@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.js": "/static/js/main.6ddea3c1.chunk.js",
-    "main.js.map": "/static/js/main.6ddea3c1.chunk.js.map",
-    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
-    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
-    "static/js/2.f65cf444.chunk.js": "/static/js/2.f65cf444.chunk.js",
-    "static/js/2.f65cf444.chunk.js.map": "/static/js/2.f65cf444.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.1a6bc370800082b158bee20ff8eac683.js": "/precache-manifest.1a6bc370800082b158bee20ff8eac683.js",
-    "service-worker.js": "/service-worker.js"
-  }
+    "main.css": "/lostma-website-test/static/css/main.31d6cfe0.css",
+    "main.js": "/lostma-website-test/static/js/main.15706e29.js",
+    "static/js/453.1f251112.chunk.js": "/lostma-website-test/static/js/453.1f251112.chunk.js",
+    "index.html": "/lostma-website-test/index.html",
+    "main.15706e29.js.map": "/lostma-website-test/static/js/main.15706e29.js.map",
+    "453.1f251112.chunk.js.map": "/lostma-website-test/static/js/453.1f251112.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.31d6cfe0.css",
+    "static/js/main.15706e29.js"
+  ]
 }
