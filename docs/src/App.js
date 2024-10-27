@@ -4,7 +4,6 @@ import Home from './views/Home';
 import RecordTypePage from './views/RecordTypes';
 import About from './views/About';
 import {
-  BrowserRouter,
   Route,
   Routes
 } from "react-router-dom";
@@ -20,13 +19,11 @@ function App() {
         <p>LostMa project tag line.</p>
       </header>
       < NavBar />
-      <BrowserRouter basename={`/${process.env.PUBLIC_URL}`}>
-        <Routes>
-          <Route path="" element={<Home />} />
-          <Route path="/views/recordtypes" element={<RecordTypePage />} />
-          <Route path="/views/about" element={<About />} />
-        </Routes>
-      </BrowserRouter >
+      <Routes>
+        <Route path="" element={<Home />} />
+        <Route path="/views/recordtypes" element={<RecordTypePage />} />
+        <Route path="/views/about" element={<About />} />
+      </Routes>
     </div>
   );
 }
