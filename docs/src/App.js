@@ -20,13 +20,13 @@ function App() {
         <p>LostMa project tag line.</p>
       </header>
       < NavBar />
-      <BrowserRouter>
+      <BrowserRouter basename={`/${process.env.PUBLIC_URL}`}>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="" element={<Home />} />
           <Route path="/views/recordtypes" element={<RecordTypePage />} />
           <Route path="/views/about" element={<About />} />
         </Routes>
-      </BrowserRouter>
+      </BrowserRouter >
     </div>
   );
 }
