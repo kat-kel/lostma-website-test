@@ -1,11 +1,14 @@
 import * as RecordTypes from '../rty_components'
 import rtyArray from '../rty_components/index.json'
+import React from 'react';
+import { HashLink } from 'react-router-hash-link'
 
 const rtypes = Object.keys(RecordTypes);
 
-const ListItem = ({ obj }) => (
-  <li><a href={obj["id"]}>{obj["name"]}</a></li>
-);
+const ListItem = ({ obj }) => {
+  let href = "#" + obj["id"]
+  return <li><HashLink to={href}>{obj["name"]}</HashLink></li>
+};
 
 const List = ({ items }) => (
   <ul>
@@ -15,22 +18,24 @@ const List = ({ items }) => (
   </ul>
 );
 
-function RecordTypePage() {
-  return (
-    <div id="record-types">
-      <div className="container-fluid">
-        <h3>Profiles of Record Types</h3>
-        <p>For the LostMa project, we created the following record types. The database relies on them as well as the general entities of "Person," "Place," and several bibliographic entities native to Heurist, including "Book" and "Journal article."</p>
+class RecordTypePage extends React.Component {
+  render() {
+    return (
+      <div id="record-types">
+        <div className="container-fluid">
+          <h3>Profiles of Record Types</h3>
+          <p>For the LostMa project, we created the following record types. The database relies on them as well as the general entities of "Person," "Place," and several bibliographic entities native to Heurist, including "Book" and "Journal article."</p>
+        </div>
+        <ul id="record-profile-list">
+          <List items={rtyArray} />
+        </ul>
+        {rtypes.map(i => {
+          const RTY = RecordTypes[i];
+          return <RTY />
+        })}
       </div>
-      <ul id="record-profile-list">
-        <List items={rtyArray} />
-      </ul>
-      {rtypes.map(i => {
-        const RT = RecordTypes[i];
-        return <RT />
-      })}
-    </div>
-  );
+    );
+  }
 }
 
 export default RecordTypePage;
