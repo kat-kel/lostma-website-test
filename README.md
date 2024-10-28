@@ -4,7 +4,7 @@ Test environment for react web app.
 
 ## Deployment
 
-Website is deployed at [https://kat-kel.github.io/lostma-website-test/](https://kat-kel.github.io/lostma-website-test/).
+Website is deployed at [https://kat-kel.github.io/lostma-website-test/](https://kat-kel.github.io/lostma-website-test/){:target="_blank"}.
 
 ## Development
 
