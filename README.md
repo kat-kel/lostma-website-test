@@ -8,6 +8,8 @@ Website is deployed at [https://kat-kel.github.io/lostma-website-test/](https://
 
 ## Development
 
+> The JavaScript exports from `heurist-api` work for browser routers (the links are simply `<a href="#">`) but not a hash router, which is what GitHub Pages requires. The latter requiers a special react class, `<HashLink to="#">`. The following regex pattern captures the link and the text of an `<a>` link : `<a className="link" href=("#\w+")>(\w+)<\/a>`. And this pattern transforms it into a hash router link : `<HashLink to=$1>$2</HashLink>`.
+
 ### Set up
 
 1. Check your version of `node` (22 or greater).
