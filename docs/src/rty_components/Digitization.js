@@ -1,9 +1,10 @@
-import { HashLink } from 'react-router-hash-link'
 
+import { HashLink } from 'react-router-hash-link';
 export default function Digitization() {
+
     return (
-<div className="container-lg" id="126">
-  <div className="card bg-light mb-3" style={{position: "sticky", top: "0"}}>
+<div className="container-fluid" id="126">
+  <div className="card bg-light mb-3">
     <div className="card-body">
       <h4 className="card-title">digitization</h4>
       <h6 className="card-subtitle mb-2 text-body-secondary">Record ID 126</h6>
@@ -15,15 +16,15 @@ export default function Digitization() {
       <table className="table table-bordered">
         <thead className="table-light sticky-header">
           <tr>
-            <th scope="col" data-field="sec">Section</th>
-            <th scope="col" data-field="rst_DisplayName">Name</th>
-            <th scope="col" data-field="rst_DetailTypeID">Field ID</th>
-            <th scope="col" data-field="dty_HelpText">Help Text</th>
-            <th scope="col" data-field="dty_SemanticReferenceURL">Semantic Reference URL</th>
-            <th scope="col" data-field="rst_RequirementType">Requirement</th>
-            <th scope="col" data-field="dty_Type">Data Type</th>
-            <th scope="col" data-field="dty_PtrTargetRectypeIDs">Linked Record Types</th>
-            <th scope="col" data-field="dty_TermIDTreeNonSelectableIDs">Vocabulary</th>
+            <th scope="col">Section</th>
+            <th scope="col">Name</th>
+            <th scope="col">Field ID</th>
+            <th scope="col">Help Text</th>
+            <th scope="col">Semantic Reference URL</th>
+            <th scope="col">Requirement</th>
+            <th scope="col">Data Type</th>
+            <th scope="col">Linked Record Types</th>
+            <th scope="col">Vocabulary</th>
           </tr>
         </thead>
         <tbody>

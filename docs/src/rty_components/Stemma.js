@@ -1,9 +1,10 @@
-import { HashLink } from 'react-router-hash-link'
 
+import { HashLink } from 'react-router-hash-link';
 export default function Stemma() {
+
     return (
-<div className="container-lg" id="104">
-  <div className="card bg-light mb-3" style={{position: "sticky", top: "0"}}>
+<div className="container-fluid" id="104">
+  <div className="card bg-light mb-3">
     <div className="card-body">
       <h4 className="card-title">stemma</h4>
       <h6 className="card-subtitle mb-2 text-body-secondary">Record ID 104</h6>
@@ -15,20 +16,20 @@ export default function Stemma() {
       <table className="table table-bordered">
         <thead className="table-light sticky-header">
           <tr>
-            <th scope="col" data-field="sec">Section</th>
-            <th scope="col" data-field="rst_DisplayName">Name</th>
-            <th scope="col" data-field="rst_DetailTypeID">Field ID</th>
-            <th scope="col" data-field="dty_HelpText">Help Text</th>
-            <th scope="col" data-field="dty_SemanticReferenceURL">Semantic Reference URL</th>
-            <th scope="col" data-field="rst_RequirementType">Requirement</th>
-            <th scope="col" data-field="dty_Type">Data Type</th>
-            <th scope="col" data-field="dty_PtrTargetRectypeIDs">Linked Record Types</th>
-            <th scope="col" data-field="dty_TermIDTreeNonSelectableIDs">Vocabulary</th>
+            <th scope="col">Section</th>
+            <th scope="col">Name</th>
+            <th scope="col">Field ID</th>
+            <th scope="col">Help Text</th>
+            <th scope="col">Semantic Reference URL</th>
+            <th scope="col">Requirement</th>
+            <th scope="col">Data Type</th>
+            <th scope="col">Linked Record Types</th>
+            <th scope="col">Vocabulary</th>
           </tr>
         </thead>
         <tbody>
           <tr className="table-light">
-            <th scope="row" rowspan="6">Identification</th>
+            <th scope="row" rowspan="6">genre</th>
             <td>openstemmata-id</td>
             <td>1128</td>
             <td>id in open stemmata</td>
@@ -62,7 +63,29 @@ export default function Stemma() {
             </td>
             <td>Vocabulary</td>
             <td/>
-            <td/>
+            <td>
+              <div id="Vocab1153">
+                <p>yes/no vocab</p>
+                <ul className="list-group list-group-flush">
+                  <li className="list-group-item list-group-item-light" id="9497">
+                    <div className="ms-2 me-auto">
+                      <div>Yes</div>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9498">
+                    <div className="ms-2 me-auto">
+                      <div>No</div>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9535">
+                    <div className="ms-2 me-auto">
+                      <div>unknown</div>
+                      <small className="text-body-secondary">The information is not ready for input.</small>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </td>
           </tr>
           <tr className="table-light">
             <td>text-title-freetext</td>
@@ -98,10 +121,136 @@ export default function Stemma() {
             </td>
             <td>Vocabulary</td>
             <td/>
-            <td/>
+            <td>
+              <div id="Vocab1129">
+                <p>__subgenre vocab</p>
+                <ul className="list-group list-group-flush">
+                  <li className="list-group-item list-group-item-light" id="9489">
+                    <div className="ms-2 me-auto">
+                      <div>chanson de geste</div>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9512">
+                    <div className="ms-2 me-auto">
+                      <div>roman arthurien en prose</div>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9513">
+                    <div className="ms-2 me-auto">
+                      <div>roman antique</div>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9514">
+                    <div className="ms-2 me-auto">
+                      <div>roman en prose</div>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9515">
+                    <div className="ms-2 me-auto">
+                      <div>narratif</div>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9516">
+                    <div className="ms-2 me-auto">
+                      <div>roman d&#8217;aventures</div>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9517">
+                    <div className="ms-2 me-auto">
+                      <div>roman arthurien en vers</div>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9518">
+                    <div className="ms-2 me-auto">
+                      <div>biblique</div>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9519">
+                    <div className="ms-2 me-auto">
+                      <div>Miracles+lyrique</div>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9520">
+                    <div className="ms-2 me-auto">
+                      <div>lyrique</div>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9521">
+                    <div className="ms-2 me-auto">
+                      <div>Fable</div>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9522">
+                    <div className="ms-2 me-auto">
+                      <div>Conte</div>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9523">
+                    <div className="ms-2 me-auto">
+                      <div>hagiographie</div>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9524">
+                    <div className="ms-2 me-auto">
+                      <div>Lai</div>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9525">
+                    <div className="ms-2 me-auto">
+                      <div>Bestiaire</div>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9526">
+                    <div className="ms-2 me-auto">
+                      <div>Encyclop&#233;die</div>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9528">
+                    <div className="ms-2 me-auto">
+                      <div>roman antique en vers</div>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9529">
+                    <div className="ms-2 me-auto">
+                      <div>roman</div>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9530">
+                    <div className="ms-2 me-auto">
+                      <div>Vie</div>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9531">
+                    <div className="ms-2 me-auto">
+                      <div>didactique</div>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9532">
+                    <div className="ms-2 me-auto">
+                      <div>Chronicle</div>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9533">
+                    <div className="ms-2 me-auto">
+                      <div>drama</div>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9534">
+                    <div className="ms-2 me-auto">
+                      <div>chanson de saint</div>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9719">
+                    <div className="ms-2 me-auto">
+                      <div>roman lignager</div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </td>
           </tr>
           <tr className="table-light">
-            <th scope="row" rowspan="12">Description</th>
+            <th scope="row" rowspan="12">stemmaType</th>
             <td>stemmaType</td>
             <td>1139</td>
             <td>Type of tree: reconstructed (general case) or observed (very rare)</td>
@@ -111,7 +260,23 @@ export default function Stemma() {
             </td>
             <td>Vocabulary</td>
             <td/>
-            <td/>
+            <td>
+              <div id="Vocab1139">
+                <p>stemmaType vocab</p>
+                <ul className="list-group list-group-flush">
+                  <li className="list-group-item list-group-item-light" id="9494">
+                    <div className="ms-2 me-auto">
+                      <div>reconstructed</div>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9495">
+                    <div className="ms-2 me-auto">
+                      <div>observed</div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </td>
           </tr>
           <tr className="table-light">
             <td>drawnStemma</td>
@@ -123,7 +288,29 @@ export default function Stemma() {
             </td>
             <td>Vocabulary</td>
             <td/>
-            <td/>
+            <td>
+              <div id="Vocab1140">
+                <p>yes/no vocab</p>
+                <ul className="list-group list-group-flush">
+                  <li className="list-group-item list-group-item-light" id="9497">
+                    <div className="ms-2 me-auto">
+                      <div>Yes</div>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9498">
+                    <div className="ms-2 me-auto">
+                      <div>No</div>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9535">
+                    <div className="ms-2 me-auto">
+                      <div>unknown</div>
+                      <small className="text-body-secondary">The information is not ready for input.</small>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </td>
           </tr>
           <tr className="table-light">
             <td>contam</td>
@@ -135,7 +322,29 @@ export default function Stemma() {
             </td>
             <td>Vocabulary</td>
             <td/>
-            <td/>
+            <td>
+              <div id="Vocab1141">
+                <p>yes/no vocab</p>
+                <ul className="list-group list-group-flush">
+                  <li className="list-group-item list-group-item-light" id="9497">
+                    <div className="ms-2 me-auto">
+                      <div>Yes</div>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9498">
+                    <div className="ms-2 me-auto">
+                      <div>No</div>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9535">
+                    <div className="ms-2 me-auto">
+                      <div>unknown</div>
+                      <small className="text-body-secondary">The information is not ready for input.</small>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </td>
           </tr>
           <tr className="table-light">
             <td>extraStemmContam</td>
@@ -147,7 +356,29 @@ export default function Stemma() {
             </td>
             <td>Vocabulary</td>
             <td/>
-            <td/>
+            <td>
+              <div id="Vocab1142">
+                <p>yes/no vocab</p>
+                <ul className="list-group list-group-flush">
+                  <li className="list-group-item list-group-item-light" id="9497">
+                    <div className="ms-2 me-auto">
+                      <div>Yes</div>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9498">
+                    <div className="ms-2 me-auto">
+                      <div>No</div>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9535">
+                    <div className="ms-2 me-auto">
+                      <div>unknown</div>
+                      <small className="text-body-secondary">The information is not ready for input.</small>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </td>
           </tr>
           <tr className="table-light">
             <td>rootType</td>
@@ -159,7 +390,28 @@ export default function Stemma() {
             </td>
             <td>Vocabulary</td>
             <td/>
-            <td/>
+            <td>
+              <div id="Vocab1143">
+                <p>rootType vocab</p>
+                <ul className="list-group list-group-flush">
+                  <li className="list-group-item list-group-item-light" id="9500">
+                    <div className="ms-2 me-auto">
+                      <div>unspecified</div>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9501">
+                    <div className="ms-2 me-auto">
+                      <div>archetype</div>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9502">
+                    <div className="ms-2 me-auto">
+                      <div>original</div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </td>
           </tr>
           <tr className="table-light">
             <td>completeWits</td>
@@ -171,7 +423,30 @@ export default function Stemma() {
             </td>
             <td>Vocabulary</td>
             <td/>
-            <td/>
+            <td>
+              <div id="Vocab1144">
+                <p>completeWits vocab</p>
+                <ul className="list-group list-group-flush">
+                  <li className="list-group-item list-group-item-light" id="9504">
+                    <div className="ms-2 me-auto">
+                      <div>included</div>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9505">
+                    <div className="ms-2 me-auto">
+                      <div>no-descripti</div>
+                      <small className="text-body-secondary">descripti removed</small>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9506">
+                    <div className="ms-2 me-auto">
+                      <div>selected</div>
+                      <small className="text-body-secondary">only a selection</small>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </td>
           </tr>
           <tr className="table-light">
             <td>sourceText</td>
@@ -183,7 +458,35 @@ export default function Stemma() {
             </td>
             <td>Vocabulary</td>
             <td/>
-            <td/>
+            <td>
+              <div id="Vocab1145">
+                <p>sourceText and derivatives vocab</p>
+                <ul className="list-group list-group-flush">
+                  <li className="list-group-item list-group-item-light" id="9508">
+                    <div className="ms-2 me-auto">
+                      <div>NA</div>
+                      <small className="text-body-secondary">not applicable (default)</small>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9509">
+                    <div className="ms-2 me-auto">
+                      <div>included</div>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9510">
+                    <div className="ms-2 me-auto">
+                      <div>excluded</div>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9511">
+                    <div className="ms-2 me-auto">
+                      <div>selected</div>
+                      <small className="text-body-secondary">only a selection</small>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </td>
           </tr>
           <tr className="table-light">
             <td>derivatives</td>
@@ -195,7 +498,35 @@ export default function Stemma() {
             </td>
             <td>Vocabulary</td>
             <td/>
-            <td/>
+            <td>
+              <div id="Vocab1146">
+                <p>sourceText and derivatives vocab</p>
+                <ul className="list-group list-group-flush">
+                  <li className="list-group-item list-group-item-light" id="9508">
+                    <div className="ms-2 me-auto">
+                      <div>NA</div>
+                      <small className="text-body-secondary">not applicable (default)</small>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9509">
+                    <div className="ms-2 me-auto">
+                      <div>included</div>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9510">
+                    <div className="ms-2 me-auto">
+                      <div>excluded</div>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9511">
+                    <div className="ms-2 me-auto">
+                      <div>selected</div>
+                      <small className="text-body-secondary">only a selection</small>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </td>
           </tr>
           <tr className="table-light">
             <td>note</td>
@@ -252,7 +583,7 @@ export default function Stemma() {
             <td/>
           </tr>
           <tr className="table-light">
-            <th scope="row" rowspan="10">References</th>
+            <th scope="row" rowspan="10">publicationType</th>
             <td>publicationType</td>
             <td>1137</td>
             <td>type of publication</td>
@@ -262,7 +593,23 @@ export default function Stemma() {
             </td>
             <td>Vocabulary</td>
             <td/>
-            <td/>
+            <td>
+              <div id="Vocab1137">
+                <p>publicationType vocab</p>
+                <ul className="list-group list-group-flush">
+                  <li className="list-group-item list-group-item-light" id="9492">
+                    <div className="ms-2 me-auto">
+                      <div>book</div>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9541">
+                    <div className="ms-2 me-auto">
+                      <div>publicationPart</div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </td>
           </tr>
           <tr className="table-light">
             <td>Author</td>

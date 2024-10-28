@@ -1,9 +1,10 @@
-import { HashLink } from 'react-router-hash-link'
 
+import { HashLink } from 'react-router-hash-link';
 export default function Part() {
+
     return (
-<div className="container-lg" id="125">
-  <div className="card bg-light mb-3" style={{position: "sticky", top: "0"}}>
+<div className="container-fluid" id="125">
+  <div className="card bg-light mb-3">
     <div className="card-body">
       <h4 className="card-title">part</h4>
       <h6 className="card-subtitle mb-2 text-body-secondary">Record ID 125</h6>
@@ -15,15 +16,15 @@ export default function Part() {
       <table className="table table-bordered">
         <thead className="table-light sticky-header">
           <tr>
-            <th scope="col" data-field="sec">Section</th>
-            <th scope="col" data-field="rst_DisplayName">Name</th>
-            <th scope="col" data-field="rst_DetailTypeID">Field ID</th>
-            <th scope="col" data-field="dty_HelpText">Help Text</th>
-            <th scope="col" data-field="dty_SemanticReferenceURL">Semantic Reference URL</th>
-            <th scope="col" data-field="rst_RequirementType">Requirement</th>
-            <th scope="col" data-field="dty_Type">Data Type</th>
-            <th scope="col" data-field="dty_PtrTargetRectypeIDs">Linked Record Types</th>
-            <th scope="col" data-field="dty_TermIDTreeNonSelectableIDs">Vocabulary</th>
+            <th scope="col">Section</th>
+            <th scope="col">Name</th>
+            <th scope="col">Field ID</th>
+            <th scope="col">Help Text</th>
+            <th scope="col">Semantic Reference URL</th>
+            <th scope="col">Requirement</th>
+            <th scope="col">Data Type</th>
+            <th scope="col">Linked Record Types</th>
+            <th scope="col">Vocabulary</th>
           </tr>
         </thead>
         <tbody>
@@ -95,7 +96,7 @@ export default function Part() {
             <td/>
           </tr>
           <tr className="table-light">
-            <th scope="row" rowspan="5">Extent</th>
+            <th scope="row" rowspan="5">lines_are_incomplete</th>
             <td>physical_description</td>
             <td>1357</td>
             <td>Description of the support, decorations, layout, and script type.</td>
@@ -131,7 +132,28 @@ export default function Part() {
             </td>
             <td>Vocabulary</td>
             <td/>
-            <td/>
+            <td>
+              <div id="Vocab1358">
+                <p>VersesPerLine vocab</p>
+                <ul className="list-group list-group-flush">
+                  <li className="list-group-item list-group-item-light" id="9830">
+                    <div className="ms-2 me-auto">
+                      <div>continuous</div>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9831">
+                    <div className="ms-2 me-auto">
+                      <div>one verse per line</div>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9832">
+                    <div className="ms-2 me-auto">
+                      <div>other</div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </td>
           </tr>
           <tr className="table-light">
             <td>lines_are_incomplete</td>
@@ -143,7 +165,29 @@ export default function Part() {
             </td>
             <td>Vocabulary</td>
             <td/>
-            <td/>
+            <td>
+              <div id="Vocab1321">
+                <p>yes/no vocab</p>
+                <ul className="list-group list-group-flush">
+                  <li className="list-group-item list-group-item-light" id="9497">
+                    <div className="ms-2 me-auto">
+                      <div>Yes</div>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9498">
+                    <div className="ms-2 me-auto">
+                      <div>No</div>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9535">
+                    <div className="ms-2 me-auto">
+                      <div>unknown</div>
+                      <small className="text-body-secondary">The information is not ready for input.</small>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </td>
           </tr>
           <tr className="table-light">
             <td>page_ranges</td>
@@ -158,7 +202,7 @@ export default function Part() {
             <td/>
           </tr>
           <tr className="table-light">
-            <th scope="row" rowspan="2">Review</th>
+            <th scope="row" rowspan="2">review_status</th>
             <td>review_status</td>
             <td>1183</td>
             <td>Status of record's preparation for public view.</td>
@@ -168,7 +212,31 @@ export default function Part() {
             </td>
             <td>Vocabulary</td>
             <td/>
-            <td/>
+            <td>
+              <div id="Vocab1183">
+                <p>_record review vocab</p>
+                <ul className="list-group list-group-flush">
+                  <li className="list-group-item list-group-item-light" id="9697">
+                    <div className="ms-2 me-auto">
+                      <div>Action required</div>
+                      <small className="text-body-secondary">The record contains information that requires a review.</small>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9698">
+                    <div className="ms-2 me-auto">
+                      <div>Open</div>
+                      <small className="text-body-secondary">The record is newly created and/or in process.</small>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9699">
+                    <div className="ms-2 me-auto">
+                      <div>Publish</div>
+                      <small className="text-body-secondary">The record has been approved for publication. It's accuracy has been verified.</small>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </td>
           </tr>
           <tr className="table-light">
             <td>review_note</td>

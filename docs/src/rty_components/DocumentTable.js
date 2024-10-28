@@ -1,9 +1,10 @@
-import { HashLink } from 'react-router-hash-link'
 
+import { HashLink } from 'react-router-hash-link';
 export default function DocumentTable() {
+
     return (
-<div className="container-lg" id="106">
-  <div className="card bg-light mb-3" style={{position: "sticky", top: "0"}}>
+<div className="container-fluid" id="106">
+  <div className="card bg-light mb-3">
     <div className="card-body">
       <h4 className="card-title">document</h4>
       <h6 className="card-subtitle mb-2 text-body-secondary">Record ID 106</h6>
@@ -15,15 +16,15 @@ export default function DocumentTable() {
       <table className="table table-bordered">
         <thead className="table-light sticky-header">
           <tr>
-            <th scope="col" data-field="sec">Section</th>
-            <th scope="col" data-field="rst_DisplayName">Name</th>
-            <th scope="col" data-field="rst_DetailTypeID">Field ID</th>
-            <th scope="col" data-field="dty_HelpText">Help Text</th>
-            <th scope="col" data-field="dty_SemanticReferenceURL">Semantic Reference URL</th>
-            <th scope="col" data-field="rst_RequirementType">Requirement</th>
-            <th scope="col" data-field="dty_Type">Data Type</th>
-            <th scope="col" data-field="dty_PtrTargetRectypeIDs">Linked Record Types</th>
-            <th scope="col" data-field="dty_TermIDTreeNonSelectableIDs">Vocabulary</th>
+            <th scope="col">Section</th>
+            <th scope="col">Name</th>
+            <th scope="col">Field ID</th>
+            <th scope="col">Help Text</th>
+            <th scope="col">Semantic Reference URL</th>
+            <th scope="col">Requirement</th>
+            <th scope="col">Data Type</th>
+            <th scope="col">Linked Record Types</th>
+            <th scope="col">Vocabulary</th>
           </tr>
         </thead>
         <tbody>
@@ -82,7 +83,7 @@ export default function DocumentTable() {
             <td/>
           </tr>
           <tr className="table-light">
-            <th scope="row" rowspan="2">Hypothesis</th>
+            <th scope="row" rowspan="2">is_hypothetical</th>
             <td>is_hypothetical</td>
             <td>1266</td>
             <td>Whether the entity is attested (True) in a hypothesis or whether it is received as fact that it exists or existed (False).</td>
@@ -92,7 +93,34 @@ export default function DocumentTable() {
             </td>
             <td>Vocabulary</td>
             <td/>
-            <td/>
+            <td>
+              <div id="Vocab1266">
+                <p>yes/no/maybe vocab</p>
+                <ul className="list-group list-group-flush">
+                  <li className="list-group-item list-group-item-light" id="9482">
+                    <div className="ms-2 me-auto">
+                      <div>Yes</div>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9483">
+                    <div className="ms-2 me-auto">
+                      <div>No</div>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9484">
+                    <div className="ms-2 me-auto">
+                      <div>Maybe</div>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9770">
+                    <div className="ms-2 me-auto">
+                      <div>unknown</div>
+                      <small className="text-body-secondary">The information is not ready to be input.</small>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </td>
           </tr>
           <tr className="table-light">
             <td>claim_freetext</td>
@@ -109,7 +137,7 @@ export default function DocumentTable() {
             <td/>
           </tr>
           <tr className="table-light">
-            <th scope="row" rowspan="4">Description</th>
+            <th scope="row" rowspan="4">collection_of_fragments</th>
             <td>collection_of_fragments</td>
             <td>1312</td>
             <td>Whether or not the document is a collection of fragments, compiled at a date significantly later than when the manuscript components were themselves created, i.e. a 19th-century collection of 12th- and 13th-century fragments.</td>
@@ -119,7 +147,29 @@ export default function DocumentTable() {
             </td>
             <td>Vocabulary</td>
             <td/>
-            <td/>
+            <td>
+              <div id="Vocab1312">
+                <p>yes/no vocab</p>
+                <ul className="list-group list-group-flush">
+                  <li className="list-group-item list-group-item-light" id="9497">
+                    <div className="ms-2 me-auto">
+                      <div>Yes</div>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9498">
+                    <div className="ms-2 me-auto">
+                      <div>No</div>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9535">
+                    <div className="ms-2 me-auto">
+                      <div>unknown</div>
+                      <small className="text-body-secondary">The information is not ready for input.</small>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </td>
           </tr>
           <tr className="table-light">
             <td>old_shelfmark</td>
@@ -309,7 +359,7 @@ Described in source / written about in / described by encyclopedia / described b
             <td/>
           </tr>
           <tr className="table-light">
-            <th scope="row" rowspan="2">Review</th>
+            <th scope="row" rowspan="2">review_status</th>
             <td>review_status</td>
             <td>1183</td>
             <td>Status of record's preparation for public view.</td>
@@ -319,7 +369,31 @@ Described in source / written about in / described by encyclopedia / described b
             </td>
             <td>Vocabulary</td>
             <td/>
-            <td/>
+            <td>
+              <div id="Vocab1183">
+                <p>_record review vocab</p>
+                <ul className="list-group list-group-flush">
+                  <li className="list-group-item list-group-item-light" id="9697">
+                    <div className="ms-2 me-auto">
+                      <div>Action required</div>
+                      <small className="text-body-secondary">The record contains information that requires a review.</small>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9698">
+                    <div className="ms-2 me-auto">
+                      <div>Open</div>
+                      <small className="text-body-secondary">The record is newly created and/or in process.</small>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9699">
+                    <div className="ms-2 me-auto">
+                      <div>Publish</div>
+                      <small className="text-body-secondary">The record has been approved for publication. It's accuracy has been verified.</small>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </td>
           </tr>
           <tr className="table-light">
             <td>review_note</td>

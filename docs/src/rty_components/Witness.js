@@ -1,9 +1,10 @@
-import { HashLink } from 'react-router-hash-link'
 
+import { HashLink } from 'react-router-hash-link';
 export default function Witness() {
+
     return (
-<div className="container-lg" id="105">
-  <div className="card bg-light mb-3" style={{position: "sticky", top: "0"}}>
+<div className="container-fluid" id="105">
+  <div className="card bg-light mb-3">
     <div className="card-body">
       <h4 className="card-title">witness</h4>
       <h6 className="card-subtitle mb-2 text-body-secondary">Record ID 105</h6>
@@ -15,15 +16,15 @@ export default function Witness() {
       <table className="table table-bordered">
         <thead className="table-light sticky-header">
           <tr>
-            <th scope="col" data-field="sec">Section</th>
-            <th scope="col" data-field="rst_DisplayName">Name</th>
-            <th scope="col" data-field="rst_DetailTypeID">Field ID</th>
-            <th scope="col" data-field="dty_HelpText">Help Text</th>
-            <th scope="col" data-field="dty_SemanticReferenceURL">Semantic Reference URL</th>
-            <th scope="col" data-field="rst_RequirementType">Requirement</th>
-            <th scope="col" data-field="dty_Type">Data Type</th>
-            <th scope="col" data-field="dty_PtrTargetRectypeIDs">Linked Record Types</th>
-            <th scope="col" data-field="dty_TermIDTreeNonSelectableIDs">Vocabulary</th>
+            <th scope="col">Section</th>
+            <th scope="col">Name</th>
+            <th scope="col">Field ID</th>
+            <th scope="col">Help Text</th>
+            <th scope="col">Semantic Reference URL</th>
+            <th scope="col">Requirement</th>
+            <th scope="col">Data Type</th>
+            <th scope="col">Linked Record Types</th>
+            <th scope="col">Vocabulary</th>
           </tr>
         </thead>
         <tbody>
@@ -75,7 +76,7 @@ export default function Witness() {
             <td/>
           </tr>
           <tr className="table-light">
-            <th scope="row" rowspan="4">Hypothesis</th>
+            <th scope="row" rowspan="4">is_unobserved</th>
             <td>is_unobserved</td>
             <td>1266</td>
             <td>Whether the entity is attested (True) in a hypothesis or whether it is received as fact that it exists or existed (False).</td>
@@ -85,7 +86,34 @@ export default function Witness() {
             </td>
             <td>Vocabulary</td>
             <td/>
-            <td/>
+            <td>
+              <div id="Vocab1266">
+                <p>yes/no/maybe vocab</p>
+                <ul className="list-group list-group-flush">
+                  <li className="list-group-item list-group-item-light" id="9482">
+                    <div className="ms-2 me-auto">
+                      <div>Yes</div>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9483">
+                    <div className="ms-2 me-auto">
+                      <div>No</div>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9484">
+                    <div className="ms-2 me-auto">
+                      <div>Maybe</div>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9770">
+                    <div className="ms-2 me-auto">
+                      <div>unknown</div>
+                      <small className="text-body-secondary">The information is not ready to be input.</small>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </td>
           </tr>
           <tr className="table-light">
             <td>claim_freetext</td>
@@ -130,7 +158,7 @@ export default function Witness() {
             <td/>
           </tr>
           <tr className="table-light">
-            <th scope="row" rowspan="4">Tradition</th>
+            <th scope="row" rowspan="4">status_witness</th>
             <td>preferred_siglum</td>
             <td>1296</td>
             <td>An abbreviation, usually a letter or a letter with a numeral, assigned to a source.</td>
@@ -164,7 +192,37 @@ export default function Witness() {
             </td>
             <td>Vocabulary</td>
             <td/>
-            <td/>
+            <td>
+              <div id="Vocab1301">
+                <p>Witness Status</p>
+                <ul className="list-group list-group-flush">
+                  <li className="list-group-item list-group-item-light" id="9544">
+                    <div className="ms-2 me-auto">
+                      <div>fragmentary</div>
+                      <small className="text-body-secondary">Only 1 or 2 pages are all that remain of the witness, which is expected to be much longer.</small>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9545">
+                    <div className="ms-2 me-auto">
+                      <div>complete</div>
+                      <small className="text-body-secondary">All of the literary content (not including dedication, etc.) is extant and legible.</small>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9546">
+                    <div className="ms-2 me-auto">
+                      <div>defective</div>
+                      <small className="text-body-secondary">Some pages containing literary content are missing from the extant witness, but the majority or a significant portion survives.</small>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9758">
+                    <div className="ms-2 me-auto">
+                      <div>lost</div>
+                      <small className="text-body-secondary">In the case of a hypothetical witness, whose existence is posited, no part of the witness survives.</small>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </td>
           </tr>
           <tr className="table-light">
             <td>status_notes</td>
@@ -179,7 +237,7 @@ export default function Witness() {
             <td/>
           </tr>
           <tr className="table-light">
-            <th scope="row" rowspan="3">Description</th>
+            <th scope="row" rowspan="3">is_excerpt</th>
             <td>is_excerpt</td>
             <td>1302</td>
             <td>The witness was never a full manifestation of the text, but offers an excerpt or a citation of the text.</td>
@@ -189,7 +247,34 @@ export default function Witness() {
             </td>
             <td>Vocabulary</td>
             <td/>
-            <td/>
+            <td>
+              <div id="Vocab1302">
+                <p>yes/no/maybe vocab</p>
+                <ul className="list-group list-group-flush">
+                  <li className="list-group-item list-group-item-light" id="9482">
+                    <div className="ms-2 me-auto">
+                      <div>Yes</div>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9483">
+                    <div className="ms-2 me-auto">
+                      <div>No</div>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9484">
+                    <div className="ms-2 me-auto">
+                      <div>Maybe</div>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9770">
+                    <div className="ms-2 me-auto">
+                      <div>unknown</div>
+                      <small className="text-body-secondary">The information is not ready to be input.</small>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </td>
           </tr>
           <tr className="table-light">
             <td>regional_writing_style</td>
@@ -218,7 +303,7 @@ export default function Witness() {
             <td/>
           </tr>
           <tr className="table-light">
-            <th scope="row" rowspan="4">Date</th>
+            <th scope="row" rowspan="4">date_of_creation_certainty</th>
             <td>date_of_creation</td>
             <td>1285</td>
             <td>Time when the entity begins to exist.</td>
@@ -242,7 +327,33 @@ export default function Witness() {
             </td>
             <td>Vocabulary</td>
             <td/>
-            <td/>
+            <td>
+              <div id="Vocab1258">
+                <p>certainty vocab</p>
+                <ul className="list-group list-group-flush">
+                  <li className="list-group-item list-group-item-light" id="9760">
+                    <div className="ms-2 me-auto">
+                      <div>4. Certain (100%)</div>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9762">
+                    <div className="ms-2 me-auto">
+                      <div>3. Very likely (66%-99%)</div>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9763">
+                    <div className="ms-2 me-auto">
+                      <div>2. Probable (33%-66%)</div>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9765">
+                    <div className="ms-2 me-auto">
+                      <div>0. Unlikely (1%-33%)</div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </td>
           </tr>
           <tr className="table-light">
             <td>date_of_creation_source</td>
@@ -376,7 +487,7 @@ Described in source / written about in / described by encyclopedia / described b
             <td/>
           </tr>
           <tr className="table-light">
-            <th scope="row" rowspan="2">Review</th>
+            <th scope="row" rowspan="2">review_status</th>
             <td>review_status</td>
             <td>1183</td>
             <td>Status of record's preparation for public view.</td>
@@ -386,7 +497,31 @@ Described in source / written about in / described by encyclopedia / described b
             </td>
             <td>Vocabulary</td>
             <td/>
-            <td/>
+            <td>
+              <div id="Vocab1183">
+                <p>_record review vocab</p>
+                <ul className="list-group list-group-flush">
+                  <li className="list-group-item list-group-item-light" id="9697">
+                    <div className="ms-2 me-auto">
+                      <div>Action required</div>
+                      <small className="text-body-secondary">The record contains information that requires a review.</small>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9698">
+                    <div className="ms-2 me-auto">
+                      <div>Open</div>
+                      <small className="text-body-secondary">The record is newly created and/or in process.</small>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9699">
+                    <div className="ms-2 me-auto">
+                      <div>Publish</div>
+                      <small className="text-body-secondary">The record has been approved for publication. It's accuracy has been verified.</small>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </td>
           </tr>
           <tr className="table-light">
             <td>review_note</td>

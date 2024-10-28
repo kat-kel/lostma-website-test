@@ -1,9 +1,10 @@
-import { HashLink } from 'react-router-hash-link'
 
+import { HashLink } from 'react-router-hash-link';
 export default function Hypothesis() {
+
     return (
-<div className="container-lg" id="116">
-  <div className="card bg-light mb-3" style={{position: "sticky", top: "0"}}>
+<div className="container-fluid" id="116">
+  <div className="card bg-light mb-3">
     <div className="card-body">
       <h4 className="card-title">hypothesis</h4>
       <h6 className="card-subtitle mb-2 text-body-secondary">Record ID 116</h6>
@@ -15,15 +16,15 @@ export default function Hypothesis() {
       <table className="table table-bordered">
         <thead className="table-light sticky-header">
           <tr>
-            <th scope="col" data-field="sec">Section</th>
-            <th scope="col" data-field="rst_DisplayName">Name</th>
-            <th scope="col" data-field="rst_DetailTypeID">Field ID</th>
-            <th scope="col" data-field="dty_HelpText">Help Text</th>
-            <th scope="col" data-field="dty_SemanticReferenceURL">Semantic Reference URL</th>
-            <th scope="col" data-field="rst_RequirementType">Requirement</th>
-            <th scope="col" data-field="dty_Type">Data Type</th>
-            <th scope="col" data-field="dty_PtrTargetRectypeIDs">Linked Record Types</th>
-            <th scope="col" data-field="dty_TermIDTreeNonSelectableIDs">Vocabulary</th>
+            <th scope="col">Section</th>
+            <th scope="col">Name</th>
+            <th scope="col">Field ID</th>
+            <th scope="col">Help Text</th>
+            <th scope="col">Semantic Reference URL</th>
+            <th scope="col">Requirement</th>
+            <th scope="col">Data Type</th>
+            <th scope="col">Linked Record Types</th>
+            <th scope="col">Vocabulary</th>
           </tr>
         </thead>
         <tbody>
@@ -43,7 +44,7 @@ export default function Hypothesis() {
             <td/>
           </tr>
           <tr className="table-light">
-            <th scope="row" rowspan="2">Description</th>
+            <th scope="row" rowspan="2">certainty</th>
             <td>claim</td>
             <td>1257</td>
             <td>Brief summary of the hypothesis.</td>
@@ -65,7 +66,33 @@ export default function Hypothesis() {
             </td>
             <td>Vocabulary</td>
             <td/>
-            <td/>
+            <td>
+              <div id="Vocab1258">
+                <p>certainty vocab</p>
+                <ul className="list-group list-group-flush">
+                  <li className="list-group-item list-group-item-light" id="9760">
+                    <div className="ms-2 me-auto">
+                      <div>4. Certain (100%)</div>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9762">
+                    <div className="ms-2 me-auto">
+                      <div>3. Very likely (66%-99%)</div>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9763">
+                    <div className="ms-2 me-auto">
+                      <div>2. Probable (33%-66%)</div>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9765">
+                    <div className="ms-2 me-auto">
+                      <div>0. Unlikely (1%-33%)</div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </td>
           </tr>
           <tr className="table-light">
             <th scope="row" rowspan="1">References</th>
@@ -86,7 +113,7 @@ Described in source / written about in / described by encyclopedia / described b
             <td/>
           </tr>
           <tr className="table-light">
-            <th scope="row" rowspan="2">Review</th>
+            <th scope="row" rowspan="2">review_status</th>
             <td>review_status</td>
             <td>1183</td>
             <td>Status of record's preparation for public view.</td>
@@ -96,7 +123,31 @@ Described in source / written about in / described by encyclopedia / described b
             </td>
             <td>Vocabulary</td>
             <td/>
-            <td/>
+            <td>
+              <div id="Vocab1183">
+                <p>_record review vocab</p>
+                <ul className="list-group list-group-flush">
+                  <li className="list-group-item list-group-item-light" id="9697">
+                    <div className="ms-2 me-auto">
+                      <div>Action required</div>
+                      <small className="text-body-secondary">The record contains information that requires a review.</small>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9698">
+                    <div className="ms-2 me-auto">
+                      <div>Open</div>
+                      <small className="text-body-secondary">The record is newly created and/or in process.</small>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9699">
+                    <div className="ms-2 me-auto">
+                      <div>Publish</div>
+                      <small className="text-body-secondary">The record has been approved for publication. It's accuracy has been verified.</small>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </td>
           </tr>
           <tr className="table-light">
             <td>review_note</td>

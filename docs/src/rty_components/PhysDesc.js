@@ -1,9 +1,10 @@
-import { HashLink } from 'react-router-hash-link'
 
+import { HashLink } from 'react-router-hash-link';
 export default function PhysDesc() {
+
     return (
-<div className="container-lg" id="129">
-  <div className="card bg-light mb-3" style={{position: "sticky", top: "0"}}>
+<div className="container-fluid" id="129">
+  <div className="card bg-light mb-3">
     <div className="card-body">
       <h4 className="card-title">physDesc</h4>
       <h6 className="card-subtitle mb-2 text-body-secondary">Record ID 129</h6>
@@ -15,20 +16,20 @@ export default function PhysDesc() {
       <table className="table table-bordered">
         <thead className="table-light sticky-header">
           <tr>
-            <th scope="col" data-field="sec">Section</th>
-            <th scope="col" data-field="rst_DisplayName">Name</th>
-            <th scope="col" data-field="rst_DetailTypeID">Field ID</th>
-            <th scope="col" data-field="dty_HelpText">Help Text</th>
-            <th scope="col" data-field="dty_SemanticReferenceURL">Semantic Reference URL</th>
-            <th scope="col" data-field="rst_RequirementType">Requirement</th>
-            <th scope="col" data-field="dty_Type">Data Type</th>
-            <th scope="col" data-field="dty_PtrTargetRectypeIDs">Linked Record Types</th>
-            <th scope="col" data-field="dty_TermIDTreeNonSelectableIDs">Vocabulary</th>
+            <th scope="col">Section</th>
+            <th scope="col">Name</th>
+            <th scope="col">Field ID</th>
+            <th scope="col">Help Text</th>
+            <th scope="col">Semantic Reference URL</th>
+            <th scope="col">Requirement</th>
+            <th scope="col">Data Type</th>
+            <th scope="col">Linked Record Types</th>
+            <th scope="col">Vocabulary</th>
           </tr>
         </thead>
         <tbody>
           <tr className="table-light">
-            <th scope="row" rowspan="6">Support</th>
+            <th scope="row" rowspan="6">material</th>
             <td>subject_of_description</td>
             <td>1359</td>
             <td>The document that is the subject of the physical description.</td>
@@ -52,7 +53,35 @@ export default function PhysDesc() {
             </td>
             <td>Vocabulary</td>
             <td/>
-            <td/>
+            <td>
+              <div id="Vocab1341">
+                <p>Material vocab</p>
+                <ul className="list-group list-group-flush">
+                  <li className="list-group-item list-group-item-light" id="9782">
+                    <div className="ms-2 me-auto">
+                      <div>perg</div>
+                      <small className="text-body-secondary">Parchment and vellum</small>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9783">
+                    <div className="ms-2 me-auto">
+                      <div>chart</div>
+                      <small className="text-body-secondary">All kinds of paper</small>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9785">
+                    <div className="ms-2 me-auto">
+                      <div>mixed</div>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9786">
+                    <div className="ms-2 me-auto">
+                      <div>unknown</div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </td>
           </tr>
           <tr className="table-light">
             <td>form</td>
@@ -65,7 +94,42 @@ export default function PhysDesc() {
             </td>
             <td>Vocabulary</td>
             <td/>
-            <td/>
+            <td>
+              <div id="Vocab1342">
+                <p>PhysicalForm vocab</p>
+                <ul className="list-group list-group-flush">
+                  <li className="list-group-item list-group-item-light" id="9788">
+                    <div className="ms-2 me-auto">
+                      <div>codex</div>
+                      <small className="text-body-secondary">"multiple gatherings of leaves, held within a binding of some kind, and used by turning the leaves." <br/>
+                        <a target="_blank" rel="noreferrer noopener" href="https://github.com/msDesc/consolidated-tei-schema">Consolidated TEI Schema</a>
+                      </small>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9789">
+                    <div className="ms-2 me-auto">
+                      <div>roll</div>
+                      <small className="text-body-secondary">"a parchment membrane, or two or more such membranes, either sewn together edge-to-edge to form a continuous surface for writing, or laid together in a pile and sewn together at the head, and used by unrolling the membranes." <br/>
+                        <a target="_blank" rel="noreferrer noopener" href="https://github.com/msDesc/consolidated-tei-schema">Consolidated TEI Schema</a>
+                      </small>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9790">
+                    <div className="ms-2 me-auto">
+                      <div>sheet</div>
+                      <small className="text-body-secondary">"a single sheet of parchment paper, not intended to form part of a codex, either kept flat or folded (rather than rolled) for storage." <br/>
+                        <a target="_blank" rel="noreferrer noopener" href="https://github.com/msDesc/consolidated-tei-schema">Consolidated TEI Schema</a>
+                      </small>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9791">
+                    <div className="ms-2 me-auto">
+                      <div>unknown</div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </td>
           </tr>
           <tr className="table-light">
             <td>estimated_folio_size_height</td>
@@ -104,7 +168,7 @@ export default function PhysDesc() {
             <td/>
           </tr>
           <tr className="table-light">
-            <th scope="row" rowspan="2">Decorations</th>
+            <th scope="row" rowspan="2">has_decorations</th>
             <td>has_decorations</td>
             <td>1346</td>
             <td>Decorations present in the witness. Select all that apply.</td>
@@ -114,7 +178,47 @@ export default function PhysDesc() {
             </td>
             <td>Vocabulary</td>
             <td/>
-            <td/>
+            <td>
+              <div id="Vocab1346">
+                <p>Decorations vocab</p>
+                <ul className="list-group list-group-flush">
+                  <li className="list-group-item list-group-item-light" id="9793">
+                    <div className="ms-2 me-auto">
+                      <div>unknown</div>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9794">
+                    <div className="ms-2 me-auto">
+                      <div>
+                        <a className="link" target="_blank" rel="noreferrer noopener" href="https://www.wikidata.org/wiki/Q378408">initial</a>
+                      </div>
+                      <small className="text-body-secondary">"Letter at the beginning of a chapter or paragraph that is larger than the rest of the text."<br/>Property <a target="_blank" rel="noreferrer noopener" href="https://www.wikidata.org/wiki/Q378408">Q378408</a>
+                      </small>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9795">
+                    <div className="ms-2 me-auto">
+                      <div>
+                        <a className="link" target="_blank" rel="noreferrer noopener" href="https://www.wikidata.org/wiki/Q1365156">rubrication</a>
+                      </div>
+                      <small className="text-body-secondary">"Red letters added for emphasis in a manuscript."<br/>Property <a target="_blank" rel="noreferrer noopener" href="https://www.wikidata.org/wiki/Q1365156">Q1365156</a>
+                      </small>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9796">
+                    <div className="ms-2 me-auto">
+                      <div>incomplete dec.</div>
+                      <small className="text-body-secondary">There is evidence that rubrication or one or more illustrations or initials were planned to be included on pages but were not realized.</small>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9797">
+                    <div className="ms-2 me-auto">
+                      <div>none of the above</div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </td>
           </tr>
           <tr className="table-light">
             <td>amount_of_illustrations</td>
@@ -126,10 +230,36 @@ export default function PhysDesc() {
             </td>
             <td>Vocabulary</td>
             <td/>
-            <td/>
+            <td>
+              <div id="Vocab1347">
+                <p>CountCategories vocab</p>
+                <ul className="list-group list-group-flush">
+                  <li className="list-group-item list-group-item-light" id="9799">
+                    <div className="ms-2 me-auto">
+                      <div>unknown</div>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9800">
+                    <div className="ms-2 me-auto">
+                      <div>none</div>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9801">
+                    <div className="ms-2 me-auto">
+                      <div>one</div>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9802">
+                    <div className="ms-2 me-auto">
+                      <div>more than one</div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </td>
           </tr>
           <tr className="table-light">
-            <th scope="row" rowspan="6">Layout</th>
+            <th scope="row" rowspan="6">above_top_line</th>
             <td>writing_surface_area_height</td>
             <td>1348</td>
             <td>Height in millimeters (a range is permitted) of the writing area. <br/>Equivalent to dimensions[@type="written"]/height</td>
@@ -199,10 +329,32 @@ export default function PhysDesc() {
             </td>
             <td>Vocabulary</td>
             <td/>
-            <td/>
+            <td>
+              <div id="Vocab1353">
+                <p>yes/no vocab</p>
+                <ul className="list-group list-group-flush">
+                  <li className="list-group-item list-group-item-light" id="9497">
+                    <div className="ms-2 me-auto">
+                      <div>Yes</div>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9498">
+                    <div className="ms-2 me-auto">
+                      <div>No</div>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9535">
+                    <div className="ms-2 me-auto">
+                      <div>unknown</div>
+                      <small className="text-body-secondary">The information is not ready for input.</small>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </td>
           </tr>
           <tr className="table-light">
-            <th scope="row" rowspan="2">Script Type</th>
+            <th scope="row" rowspan="2">subscript_type</th>
             <td>script_type</td>
             <td>1354</td>
             <td>Principal script type of the witness.</td>
@@ -212,7 +364,39 @@ export default function PhysDesc() {
             </td>
             <td>Vocabulary</td>
             <td/>
-            <td/>
+            <td>
+              <div id="Vocab1354">
+                <p>MainScriptType vocab</p>
+                <ul className="list-group list-group-flush">
+                  <li className="list-group-item list-group-item-light" id="9804">
+                    <div className="ms-2 me-auto">
+                      <div>unknown</div>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9805">
+                    <div className="ms-2 me-auto">
+                      <div>praegothica</div>
+                      <small className="text-body-secondary">protogothic</small>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9806">
+                    <div className="ms-2 me-auto">
+                      <div>textualis</div>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9807">
+                    <div className="ms-2 me-auto">
+                      <div>cursiva</div>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9808">
+                    <div className="ms-2 me-auto">
+                      <div>hybrida</div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </td>
           </tr>
           <tr className="table-light">
             <td>subscript_type</td>
@@ -224,7 +408,73 @@ export default function PhysDesc() {
             </td>
             <td>Vocabulary</td>
             <td/>
-            <td/>
+            <td>
+              <div id="Vocab1355">
+                <p>SubScriptType vocab</p>
+                <ul className="list-group list-group-flush">
+                  <li className="list-group-item list-group-item-light" id="9810">
+                    <div className="ms-2 me-auto">
+                      <div>textualisNorthern</div>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9811">
+                    <div className="ms-2 me-auto">
+                      <div>textualisSouthern</div>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9812">
+                    <div className="ms-2 me-auto">
+                      <div>semitextualis</div>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9819">
+                    <div className="ms-2 me-auto">
+                      <div>humanisticaTextualis</div>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9820">
+                    <div className="ms-2 me-auto">
+                      <div>humanisticaSemitextualis</div>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9821">
+                    <div className="ms-2 me-auto">
+                      <div>humanisticaCursiva</div>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9823">
+                    <div className="ms-2 me-auto">
+                      <div>cancelleresca</div>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9824">
+                    <div className="ms-2 me-auto">
+                      <div>bastarda</div>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9825">
+                    <div className="ms-2 me-auto">
+                      <div>lettre batarde</div>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9826">
+                    <div className="ms-2 me-auto">
+                      <div>secretary</div>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9827">
+                    <div className="ms-2 me-auto">
+                      <div>anglicana</div>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9828">
+                    <div className="ms-2 me-auto">
+                      <div>anglicana formata</div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </td>
           </tr>
         </tbody>
       </table>

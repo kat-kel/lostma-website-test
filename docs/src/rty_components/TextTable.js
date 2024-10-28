@@ -1,9 +1,10 @@
-import { HashLink } from 'react-router-hash-link'
 
+import { HashLink } from 'react-router-hash-link';
 export default function TextTable() {
+
     return (
-<div className="container-lg" id="101">
-  <div className="card bg-light mb-3" style={{position: "sticky", top: "0"}}>
+<div className="container-fluid" id="101">
+  <div className="card bg-light mb-3">
     <div className="card-body">
       <h4 className="card-title">text</h4>
       <h6 className="card-subtitle mb-2 text-body-secondary">Record ID 101</h6>
@@ -15,20 +16,20 @@ export default function TextTable() {
       <table className="table table-bordered">
         <thead className="table-light sticky-header">
           <tr>
-            <th scope="col" data-field="sec">Section</th>
-            <th scope="col" data-field="rst_DisplayName">Name</th>
-            <th scope="col" data-field="rst_DetailTypeID">Field ID</th>
-            <th scope="col" data-field="dty_HelpText">Help Text</th>
-            <th scope="col" data-field="dty_SemanticReferenceURL">Semantic Reference URL</th>
-            <th scope="col" data-field="rst_RequirementType">Requirement</th>
-            <th scope="col" data-field="dty_Type">Data Type</th>
-            <th scope="col" data-field="dty_PtrTargetRectypeIDs">Linked Record Types</th>
-            <th scope="col" data-field="dty_TermIDTreeNonSelectableIDs">Vocabulary</th>
+            <th scope="col">Section</th>
+            <th scope="col">Name</th>
+            <th scope="col">Field ID</th>
+            <th scope="col">Help Text</th>
+            <th scope="col">Semantic Reference URL</th>
+            <th scope="col">Requirement</th>
+            <th scope="col">Data Type</th>
+            <th scope="col">Linked Record Types</th>
+            <th scope="col">Vocabulary</th>
           </tr>
         </thead>
         <tbody>
           <tr className="table-light">
-            <th scope="row" rowspan="3">Label Components</th>
+            <th scope="row" rowspan="3">language</th>
             <td>preferred_name</td>
             <td>1244</td>
             <td>Received or primary name by which the entity is known.</td>
@@ -50,7 +51,193 @@ export default function TextTable() {
             </td>
             <td>Vocabulary</td>
             <td/>
-            <td/>
+            <td>
+              <div id="Vocab1090">
+                <p>Language</p>
+                <ul className="list-group list-group-flush">
+                  <li className="list-group-item list-group-item-light" id="9470">
+                    <div className="ms-2 me-auto">
+                      <div>
+                        <a className="link" target="_blank" rel="noreferrer noopener" href="https://iso639-3.sil.org/code/fro">fro (Old French)</a>
+                      </div>
+                      <small className="text-body-secondary">Old French</small>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9471">
+                    <div className="ms-2 me-auto">
+                      <div>
+                        <a className="link" target="_blank" rel="noreferrer noopener" href="https://iso639-3.sil.org/code/pro">pro (Occitan)</a>
+                      </div>
+                      <small className="text-body-secondary">Old Occitan, Proven&#231;al (to 1500)</small>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9472">
+                    <div className="ms-2 me-auto">
+                      <div>fro_ENG (Anglo-Norman)</div>
+                      <small className="text-body-secondary">Anglo-Norman</small>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9473">
+                    <div className="ms-2 me-auto">
+                      <div>fro_ITA (Franco-Italian)</div>
+                      <small className="text-body-secondary">Franco-italian</small>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9474">
+                    <div className="ms-2 me-auto">
+                      <div>fro_PRO (Franco-Occitan)</div>
+                      <small className="text-body-secondary">Franco-Occitan (occitanised French or francised Occitan)</small>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9557">
+                    <div className="ms-2 me-auto">
+                      <div>
+                        <a className="link" target="_blank" rel="noreferrer noopener" href="https://iso639-3.sil.org/code/frm">frm (Middle French)</a>
+                      </div>
+                      <small className="text-body-secondary">Middle French</small>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9727">
+                    <div className="ms-2 me-auto">
+                      <div>
+                        <a className="link" target="_blank" rel="noreferrer noopener" href="https://iso639-3.sil.org/code/cat">cat (Catalan)</a>
+                      </div>
+                      <small className="text-body-secondary">Catalan</small>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9728">
+                    <div className="ms-2 me-auto">
+                      <div>
+                        <a className="link" target="_blank" rel="noreferrer noopener" href="https://iso639-3.sil.org/code/dum">dum (Middle Dutch)</a>
+                      </div>
+                      <small className="text-body-secondary">Middle Dutch</small>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9729">
+                    <div className="ms-2 me-auto">
+                      <div>
+                        <a className="link" target="_blank" rel="noreferrer noopener" href="https://iso639-3.sil.org/code/enm">enm (Middle English)</a>
+                      </div>
+                      <small className="text-body-secondary">Middle English (1100-1500)</small>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9732">
+                    <div className="ms-2 me-auto">
+                      <div>
+                        <a className="link" target="_blank" rel="noreferrer noopener" href="https://iso639-3.sil.org/code/ghg">ghg (Early Modern Irish)</a>
+                      </div>
+                      <small className="text-body-secondary">Early Modern Irish, Hiberno-Scottish Gaelic</small>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9733">
+                    <div className="ms-2 me-auto">
+                      <div>
+                        <a className="link" target="_blank" rel="noreferrer noopener" href="https://iso639-3.sil.org/code/glg">glg (Galician)</a>
+                      </div>
+                      <small className="text-body-secondary">Galician</small>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9734">
+                    <div className="ms-2 me-auto">
+                      <div>glg_POR (Galician-Portugese)</div>
+                      <small className="text-body-secondary">Galician-Portugese</small>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9735">
+                    <div className="ms-2 me-auto">
+                      <div>
+                        <a className="link" target="_blank" rel="noreferrer noopener" href="https://iso639-3.sil.org/code/gmh">gmh (Middle High German)</a>
+                      </div>
+                      <small className="text-body-secondary">Middle High German (1050-1500)</small>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9736">
+                    <div className="ms-2 me-auto">
+                      <div>
+                        <a className="link" target="_blank" rel="noreferrer noopener" href="https://iso639-3.sil.org/code/gml">gml (Middle Low German)</a>
+                      </div>
+                      <small className="text-body-secondary">Middle Low German</small>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9737">
+                    <div className="ms-2 me-auto">
+                      <div>
+                        <a className="link" target="_blank" rel="noreferrer noopener" href="https://iso639-3.sil.org/code/isl">isl (Islandic)</a>
+                      </div>
+                      <small className="text-body-secondary">Islandic</small>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9738">
+                    <div className="ms-2 me-auto">
+                      <div>
+                        <a className="link" target="_blank" rel="noreferrer noopener" href="https://iso639-3.sil.org/code/ita">ita (Italian)</a>
+                      </div>
+                      <small className="text-body-secondary">Italian</small>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9739">
+                    <div className="ms-2 me-auto">
+                      <div>
+                        <a className="link" target="_blank" rel="noreferrer noopener" href="https://iso639-3.sil.org/code/mga">mga (Middle Irish)</a>
+                      </div>
+                      <small className="text-body-secondary">Middle Irish (900-1200)</small>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9740">
+                    <div className="ms-2 me-auto">
+                      <div>
+                        <a className="link" target="_blank" rel="noreferrer noopener" href="https://iso639-3.sil.org/code/non">non (Old Norse)</a>
+                      </div>
+                      <small className="text-body-secondary">Old Norse denotes both Old Icelandic and Old Norwegian.</small>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9741">
+                    <div className="ms-2 me-auto">
+                      <div>non_DAN (Old Danish)</div>
+                      <small className="text-body-secondary">Old Danish (800-1100)</small>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9742">
+                    <div className="ms-2 me-auto">
+                      <div>non_SWE (Old Swedish)</div>
+                      <small className="text-body-secondary">Old Swedish (800-1500)</small>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9743">
+                    <div className="ms-2 me-auto">
+                      <div>
+                        <a className="link" target="_blank" rel="noreferrer noopener" href="https://iso639-3.sil.org/code/oco">oco (Old Cornish)</a>
+                      </div>
+                      <small className="text-body-secondary">Old Cornish</small>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9744">
+                    <div className="ms-2 me-auto">
+                      <div>
+                        <a className="link" target="_blank" rel="noreferrer noopener" href="https://iso639-3.sil.org/code/por">por (Portugese)</a>
+                      </div>
+                      <small className="text-body-secondary">Portugese</small>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9745">
+                    <div className="ms-2 me-auto">
+                      <div>
+                        <a className="link" target="_blank" rel="noreferrer noopener" href="https://iso639-3.sil.org/code/spa">spa (Spanish)</a>
+                      </div>
+                      <small className="text-body-secondary">Spanish or Castilian</small>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9746">
+                    <div className="ms-2 me-auto">
+                      <div>
+                        <a className="link" target="_blank" rel="noreferrer noopener" href="https://iso639-3.sil.org/code/wlm">wlm (Middle Welsh)</a>
+                      </div>
+                      <small className="text-body-secondary">Middle Welsh</small>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </td>
           </tr>
           <tr className="table-light">
             <td>literary_form</td>
@@ -62,10 +249,37 @@ export default function TextTable() {
             </td>
             <td>Vocabulary</td>
             <td/>
-            <td/>
+            <td>
+              <div id="Vocab1265">
+                <p>Form</p>
+                <ul className="list-group list-group-flush">
+                  <li className="list-group-item list-group-item-light" id="9549">
+                    <div className="ms-2 me-auto">
+                      <div>verse</div>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9550">
+                    <div className="ms-2 me-auto">
+                      <div>prose</div>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9551">
+                    <div className="ms-2 me-auto">
+                      <div>mixed</div>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9726">
+                    <div className="ms-2 me-auto">
+                      <div>unknown</div>
+                      <small className="text-body-secondary">The form is unknown because all manifestations (Witnesses) of the text are lost and there is no hypothesis about whether the text is in verse, prose, or both.</small>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </td>
           </tr>
           <tr className="table-light">
-            <th scope="row" rowspan="2">Hypothesis</th>
+            <th scope="row" rowspan="2">is_hypothetical</th>
             <td>is_hypothetical</td>
             <td>1266</td>
             <td>Whether the entity is attested (True) in a hypothesis or whether it is received as fact that it exists or existed (False).</td>
@@ -75,7 +289,34 @@ export default function TextTable() {
             </td>
             <td>Vocabulary</td>
             <td/>
-            <td/>
+            <td>
+              <div id="Vocab1266">
+                <p>yes/no/maybe vocab</p>
+                <ul className="list-group list-group-flush">
+                  <li className="list-group-item list-group-item-light" id="9482">
+                    <div className="ms-2 me-auto">
+                      <div>Yes</div>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9483">
+                    <div className="ms-2 me-auto">
+                      <div>No</div>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9484">
+                    <div className="ms-2 me-auto">
+                      <div>Maybe</div>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9770">
+                    <div className="ms-2 me-auto">
+                      <div>unknown</div>
+                      <small className="text-body-secondary">The information is not ready to be input.</small>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </td>
           </tr>
           <tr className="table-light">
             <td>claim_freetext</td>
@@ -92,7 +333,7 @@ export default function TextTable() {
             <td/>
           </tr>
           <tr className="table-light">
-            <th scope="row" rowspan="8">Description</th>
+            <th scope="row" rowspan="8">peripheral</th>
             <td>alternative_names</td>
             <td>132</td>
             <td>Alternative names or titles, use for simple alternatives where additional metadata is not needed.</td>
@@ -128,7 +369,29 @@ export default function TextTable() {
             </td>
             <td>Vocabulary</td>
             <td/>
-            <td/>
+            <td>
+              <div id="Vocab1331">
+                <p>yes/no vocab</p>
+                <ul className="list-group list-group-flush">
+                  <li className="list-group-item list-group-item-light" id="9497">
+                    <div className="ms-2 me-auto">
+                      <div>Yes</div>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9498">
+                    <div className="ms-2 me-auto">
+                      <div>No</div>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9535">
+                    <div className="ms-2 me-auto">
+                      <div>unknown</div>
+                      <small className="text-body-secondary">The information is not ready for input.</small>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </td>
           </tr>
           <tr className="table-light">
             <td>specific_genre</td>
@@ -178,7 +441,54 @@ export default function TextTable() {
             </td>
             <td>Vocabulary</td>
             <td/>
-            <td/>
+            <td>
+              <div id="Vocab1165">
+                <p>Meter</p>
+                <ul className="list-group list-group-flush">
+                  <li className="list-group-item list-group-item-light" id="9553">
+                    <div className="ms-2 me-auto">
+                      <div>octosyllabe</div>
+                      <small className="text-body-secondary">Line consisting of 8 syllables.</small>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9554">
+                    <div className="ms-2 me-auto">
+                      <div>decasyllabe</div>
+                      <small className="text-body-secondary">Line consisting of 10 syllables.</small>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9555">
+                    <div className="ms-2 me-auto">
+                      <div>alexandrine</div>
+                      <small className="text-body-secondary">Line consisting of 2 half-lines each of 6 syllables, total of 12 syllables. Also known as French alexandrine.</small>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9561">
+                    <div className="ms-2 me-auto">
+                      <div>hexasyllabe</div>
+                      <small className="text-body-secondary">Line consisting of 6 syllables.</small>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9756">
+                    <div className="ms-2 me-auto">
+                      <div>dodecasyllabe</div>
+                      <small className="text-body-secondary">Line consisting of 12 syllables.</small>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9757">
+                    <div className="ms-2 me-auto">
+                      <div>pentasyllabe</div>
+                      <small className="text-body-secondary">Line consisting of 5 syllables.</small>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9780">
+                    <div className="ms-2 me-auto">
+                      <div>iambic</div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </td>
           </tr>
           <tr className="table-light">
             <td>rhyme_type</td>
@@ -190,10 +500,44 @@ export default function TextTable() {
             </td>
             <td>Vocabulary</td>
             <td/>
-            <td/>
+            <td>
+              <div id="Vocab1167">
+                <p>Rhyme</p>
+                <ul className="list-group list-group-flush">
+                  <li className="list-group-item list-group-item-light" id="9559">
+                    <div className="ms-2 me-auto">
+                      <div>unknown</div>
+                      <small className="text-body-secondary">It is known that the text is in verse and rhyming, but the type of rhyme is unknown.</small>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9560">
+                    <div className="ms-2 me-auto">
+                      <div>assonance</div>
+                      <small className="text-body-secondary">Rhyme is allowed between words that have a repeated vowel sound, such as &#8220;a&#8221; in &#8220;Vio puertas abiertas e u&#231;os sin ca&#241;ados / alcandaras vazias sin pielles e sin mantos&#8221; in Castilian. (J. Gornall, &#8220;Assonance in the Hispanic "Romance," 1995)</small>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9771">
+                    <div className="ms-2 me-auto">
+                      <div>monorhyme</div>
+                      <small className="text-body-secondary">All lines have the same end-rhyme.</small>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9778">
+                    <div className="ms-2 me-auto">
+                      <div>alliteration</div>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9779">
+                    <div className="ms-2 me-auto">
+                      <div>full rhyme</div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </td>
           </tr>
           <tr className="table-light">
-            <th scope="row" rowspan="5">Tradition</th>
+            <th scope="row" rowspan="5">tradition_status</th>
             <td>is_derived_from</td>
             <td>1267</td>
             <td>Prior text(s) that the entity reworked as an adaptation, translation, versification, etc.</td>
@@ -229,7 +573,37 @@ export default function TextTable() {
             </td>
             <td>Vocabulary</td>
             <td/>
-            <td/>
+            <td>
+              <div id="Vocab1101">
+                <p>Tradition Status</p>
+                <ul className="list-group list-group-flush">
+                  <li className="list-group-item list-group-item-light" id="9477">
+                    <div className="ms-2 me-auto">
+                      <div>fragmentary</div>
+                      <small className="text-body-secondary">Surviving in only fragments. No complete witnesses survive.</small>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9478">
+                    <div className="ms-2 me-auto">
+                      <div>lost</div>
+                      <small className="text-body-secondary">No witnesses of this text survive. It is a completely lost tradition.</small>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9480">
+                    <div className="ms-2 me-auto">
+                      <div>surviving</div>
+                      <small className="text-body-secondary">Surviving in at least one (more or less) complete manuscript</small>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9777">
+                    <div className="ms-2 me-auto">
+                      <div>unknown</div>
+                      <small className="text-body-secondary">The information is not ready to be input.</small>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </td>
           </tr>
           <tr className="table-light">
             <td>status_notes</td>
@@ -258,7 +632,7 @@ export default function TextTable() {
             <td/>
           </tr>
           <tr className="table-light">
-            <th scope="row" rowspan="4">Placeholder annotations</th>
+            <th scope="row" rowspan="4">has_lost_older_version</th>
             <td>has_lost_older_version</td>
             <td>1103</td>
             <td>Is the text based on a now-lost older version?</td>
@@ -268,7 +642,34 @@ export default function TextTable() {
             </td>
             <td>Vocabulary</td>
             <td/>
-            <td/>
+            <td>
+              <div id="Vocab1103">
+                <p>yes/no/maybe vocab</p>
+                <ul className="list-group list-group-flush">
+                  <li className="list-group-item list-group-item-light" id="9482">
+                    <div className="ms-2 me-auto">
+                      <div>Yes</div>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9483">
+                    <div className="ms-2 me-auto">
+                      <div>No</div>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9484">
+                    <div className="ms-2 me-auto">
+                      <div>Maybe</div>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9770">
+                    <div className="ms-2 me-auto">
+                      <div>unknown</div>
+                      <small className="text-body-secondary">The information is not ready to be input.</small>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </td>
           </tr>
           <tr className="table-light">
             <td>ancient_translations_freetext</td>
@@ -334,7 +735,7 @@ export default function TextTable() {
             <td/>
           </tr>
           <tr className="table-light">
-            <th scope="row" rowspan="4">Date</th>
+            <th scope="row" rowspan="4">date_of_creation_certainty</th>
             <td>date_of_creation</td>
             <td>1285</td>
             <td>Time when the entity begins to exist.</td>
@@ -358,7 +759,33 @@ export default function TextTable() {
             </td>
             <td>Vocabulary</td>
             <td/>
-            <td/>
+            <td>
+              <div id="Vocab1258">
+                <p>certainty vocab</p>
+                <ul className="list-group list-group-flush">
+                  <li className="list-group-item list-group-item-light" id="9760">
+                    <div className="ms-2 me-auto">
+                      <div>4. Certain (100%)</div>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9762">
+                    <div className="ms-2 me-auto">
+                      <div>3. Very likely (66%-99%)</div>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9763">
+                    <div className="ms-2 me-auto">
+                      <div>2. Probable (33%-66%)</div>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9765">
+                    <div className="ms-2 me-auto">
+                      <div>0. Unlikely (1%-33%)</div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </td>
           </tr>
           <tr className="table-light">
             <td>date_of_creation_source</td>
@@ -492,7 +919,7 @@ Described in source / written about in / described by encyclopedia / described b
             <td/>
           </tr>
           <tr className="table-light">
-            <th scope="row" rowspan="2">Review</th>
+            <th scope="row" rowspan="2">review_status</th>
             <td>review_status</td>
             <td>1183</td>
             <td>Status of record's preparation for public view.</td>
@@ -502,7 +929,31 @@ Described in source / written about in / described by encyclopedia / described b
             </td>
             <td>Vocabulary</td>
             <td/>
-            <td/>
+            <td>
+              <div id="Vocab1183">
+                <p>_record review vocab</p>
+                <ul className="list-group list-group-flush">
+                  <li className="list-group-item list-group-item-light" id="9697">
+                    <div className="ms-2 me-auto">
+                      <div>Action required</div>
+                      <small className="text-body-secondary">The record contains information that requires a review.</small>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9698">
+                    <div className="ms-2 me-auto">
+                      <div>Open</div>
+                      <small className="text-body-secondary">The record is newly created and/or in process.</small>
+                    </div>
+                  </li>
+                  <li className="list-group-item list-group-item-light" id="9699">
+                    <div className="ms-2 me-auto">
+                      <div>Publish</div>
+                      <small className="text-body-secondary">The record has been approved for publication. It's accuracy has been verified.</small>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </td>
           </tr>
           <tr className="table-light">
             <td>review_note</td>
