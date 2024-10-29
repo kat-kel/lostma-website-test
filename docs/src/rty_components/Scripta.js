@@ -35,7 +35,7 @@ export default function Scripta() {
             <td>Received or primary name by which the entity is known.</td>
             <td/>
             <td>
-              <span className="badge badge-success">Required</span>
+              <span className="badge bg-success">Required</span>
             </td>
             <td>Text</td>
             <td/>
@@ -48,7 +48,7 @@ export default function Scripta() {
             <td>An extended description, use this for free-format description up to 64K latin or 32K UTF characters</td>
             <td/>
             <td>
-              <span className="badge badge-success">Required</span>
+              <span className="badge bg-success">Required</span>
             </td>
             <td>Text</td>
             <td/>
@@ -60,7 +60,7 @@ export default function Scripta() {
             <td>Spoken language through which the entity is primarily expressed.</td>
             <td/>
             <td>
-              <span className="badge badge-success">Required</span>
+              <span className="badge bg-success">Required</span>
             </td>
             <td>Vocabulary</td>
             <td/>
@@ -258,7 +258,7 @@ export default function Scripta() {
             <td>Region in which the entity is primarily located.</td>
             <td/>
             <td>
-              <span className="badge badge-primary">Recommended</span>
+              <span className="badge bg-primary">Recommended</span>
             </td>
             <td>Foreign key</td>
             <td>Place</td>
@@ -270,7 +270,7 @@ export default function Scripta() {
             <td>Brief note about the region in which the entity is primarily located.</td>
             <td/>
             <td>
-              <span className="badge badge-secondary">Optional</span>
+              <span className="badge bg-secondary">Optional</span>
             </td>
             <td>Text</td>
             <td/>
@@ -287,7 +287,7 @@ Described in source / written about in / described by encyclopedia / described b
               <a className="link" target="_blank" rel="noreferrer noopener" href="https://www.wikidata.org/wiki/Property:P1343">https://www.wikidata.org/wiki/Property:P1343</a>
             </td>
             <td>
-              <span className="badge badge-primary">Recommended</span>
+              <span className="badge bg-primary">Recommended</span>
             </td>
             <td>Foreign key</td>
             <td>Book chapter, Book, Journal article, Thesis, <HashLink to="#128">footnote</HashLink>
@@ -301,7 +301,7 @@ Described in source / written about in / described by encyclopedia / described b
             </td>
             <td/>
             <td>
-              <span className="badge badge-primary">Recommended</span>
+              <span className="badge bg-primary">Recommended</span>
             </td>
             <td>Text</td>
             <td/>
@@ -313,7 +313,7 @@ Described in source / written about in / described by encyclopedia / described b
             <td>Brief notes about a reference and/or citation that should eventually be added to the database and linked to this record.</td>
             <td/>
             <td>
-              <span className="badge badge-secondary">Optional</span>
+              <span className="badge bg-secondary">Optional</span>
             </td>
             <td>Text</td>
             <td/>
@@ -326,7 +326,7 @@ Described in source / written about in / described by encyclopedia / described b
             <td>Status of record's preparation for public view.</td>
             <td/>
             <td>
-              <span className="badge badge-success">Required</span>
+              <span className="badge bg-success">Required</span>
             </td>
             <td>Vocabulary</td>
             <td/>
@@ -362,7 +362,7 @@ Described in source / written about in / described by encyclopedia / described b
             <td>Information to help with review of this entity.</td>
             <td/>
             <td>
-              <span className="badge badge-primary">Recommended</span>
+              <span className="badge bg-primary">Recommended</span>
             </td>
             <td>Text</td>
             <td/>

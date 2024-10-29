@@ -35,7 +35,7 @@ export default function TextTable() {
             <td>Received or primary name by which the entity is known.</td>
             <td/>
             <td>
-              <span className="badge badge-success">Required</span>
+              <span className="badge bg-success">Required</span>
             </td>
             <td>Text</td>
             <td/>
@@ -47,7 +47,7 @@ export default function TextTable() {
             <td>Spoken language through which the entity is primarily expressed.</td>
             <td/>
             <td>
-              <span className="badge badge-success">Required</span>
+              <span className="badge bg-success">Required</span>
             </td>
             <td>Vocabulary</td>
             <td/>
@@ -245,7 +245,7 @@ export default function TextTable() {
             <td>Overall form of the literary style (verse, prose, mixed).</td>
             <td/>
             <td>
-              <span className="badge badge-success">Required</span>
+              <span className="badge bg-success">Required</span>
             </td>
             <td>Vocabulary</td>
             <td/>
@@ -285,7 +285,7 @@ export default function TextTable() {
             <td>Whether the entity is attested (True) in a hypothesis or whether it is received as fact that it exists or existed (False).</td>
             <td/>
             <td>
-              <span className="badge badge-success">Required</span>
+              <span className="badge bg-success">Required</span>
             </td>
             <td>Vocabulary</td>
             <td/>
@@ -326,7 +326,7 @@ export default function TextTable() {
               <br/>Brief note about the hypothesis that attests to this record's existence. This information is meant to be a temporary note that will eventually be entered into a Hypothesis entity, which should be linked back to this record.</td>
             <td/>
             <td>
-              <span className="badge badge-primary">Recommended</span>
+              <span className="badge bg-primary">Recommended</span>
             </td>
             <td>Text</td>
             <td/>
@@ -339,7 +339,7 @@ export default function TextTable() {
             <td>Alternative names or titles, use for simple alternatives where additional metadata is not needed.</td>
             <td/>
             <td>
-              <span className="badge badge-primary">Recommended</span>
+              <span className="badge bg-primary">Recommended</span>
             </td>
             <td>Text</td>
             <td/>
@@ -351,7 +351,7 @@ export default function TextTable() {
             <td>Realization of an abstract, creative work through words, sound, image, etc.</td>
             <td/>
             <td>
-              <span className="badge badge-primary">Recommended</span>
+              <span className="badge bg-primary">Recommended</span>
             </td>
             <td>Foreign key</td>
             <td>
@@ -365,7 +365,7 @@ export default function TextTable() {
             <td>Not part of the main corpus's scope.</td>
             <td/>
             <td>
-              <span className="badge badge-success">Required</span>
+              <span className="badge bg-success">Required</span>
             </td>
             <td>Vocabulary</td>
             <td/>
@@ -399,7 +399,7 @@ export default function TextTable() {
             <td>Specific literary genre or subgenre attributed to the text.</td>
             <td/>
             <td>
-              <span className="badge badge-primary">Recommended</span>
+              <span className="badge bg-primary">Recommended</span>
             </td>
             <td>Foreign key</td>
             <td>
@@ -413,7 +413,7 @@ export default function TextTable() {
             <td>Length (number of verses, of chapters for prose)</td>
             <td/>
             <td>
-              <span className="badge badge-primary">Recommended</span>
+              <span className="badge bg-primary">Recommended</span>
             </td>
             <td>Float</td>
             <td/>
@@ -425,7 +425,7 @@ export default function TextTable() {
             <td>Briefly describe any uncertainties or ambiguities about the length.</td>
             <td/>
             <td>
-              <span className="badge badge-primary">Recommended</span>
+              <span className="badge bg-primary">Recommended</span>
             </td>
             <td>Text</td>
             <td/>
@@ -437,7 +437,7 @@ export default function TextTable() {
             <td>Type of verses</td>
             <td/>
             <td>
-              <span className="badge badge-primary">Recommended</span>
+              <span className="badge bg-primary">Recommended</span>
             </td>
             <td>Vocabulary</td>
             <td/>
@@ -496,7 +496,7 @@ export default function TextTable() {
             <td>Rhyme or assonance</td>
             <td/>
             <td>
-              <span className="badge badge-primary">Recommended</span>
+              <span className="badge bg-primary">Recommended</span>
             </td>
             <td>Vocabulary</td>
             <td/>
@@ -543,7 +543,7 @@ export default function TextTable() {
             <td>Prior text(s) that the entity reworked as an adaptation, translation, versification, etc.</td>
             <td/>
             <td>
-              <span className="badge badge-secondary">Optional</span>
+              <span className="badge bg-secondary">Optional</span>
             </td>
             <td>Foreign key</td>
             <td>
@@ -557,7 +557,7 @@ export default function TextTable() {
             <td>Note about the nature of the text or texts from which this text is derived.</td>
             <td/>
             <td>
-              <span className="badge badge-secondary">Optional</span>
+              <span className="badge bg-secondary">Optional</span>
             </td>
             <td>Text</td>
             <td/>
@@ -569,7 +569,7 @@ export default function TextTable() {
             <td>General evaluation of the overall survival of all the witnesses of a text.</td>
             <td/>
             <td>
-              <span className="badge badge-success">Required</span>
+              <span className="badge bg-success">Required</span>
             </td>
             <td>Vocabulary</td>
             <td/>
@@ -611,7 +611,7 @@ export default function TextTable() {
             <td>Brief note detailing the entity's survival status.</td>
             <td/>
             <td>
-              <span className="badge badge-secondary">Optional</span>
+              <span className="badge bg-secondary">Optional</span>
             </td>
             <td>Text</td>
             <td/>
@@ -623,7 +623,7 @@ export default function TextTable() {
             <td>Reference to the stemma(ta) of the text.</td>
             <td/>
             <td>
-              <span className="badge badge-secondary">Optional</span>
+              <span className="badge bg-secondary">Optional</span>
             </td>
             <td>Foreign key</td>
             <td>
@@ -638,7 +638,7 @@ export default function TextTable() {
             <td>Is the text based on a now-lost older version?</td>
             <td/>
             <td>
-              <span className="badge badge-success">Required</span>
+              <span className="badge bg-success">Required</span>
             </td>
             <td>Vocabulary</td>
             <td/>
@@ -677,7 +677,7 @@ export default function TextTable() {
             <td>Free text description of translations and adaptations that were derived from this record.</td>
             <td/>
             <td>
-              <span className="badge badge-secondary">Optional</span>
+              <span className="badge bg-secondary">Optional</span>
             </td>
             <td>Text</td>
             <td/>
@@ -689,7 +689,7 @@ export default function TextTable() {
             <td>Freetext description of rewritings that were derived from this record.</td>
             <td/>
             <td>
-              <span className="badge badge-secondary">Optional</span>
+              <span className="badge bg-secondary">Optional</span>
             </td>
             <td>Text</td>
             <td/>
@@ -701,7 +701,7 @@ export default function TextTable() {
             <td>Note(s) concerning the record.</td>
             <td/>
             <td>
-              <span className="badge badge-secondary">Optional</span>
+              <span className="badge bg-secondary">Optional</span>
             </td>
             <td>Text</td>
             <td/>
@@ -714,7 +714,7 @@ export default function TextTable() {
             <td>A regional writing style (aka scripta), similar to the written version of a spoken dialect.</td>
             <td/>
             <td>
-              <span className="badge badge-primary">Recommended</span>
+              <span className="badge bg-primary">Recommended</span>
             </td>
             <td>Foreign key</td>
             <td>
@@ -728,7 +728,7 @@ export default function TextTable() {
             <td>Brief, human-readable description of the writing variant (Scripta) with which this record is associated.</td>
             <td/>
             <td>
-              <span className="badge badge-secondary">Optional</span>
+              <span className="badge bg-secondary">Optional</span>
             </td>
             <td>Text</td>
             <td/>
@@ -743,7 +743,7 @@ export default function TextTable() {
               <a className="link" target="_blank" rel="noreferrer noopener" href="https://www.wikidata.org/wiki/Property:P571">https://www.wikidata.org/wiki/Property:P571</a>
             </td>
             <td>
-              <span className="badge badge-success">Required</span>
+              <span className="badge bg-success">Required</span>
             </td>
             <td>Date</td>
             <td/>
@@ -755,7 +755,7 @@ export default function TextTable() {
             <td>Degree of certainty applied to the claim.</td>
             <td/>
             <td>
-              <span className="badge badge-primary">Recommended</span>
+              <span className="badge bg-primary">Recommended</span>
             </td>
             <td>Vocabulary</td>
             <td/>
@@ -793,7 +793,7 @@ export default function TextTable() {
             <td>Notes about the source of the creation date information, including a human-readable summary or transcription of the time range. Can include a brief bibliographic citation.</td>
             <td/>
             <td>
-              <span className="badge badge-primary">Recommended</span>
+              <span className="badge bg-primary">Recommended</span>
             </td>
             <td>Text</td>
             <td/>
@@ -805,7 +805,7 @@ export default function TextTable() {
             <td>Brief, human-readable description of the date given to this record.</td>
             <td/>
             <td>
-              <span className="badge badge-secondary">Optional</span>
+              <span className="badge bg-secondary">Optional</span>
             </td>
             <td>Text</td>
             <td/>
@@ -818,7 +818,7 @@ export default function TextTable() {
             <td>The individual accredited with formulating an expression of the creative work.</td>
             <td/>
             <td>
-              <span className="badge badge-primary">Recommended</span>
+              <span className="badge bg-primary">Recommended</span>
             </td>
             <td>Foreign key</td>
             <td>Person</td>
@@ -830,7 +830,7 @@ export default function TextTable() {
             <td>When the Text is an adaptation or translation of another Text, the individual accredited with creating the adaptation or translation.</td>
             <td/>
             <td>
-              <span className="badge badge-primary">Recommended</span>
+              <span className="badge bg-primary">Recommended</span>
             </td>
             <td>Foreign key</td>
             <td>Person</td>
@@ -842,7 +842,7 @@ export default function TextTable() {
             <td>Human-readable reference to an author, which can include annotations about certainty.</td>
             <td/>
             <td>
-              <span className="badge badge-primary">Recommended</span>
+              <span className="badge bg-primary">Recommended</span>
             </td>
             <td>Text</td>
             <td/>
@@ -857,7 +857,7 @@ export default function TextTable() {
               <a className="link" target="_blank" rel="noreferrer noopener" href="https://www.wikidata.org/wiki/Property:P1071">https://www.wikidata.org/wiki/Property:P1071</a>
             </td>
             <td>
-              <span className="badge badge-primary">Recommended</span>
+              <span className="badge bg-primary">Recommended</span>
             </td>
             <td>Foreign key</td>
             <td>Place</td>
@@ -869,7 +869,7 @@ export default function TextTable() {
             <td>Notes along with bibliographic citation about the source of the creation place information.</td>
             <td/>
             <td>
-              <span className="badge badge-primary">Recommended</span>
+              <span className="badge bg-primary">Recommended</span>
             </td>
             <td>Text</td>
             <td/>
@@ -886,7 +886,7 @@ Described in source / written about in / described by encyclopedia / described b
               <a className="link" target="_blank" rel="noreferrer noopener" href="https://www.wikidata.org/wiki/Property:P1343">https://www.wikidata.org/wiki/Property:P1343</a>
             </td>
             <td>
-              <span className="badge badge-primary">Recommended</span>
+              <span className="badge bg-primary">Recommended</span>
             </td>
             <td>Foreign key</td>
             <td>Book chapter, Book, Journal article, Thesis, <HashLink to="#128">footnote</HashLink>
@@ -900,7 +900,7 @@ Described in source / written about in / described by encyclopedia / described b
             </td>
             <td/>
             <td>
-              <span className="badge badge-primary">Recommended</span>
+              <span className="badge bg-primary">Recommended</span>
             </td>
             <td>Text</td>
             <td/>
@@ -912,7 +912,7 @@ Described in source / written about in / described by encyclopedia / described b
             <td>Brief notes about a reference and/or citation that should eventually be added to the database and linked to this record.</td>
             <td/>
             <td>
-              <span className="badge badge-secondary">Optional</span>
+              <span className="badge bg-secondary">Optional</span>
             </td>
             <td>Text</td>
             <td/>
@@ -925,7 +925,7 @@ Described in source / written about in / described by encyclopedia / described b
             <td>Status of record's preparation for public view.</td>
             <td/>
             <td>
-              <span className="badge badge-success">Required</span>
+              <span className="badge bg-success">Required</span>
             </td>
             <td>Vocabulary</td>
             <td/>
@@ -961,7 +961,7 @@ Described in source / written about in / described by encyclopedia / described b
             <td>Information to help with review of this entity.</td>
             <td/>
             <td>
-              <span className="badge badge-primary">Recommended</span>
+              <span className="badge bg-primary">Recommended</span>
             </td>
             <td>Text</td>
             <td/>

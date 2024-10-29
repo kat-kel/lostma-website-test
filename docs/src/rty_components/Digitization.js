@@ -35,7 +35,7 @@ export default function Digitization() {
             <td>Unique Resource Identifier (aka URL) for the digital document, which must contain a series of digital images.</td>
             <td/>
             <td>
-              <span className="badge badge-success">Required</span>
+              <span className="badge bg-success">Required</span>
             </td>
             <td>Text</td>
             <td/>
@@ -47,7 +47,7 @@ export default function Digitization() {
             <td>Document.</td>
             <td/>
             <td>
-              <span className="badge badge-success">Required</span>
+              <span className="badge bg-success">Required</span>
             </td>
             <td>Foreign key</td>
             <td>
@@ -62,7 +62,7 @@ export default function Digitization() {
             <td>If encoded according to IIIF standards, a URI linking to the file of a IIIF manifest.</td>
             <td/>
             <td>
-              <span className="badge badge-primary">Recommended</span>
+              <span className="badge bg-primary">Recommended</span>
             </td>
             <td>Text</td>
             <td/>
@@ -76,7 +76,7 @@ export default function Digitization() {
             </td>
             <td/>
             <td>
-              <span className="badge badge-primary">Recommended</span>
+              <span className="badge bg-primary">Recommended</span>
             </td>
             <td>Text</td>
             <td/>

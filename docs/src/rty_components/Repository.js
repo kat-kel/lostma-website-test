@@ -33,7 +33,7 @@ export default function Repository() {
             <td>Received or primary name by which the entity is known.</td>
             <td/>
             <td>
-              <span className="badge badge-success">Required</span>
+              <span className="badge bg-success">Required</span>
             </td>
             <td>Text</td>
             <td/>
@@ -45,7 +45,7 @@ export default function Repository() {
             <td>Shortened name of the entity.</td>
             <td/>
             <td>
-              <span className="badge badge-success">Required</span>
+              <span className="badge bg-success">Required</span>
             </td>
             <td>Text</td>
             <td/>
@@ -57,7 +57,7 @@ export default function Repository() {
             <td>City, town, or municipality in which the organization is located.</td>
             <td/>
             <td>
-              <span className="badge badge-success">Required</span>
+              <span className="badge bg-success">Required</span>
             </td>
             <td>Foreign key</td>
             <td>Place</td>
@@ -70,7 +70,7 @@ export default function Repository() {
             <td>Alternative names or titles, use for simple alternatives where additional metadata is not needed.</td>
             <td/>
             <td>
-              <span className="badge badge-secondary">Optional</span>
+              <span className="badge bg-secondary">Optional</span>
             </td>
             <td>Text</td>
             <td/>
@@ -82,7 +82,7 @@ export default function Repository() {
             <td>The record's permanent identifier in the VIAF database.</td>
             <td/>
             <td>
-              <span className="badge badge-primary">Recommended</span>
+              <span className="badge bg-primary">Recommended</span>
             </td>
             <td>Float</td>
             <td/>
@@ -94,7 +94,7 @@ export default function Repository() {
             <td>International Standard Name Identifier.</td>
             <td/>
             <td>
-              <span className="badge badge-primary">Recommended</span>
+              <span className="badge bg-primary">Recommended</span>
             </td>
             <td>Text</td>
             <td/>
@@ -106,7 +106,7 @@ export default function Repository() {
             <td>Permanent identifier for the record in the Biblissima+ database.</td>
             <td/>
             <td>
-              <span className="badge badge-primary">Recommended</span>
+              <span className="badge bg-primary">Recommended</span>
             </td>
             <td>Text</td>
             <td/>
@@ -120,7 +120,7 @@ export default function Repository() {
               <a className="link" target="_blank" rel="noreferrer noopener" href="https://www.wikidata.org/wiki/Q22137024">https://www.wikidata.org/wiki/Q22137024</a>
             </td>
             <td>
-              <span className="badge badge-secondary">Optional</span>
+              <span className="badge bg-secondary">Optional</span>
             </td>
             <td>Text</td>
             <td/>

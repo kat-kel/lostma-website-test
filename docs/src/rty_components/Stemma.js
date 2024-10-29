@@ -35,7 +35,7 @@ export default function Stemma() {
             <td>id in open stemmata</td>
             <td/>
             <td>
-              <span className="badge badge-secondary">Optional</span>
+              <span className="badge bg-secondary">Optional</span>
             </td>
             <td>Text</td>
             <td/>
@@ -47,7 +47,7 @@ export default function Stemma() {
             <td>openstemmata contributor</td>
             <td/>
             <td>
-              <span className="badge badge-secondary">Optional</span>
+              <span className="badge bg-secondary">Optional</span>
             </td>
             <td>Text</td>
             <td/>
@@ -59,7 +59,7 @@ export default function Stemma() {
             <td>Is this the reference stemma for this particular text, or an obsolete one?</td>
             <td/>
             <td>
-              <span className="badge badge-secondary">Optional</span>
+              <span className="badge bg-secondary">Optional</span>
             </td>
             <td>Vocabulary</td>
             <td/>
@@ -93,7 +93,7 @@ export default function Stemma() {
             <td>Freetext version of the text whose stemma is being described.</td>
             <td/>
             <td>
-              <span className="badge badge-secondary">Optional</span>
+              <span className="badge bg-secondary">Optional</span>
             </td>
             <td>Text</td>
             <td/>
@@ -105,7 +105,7 @@ export default function Stemma() {
             <td>Freetext version of the text author whose stemma is being described</td>
             <td/>
             <td>
-              <span className="badge badge-secondary">Optional</span>
+              <span className="badge bg-secondary">Optional</span>
             </td>
             <td>Text</td>
             <td/>
@@ -117,7 +117,7 @@ export default function Stemma() {
             <td>text genre</td>
             <td/>
             <td>
-              <span className="badge badge-primary">Recommended</span>
+              <span className="badge bg-primary">Recommended</span>
             </td>
             <td>Vocabulary</td>
             <td/>
@@ -256,7 +256,7 @@ export default function Stemma() {
             <td>Type of tree: reconstructed (general case) or observed (very rare)</td>
             <td/>
             <td>
-              <span className="badge badge-secondary">Optional</span>
+              <span className="badge bg-secondary">Optional</span>
             </td>
             <td>Vocabulary</td>
             <td/>
@@ -284,7 +284,7 @@ export default function Stemma() {
             <td>stemma actually drawn in the source, or deduced from textual description?</td>
             <td/>
             <td>
-              <span className="badge badge-secondary">Optional</span>
+              <span className="badge bg-secondary">Optional</span>
             </td>
             <td>Vocabulary</td>
             <td/>
@@ -318,7 +318,7 @@ export default function Stemma() {
             <td>contamination present (whether drawn or not)?</td>
             <td/>
             <td>
-              <span className="badge badge-secondary">Optional</span>
+              <span className="badge bg-secondary">Optional</span>
             </td>
             <td>Vocabulary</td>
             <td/>
@@ -352,7 +352,7 @@ export default function Stemma() {
             <td>Extra stemmatic contamination (i.e., coming from outside the tree)</td>
             <td/>
             <td>
-              <span className="badge badge-secondary">Optional</span>
+              <span className="badge bg-secondary">Optional</span>
             </td>
             <td>Vocabulary</td>
             <td/>
@@ -386,7 +386,7 @@ export default function Stemma() {
             <td>Root type if specified: original, archetype</td>
             <td/>
             <td>
-              <span className="badge badge-secondary">Optional</span>
+              <span className="badge bg-secondary">Optional</span>
             </td>
             <td>Vocabulary</td>
             <td/>
@@ -419,7 +419,7 @@ export default function Stemma() {
             <td>Does the stemma include all witnesses?</td>
             <td/>
             <td>
-              <span className="badge badge-secondary">Optional</span>
+              <span className="badge bg-secondary">Optional</span>
             </td>
             <td>Vocabulary</td>
             <td/>
@@ -454,7 +454,7 @@ export default function Stemma() {
             <td>If it is a translation or rewriting, does the stemma include the source text(s) ?</td>
             <td/>
             <td>
-              <span className="badge badge-secondary">Optional</span>
+              <span className="badge bg-secondary">Optional</span>
             </td>
             <td>Vocabulary</td>
             <td/>
@@ -494,7 +494,7 @@ export default function Stemma() {
             <td>Does the stemma include derivatives (when applicable) such as translations, rewritings, &#8230; ?</td>
             <td/>
             <td>
-              <span className="badge badge-secondary">Optional</span>
+              <span className="badge bg-secondary">Optional</span>
             </td>
             <td>Vocabulary</td>
             <td/>
@@ -534,7 +534,7 @@ export default function Stemma() {
             <td>Note(s) concerning the record.</td>
             <td/>
             <td>
-              <span className="badge badge-primary">Recommended</span>
+              <span className="badge bg-primary">Recommended</span>
             </td>
             <td>Text</td>
             <td/>
@@ -546,7 +546,7 @@ export default function Stemma() {
             <td>witness of this tradition</td>
             <td/>
             <td>
-              <span className="badge badge-secondary">Optional</span>
+              <span className="badge bg-secondary">Optional</span>
             </td>
             <td>Foreign key</td>
             <td>
@@ -560,7 +560,7 @@ export default function Stemma() {
             <td>witness of this tradition, yet not included in this stemma</td>
             <td/>
             <td>
-              <span className="badge badge-secondary">Optional</span>
+              <span className="badge bg-secondary">Optional</span>
             </td>
             <td>Foreign key</td>
             <td>
@@ -574,7 +574,7 @@ export default function Stemma() {
             <td>lost manuscript, part of the tradition, usually not shown on stemma</td>
             <td/>
             <td>
-              <span className="badge badge-secondary">Optional</span>
+              <span className="badge bg-secondary">Optional</span>
             </td>
             <td>Foreign key</td>
             <td>
@@ -589,7 +589,7 @@ export default function Stemma() {
             <td>type of publication</td>
             <td/>
             <td>
-              <span className="badge badge-secondary">Optional</span>
+              <span className="badge bg-secondary">Optional</span>
             </td>
             <td>Vocabulary</td>
             <td/>
@@ -617,7 +617,7 @@ export default function Stemma() {
             <td>Human-readable reference to an author, which can include annotations about certainty.</td>
             <td/>
             <td>
-              <span className="badge badge-primary">Recommended</span>
+              <span className="badge bg-primary">Recommended</span>
             </td>
             <td>Text</td>
             <td/>
@@ -629,7 +629,7 @@ export default function Stemma() {
             <td>Title of the book or article.</td>
             <td/>
             <td>
-              <span className="badge badge-primary">Recommended</span>
+              <span className="badge bg-primary">Recommended</span>
             </td>
             <td>Text</td>
             <td/>
@@ -641,7 +641,7 @@ export default function Stemma() {
             <td>publication place</td>
             <td/>
             <td>
-              <span className="badge badge-secondary">Optional</span>
+              <span className="badge bg-secondary">Optional</span>
             </td>
             <td>Text</td>
             <td/>
@@ -653,7 +653,7 @@ export default function Stemma() {
             <td>publication date</td>
             <td/>
             <td>
-              <span className="badge badge-secondary">Optional</span>
+              <span className="badge bg-secondary">Optional</span>
             </td>
             <td>Date</td>
             <td/>
@@ -665,7 +665,7 @@ export default function Stemma() {
             <td>Title of the series that published this record.</td>
             <td/>
             <td>
-              <span className="badge badge-secondary">Optional</span>
+              <span className="badge bg-secondary">Optional</span>
             </td>
             <td>Text</td>
             <td/>
@@ -677,7 +677,7 @@ export default function Stemma() {
             <td>the volume</td>
             <td/>
             <td>
-              <span className="badge badge-secondary">Optional</span>
+              <span className="badge bg-secondary">Optional</span>
             </td>
             <td>Float</td>
             <td/>
@@ -689,7 +689,7 @@ export default function Stemma() {
             <td>page</td>
             <td/>
             <td>
-              <span className="badge badge-secondary">Optional</span>
+              <span className="badge bg-secondary">Optional</span>
             </td>
             <td>Text</td>
             <td/>
@@ -701,7 +701,7 @@ export default function Stemma() {
             <td>stemma number (if more than one in publication)</td>
             <td/>
             <td>
-              <span className="badge badge-secondary">Optional</span>
+              <span className="badge bg-secondary">Optional</span>
             </td>
             <td>Float</td>
             <td/>
@@ -714,7 +714,7 @@ export default function Stemma() {
 If there is a primary URL, turn on the special URL field in the record type definition (Attributes) form., which will become a hotlink.</td>
             <td/>
             <td>
-              <span className="badge badge-primary">Recommended</span>
+              <span className="badge bg-primary">Recommended</span>
             </td>
             <td>Text</td>
             <td/>

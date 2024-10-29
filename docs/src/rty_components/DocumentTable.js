@@ -36,7 +36,7 @@ export default function DocumentTable() {
             </td>
             <td/>
             <td>
-              <span className="badge badge-primary">Recommended</span>
+              <span className="badge bg-primary">Recommended</span>
             </td>
             <td>Text</td>
             <td/>
@@ -49,7 +49,7 @@ export default function DocumentTable() {
             </td>
             <td/>
             <td>
-              <span className="badge badge-primary">Recommended</span>
+              <span className="badge bg-primary">Recommended</span>
             </td>
             <td>Foreign key</td>
             <td>
@@ -64,7 +64,7 @@ export default function DocumentTable() {
             </td>
             <td/>
             <td>
-              <span className="badge badge-secondary">Optional</span>
+              <span className="badge bg-secondary">Optional</span>
             </td>
             <td>Text</td>
             <td/>
@@ -76,7 +76,7 @@ export default function DocumentTable() {
             <td>If this record is a hypothetical document, a useful label by which to recognize and refer to the document.</td>
             <td/>
             <td>
-              <span className="badge badge-secondary">Optional</span>
+              <span className="badge bg-secondary">Optional</span>
             </td>
             <td>Text</td>
             <td/>
@@ -89,7 +89,7 @@ export default function DocumentTable() {
             <td>Whether the entity is attested (True) in a hypothesis or whether it is received as fact that it exists or existed (False).</td>
             <td/>
             <td>
-              <span className="badge badge-success">Required</span>
+              <span className="badge bg-success">Required</span>
             </td>
             <td>Vocabulary</td>
             <td/>
@@ -130,7 +130,7 @@ export default function DocumentTable() {
               <br/>Brief note about the hypothesis that attests to this record's existence. This information is meant to be a temporary note that will eventually be entered into a Hypothesis entity, which should be linked back to this record.</td>
             <td/>
             <td>
-              <span className="badge badge-primary">Recommended</span>
+              <span className="badge bg-primary">Recommended</span>
             </td>
             <td>Text</td>
             <td/>
@@ -143,7 +143,7 @@ export default function DocumentTable() {
             <td>Whether or not the document is a collection of fragments, compiled at a date significantly later than when the manuscript components were themselves created, i.e. a 19th-century collection of 12th- and 13th-century fragments.</td>
             <td/>
             <td>
-              <span className="badge badge-success">Required</span>
+              <span className="badge bg-success">Required</span>
             </td>
             <td>Vocabulary</td>
             <td/>
@@ -177,7 +177,7 @@ export default function DocumentTable() {
             <td>Outmoded shelf marks by which the archival object used to be known and referenced.</td>
             <td/>
             <td>
-              <span className="badge badge-primary">Recommended</span>
+              <span className="badge bg-primary">Recommended</span>
             </td>
             <td>Text</td>
             <td/>
@@ -189,7 +189,7 @@ export default function DocumentTable() {
             <td>A digitization of the archival object, preferably in its entirety.</td>
             <td/>
             <td>
-              <span className="badge badge-primary">Recommended</span>
+              <span className="badge bg-primary">Recommended</span>
             </td>
             <td>Foreign key</td>
             <td>
@@ -205,7 +205,7 @@ export default function DocumentTable() {
               <br/>Reference to a digitization that hasn't yet been added to the database, as a means of temporarily storing information that will eventually be linked via an entity to this record.</td>
             <td/>
             <td>
-              <span className="badge badge-secondary">Optional</span>
+              <span className="badge bg-secondary">Optional</span>
             </td>
             <td>Text</td>
             <td/>
@@ -220,7 +220,7 @@ export default function DocumentTable() {
               <a className="link" target="_blank" rel="noreferrer noopener" href="https://www.wikidata.org/wiki/Property:P571">https://www.wikidata.org/wiki/Property:P571</a>
             </td>
             <td>
-              <span className="badge badge-dark">Outmoded</span>
+              <span className="badge bg-dark">Outmoded</span>
             </td>
             <td>Date</td>
             <td/>
@@ -232,7 +232,7 @@ export default function DocumentTable() {
             <td>Brief, human-readable description of the date given to this record.</td>
             <td/>
             <td>
-              <span className="badge badge-dark">Outmoded</span>
+              <span className="badge bg-dark">Outmoded</span>
             </td>
             <td>Text</td>
             <td/>
@@ -244,7 +244,7 @@ export default function DocumentTable() {
             <td>Notes about the source of the creation date information, including a human-readable summary or transcription of the time range. Can include a brief bibliographic citation.</td>
             <td/>
             <td>
-              <span className="badge badge-dark">Outmoded</span>
+              <span className="badge bg-dark">Outmoded</span>
             </td>
             <td>Text</td>
             <td/>
@@ -258,7 +258,7 @@ export default function DocumentTable() {
               <a className="link" target="_blank" rel="noreferrer noopener" href="https://www.wikidata.org/wiki/Property:P1071">https://www.wikidata.org/wiki/Property:P1071</a>
             </td>
             <td>
-              <span className="badge badge-dark">Outmoded</span>
+              <span className="badge bg-dark">Outmoded</span>
             </td>
             <td>Foreign key</td>
             <td>Place</td>
@@ -270,7 +270,7 @@ export default function DocumentTable() {
             <td>Placeholder notes about the entity's place of creation, to eventually be converted into a relation to a Place entity.</td>
             <td/>
             <td>
-              <span className="badge badge-dark">Outmoded</span>
+              <span className="badge bg-dark">Outmoded</span>
             </td>
             <td>Text</td>
             <td/>
@@ -282,7 +282,7 @@ export default function DocumentTable() {
             <td>Notes along with bibliographic citation about the source of the creation place information.</td>
             <td/>
             <td>
-              <span className="badge badge-dark">Outmoded</span>
+              <span className="badge bg-dark">Outmoded</span>
             </td>
             <td>Text</td>
             <td/>
@@ -299,7 +299,7 @@ Described in source / written about in / described by encyclopedia / described b
               <a className="link" target="_blank" rel="noreferrer noopener" href="https://www.wikidata.org/wiki/Property:P1343">https://www.wikidata.org/wiki/Property:P1343</a>
             </td>
             <td>
-              <span className="badge badge-primary">Recommended</span>
+              <span className="badge bg-primary">Recommended</span>
             </td>
             <td>Foreign key</td>
             <td>Book chapter, Book, Journal article, Thesis, <HashLink to="#128">footnote</HashLink>
@@ -313,7 +313,7 @@ Described in source / written about in / described by encyclopedia / described b
             </td>
             <td/>
             <td>
-              <span className="badge badge-primary">Recommended</span>
+              <span className="badge bg-primary">Recommended</span>
             </td>
             <td>Text</td>
             <td/>
@@ -326,7 +326,7 @@ Described in source / written about in / described by encyclopedia / described b
             </td>
             <td/>
             <td>
-              <span className="badge badge-primary">Recommended</span>
+              <span className="badge bg-primary">Recommended</span>
             </td>
             <td>Text</td>
             <td/>
@@ -340,7 +340,7 @@ Described in source / written about in / described by encyclopedia / described b
             </td>
             <td/>
             <td>
-              <span className="badge badge-primary">Recommended</span>
+              <span className="badge bg-primary">Recommended</span>
             </td>
             <td>Text</td>
             <td/>
@@ -352,7 +352,7 @@ Described in source / written about in / described by encyclopedia / described b
             <td>Brief notes about a reference and/or citation that should eventually be added to the database and linked to this record.</td>
             <td/>
             <td>
-              <span className="badge badge-secondary">Optional</span>
+              <span className="badge bg-secondary">Optional</span>
             </td>
             <td>Text</td>
             <td/>
@@ -365,7 +365,7 @@ Described in source / written about in / described by encyclopedia / described b
             <td>Status of record's preparation for public view.</td>
             <td/>
             <td>
-              <span className="badge badge-success">Required</span>
+              <span className="badge bg-success">Required</span>
             </td>
             <td>Vocabulary</td>
             <td/>
@@ -401,7 +401,7 @@ Described in source / written about in / described by encyclopedia / described b
             <td>Information to help with review of this entity.</td>
             <td/>
             <td>
-              <span className="badge badge-primary">Recommended</span>
+              <span className="badge bg-primary">Recommended</span>
             </td>
             <td>Text</td>
             <td/>

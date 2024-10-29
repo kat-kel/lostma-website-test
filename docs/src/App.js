@@ -8,7 +8,9 @@ import {
   Route,
   Routes,
 } from "react-router-dom";
+import ScrollToTop from "react-scroll-to-top";
 import React from 'react';
+import './App.css';
 
 class App extends React.Component {
   render() {
@@ -28,6 +30,7 @@ class App extends React.Component {
             <Route exact path="/views/recordtypes" element={<RecordTypePage />} />
             <Route exact path="/views/about" element={<About />} />
           </Routes>
+          <ScrollToTop smooth className="scroll-to-top" />
         </div>
       </Router>
     );

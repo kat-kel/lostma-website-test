@@ -35,7 +35,7 @@ export default function PhysDesc() {
             <td>The document that is the subject of the physical description.</td>
             <td/>
             <td>
-              <span className="badge badge-success">Required</span>
+              <span className="badge bg-success">Required</span>
             </td>
             <td>Foreign key</td>
             <td>
@@ -49,7 +49,7 @@ export default function PhysDesc() {
             <td>Description of the material of which the object is composed.</td>
             <td/>
             <td>
-              <span className="badge badge-success">Required</span>
+              <span className="badge bg-success">Required</span>
             </td>
             <td>Vocabulary</td>
             <td/>
@@ -90,7 +90,7 @@ export default function PhysDesc() {
               <a target="_blank" rel="noreferrer noopener" href="https://github.com/msDesc/consolidated-tei-schema">Consolidated TEI Schema</a> objectDesc[@form])</td>
             <td/>
             <td>
-              <span className="badge badge-success">Required</span>
+              <span className="badge bg-success">Required</span>
             </td>
             <td>Vocabulary</td>
             <td/>
@@ -137,7 +137,7 @@ export default function PhysDesc() {
             <td>The height in millimeters (a range is permitted) of the folio size in the witness as it would have been before any mutilation, rebinding, etc.</td>
             <td/>
             <td>
-              <span className="badge badge-secondary">Optional</span>
+              <span className="badge bg-secondary">Optional</span>
             </td>
             <td>Text</td>
             <td/>
@@ -149,7 +149,7 @@ export default function PhysDesc() {
             <td>The width in millimeters (a range is permitted) of the folio size in the witness as it would have been before any mutilation, rebinding, etc.</td>
             <td/>
             <td>
-              <span className="badge badge-secondary">Optional</span>
+              <span className="badge bg-secondary">Optional</span>
             </td>
             <td>Text</td>
             <td/>
@@ -161,7 +161,7 @@ export default function PhysDesc() {
             <td>In-line citation to remind contributors from where the reference for the estimated folio size came.</td>
             <td/>
             <td>
-              <span className="badge badge-secondary">Optional</span>
+              <span className="badge bg-secondary">Optional</span>
             </td>
             <td>Text</td>
             <td/>
@@ -174,7 +174,7 @@ export default function PhysDesc() {
             <td>Decorations present in the witness. Select all that apply.</td>
             <td/>
             <td>
-              <span className="badge badge-success">Required</span>
+              <span className="badge bg-success">Required</span>
             </td>
             <td>Vocabulary</td>
             <td/>
@@ -226,7 +226,7 @@ export default function PhysDesc() {
             <td>A rough representation of how many illustrations are realized in the witness. Select the category that matches the number most specialists agree are in the witness.</td>
             <td/>
             <td>
-              <span className="badge badge-success">Required</span>
+              <span className="badge bg-success">Required</span>
             </td>
             <td>Vocabulary</td>
             <td/>
@@ -265,7 +265,7 @@ export default function PhysDesc() {
             <td>Height in millimeters (a range is permitted) of the writing area. <br/>Equivalent to dimensions[@type="written"]/height</td>
             <td/>
             <td>
-              <span className="badge badge-secondary">Optional</span>
+              <span className="badge bg-secondary">Optional</span>
             </td>
             <td>Text</td>
             <td/>
@@ -277,7 +277,7 @@ export default function PhysDesc() {
             <td>Width in millimeters (a range is permitted) of the writing area. <br/>Equivalent to dimensions[@type="written"]/width</td>
             <td/>
             <td>
-              <span className="badge badge-secondary">Optional</span>
+              <span className="badge bg-secondary">Optional</span>
             </td>
             <td>Text</td>
             <td/>
@@ -289,7 +289,7 @@ export default function PhysDesc() {
             <td>An in-line citation for the source of the information about the dimensions of the witness's writing area.</td>
             <td/>
             <td>
-              <span className="badge badge-secondary">Optional</span>
+              <span className="badge bg-secondary">Optional</span>
             </td>
             <td>Text</td>
             <td/>
@@ -301,7 +301,7 @@ export default function PhysDesc() {
             <td>An estimation of the number of columns per page through which the text is presented.</td>
             <td/>
             <td>
-              <span className="badge badge-secondary">Optional</span>
+              <span className="badge bg-secondary">Optional</span>
             </td>
             <td>Text</td>
             <td/>
@@ -313,7 +313,7 @@ export default function PhysDesc() {
             <td>An estimation of the number of lines of text per page or per column.</td>
             <td/>
             <td>
-              <span className="badge badge-secondary">Optional</span>
+              <span className="badge bg-secondary">Optional</span>
             </td>
             <td>Text</td>
             <td/>
@@ -325,7 +325,7 @@ export default function PhysDesc() {
             <td>The text starts above the top ruled line on the page. If no, then the text starts at the line below the top line.</td>
             <td/>
             <td>
-              <span className="badge badge-secondary">Optional</span>
+              <span className="badge bg-secondary">Optional</span>
             </td>
             <td>Vocabulary</td>
             <td/>
@@ -360,7 +360,7 @@ export default function PhysDesc() {
             <td>Principal script type of the witness.</td>
             <td/>
             <td>
-              <span className="badge badge-primary">Recommended</span>
+              <span className="badge bg-primary">Recommended</span>
             </td>
             <td>Vocabulary</td>
             <td/>
@@ -404,7 +404,7 @@ export default function PhysDesc() {
             <td>More refined definition of the main script type.</td>
             <td/>
             <td>
-              <span className="badge badge-secondary">Optional</span>
+              <span className="badge bg-secondary">Optional</span>
             </td>
             <td>Vocabulary</td>
             <td/>

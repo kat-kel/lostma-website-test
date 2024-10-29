@@ -35,7 +35,7 @@ export default function Hypothesis() {
             <td>The entity whose existence is attested in the hypothesis.</td>
             <td/>
             <td>
-              <span className="badge badge-success">Required</span>
+              <span className="badge bg-success">Required</span>
             </td>
             <td>Foreign key</td>
             <td>
@@ -50,7 +50,7 @@ export default function Hypothesis() {
             <td>Brief summary of the hypothesis.</td>
             <td/>
             <td>
-              <span className="badge badge-success">Required</span>
+              <span className="badge bg-success">Required</span>
             </td>
             <td>Text</td>
             <td/>
@@ -62,7 +62,7 @@ export default function Hypothesis() {
             <td>Degree of certainty applied to the claim.</td>
             <td/>
             <td>
-              <span className="badge badge-success">Required</span>
+              <span className="badge bg-success">Required</span>
             </td>
             <td>Vocabulary</td>
             <td/>
@@ -105,7 +105,7 @@ Described in source / written about in / described by encyclopedia / described b
               <a className="link" target="_blank" rel="noreferrer noopener" href="https://www.wikidata.org/wiki/Property:P1343">https://www.wikidata.org/wiki/Property:P1343</a>
             </td>
             <td>
-              <span className="badge badge-primary">Recommended</span>
+              <span className="badge bg-primary">Recommended</span>
             </td>
             <td>Foreign key</td>
             <td>Book chapter, Book, Journal article, Thesis, <HashLink to="#128">footnote</HashLink>
@@ -119,7 +119,7 @@ Described in source / written about in / described by encyclopedia / described b
             <td>Status of record's preparation for public view.</td>
             <td/>
             <td>
-              <span className="badge badge-success">Required</span>
+              <span className="badge bg-success">Required</span>
             </td>
             <td>Vocabulary</td>
             <td/>
@@ -155,7 +155,7 @@ Described in source / written about in / described by encyclopedia / described b
             <td>Information to help with review of this entity.</td>
             <td/>
             <td>
-              <span className="badge badge-primary">Recommended</span>
+              <span className="badge bg-primary">Recommended</span>
             </td>
             <td>Text</td>
             <td/>

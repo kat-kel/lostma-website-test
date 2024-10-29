@@ -35,7 +35,7 @@ export default function Images() {
             <td>The portion (pages) of the document represented in the digitized images.</td>
             <td/>
             <td>
-              <span className="badge badge-success">Required</span>
+              <span className="badge bg-success">Required</span>
             </td>
             <td>Foreign key</td>
             <td>
@@ -49,7 +49,7 @@ export default function Images() {
             <td>The digital object, which has a URL, from which this discrete range of images comes.</td>
             <td/>
             <td>
-              <span className="badge badge-success">Required</span>
+              <span className="badge bg-success">Required</span>
             </td>
             <td>Foreign key</td>
             <td>
@@ -64,7 +64,7 @@ export default function Images() {
             <td>A formatted string that represents the index of the first and last image file in the series of images. <br/>When multiple files, separate the first and last with two colons, i.e. "4::725". <br/>When a single file, do not include the separator, i.e. "725".</td>
             <td/>
             <td>
-              <span className="badge badge-success">Required</span>
+              <span className="badge bg-success">Required</span>
             </td>
             <td>Text</td>
             <td/>
@@ -76,7 +76,7 @@ export default function Images() {
             <td>A formatted string that represents the numbering on the beginning and end of an uninterrupted series of pages. <br/>When a range of pages, separate the two numbers with two colons, i.e. "1r::4v". <br/>When a single page, do not include separator, i.e. "1r".</td>
             <td/>
             <td>
-              <span className="badge badge-success">Required</span>
+              <span className="badge bg-success">Required</span>
             </td>
             <td>Text</td>
             <td/>

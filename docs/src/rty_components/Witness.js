@@ -37,7 +37,7 @@ export default function Witness() {
               <a className="link" target="_blank" rel="noreferrer noopener" href="https://www.wikidata.org/wiki/Property:P1557">https://www.wikidata.org/wiki/Property:P1557</a>
             </td>
             <td>
-              <span className="badge badge-success">Required</span>
+              <span className="badge bg-success">Required</span>
             </td>
             <td>Foreign key</td>
             <td>
@@ -53,7 +53,7 @@ export default function Witness() {
             </td>
             <td/>
             <td>
-              <span className="badge badge-primary">Recommended</span>
+              <span className="badge bg-primary">Recommended</span>
             </td>
             <td>Foreign key</td>
             <td>
@@ -67,7 +67,7 @@ export default function Witness() {
             <td>The document in which the witness was last observed.</td>
             <td/>
             <td>
-              <span className="badge badge-secondary">Optional</span>
+              <span className="badge bg-secondary">Optional</span>
             </td>
             <td>Foreign key</td>
             <td>
@@ -82,7 +82,7 @@ export default function Witness() {
             <td>Whether the entity is attested (True) in a hypothesis or whether it is received as fact that it exists or existed (False).</td>
             <td/>
             <td>
-              <span className="badge badge-success">Required</span>
+              <span className="badge bg-success">Required</span>
             </td>
             <td>Vocabulary</td>
             <td/>
@@ -123,7 +123,7 @@ export default function Witness() {
               <br/>Brief note about the hypothesis that attests to this record's existence. This information is meant to be a temporary note that will eventually be entered into a Hypothesis entity, which should be linked back to this record.</td>
             <td/>
             <td>
-              <span className="badge badge-primary">Recommended</span>
+              <span className="badge bg-primary">Recommended</span>
             </td>
             <td>Text</td>
             <td/>
@@ -135,7 +135,7 @@ export default function Witness() {
             <td>If the witness is a fragment, another fragment of the same text and from the same codicological unit that represents an earlier part of the text, so that this witness and the linked witness would constitute two sequential parts of a lost witness.</td>
             <td/>
             <td>
-              <span className="badge badge-secondary">Optional</span>
+              <span className="badge bg-secondary">Optional</span>
             </td>
             <td>Foreign key</td>
             <td>
@@ -149,7 +149,7 @@ export default function Witness() {
             <td>If the witness was originally with another witness, especially the witness of a different text, in a now lost or disassembled document, the witness that immediately preceded it in the hypothetical document.</td>
             <td/>
             <td>
-              <span className="badge badge-secondary">Optional</span>
+              <span className="badge bg-secondary">Optional</span>
             </td>
             <td>Foreign key</td>
             <td>
@@ -164,7 +164,7 @@ export default function Witness() {
             <td>An abbreviation, usually a letter or a letter with a numeral, assigned to a source.</td>
             <td/>
             <td>
-              <span className="badge badge-success">Required</span>
+              <span className="badge bg-success">Required</span>
             </td>
             <td>Text</td>
             <td/>
@@ -176,7 +176,7 @@ export default function Witness() {
             <td>Other sigla by which the witness is known and which is different than the siglum preferred for making new stemma.</td>
             <td/>
             <td>
-              <span className="badge badge-secondary">Optional</span>
+              <span className="badge bg-secondary">Optional</span>
             </td>
             <td>Text</td>
             <td/>
@@ -188,7 +188,7 @@ export default function Witness() {
             <td>Survival status of the witness.</td>
             <td/>
             <td>
-              <span className="badge badge-success">Required</span>
+              <span className="badge bg-success">Required</span>
             </td>
             <td>Vocabulary</td>
             <td/>
@@ -230,7 +230,7 @@ export default function Witness() {
             <td>Brief note detailing the entity's survival status.</td>
             <td/>
             <td>
-              <span className="badge badge-primary">Recommended</span>
+              <span className="badge bg-primary">Recommended</span>
             </td>
             <td>Text</td>
             <td/>
@@ -243,7 +243,7 @@ export default function Witness() {
             <td>The witness was never a full manifestation of the text, but offers an excerpt or a citation of the text.</td>
             <td/>
             <td>
-              <span className="badge badge-success">Required</span>
+              <span className="badge bg-success">Required</span>
             </td>
             <td>Vocabulary</td>
             <td/>
@@ -282,7 +282,7 @@ export default function Witness() {
             <td>A regional writing style (aka scripta), similar to the written version of a spoken dialect.</td>
             <td/>
             <td>
-              <span className="badge badge-primary">Recommended</span>
+              <span className="badge bg-primary">Recommended</span>
             </td>
             <td>Foreign key</td>
             <td>
@@ -296,7 +296,7 @@ export default function Witness() {
             <td>Brief, human-readable description of the writing variant (Scripta) with which this record is associated.</td>
             <td/>
             <td>
-              <span className="badge badge-secondary">Optional</span>
+              <span className="badge bg-secondary">Optional</span>
             </td>
             <td>Text</td>
             <td/>
@@ -311,7 +311,7 @@ export default function Witness() {
               <a className="link" target="_blank" rel="noreferrer noopener" href="https://www.wikidata.org/wiki/Property:P571">https://www.wikidata.org/wiki/Property:P571</a>
             </td>
             <td>
-              <span className="badge badge-success">Required</span>
+              <span className="badge bg-success">Required</span>
             </td>
             <td>Date</td>
             <td/>
@@ -323,7 +323,7 @@ export default function Witness() {
             <td>Degree of certainty applied to the claim.</td>
             <td/>
             <td>
-              <span className="badge badge-primary">Recommended</span>
+              <span className="badge bg-primary">Recommended</span>
             </td>
             <td>Vocabulary</td>
             <td/>
@@ -361,7 +361,7 @@ export default function Witness() {
             <td>Notes about the source of the creation date information, including a human-readable summary or transcription of the time range. Can include a brief bibliographic citation.</td>
             <td/>
             <td>
-              <span className="badge badge-primary">Recommended</span>
+              <span className="badge bg-primary">Recommended</span>
             </td>
             <td>Text</td>
             <td/>
@@ -373,7 +373,7 @@ export default function Witness() {
             <td>Brief, human-readable description of the date given to this record.</td>
             <td/>
             <td>
-              <span className="badge badge-primary">Recommended</span>
+              <span className="badge bg-primary">Recommended</span>
             </td>
             <td>Text</td>
             <td/>
@@ -386,7 +386,7 @@ export default function Witness() {
             <td>The scribe accredited with composing the witness.</td>
             <td/>
             <td>
-              <span className="badge badge-secondary">Optional</span>
+              <span className="badge bg-secondary">Optional</span>
             </td>
             <td>Foreign key</td>
             <td>Person</td>
@@ -398,7 +398,7 @@ export default function Witness() {
             <td>Number of hands identified in the witness.</td>
             <td/>
             <td>
-              <span className="badge badge-secondary">Optional</span>
+              <span className="badge bg-secondary">Optional</span>
             </td>
             <td>Float</td>
             <td/>
@@ -410,7 +410,7 @@ export default function Witness() {
             <td>Notes about the source of information for the number of hands or number of scribes.</td>
             <td/>
             <td>
-              <span className="badge badge-secondary">Optional</span>
+              <span className="badge bg-secondary">Optional</span>
             </td>
             <td>Text</td>
             <td/>
@@ -425,7 +425,7 @@ export default function Witness() {
               <a className="link" target="_blank" rel="noreferrer noopener" href="https://www.wikidata.org/wiki/Property:P1071">https://www.wikidata.org/wiki/Property:P1071</a>
             </td>
             <td>
-              <span className="badge badge-primary">Recommended</span>
+              <span className="badge bg-primary">Recommended</span>
             </td>
             <td>Foreign key</td>
             <td>Place</td>
@@ -437,7 +437,7 @@ export default function Witness() {
             <td>Notes along with bibliographic citation about the source of the creation place information.</td>
             <td/>
             <td>
-              <span className="badge badge-primary">Recommended</span>
+              <span className="badge bg-primary">Recommended</span>
             </td>
             <td>Text</td>
             <td/>
@@ -454,7 +454,7 @@ Described in source / written about in / described by encyclopedia / described b
               <a className="link" target="_blank" rel="noreferrer noopener" href="https://www.wikidata.org/wiki/Property:P1343">https://www.wikidata.org/wiki/Property:P1343</a>
             </td>
             <td>
-              <span className="badge badge-primary">Recommended</span>
+              <span className="badge bg-primary">Recommended</span>
             </td>
             <td>Foreign key</td>
             <td>Book chapter, Book, Journal article, Thesis, <HashLink to="#128">footnote</HashLink>
@@ -468,7 +468,7 @@ Described in source / written about in / described by encyclopedia / described b
             </td>
             <td/>
             <td>
-              <span className="badge badge-primary">Recommended</span>
+              <span className="badge bg-primary">Recommended</span>
             </td>
             <td>Text</td>
             <td/>
@@ -480,7 +480,7 @@ Described in source / written about in / described by encyclopedia / described b
             <td>Brief notes about a reference and/or citation that should eventually be added to the database and linked to this record.</td>
             <td/>
             <td>
-              <span className="badge badge-secondary">Optional</span>
+              <span className="badge bg-secondary">Optional</span>
             </td>
             <td>Text</td>
             <td/>
@@ -493,7 +493,7 @@ Described in source / written about in / described by encyclopedia / described b
             <td>Status of record's preparation for public view.</td>
             <td/>
             <td>
-              <span className="badge badge-success">Required</span>
+              <span className="badge bg-success">Required</span>
             </td>
             <td>Vocabulary</td>
             <td/>
@@ -529,7 +529,7 @@ Described in source / written about in / described by encyclopedia / described b
             <td>Information to help with review of this entity.</td>
             <td/>
             <td>
-              <span className="badge badge-primary">Recommended</span>
+              <span className="badge bg-primary">Recommended</span>
             </td>
             <td>Text</td>
             <td/>

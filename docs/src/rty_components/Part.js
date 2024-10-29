@@ -35,7 +35,7 @@ export default function Part() {
             <td>The physical document on which the signs (letters) of a witness's parts are inscribed.</td>
             <td/>
             <td>
-              <span className="badge badge-success">Required</span>
+              <span className="badge bg-success">Required</span>
             </td>
             <td>Foreign key</td>
             <td>
@@ -53,7 +53,7 @@ export default function Part() {
               <a className="link" target="_blank" rel="noreferrer noopener" href="https://www.wikidata.org/wiki/Property:P1545">https://www.wikidata.org/wiki/Property:P1545</a>
             </td>
             <td>
-              <span className="badge badge-success">Required</span>
+              <span className="badge bg-success">Required</span>
             </td>
             <td>Float</td>
             <td/>
@@ -65,7 +65,7 @@ export default function Part() {
             <td>To be compared with the "verse length" of the representative text, the number of verses or lines from the text represented on this part of the witness.</td>
             <td/>
             <td>
-              <span className="badge badge-primary">Recommended</span>
+              <span className="badge bg-primary">Recommended</span>
             </td>
             <td>Float</td>
             <td/>
@@ -77,7 +77,7 @@ export default function Part() {
             <td>A simple description of the portion of the text, i.e. "first third," represented on this part of the witness.</td>
             <td/>
             <td>
-              <span className="badge badge-primary">Recommended</span>
+              <span className="badge bg-primary">Recommended</span>
             </td>
             <td>Text</td>
             <td/>
@@ -89,7 +89,7 @@ export default function Part() {
             <td>If the witness is composed of multiple volumes, the integer, roman numeral, or other indicator used by archival or library catalogues to identify the part as a volume of the witness.</td>
             <td/>
             <td>
-              <span className="badge badge-primary">Recommended</span>
+              <span className="badge bg-primary">Recommended</span>
             </td>
             <td>Text</td>
             <td/>
@@ -102,7 +102,7 @@ export default function Part() {
             <td>Description of the support, decorations, layout, and script type.</td>
             <td/>
             <td>
-              <span className="badge badge-success">Required</span>
+              <span className="badge bg-success">Required</span>
             </td>
             <td>Foreign key</td>
             <td>
@@ -116,7 +116,7 @@ export default function Part() {
             <td>The length of the text as calculated by the number of lines.</td>
             <td/>
             <td>
-              <span className="badge badge-primary">Recommended</span>
+              <span className="badge bg-primary">Recommended</span>
             </td>
             <td>Float</td>
             <td/>
@@ -128,7 +128,7 @@ export default function Part() {
             <td>If the text is in verse, a categorical description of how many verses the scribe fit into a line of text.</td>
             <td/>
             <td>
-              <span className="badge badge-primary">Recommended</span>
+              <span className="badge bg-primary">Recommended</span>
             </td>
             <td>Vocabulary</td>
             <td/>
@@ -161,7 +161,7 @@ export default function Part() {
             <td>Whether the text lines have been interrupted, i.e. cut (Yes, incomplete).</td>
             <td/>
             <td>
-              <span className="badge badge-success">Required</span>
+              <span className="badge bg-success">Required</span>
             </td>
             <td>Vocabulary</td>
             <td/>
@@ -195,7 +195,7 @@ export default function Part() {
             <td>A formatted string that represents the numbering on the beginning and end of an uninterrupted series of pages. <br/>When a range of pages, separate the two numbers with two colons, i.e. "1r::4v". <br/>When a single page, do not include separator, i.e. "1r".</td>
             <td/>
             <td>
-              <span className="badge badge-success">Required</span>
+              <span className="badge bg-success">Required</span>
             </td>
             <td>Text</td>
             <td/>
@@ -208,7 +208,7 @@ export default function Part() {
             <td>Status of record's preparation for public view.</td>
             <td/>
             <td>
-              <span className="badge badge-success">Required</span>
+              <span className="badge bg-success">Required</span>
             </td>
             <td>Vocabulary</td>
             <td/>
@@ -244,7 +244,7 @@ export default function Part() {
             <td>Information to help with review of this entity.</td>
             <td/>
             <td>
-              <span className="badge badge-primary">Recommended</span>
+              <span className="badge bg-primary">Recommended</span>
             </td>
             <td>Text</td>
             <td/>

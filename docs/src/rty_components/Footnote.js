@@ -37,7 +37,7 @@ export default function Footnote() {
               <a className="link" target="_blank" rel="noreferrer noopener" href="https://www.wikidata.org/wiki/Property:P248">https://www.wikidata.org/wiki/Property:P248</a>
             </td>
             <td>
-              <span className="badge badge-success">Required</span>
+              <span className="badge bg-success">Required</span>
             </td>
             <td>Foreign key</td>
             <td>Book chapter, Book, Conference, Journal article, Thesis</td>
@@ -53,7 +53,7 @@ export default function Footnote() {
               <a className="link" target="_blank" rel="noreferrer noopener" href="https://www.wikidata.org/wiki/Property:P304">https://www.wikidata.org/wiki/Property:P304</a>
             </td>
             <td>
-              <span className="badge badge-success">Required</span>
+              <span className="badge bg-success">Required</span>
             </td>
             <td>Text</td>
             <td/>
@@ -65,7 +65,7 @@ export default function Footnote() {
             <td>Prefix or other key used in a dictionary or encyclopedia to refer to an entry, i.e. "AnsMetz."</td>
             <td/>
             <td>
-              <span className="badge badge-primary">Recommended</span>
+              <span className="badge bg-primary">Recommended</span>
             </td>
             <td>Text</td>
             <td/>
@@ -77,7 +77,7 @@ export default function Footnote() {
             <td>Quotation from the source of information.</td>
             <td/>
             <td>
-              <span className="badge badge-secondary">Optional</span>
+              <span className="badge bg-secondary">Optional</span>
             </td>
             <td>Text</td>
             <td/>

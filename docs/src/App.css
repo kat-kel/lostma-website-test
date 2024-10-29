@@ -1,0 +1,7 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+
+.scroll-to-top {
+    background-color: var(--bs-success);
+    color: white !important;
+  }
