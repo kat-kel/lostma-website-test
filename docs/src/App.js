@@ -9,8 +9,6 @@ import {
   Routes,
 } from "react-router-dom";
 import React from 'react';
-import './styles/reduction.scss';
-
 
 class App extends React.Component {
   render() {
@@ -19,7 +17,7 @@ class App extends React.Component {
         <div>
           <header>
             <span>
-              <img src={logo} width="60px" alt="placeholder duck" className="rounded float-left" />
+              <img src={logo} width="60px" alt="placeholder duck" className="float-left" />
             </span>
             <h1 id="logo">LostMa</h1>
             <p>LostMa project tag line.</p>
