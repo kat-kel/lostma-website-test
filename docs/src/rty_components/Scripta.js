@@ -1,7 +1,7 @@
-
 import { HashLink } from 'react-router-hash-link';
-export default function Scripta() {
 
+export default function Scripta() {
+    
     return (
 <div className="container-fluid" id="118">
   <div className="card bg-light mb-3">
@@ -14,7 +14,7 @@ export default function Scripta() {
   <div className="container-fluid ml-1">
     <div className="table-responsive">
       <table className="table table-bordered">
-        <thead className="table-light sticky-header">
+        <thead>
           <tr>
             <th scope="col">Section</th>
             <th scope="col">Name</th>
@@ -28,7 +28,7 @@ export default function Scripta() {
           </tr>
         </thead>
         <tbody>
-          <tr className="table-light">
+          <tr>
             <th scope="row" rowspan="1">Label Components</th>
             <td>preferred_name</td>
             <td>1244</td>
@@ -41,7 +41,7 @@ export default function Scripta() {
             <td/>
             <td/>
           </tr>
-          <tr className="table-light">
+          <tr>
             <th scope="row" rowspan="4">language</th>
             <td>description</td>
             <td>4</td>
@@ -54,7 +54,7 @@ export default function Scripta() {
             <td/>
             <td/>
           </tr>
-          <tr className="table-light">
+          <tr>
             <td>language</td>
             <td>1090</td>
             <td>Spoken language through which the entity is primarily expressed.</td>
@@ -252,7 +252,7 @@ export default function Scripta() {
               </div>
             </td>
           </tr>
-          <tr className="table-light">
+          <tr>
             <td>region</td>
             <td>1261</td>
             <td>Region in which the entity is primarily located.</td>
@@ -264,7 +264,7 @@ export default function Scripta() {
             <td>Place</td>
             <td/>
           </tr>
-          <tr className="table-light">
+          <tr>
             <td>region_note</td>
             <td>1262</td>
             <td>Brief note about the region in which the entity is primarily located.</td>
@@ -276,7 +276,7 @@ export default function Scripta() {
             <td/>
             <td/>
           </tr>
-          <tr className="table-light">
+          <tr>
             <th scope="row" rowspan="3">References</th>
             <td>described_by_source</td>
             <td>1255</td>
@@ -294,7 +294,7 @@ Described in source / written about in / described by encyclopedia / described b
             </td>
             <td/>
           </tr>
-          <tr className="table-light">
+          <tr>
             <td>described_at_URL</td>
             <td>1269</td>
             <td>Described at webpage.<br/>Property <a target="_blank" rel="noreferrer noopener" href="https://www.wikidata.org/wiki/Property:P973">P973</a>
@@ -307,7 +307,7 @@ Described in source / written about in / described by encyclopedia / described b
             <td/>
             <td/>
           </tr>
-          <tr className="table-light">
+          <tr>
             <td>reference_notes</td>
             <td>1284</td>
             <td>Brief notes about a reference and/or citation that should eventually be added to the database and linked to this record.</td>
@@ -319,7 +319,7 @@ Described in source / written about in / described by encyclopedia / described b
             <td/>
             <td/>
           </tr>
-          <tr className="table-light">
+          <tr>
             <th scope="row" rowspan="2">review_status</th>
             <td>review_status</td>
             <td>1183</td>
@@ -356,7 +356,7 @@ Described in source / written about in / described by encyclopedia / described b
               </div>
             </td>
           </tr>
-          <tr className="table-light">
+          <tr>
             <td>review_note</td>
             <td>1248</td>
             <td>Information to help with review of this entity.</td>

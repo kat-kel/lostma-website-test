@@ -1,7 +1,7 @@
-
 import { HashLink } from 'react-router-hash-link';
-export default function Witness() {
 
+export default function Witness() {
+    
     return (
 <div className="container-fluid" id="105">
   <div className="card bg-light mb-3">
@@ -14,7 +14,7 @@ export default function Witness() {
   <div className="container-fluid ml-1">
     <div className="table-responsive">
       <table className="table table-bordered">
-        <thead className="table-light sticky-header">
+        <thead>
           <tr>
             <th scope="col">Section</th>
             <th scope="col">Name</th>
@@ -28,7 +28,7 @@ export default function Witness() {
           </tr>
         </thead>
         <tbody>
-          <tr className="table-light">
+          <tr>
             <th scope="row" rowspan="3">Label Components</th>
             <td>is_manifestation_of</td>
             <td>1295</td>
@@ -45,7 +45,7 @@ export default function Witness() {
             </td>
             <td/>
           </tr>
-          <tr className="table-light">
+          <tr>
             <td>observed_on_pages</td>
             <td>1356</td>
             <td>A subdivision of the witness's text in an extant document.<br/>
@@ -61,7 +61,7 @@ export default function Witness() {
             </td>
             <td/>
           </tr>
-          <tr className="table-light">
+          <tr>
             <td>last_observed_in_doc</td>
             <td>1190</td>
             <td>The document in which the witness was last observed.</td>
@@ -75,7 +75,7 @@ export default function Witness() {
             </td>
             <td/>
           </tr>
-          <tr className="table-light">
+          <tr>
             <th scope="row" rowspan="4">is_unobserved</th>
             <td>is_unobserved</td>
             <td>1266</td>
@@ -115,7 +115,7 @@ export default function Witness() {
               </div>
             </td>
           </tr>
-          <tr className="table-light">
+          <tr>
             <td>claim_freetext</td>
             <td>1294</td>
             <td>
@@ -129,7 +129,7 @@ export default function Witness() {
             <td/>
             <td/>
           </tr>
-          <tr className="table-light">
+          <tr>
             <td>used_to_follow_fragment</td>
             <td>1298</td>
             <td>If the witness is a fragment, another fragment of the same text and from the same codicological unit that represents an earlier part of the text, so that this witness and the linked witness would constitute two sequential parts of a lost witness.</td>
@@ -143,7 +143,7 @@ export default function Witness() {
             </td>
             <td/>
           </tr>
-          <tr className="table-light">
+          <tr>
             <td>used_to_follow_witness</td>
             <td>1300</td>
             <td>If the witness was originally with another witness, especially the witness of a different text, in a now lost or disassembled document, the witness that immediately preceded it in the hypothetical document.</td>
@@ -157,7 +157,7 @@ export default function Witness() {
             </td>
             <td/>
           </tr>
-          <tr className="table-light">
+          <tr>
             <th scope="row" rowspan="4">status_witness</th>
             <td>preferred_siglum</td>
             <td>1296</td>
@@ -170,7 +170,7 @@ export default function Witness() {
             <td/>
             <td/>
           </tr>
-          <tr className="table-light">
+          <tr>
             <td>alternative_sigla</td>
             <td>1333</td>
             <td>Other sigla by which the witness is known and which is different than the siglum preferred for making new stemma.</td>
@@ -182,7 +182,7 @@ export default function Witness() {
             <td/>
             <td/>
           </tr>
-          <tr className="table-light">
+          <tr>
             <td>status_witness</td>
             <td>1301</td>
             <td>Survival status of the witness.</td>
@@ -224,7 +224,7 @@ export default function Witness() {
               </div>
             </td>
           </tr>
-          <tr className="table-light">
+          <tr>
             <td>status_notes</td>
             <td>1102</td>
             <td>Brief note detailing the entity's survival status.</td>
@@ -236,7 +236,7 @@ export default function Witness() {
             <td/>
             <td/>
           </tr>
-          <tr className="table-light">
+          <tr>
             <th scope="row" rowspan="3">is_excerpt</th>
             <td>is_excerpt</td>
             <td>1302</td>
@@ -276,7 +276,7 @@ export default function Witness() {
               </div>
             </td>
           </tr>
-          <tr className="table-light">
+          <tr>
             <td>regional_writing_style</td>
             <td>1330</td>
             <td>A regional writing style (aka scripta), similar to the written version of a spoken dialect.</td>
@@ -290,7 +290,7 @@ export default function Witness() {
             </td>
             <td/>
           </tr>
-          <tr className="table-light">
+          <tr>
             <td>scripta_freetext</td>
             <td>1100</td>
             <td>Brief, human-readable description of the writing variant (Scripta) with which this record is associated.</td>
@@ -302,7 +302,7 @@ export default function Witness() {
             <td/>
             <td/>
           </tr>
-          <tr className="table-light">
+          <tr>
             <th scope="row" rowspan="4">date_of_creation_certainty</th>
             <td>date_of_creation</td>
             <td>1285</td>
@@ -317,7 +317,7 @@ export default function Witness() {
             <td/>
             <td/>
           </tr>
-          <tr className="table-light">
+          <tr>
             <td>date_of_creation_certainty</td>
             <td>1258</td>
             <td>Degree of certainty applied to the claim.</td>
@@ -355,7 +355,7 @@ export default function Witness() {
               </div>
             </td>
           </tr>
-          <tr className="table-light">
+          <tr>
             <td>date_of_creation_source</td>
             <td>1286</td>
             <td>Notes about the source of the creation date information, including a human-readable summary or transcription of the time range. Can include a brief bibliographic citation.</td>
@@ -367,7 +367,7 @@ export default function Witness() {
             <td/>
             <td/>
           </tr>
-          <tr className="table-light">
+          <tr>
             <td>date_freetext</td>
             <td>1094</td>
             <td>Brief, human-readable description of the date given to this record.</td>
@@ -379,7 +379,7 @@ export default function Witness() {
             <td/>
             <td/>
           </tr>
-          <tr className="table-light">
+          <tr>
             <th scope="row" rowspan="3">People</th>
             <td>scribe</td>
             <td>1303</td>
@@ -392,7 +392,7 @@ export default function Witness() {
             <td>Person</td>
             <td/>
           </tr>
-          <tr className="table-light">
+          <tr>
             <td>number_of_hands</td>
             <td>1336</td>
             <td>Number of hands identified in the witness.</td>
@@ -404,7 +404,7 @@ export default function Witness() {
             <td/>
             <td/>
           </tr>
-          <tr className="table-light">
+          <tr>
             <td>scribe_note</td>
             <td>1337</td>
             <td>Notes about the source of information for the number of hands or number of scribes.</td>
@@ -416,7 +416,7 @@ export default function Witness() {
             <td/>
             <td/>
           </tr>
-          <tr className="table-light">
+          <tr>
             <th scope="row" rowspan="2">Place</th>
             <td>place_of_creation</td>
             <td>1290</td>
@@ -431,7 +431,7 @@ export default function Witness() {
             <td>Place</td>
             <td/>
           </tr>
-          <tr className="table-light">
+          <tr>
             <td>place_of_creation_source</td>
             <td>1291</td>
             <td>Notes along with bibliographic citation about the source of the creation place information.</td>
@@ -443,7 +443,7 @@ export default function Witness() {
             <td/>
             <td/>
           </tr>
-          <tr className="table-light">
+          <tr>
             <th scope="row" rowspan="3">References</th>
             <td>described_by_source</td>
             <td>1255</td>
@@ -461,7 +461,7 @@ Described in source / written about in / described by encyclopedia / described b
             </td>
             <td/>
           </tr>
-          <tr className="table-light">
+          <tr>
             <td>described_at_URL</td>
             <td>1269</td>
             <td>Described at webpage.<br/>Property <a target="_blank" rel="noreferrer noopener" href="https://www.wikidata.org/wiki/Property:P973">P973</a>
@@ -474,7 +474,7 @@ Described in source / written about in / described by encyclopedia / described b
             <td/>
             <td/>
           </tr>
-          <tr className="table-light">
+          <tr>
             <td>reference_notes</td>
             <td>1284</td>
             <td>Brief notes about a reference and/or citation that should eventually be added to the database and linked to this record.</td>
@@ -486,7 +486,7 @@ Described in source / written about in / described by encyclopedia / described b
             <td/>
             <td/>
           </tr>
-          <tr className="table-light">
+          <tr>
             <th scope="row" rowspan="2">review_status</th>
             <td>review_status</td>
             <td>1183</td>
@@ -523,7 +523,7 @@ Described in source / written about in / described by encyclopedia / described b
               </div>
             </td>
           </tr>
-          <tr className="table-light">
+          <tr>
             <td>review_note</td>
             <td>1248</td>
             <td>Information to help with review of this entity.</td>

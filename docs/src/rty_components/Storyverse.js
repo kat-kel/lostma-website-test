@@ -1,7 +1,7 @@
-
 import { HashLink } from 'react-router-hash-link';
-export default function Storyverse() {
 
+export default function Storyverse() {
+    
     return (
 <div className="container-fluid" id="102">
   <div className="card bg-light mb-3">
@@ -14,7 +14,7 @@ export default function Storyverse() {
   <div className="container-fluid ml-1">
     <div className="table-responsive">
       <table className="table table-bordered">
-        <thead className="table-light sticky-header">
+        <thead>
           <tr>
             <th scope="col">Section</th>
             <th scope="col">Name</th>
@@ -28,7 +28,7 @@ export default function Storyverse() {
           </tr>
         </thead>
         <tbody>
-          <tr className="table-light">
+          <tr>
             <th scope="row" rowspan="1">Label Components</th>
             <td>preferred_name</td>
             <td>1244</td>
@@ -41,7 +41,7 @@ export default function Storyverse() {
             <td/>
             <td/>
           </tr>
-          <tr className="table-light">
+          <tr>
             <th scope="row" rowspan="2">Description</th>
             <td>member_of_cycle</td>
             <td>1246</td>
@@ -56,7 +56,7 @@ export default function Storyverse() {
             </td>
             <td/>
           </tr>
-          <tr className="table-light">
+          <tr>
             <td>alternative_names</td>
             <td>132</td>
             <td>Alternative names or titles, use for simple alternatives where additional metadata is not needed.</td>
@@ -68,7 +68,7 @@ export default function Storyverse() {
             <td/>
             <td/>
           </tr>
-          <tr className="table-light">
+          <tr>
             <th scope="row" rowspan="3">References</th>
             <td>described_by_source</td>
             <td>1255</td>
@@ -86,7 +86,7 @@ Described in source / written about in / described by encyclopedia / described b
             </td>
             <td/>
           </tr>
-          <tr className="table-light">
+          <tr>
             <td>described_at_URL</td>
             <td>1269</td>
             <td>Described at webpage.<br/>Property <a target="_blank" rel="noreferrer noopener" href="https://www.wikidata.org/wiki/Property:P973">P973</a>
@@ -99,7 +99,7 @@ Described in source / written about in / described by encyclopedia / described b
             <td/>
             <td/>
           </tr>
-          <tr className="table-light">
+          <tr>
             <td>reference_notes</td>
             <td>1284</td>
             <td>Brief notes about a reference and/or citation that should eventually be added to the database and linked to this record.</td>
@@ -111,7 +111,7 @@ Described in source / written about in / described by encyclopedia / described b
             <td/>
             <td/>
           </tr>
-          <tr className="table-light">
+          <tr>
             <th scope="row" rowspan="2">review_status</th>
             <td>review_status</td>
             <td>1183</td>
@@ -148,7 +148,7 @@ Described in source / written about in / described by encyclopedia / described b
               </div>
             </td>
           </tr>
-          <tr className="table-light">
+          <tr>
             <td>review_note</td>
             <td>1248</td>
             <td>Information to help with review of this entity.</td>

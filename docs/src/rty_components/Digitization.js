@@ -1,7 +1,7 @@
-
 import { HashLink } from 'react-router-hash-link';
-export default function Digitization() {
 
+export default function Digitization() {
+    
     return (
 <div className="container-fluid" id="126">
   <div className="card bg-light mb-3">
@@ -14,7 +14,7 @@ export default function Digitization() {
   <div className="container-fluid ml-1">
     <div className="table-responsive">
       <table className="table table-bordered">
-        <thead className="table-light sticky-header">
+        <thead>
           <tr>
             <th scope="col">Section</th>
             <th scope="col">Name</th>
@@ -28,7 +28,7 @@ export default function Digitization() {
           </tr>
         </thead>
         <tbody>
-          <tr className="table-light">
+          <tr>
             <th scope="row" rowspan="2">Label Components</th>
             <td>URI</td>
             <td>1304</td>
@@ -41,7 +41,7 @@ export default function Digitization() {
             <td/>
             <td/>
           </tr>
-          <tr className="table-light">
+          <tr>
             <td>digitization_of</td>
             <td>1338</td>
             <td>Document.</td>
@@ -55,7 +55,7 @@ export default function Digitization() {
             </td>
             <td/>
           </tr>
-          <tr className="table-light">
+          <tr>
             <th scope="row" rowspan="2">Description</th>
             <td>IIIF</td>
             <td>1306</td>
@@ -68,7 +68,7 @@ export default function Digitization() {
             <td/>
             <td/>
           </tr>
-          <tr className="table-light">
+          <tr>
             <td>ARK</td>
             <td>1271</td>
             <td>Archival Resource Key for the item or notice in the archival institution's catalogue / system.<br/>

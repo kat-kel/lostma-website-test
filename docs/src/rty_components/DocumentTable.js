@@ -1,7 +1,7 @@
-
 import { HashLink } from 'react-router-hash-link';
-export default function DocumentTable() {
 
+export default function DocumentTable() {
+    
     return (
 <div className="container-fluid" id="106">
   <div className="card bg-light mb-3">
@@ -14,7 +14,7 @@ export default function DocumentTable() {
   <div className="container-fluid ml-1">
     <div className="table-responsive">
       <table className="table table-bordered">
-        <thead className="table-light sticky-header">
+        <thead>
           <tr>
             <th scope="col">Section</th>
             <th scope="col">Name</th>
@@ -28,7 +28,7 @@ export default function DocumentTable() {
           </tr>
         </thead>
         <tbody>
-          <tr className="table-light">
+          <tr>
             <th scope="row" rowspan="4">Label Components</th>
             <td>current_shelfmark</td>
             <td>1307</td>
@@ -42,7 +42,7 @@ export default function DocumentTable() {
             <td/>
             <td/>
           </tr>
-          <tr className="table-light">
+          <tr>
             <td>location</td>
             <td>1308</td>
             <td>Location of the object, structure or event, i.e. the Mona Lisa's location is the Louvre Museum.<br/>Property <a target="_blank" rel="noreferrer noopener" href="https://www.wikidata.org/wiki/Property:P276">P276</a>
@@ -57,7 +57,7 @@ export default function DocumentTable() {
             </td>
             <td/>
           </tr>
-          <tr className="table-light">
+          <tr>
             <td>collection</td>
             <td>1309</td>
             <td>A single collection of materials with some unifying characteristic, housed in an archive.<br/>Query <a target="_blank" rel="noreferrer noopener" href="https://www.wikidata.org/wiki/Q9388534">Q9388534</a>
@@ -70,7 +70,7 @@ export default function DocumentTable() {
             <td/>
             <td/>
           </tr>
-          <tr className="table-light">
+          <tr>
             <td>invented_label</td>
             <td>1310</td>
             <td>If this record is a hypothetical document, a useful label by which to recognize and refer to the document.</td>
@@ -82,7 +82,7 @@ export default function DocumentTable() {
             <td/>
             <td/>
           </tr>
-          <tr className="table-light">
+          <tr>
             <th scope="row" rowspan="2">is_hypothetical</th>
             <td>is_hypothetical</td>
             <td>1266</td>
@@ -122,7 +122,7 @@ export default function DocumentTable() {
               </div>
             </td>
           </tr>
-          <tr className="table-light">
+          <tr>
             <td>claim_freetext</td>
             <td>1294</td>
             <td>
@@ -136,7 +136,7 @@ export default function DocumentTable() {
             <td/>
             <td/>
           </tr>
-          <tr className="table-light">
+          <tr>
             <th scope="row" rowspan="4">collection_of_fragments</th>
             <td>collection_of_fragments</td>
             <td>1312</td>
@@ -171,7 +171,7 @@ export default function DocumentTable() {
               </div>
             </td>
           </tr>
-          <tr className="table-light">
+          <tr>
             <td>old_shelfmark</td>
             <td>1311</td>
             <td>Outmoded shelf marks by which the archival object used to be known and referenced.</td>
@@ -183,7 +183,7 @@ export default function DocumentTable() {
             <td/>
             <td/>
           </tr>
-          <tr className="table-light">
+          <tr>
             <td>digitization</td>
             <td>1313</td>
             <td>A digitization of the archival object, preferably in its entirety.</td>
@@ -197,7 +197,7 @@ export default function DocumentTable() {
             </td>
             <td/>
           </tr>
-          <tr className="table-light">
+          <tr>
             <td>digitization_freetext</td>
             <td>1326</td>
             <td>
@@ -211,7 +211,7 @@ export default function DocumentTable() {
             <td/>
             <td/>
           </tr>
-          <tr className="table-light">
+          <tr>
             <th scope="row" rowspan="6">Production</th>
             <td>date_of_creation</td>
             <td>1285</td>
@@ -226,7 +226,7 @@ export default function DocumentTable() {
             <td/>
             <td/>
           </tr>
-          <tr className="table-light">
+          <tr>
             <td>date_freetext</td>
             <td>1094</td>
             <td>Brief, human-readable description of the date given to this record.</td>
@@ -238,7 +238,7 @@ export default function DocumentTable() {
             <td/>
             <td/>
           </tr>
-          <tr className="table-light">
+          <tr>
             <td>date_of_creation_source</td>
             <td>1286</td>
             <td>Notes about the source of the creation date information, including a human-readable summary or transcription of the time range. Can include a brief bibliographic citation.</td>
@@ -250,7 +250,7 @@ export default function DocumentTable() {
             <td/>
             <td/>
           </tr>
-          <tr className="table-light">
+          <tr>
             <td>place_of_creation</td>
             <td>1290</td>
             <td>Place where the entity was conceived or made.</td>
@@ -264,7 +264,7 @@ export default function DocumentTable() {
             <td>Place</td>
             <td/>
           </tr>
-          <tr className="table-light">
+          <tr>
             <td>place_of_creation_freetext</td>
             <td>1328</td>
             <td>Placeholder notes about the entity's place of creation, to eventually be converted into a relation to a Place entity.</td>
@@ -276,7 +276,7 @@ export default function DocumentTable() {
             <td/>
             <td/>
           </tr>
-          <tr className="table-light">
+          <tr>
             <td>place_of_creation_source</td>
             <td>1291</td>
             <td>Notes along with bibliographic citation about the source of the creation place information.</td>
@@ -288,7 +288,7 @@ export default function DocumentTable() {
             <td/>
             <td/>
           </tr>
-          <tr className="table-light">
+          <tr>
             <th scope="row" rowspan="5">References</th>
             <td>described_by_source</td>
             <td>1255</td>
@@ -306,7 +306,7 @@ Described in source / written about in / described by encyclopedia / described b
             </td>
             <td/>
           </tr>
-          <tr className="table-light">
+          <tr>
             <td>described_at_URL</td>
             <td>1269</td>
             <td>Described at webpage.<br/>Property <a target="_blank" rel="noreferrer noopener" href="https://www.wikidata.org/wiki/Property:P973">P973</a>
@@ -319,7 +319,7 @@ Described in source / written about in / described by encyclopedia / described b
             <td/>
             <td/>
           </tr>
-          <tr className="table-light">
+          <tr>
             <td>online_catalogue_URL</td>
             <td>1329</td>
             <td>URL of the page in a library or archive's digital catalogue that serves as the reference for the document.<br/>Property <a target="_blank" rel="noreferrer noopener" href="https://www.wikidata.org/wiki/Property:P8768">P8768</a>
@@ -332,7 +332,7 @@ Described in source / written about in / described by encyclopedia / described b
             <td/>
             <td/>
           </tr>
-          <tr className="table-light">
+          <tr>
             <td>ARK</td>
             <td>1271</td>
             <td>Archival Resource Key for the item or notice in the archival institution's catalogue / system.<br/>
@@ -346,7 +346,7 @@ Described in source / written about in / described by encyclopedia / described b
             <td/>
             <td/>
           </tr>
-          <tr className="table-light">
+          <tr>
             <td>reference_notes</td>
             <td>1284</td>
             <td>Brief notes about a reference and/or citation that should eventually be added to the database and linked to this record.</td>
@@ -358,7 +358,7 @@ Described in source / written about in / described by encyclopedia / described b
             <td/>
             <td/>
           </tr>
-          <tr className="table-light">
+          <tr>
             <th scope="row" rowspan="2">review_status</th>
             <td>review_status</td>
             <td>1183</td>
@@ -395,7 +395,7 @@ Described in source / written about in / described by encyclopedia / described b
               </div>
             </td>
           </tr>
-          <tr className="table-light">
+          <tr>
             <td>review_note</td>
             <td>1248</td>
             <td>Information to help with review of this entity.</td>

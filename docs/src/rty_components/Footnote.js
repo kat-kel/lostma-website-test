@@ -1,7 +1,5 @@
-
-
 export default function Footnote() {
-
+    
     return (
 <div className="container-fluid" id="128">
   <div className="card bg-light mb-3">
@@ -14,7 +12,7 @@ export default function Footnote() {
   <div className="container-fluid ml-1">
     <div className="table-responsive">
       <table className="table table-bordered">
-        <thead className="table-light sticky-header">
+        <thead>
           <tr>
             <th scope="col">Section</th>
             <th scope="col">Name</th>
@@ -28,7 +26,7 @@ export default function Footnote() {
           </tr>
         </thead>
         <tbody>
-          <tr className="table-light">
+          <tr>
             <th scope="row" rowspan="4">General Info</th>
             <td>stated_in</td>
             <td>1339</td>
@@ -45,7 +43,7 @@ export default function Footnote() {
             <td>Book chapter, Book, Conference, Journal article, Thesis</td>
             <td/>
           </tr>
-          <tr className="table-light">
+          <tr>
             <td>pages</td>
             <td>1340</td>
             <td>Page number(s) of the source in which the information is stated.<br/>
@@ -61,7 +59,7 @@ export default function Footnote() {
             <td/>
             <td/>
           </tr>
-          <tr className="table-light">
+          <tr>
             <td>reference_prefix</td>
             <td>1278</td>
             <td>Prefix or other key used in a dictionary or encyclopedia to refer to an entry, i.e. "AnsMetz."</td>
@@ -73,7 +71,7 @@ export default function Footnote() {
             <td/>
             <td/>
           </tr>
-          <tr className="table-light">
+          <tr>
             <td>quotation</td>
             <td>1277</td>
             <td>Quotation from the source of information.</td>

@@ -1,7 +1,7 @@
-
 import { HashLink } from 'react-router-hash-link';
-export default function Part() {
 
+export default function Part() {
+    
     return (
 <div className="container-fluid" id="125">
   <div className="card bg-light mb-3">
@@ -14,7 +14,7 @@ export default function Part() {
   <div className="container-fluid ml-1">
     <div className="table-responsive">
       <table className="table table-bordered">
-        <thead className="table-light sticky-header">
+        <thead>
           <tr>
             <th scope="col">Section</th>
             <th scope="col">Name</th>
@@ -28,7 +28,7 @@ export default function Part() {
           </tr>
         </thead>
         <tbody>
-          <tr className="table-light">
+          <tr>
             <th scope="row" rowspan="1">Label Components</th>
             <td>is_inscribed_on</td>
             <td>1315</td>
@@ -43,7 +43,7 @@ export default function Part() {
             </td>
             <td/>
           </tr>
-          <tr className="table-light">
+          <tr>
             <th scope="row" rowspan="4">Locus</th>
             <td>div_order</td>
             <td>1316</td>
@@ -59,7 +59,7 @@ export default function Part() {
             <td/>
             <td/>
           </tr>
-          <tr className="table-light">
+          <tr>
             <td>number_of_verses</td>
             <td>1317</td>
             <td>To be compared with the "verse length" of the representative text, the number of verses or lines from the text represented on this part of the witness.</td>
@@ -71,7 +71,7 @@ export default function Part() {
             <td/>
             <td/>
           </tr>
-          <tr className="table-light">
+          <tr>
             <td>part_of_text</td>
             <td>1318</td>
             <td>A simple description of the portion of the text, i.e. "first third," represented on this part of the witness.</td>
@@ -83,7 +83,7 @@ export default function Part() {
             <td/>
             <td/>
           </tr>
-          <tr className="table-light">
+          <tr>
             <td>volume_number</td>
             <td>1319</td>
             <td>If the witness is composed of multiple volumes, the integer, roman numeral, or other indicator used by archival or library catalogues to identify the part as a volume of the witness.</td>
@@ -95,7 +95,7 @@ export default function Part() {
             <td/>
             <td/>
           </tr>
-          <tr className="table-light">
+          <tr>
             <th scope="row" rowspan="5">lines_are_incomplete</th>
             <td>physical_description</td>
             <td>1357</td>
@@ -110,7 +110,7 @@ export default function Part() {
             </td>
             <td/>
           </tr>
-          <tr className="table-light">
+          <tr>
             <td>number_of_lines</td>
             <td>1320</td>
             <td>The length of the text as calculated by the number of lines.</td>
@@ -122,7 +122,7 @@ export default function Part() {
             <td/>
             <td/>
           </tr>
-          <tr className="table-light">
+          <tr>
             <td>verses_per_line</td>
             <td>1358</td>
             <td>If the text is in verse, a categorical description of how many verses the scribe fit into a line of text.</td>
@@ -155,7 +155,7 @@ export default function Part() {
               </div>
             </td>
           </tr>
-          <tr className="table-light">
+          <tr>
             <td>lines_are_incomplete</td>
             <td>1321</td>
             <td>Whether the text lines have been interrupted, i.e. cut (Yes, incomplete).</td>
@@ -189,7 +189,7 @@ export default function Part() {
               </div>
             </td>
           </tr>
-          <tr className="table-light">
+          <tr>
             <td>page_ranges</td>
             <td>1322</td>
             <td>A formatted string that represents the numbering on the beginning and end of an uninterrupted series of pages. <br/>When a range of pages, separate the two numbers with two colons, i.e. "1r::4v". <br/>When a single page, do not include separator, i.e. "1r".</td>
@@ -201,7 +201,7 @@ export default function Part() {
             <td/>
             <td/>
           </tr>
-          <tr className="table-light">
+          <tr>
             <th scope="row" rowspan="2">review_status</th>
             <td>review_status</td>
             <td>1183</td>
@@ -238,7 +238,7 @@ export default function Part() {
               </div>
             </td>
           </tr>
-          <tr className="table-light">
+          <tr>
             <td>review_note</td>
             <td>1248</td>
             <td>Information to help with review of this entity.</td>

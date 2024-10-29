@@ -1,7 +1,7 @@
-
 import { HashLink } from 'react-router-hash-link';
-export default function Hypothesis() {
 
+export default function Hypothesis() {
+    
     return (
 <div className="container-fluid" id="116">
   <div className="card bg-light mb-3">
@@ -14,7 +14,7 @@ export default function Hypothesis() {
   <div className="container-fluid ml-1">
     <div className="table-responsive">
       <table className="table table-bordered">
-        <thead className="table-light sticky-header">
+        <thead>
           <tr>
             <th scope="col">Section</th>
             <th scope="col">Name</th>
@@ -28,7 +28,7 @@ export default function Hypothesis() {
           </tr>
         </thead>
         <tbody>
-          <tr className="table-light">
+          <tr>
             <th scope="row" rowspan="1">Label Components</th>
             <td>attested_object</td>
             <td>1256</td>
@@ -43,7 +43,7 @@ export default function Hypothesis() {
             </td>
             <td/>
           </tr>
-          <tr className="table-light">
+          <tr>
             <th scope="row" rowspan="2">certainty</th>
             <td>claim</td>
             <td>1257</td>
@@ -56,7 +56,7 @@ export default function Hypothesis() {
             <td/>
             <td/>
           </tr>
-          <tr className="table-light">
+          <tr>
             <td>certainty</td>
             <td>1258</td>
             <td>Degree of certainty applied to the claim.</td>
@@ -94,7 +94,7 @@ export default function Hypothesis() {
               </div>
             </td>
           </tr>
-          <tr className="table-light">
+          <tr>
             <th scope="row" rowspan="1">References</th>
             <td>described_by_source</td>
             <td>1255</td>
@@ -112,7 +112,7 @@ Described in source / written about in / described by encyclopedia / described b
             </td>
             <td/>
           </tr>
-          <tr className="table-light">
+          <tr>
             <th scope="row" rowspan="2">review_status</th>
             <td>review_status</td>
             <td>1183</td>
@@ -149,7 +149,7 @@ Described in source / written about in / described by encyclopedia / described b
               </div>
             </td>
           </tr>
-          <tr className="table-light">
+          <tr>
             <td>review_note</td>
             <td>1248</td>
             <td>Information to help with review of this entity.</td>

@@ -9,6 +9,7 @@ import {
   Routes,
 } from "react-router-dom";
 import React from 'react';
+import './styles/reduction.scss';
 
 
 class App extends React.Component {

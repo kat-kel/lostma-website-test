@@ -1,7 +1,7 @@
-
 import { HashLink } from 'react-router-hash-link';
-export default function TextTable() {
 
+export default function TextTable() {
+    
     return (
 <div className="container-fluid" id="101">
   <div className="card bg-light mb-3">
@@ -14,7 +14,7 @@ export default function TextTable() {
   <div className="container-fluid ml-1">
     <div className="table-responsive">
       <table className="table table-bordered">
-        <thead className="table-light sticky-header">
+        <thead>
           <tr>
             <th scope="col">Section</th>
             <th scope="col">Name</th>
@@ -28,7 +28,7 @@ export default function TextTable() {
           </tr>
         </thead>
         <tbody>
-          <tr className="table-light">
+          <tr>
             <th scope="row" rowspan="3">language</th>
             <td>preferred_name</td>
             <td>1244</td>
@@ -41,7 +41,7 @@ export default function TextTable() {
             <td/>
             <td/>
           </tr>
-          <tr className="table-light">
+          <tr>
             <td>language</td>
             <td>1090</td>
             <td>Spoken language through which the entity is primarily expressed.</td>
@@ -239,7 +239,7 @@ export default function TextTable() {
               </div>
             </td>
           </tr>
-          <tr className="table-light">
+          <tr>
             <td>literary_form</td>
             <td>1265</td>
             <td>Overall form of the literary style (verse, prose, mixed).</td>
@@ -278,7 +278,7 @@ export default function TextTable() {
               </div>
             </td>
           </tr>
-          <tr className="table-light">
+          <tr>
             <th scope="row" rowspan="2">is_hypothetical</th>
             <td>is_hypothetical</td>
             <td>1266</td>
@@ -318,7 +318,7 @@ export default function TextTable() {
               </div>
             </td>
           </tr>
-          <tr className="table-light">
+          <tr>
             <td>claim_freetext</td>
             <td>1294</td>
             <td>
@@ -332,7 +332,7 @@ export default function TextTable() {
             <td/>
             <td/>
           </tr>
-          <tr className="table-light">
+          <tr>
             <th scope="row" rowspan="8">peripheral</th>
             <td>alternative_names</td>
             <td>132</td>
@@ -345,7 +345,7 @@ export default function TextTable() {
             <td/>
             <td/>
           </tr>
-          <tr className="table-light">
+          <tr>
             <td>is_expression_of</td>
             <td>1097</td>
             <td>Realization of an abstract, creative work through words, sound, image, etc.</td>
@@ -359,7 +359,7 @@ export default function TextTable() {
             </td>
             <td/>
           </tr>
-          <tr className="table-light">
+          <tr>
             <td>peripheral</td>
             <td>1331</td>
             <td>Not part of the main corpus's scope.</td>
@@ -393,7 +393,7 @@ export default function TextTable() {
               </div>
             </td>
           </tr>
-          <tr className="table-light">
+          <tr>
             <td>specific_genre</td>
             <td>1270</td>
             <td>Specific literary genre or subgenre attributed to the text.</td>
@@ -407,7 +407,7 @@ export default function TextTable() {
             </td>
             <td/>
           </tr>
-          <tr className="table-light">
+          <tr>
             <td>length</td>
             <td>1166</td>
             <td>Length (number of verses, of chapters for prose)</td>
@@ -419,7 +419,7 @@ export default function TextTable() {
             <td/>
             <td/>
           </tr>
-          <tr className="table-light">
+          <tr>
             <td>length_freetext</td>
             <td>1334</td>
             <td>Briefly describe any uncertainties or ambiguities about the length.</td>
@@ -431,7 +431,7 @@ export default function TextTable() {
             <td/>
             <td/>
           </tr>
-          <tr className="table-light">
+          <tr>
             <td>verse_type</td>
             <td>1165</td>
             <td>Type of verses</td>
@@ -490,7 +490,7 @@ export default function TextTable() {
               </div>
             </td>
           </tr>
-          <tr className="table-light">
+          <tr>
             <td>rhyme_type</td>
             <td>1167</td>
             <td>Rhyme or assonance</td>
@@ -536,7 +536,7 @@ export default function TextTable() {
               </div>
             </td>
           </tr>
-          <tr className="table-light">
+          <tr>
             <th scope="row" rowspan="5">tradition_status</th>
             <td>is_derived_from</td>
             <td>1267</td>
@@ -551,7 +551,7 @@ export default function TextTable() {
             </td>
             <td/>
           </tr>
-          <tr className="table-light">
+          <tr>
             <td>nature_of_derivations</td>
             <td>1332</td>
             <td>Note about the nature of the text or texts from which this text is derived.</td>
@@ -563,7 +563,7 @@ export default function TextTable() {
             <td/>
             <td/>
           </tr>
-          <tr className="table-light">
+          <tr>
             <td>tradition_status</td>
             <td>1101</td>
             <td>General evaluation of the overall survival of all the witnesses of a text.</td>
@@ -605,7 +605,7 @@ export default function TextTable() {
               </div>
             </td>
           </tr>
-          <tr className="table-light">
+          <tr>
             <td>status_notes</td>
             <td>1102</td>
             <td>Brief note detailing the entity's survival status.</td>
@@ -617,7 +617,7 @@ export default function TextTable() {
             <td/>
             <td/>
           </tr>
-          <tr className="table-light">
+          <tr>
             <td>in_stemma</td>
             <td>1117</td>
             <td>Reference to the stemma(ta) of the text.</td>
@@ -631,7 +631,7 @@ export default function TextTable() {
             </td>
             <td/>
           </tr>
-          <tr className="table-light">
+          <tr>
             <th scope="row" rowspan="4">has_lost_older_version</th>
             <td>has_lost_older_version</td>
             <td>1103</td>
@@ -671,7 +671,7 @@ export default function TextTable() {
               </div>
             </td>
           </tr>
-          <tr className="table-light">
+          <tr>
             <td>ancient_translations_freetext</td>
             <td>1105</td>
             <td>Free text description of translations and adaptations that were derived from this record.</td>
@@ -683,7 +683,7 @@ export default function TextTable() {
             <td/>
             <td/>
           </tr>
-          <tr className="table-light">
+          <tr>
             <td>rewritings_freetext</td>
             <td>1107</td>
             <td>Freetext description of rewritings that were derived from this record.</td>
@@ -695,7 +695,7 @@ export default function TextTable() {
             <td/>
             <td/>
           </tr>
-          <tr className="table-light">
+          <tr>
             <td>note</td>
             <td>1109</td>
             <td>Note(s) concerning the record.</td>
@@ -707,7 +707,7 @@ export default function TextTable() {
             <td/>
             <td/>
           </tr>
-          <tr className="table-light">
+          <tr>
             <th scope="row" rowspan="2">Writing variant</th>
             <td>regional_writing_style</td>
             <td>1330</td>
@@ -722,7 +722,7 @@ export default function TextTable() {
             </td>
             <td/>
           </tr>
-          <tr className="table-light">
+          <tr>
             <td>scripta_freetext</td>
             <td>1100</td>
             <td>Brief, human-readable description of the writing variant (Scripta) with which this record is associated.</td>
@@ -734,7 +734,7 @@ export default function TextTable() {
             <td/>
             <td/>
           </tr>
-          <tr className="table-light">
+          <tr>
             <th scope="row" rowspan="4">date_of_creation_certainty</th>
             <td>date_of_creation</td>
             <td>1285</td>
@@ -749,7 +749,7 @@ export default function TextTable() {
             <td/>
             <td/>
           </tr>
-          <tr className="table-light">
+          <tr>
             <td>date_of_creation_certainty</td>
             <td>1258</td>
             <td>Degree of certainty applied to the claim.</td>
@@ -787,7 +787,7 @@ export default function TextTable() {
               </div>
             </td>
           </tr>
-          <tr className="table-light">
+          <tr>
             <td>date_of_creation_source</td>
             <td>1286</td>
             <td>Notes about the source of the creation date information, including a human-readable summary or transcription of the time range. Can include a brief bibliographic citation.</td>
@@ -799,7 +799,7 @@ export default function TextTable() {
             <td/>
             <td/>
           </tr>
-          <tr className="table-light">
+          <tr>
             <td>date_freetext</td>
             <td>1094</td>
             <td>Brief, human-readable description of the date given to this record.</td>
@@ -811,7 +811,7 @@ export default function TextTable() {
             <td/>
             <td/>
           </tr>
-          <tr className="table-light">
+          <tr>
             <th scope="row" rowspan="3">People</th>
             <td>is_written_by</td>
             <td>1288</td>
@@ -824,7 +824,7 @@ export default function TextTable() {
             <td>Person</td>
             <td/>
           </tr>
-          <tr className="table-light">
+          <tr>
             <td>is_adapted_by</td>
             <td>1289</td>
             <td>When the Text is an adaptation or translation of another Text, the individual accredited with creating the adaptation or translation.</td>
@@ -836,7 +836,7 @@ export default function TextTable() {
             <td>Person</td>
             <td/>
           </tr>
-          <tr className="table-light">
+          <tr>
             <td>author_freetext</td>
             <td>1091</td>
             <td>Human-readable reference to an author, which can include annotations about certainty.</td>
@@ -848,7 +848,7 @@ export default function TextTable() {
             <td/>
             <td/>
           </tr>
-          <tr className="table-light">
+          <tr>
             <th scope="row" rowspan="2">Place</th>
             <td>place_of_creation</td>
             <td>1290</td>
@@ -863,7 +863,7 @@ export default function TextTable() {
             <td>Place</td>
             <td/>
           </tr>
-          <tr className="table-light">
+          <tr>
             <td>place_of_creation_source</td>
             <td>1291</td>
             <td>Notes along with bibliographic citation about the source of the creation place information.</td>
@@ -875,7 +875,7 @@ export default function TextTable() {
             <td/>
             <td/>
           </tr>
-          <tr className="table-light">
+          <tr>
             <th scope="row" rowspan="3">References</th>
             <td>described_by_source</td>
             <td>1255</td>
@@ -893,7 +893,7 @@ Described in source / written about in / described by encyclopedia / described b
             </td>
             <td/>
           </tr>
-          <tr className="table-light">
+          <tr>
             <td>described_at_URL</td>
             <td>1269</td>
             <td>Described at webpage.<br/>Property <a target="_blank" rel="noreferrer noopener" href="https://www.wikidata.org/wiki/Property:P973">P973</a>
@@ -906,7 +906,7 @@ Described in source / written about in / described by encyclopedia / described b
             <td/>
             <td/>
           </tr>
-          <tr className="table-light">
+          <tr>
             <td>reference_notes</td>
             <td>1284</td>
             <td>Brief notes about a reference and/or citation that should eventually be added to the database and linked to this record.</td>
@@ -918,7 +918,7 @@ Described in source / written about in / described by encyclopedia / described b
             <td/>
             <td/>
           </tr>
-          <tr className="table-light">
+          <tr>
             <th scope="row" rowspan="2">review_status</th>
             <td>review_status</td>
             <td>1183</td>
@@ -955,7 +955,7 @@ Described in source / written about in / described by encyclopedia / described b
               </div>
             </td>
           </tr>
-          <tr className="table-light">
+          <tr>
             <td>review_note</td>
             <td>1248</td>
             <td>Information to help with review of this entity.</td>

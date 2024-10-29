@@ -1,7 +1,7 @@
-
 import { HashLink } from 'react-router-hash-link';
-export default function PhysDesc() {
 
+export default function PhysDesc() {
+    
     return (
 <div className="container-fluid" id="129">
   <div className="card bg-light mb-3">
@@ -14,7 +14,7 @@ export default function PhysDesc() {
   <div className="container-fluid ml-1">
     <div className="table-responsive">
       <table className="table table-bordered">
-        <thead className="table-light sticky-header">
+        <thead>
           <tr>
             <th scope="col">Section</th>
             <th scope="col">Name</th>
@@ -28,7 +28,7 @@ export default function PhysDesc() {
           </tr>
         </thead>
         <tbody>
-          <tr className="table-light">
+          <tr>
             <th scope="row" rowspan="6">material</th>
             <td>subject_of_description</td>
             <td>1359</td>
@@ -43,7 +43,7 @@ export default function PhysDesc() {
             </td>
             <td/>
           </tr>
-          <tr className="table-light">
+          <tr>
             <td>material</td>
             <td>1341</td>
             <td>Description of the material of which the object is composed.</td>
@@ -83,7 +83,7 @@ export default function PhysDesc() {
               </div>
             </td>
           </tr>
-          <tr className="table-light">
+          <tr>
             <td>form</td>
             <td>1342</td>
             <td>"[T]he form of the object in its original state, before any mutilation, rebinding, etc."<br/>
@@ -131,7 +131,7 @@ export default function PhysDesc() {
               </div>
             </td>
           </tr>
-          <tr className="table-light">
+          <tr>
             <td>estimated_folio_size_height</td>
             <td>1343</td>
             <td>The height in millimeters (a range is permitted) of the folio size in the witness as it would have been before any mutilation, rebinding, etc.</td>
@@ -143,7 +143,7 @@ export default function PhysDesc() {
             <td/>
             <td/>
           </tr>
-          <tr className="table-light">
+          <tr>
             <td>estimated_folio_size_width</td>
             <td>1344</td>
             <td>The width in millimeters (a range is permitted) of the folio size in the witness as it would have been before any mutilation, rebinding, etc.</td>
@@ -155,7 +155,7 @@ export default function PhysDesc() {
             <td/>
             <td/>
           </tr>
-          <tr className="table-light">
+          <tr>
             <td>estimated_folio_size_reference</td>
             <td>1345</td>
             <td>In-line citation to remind contributors from where the reference for the estimated folio size came.</td>
@@ -167,7 +167,7 @@ export default function PhysDesc() {
             <td/>
             <td/>
           </tr>
-          <tr className="table-light">
+          <tr>
             <th scope="row" rowspan="2">has_decorations</th>
             <td>has_decorations</td>
             <td>1346</td>
@@ -220,7 +220,7 @@ export default function PhysDesc() {
               </div>
             </td>
           </tr>
-          <tr className="table-light">
+          <tr>
             <td>amount_of_illustrations</td>
             <td>1347</td>
             <td>A rough representation of how many illustrations are realized in the witness. Select the category that matches the number most specialists agree are in the witness.</td>
@@ -258,7 +258,7 @@ export default function PhysDesc() {
               </div>
             </td>
           </tr>
-          <tr className="table-light">
+          <tr>
             <th scope="row" rowspan="6">above_top_line</th>
             <td>writing_surface_area_height</td>
             <td>1348</td>
@@ -271,7 +271,7 @@ export default function PhysDesc() {
             <td/>
             <td/>
           </tr>
-          <tr className="table-light">
+          <tr>
             <td>writing_surface_area_width</td>
             <td>1349</td>
             <td>Width in millimeters (a range is permitted) of the writing area. <br/>Equivalent to dimensions[@type="written"]/width</td>
@@ -283,7 +283,7 @@ export default function PhysDesc() {
             <td/>
             <td/>
           </tr>
-          <tr className="table-light">
+          <tr>
             <td>writing_surface_area_reference</td>
             <td>1350</td>
             <td>An in-line citation for the source of the information about the dimensions of the witness's writing area.</td>
@@ -295,7 +295,7 @@ export default function PhysDesc() {
             <td/>
             <td/>
           </tr>
-          <tr className="table-light">
+          <tr>
             <td>number_of_columns</td>
             <td>1351</td>
             <td>An estimation of the number of columns per page through which the text is presented.</td>
@@ -307,7 +307,7 @@ export default function PhysDesc() {
             <td/>
             <td/>
           </tr>
-          <tr className="table-light">
+          <tr>
             <td>written_lines</td>
             <td>1352</td>
             <td>An estimation of the number of lines of text per page or per column.</td>
@@ -319,7 +319,7 @@ export default function PhysDesc() {
             <td/>
             <td/>
           </tr>
-          <tr className="table-light">
+          <tr>
             <td>above_top_line</td>
             <td>1353</td>
             <td>The text starts above the top ruled line on the page. If no, then the text starts at the line below the top line.</td>
@@ -353,7 +353,7 @@ export default function PhysDesc() {
               </div>
             </td>
           </tr>
-          <tr className="table-light">
+          <tr>
             <th scope="row" rowspan="2">subscript_type</th>
             <td>script_type</td>
             <td>1354</td>
@@ -398,7 +398,7 @@ export default function PhysDesc() {
               </div>
             </td>
           </tr>
-          <tr className="table-light">
+          <tr>
             <td>subscript_type</td>
             <td>1355</td>
             <td>More refined definition of the main script type.</td>

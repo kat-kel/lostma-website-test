@@ -1,7 +1,7 @@
-
 import { HashLink } from 'react-router-hash-link';
-export default function Images() {
 
+export default function Images() {
+    
     return (
 <div className="container-fluid" id="127">
   <div className="card bg-light mb-3">
@@ -14,7 +14,7 @@ export default function Images() {
   <div className="container-fluid ml-1">
     <div className="table-responsive">
       <table className="table table-bordered">
-        <thead className="table-light sticky-header">
+        <thead>
           <tr>
             <th scope="col">Section</th>
             <th scope="col">Name</th>
@@ -28,7 +28,7 @@ export default function Images() {
           </tr>
         </thead>
         <tbody>
-          <tr className="table-light">
+          <tr>
             <th scope="row" rowspan="2">Label Components</th>
             <td>represents_pages</td>
             <td>1314</td>
@@ -43,7 +43,7 @@ export default function Images() {
             </td>
             <td/>
           </tr>
-          <tr className="table-light">
+          <tr>
             <td>contained_in</td>
             <td>1323</td>
             <td>The digital object, which has a URL, from which this discrete range of images comes.</td>
@@ -57,7 +57,7 @@ export default function Images() {
             </td>
             <td/>
           </tr>
-          <tr className="table-light">
+          <tr>
             <th scope="row" rowspan="2">Description</th>
             <td>file_range</td>
             <td>1324</td>
@@ -70,7 +70,7 @@ export default function Images() {
             <td/>
             <td/>
           </tr>
-          <tr className="table-light">
+          <tr>
             <td>corresponding_page_range</td>
             <td>1322</td>
             <td>A formatted string that represents the numbering on the beginning and end of an uninterrupted series of pages. <br/>When a range of pages, separate the two numbers with two colons, i.e. "1r::4v". <br/>When a single page, do not include separator, i.e. "1r".</td>
