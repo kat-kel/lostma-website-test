@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/lostma-website-test/static/css/main.d221dc40.css",
-    "main.js": "/lostma-website-test/static/js/main.8932fee8.js",
+    "main.css": "/lostma-website-test/static/css/main.7fa2d555.css",
+    "main.js": "/lostma-website-test/static/js/main.9d56d661.js",
     "static/js/453.1f251112.chunk.js": "/lostma-website-test/static/js/453.1f251112.chunk.js",
     "static/media/duck.jpg": "/lostma-website-test/static/media/duck.7bbbd677b5cf034f7462.jpg",
     "index.html": "/lostma-website-test/index.html",
-    "main.d221dc40.css.map": "/lostma-website-test/static/css/main.d221dc40.css.map",
-    "main.8932fee8.js.map": "/lostma-website-test/static/js/main.8932fee8.js.map",
+    "main.7fa2d555.css.map": "/lostma-website-test/static/css/main.7fa2d555.css.map",
+    "main.9d56d661.js.map": "/lostma-website-test/static/js/main.9d56d661.js.map",
     "453.1f251112.chunk.js.map": "/lostma-website-test/static/js/453.1f251112.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d221dc40.css",
-    "static/js/main.8932fee8.js"
+    "static/css/main.7fa2d555.css",
+    "static/js/main.9d56d661.js"
   ]
 }
