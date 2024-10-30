@@ -1,7 +1,11 @@
-import * as RecordTypes from '../rty_components'
+// general imports
 import rtyArray from '../rty_components/index.json'
 import React from 'react';
 import { HashLink } from 'react-router-hash-link'
+import './RecordTypes.css'
+
+// route imports
+import * as RecordTypes from '../rty_components'
 
 const rtypes = Object.keys(RecordTypes);
 
@@ -25,10 +29,10 @@ class RecordTypePage extends React.Component {
         <div className="container-fluid">
           <h3>Profiles of Record Types</h3>
           <p>For the LostMa project, we created the following record types. The database relies on them as well as the general entities of "Person," "Place," and several bibliographic entities native to Heurist, including "Book" and "Journal article."</p>
+          <ul id="record-profile-list">
+            <List items={rtyArray} />
+          </ul>
         </div>
-        <ul id="record-profile-list">
-          <List items={rtyArray} />
-        </ul>
         {rtypes.map(i => {
           const RTY = RecordTypes[i];
           return <RTY />
