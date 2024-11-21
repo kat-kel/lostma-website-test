@@ -1,8 +1,5 @@
+// Basic imports
 import NavBar from './components/navbar';
-import logo from './images/duck.jpg';
-import Home from './views/Home';
-import RecordTypePage from './views/RecordTypes';
-import About from './views/About';
 import {
   HashRouter as Router,
   Route,
@@ -11,6 +8,16 @@ import {
 import ScrollToTop from "react-scroll-to-top";
 import React from 'react';
 import './App.css';
+import logo from './images/duck.jpg';
+
+// Route imports
+import Home from './Home';
+import About from './About';
+import TextsDatabaseHome from './Corpus'
+import RecordTypePage from './corpus/RecordTypes';
+import TEIPage from './corpus/WitnessTEI';
+import WorkflowPage from './corpus/Workflow';
+
 
 class App extends React.Component {
   render() {
@@ -27,8 +34,11 @@ class App extends React.Component {
           < NavBar />
           <Routes>
             <Route exact path="/" element={<Home />} />
-            <Route exact path="/views/recordtypes" element={<RecordTypePage />} />
-            <Route exact path="/views/about" element={<About />} />
+            <Route exact path="/about" element={<About />} />
+            <Route exact path="/corpus" element={<TextsDatabaseHome />} />
+            <Route exact path="/corpus/recordtypes" element={<RecordTypePage />} />
+            <Route exact path="/corpus/workflow" element={<WorkflowPage />} />
+            <Route exact path="/corpus/witnesstei" element={<TEIPage />} />
           </Routes>
           <ScrollToTop smooth className="scroll-to-top" />
         </div>
