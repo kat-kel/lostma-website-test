@@ -11,7 +11,6 @@ function navbar() {
     return (
         <Navbar 
             className="justify-content-start" 
-            bg="success" 
             variant="dark"
             sticky="top"
         >
