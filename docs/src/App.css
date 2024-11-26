@@ -1,22 +1,95 @@
 @import 'bootstrap/dist/css/bootstrap.min.css';
 
+:root {
+  --lostma-primary: #447604;
+  --lostma-light: #C5E2CE;
+  --lostma-dark: #3E4740;
+  --lostma-secondary: #6cc551;
+  --lostma-muted: #BBBBBB;
+  --lostma-highlight: #9ffcdf;
+  --lostma-info: #52ad9c;
+  --lostma-success: #c0e8f9;
+  --lostma-warning: #D53946;
+
+  --header-height: 180px;
+  --header-padding: 20px;
+  --lostma-font: "Palatino", "URW Palladio L", "serif", "monospace";
+}
 
 .scroll-to-top {
-    background-color: var(--bs-primary);
+    background-color: var(--lostma-light);
     top: 80px;
-    box-shadow: 0 9px 25px 0 var(--bs-gray);
   }
 
 .navbar {
-  background-color: var(--bs-primary);
+  background-color: var(--lostma-primary);
+  height: 50px;
+  padding-left: 10px;
+}
+
+.navbar-logo {
+  background-color: var(--lostma-success);
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  height: 40px;
+}
+
+header {
+  position: relative;
+  height: var(--header-height);
+}
+
+header .foreground {
+  position: absolute;
+  height: var(--header-height);
+  z-index: 1;
+  color: white;
+  text-shadow: 4px 4px 10px var(--lostma-dark);
+  text-align: center;
+  padding: var(--header-padding) 0;
+}
+
+header div h1 {
+  font-size: 80px;
+  font-family: var(--lostma-font);
+}
+
+header div p {
+  font-size: 20px;
+  font-family: var(--lostma-font);
+  font-style: italic;
+}
+
+header .background {
+  position: absolute;
+  z-index: -1;
+  height: var(--header-height);
+  width: 100%;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+header .image-citation {
+  padding: 5px;
+  color: var(--lostma-dark);
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  height: var(--header-height);
+  opacity: 0.5;
+}
+
+.container-fluid {
+  z-index: 0;
 }
 
 .table-of-contents {
   width: 80%;
-    column-count: 6;
-    column-fill: auto;
-    overflow: hidden;
-    height: 100px;
+  column-count: 6;
+  column-fill: auto;
+  overflow: hidden;
+  height: 100px;
 }
 
 .card {
@@ -28,32 +101,56 @@
 .card-header .badge-primary {
   font-size: 1rem;
   font-weight: 400;
-  background-color: var(--bs-primary);
+  background-color: var(--lostma-primary);
 }
 
 .card-header .badge-info {
   font-size: 1rem;
   font-weight: 400;
-  background-color: var(--bs-info);
+  background-color: var(--lostma-info);
 }
 
 .card-header .badge-success {
   font-size: 1rem;
   font-weight: 400;
-  background-color: var(--bs-success);
+  background-color: var(--lostma-success);
+  color: var(--lostma-dark);
+  border: 1px solid var(--lostma-muted);
+}
+
+.card-header .badge-fail {
+  font-size: 1rem;
+  font-weight: 400;
+  background-color: var(--lostma-muted);
+  color: var(--lostma-dark);
+  opacity: 0.5;
 }
 
 .card-header .badge-secondary {
   font-size: 1rem;
   font-weight: 400;
-  background-color: var(--bs-secondary);
+  background-color: var(--lostma-secondary);
+  color: var(--lostma-dark);
 }
 
-li .btn {
+.btn {
   line-height: 1;
   font-size: 1rem;
   margin-bottom: 0.5em;
-  background-color: var(--bs-light);
-  border-color: var(--bs-light);
-  color: var(--bs-dark);
+  background-color: var(--lostma-light);
+  border-color: var(--lostma-light);
+  color: var(--lostma-dark);
+}
+
+.section-header {
+  font-weight: 600;
+  font-style: oblique;
+}
+
+[scope='col'] {
+  font-weight: 600;
+ }
+
+.field {
+  font-weight: 200;
 }

@@ -8,7 +8,7 @@ import {
 import ScrollToTop from "react-scroll-to-top";
 import React from 'react';
 import './App.css';
-import logo from './images/duck.jpg';
+import logo from './images/GettyMuseumMS100_f23.png';
 
 // Route imports
 import Home from './Home';
@@ -26,10 +26,13 @@ class App extends React.Component {
         <div>
           <header>
             <span>
-              <img src={logo} width="60px" alt="placeholder duck" className="float-left" />
+              <img src={logo} alt="placeholder logo" className="background" />
             </span>
-            <h1 id="logo">LostMa</h1>
-            <p>LostMa project tag line.</p>
+            <div className='container-fluid foreground'>
+              <h1>LostMa</h1>
+              <p>navigating the currents of culture</p>
+            </div>
+            <span className='image-citation'>Getty Museum MS 100, folio 23</span>
           </header>
           < NavBar />
           <Routes>

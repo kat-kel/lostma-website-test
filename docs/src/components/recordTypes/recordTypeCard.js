@@ -1,32 +1,18 @@
 import Section from "./sections";
 import { HashLink } from 'react-router-hash-link';
+import buildLinkedOpenData from './buildLinkedOpenData'
+import { useState } from 'react';
+import Button from 'react-bootstrap/Button';
+import fieldToggle from '../utils';
 
-
-function buildLink (val) {
-        if (val) {
-            return (
-                <a 
-                    className="badge badge-primary link"
-                    target="_blank" 
-                    rel="noreferrer noopener" 
-                    href={val}>
-                        Linked Open Data
-                </a>
-            )
-        }
-        else {
-            return (
-                <span className="badge badge-secondary">Linked Open Data</span>
-        )
-        }
-}
 
 const RecordTypeCard = (item) => {
     const refURL = item.metadata.rty_ReferenceURL;
+    const [openAll, setOpenAll] = useState(true);
     return (
         <div className="card rty" id={item.metadata.rty_ID}>
             <div className="card-header d-flex justify-content-between">
-                <div>{buildLink(refURL)}</div>
+                <div>{buildLinkedOpenData(refURL)}</div>
                 <div>{item.metadata.rty_ID}</div>
             </div>
             <div className="card-body">
@@ -37,11 +23,17 @@ const RecordTypeCard = (item) => {
                 </h4>
                 <p className="card-text">{item.metadata.rty_Description}</p>
                 <div>
-                    <h5>Data Field Sections:</h5>
+                    <Button
+                        onClick={() => setOpenAll(!openAll)}
+                        aria-controls="collapse-all-sections"
+                        aria-expanded={openAll}
+                    >
+                        {fieldToggle(openAll)} Fields
+                    </Button>
                     <ul className="list-group">
-                    {
-                        Object.values(item.sections).map(section => Section(section))
-                    }
+                        {
+                            Object.values(item.sections).map(section => Section(section, openAll))
+                        }
                     </ul>
                 </div>
             </div>
