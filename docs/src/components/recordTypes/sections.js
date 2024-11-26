@@ -7,7 +7,7 @@ const Section = (item, openAll) => {
         <li className='list-group-item'>
             <span className='section-header'>{item.sectionName}</span>
             <Collapse in={openAll}>
-                <div id="section-collapse-fields table-responsive">
+                <div id="section-collapse-fields" className='table-responsive'>
                     <table className='table'>
                         <thead>
                             <tr>
