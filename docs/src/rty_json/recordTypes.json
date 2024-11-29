@@ -257,7 +257,7 @@
                     },
                     {
                         "rst_DisplayName": "claim_freetext",
-                        "rst_DisplayHelpText": "<b>[Temporary]</b><br>Brief note about the hypothesis that attests to this record\\'s existence.<br>The note is meant to temporarily store information that will eventually be entered into a Hypothesis entity, which should be linked back to this record.",
+                        "rst_DisplayHelpText": "<b>[Temporary]</b><br/>Brief note about the hypothesis that attests to this record's existence.<br/>The note is meant to temporarily store information that will eventually be entered into a Hypothesis entity, which should be linked back to this record.",
                         "dty_ID": 1294,
                         "dty_Type": "blocktext",
                         "dty_SemanticReferenceURL": null,
@@ -295,7 +295,7 @@
                     },
                     {
                         "rst_DisplayName": "peripheral",
-                        "rst_DisplayHelpText": "Not part of the main corpus\\'s scope.",
+                        "rst_DisplayHelpText": "Not part of the main corpus's scope.",
                         "dty_ID": 1331,
                         "dty_Type": "enum",
                         "dty_SemanticReferenceURL": null,
@@ -336,7 +336,7 @@
                     },
                     {
                         "rst_DisplayName": "length",
-                        "rst_DisplayHelpText": "If in verse, the number of verses.<br>For prose, the number of chapters.",
+                        "rst_DisplayHelpText": "If in verse, the number of verses.<br/>For prose, the number of chapters.",
                         "dty_ID": 1166,
                         "dty_Type": "float",
                         "dty_SemanticReferenceURL": null,
@@ -517,7 +517,7 @@
                     },
                     {
                         "rst_DisplayName": "status_notes",
-                        "rst_DisplayHelpText": "Brief note detailing the entity\\'s survival status.",
+                        "rst_DisplayHelpText": "Brief note detailing the entity's survival status.",
                         "dty_ID": 1102,
                         "dty_Type": "blocktext",
                         "dty_SemanticReferenceURL": null,
@@ -580,7 +580,7 @@
                     },
                     {
                         "rst_DisplayName": "ancient_translations_freetext",
-                        "rst_DisplayHelpText": "Free text description of translations and adaptations that were derived from this record.<br>The idea is that these texts will later be added to the database and/or link to this record as their model.",
+                        "rst_DisplayHelpText": "Free text description of translations and adaptations that were derived from this record.<br/>The idea is that these texts will later be added to the database and/or link to this record as their model.",
                         "dty_ID": 1105,
                         "dty_Type": "freetext",
                         "dty_SemanticReferenceURL": null,
@@ -591,7 +591,7 @@
                     },
                     {
                         "rst_DisplayName": "rewritings_freetext",
-                        "rst_DisplayHelpText": "Freetext description of rewritings that were derived from this record.<br>The idea is that these texts will later be added to the database and/or link to this record as their model.",
+                        "rst_DisplayHelpText": "Freetext description of rewritings that were derived from this record.<br/>The idea is that these texts will later be added to the database and/or link to this record as their model.",
                         "dty_ID": 1107,
                         "dty_Type": "freetext",
                         "dty_SemanticReferenceURL": null,
@@ -656,7 +656,7 @@
                     },
                     {
                         "rst_DisplayName": "date_of_creation_certainty",
-                        "rst_DisplayHelpText": "Degree of certainty about the dating of the text\\'s creation.",
+                        "rst_DisplayHelpText": "Degree of certainty about the dating of the text's creation.",
                         "dty_ID": 1258,
                         "dty_Type": "enum",
                         "dty_SemanticReferenceURL": null,
@@ -703,7 +703,7 @@
                     },
                     {
                         "rst_DisplayName": "date_freetext",
-                        "rst_DisplayHelpText": "[Temporary] To eventually be input as a date object in <b>date_of_creation</b> field. <br>Brief, human-readable description of the date given to this record.",
+                        "rst_DisplayHelpText": "[Temporary] To eventually be input as a date object in <b>date_of_creation</b> field. <br/>Brief, human-readable description of the date given to this record.",
                         "dty_ID": 1094,
                         "dty_Type": "freetext",
                         "dty_SemanticReferenceURL": null,
@@ -741,7 +741,7 @@
                     },
                     {
                         "rst_DisplayName": "author_freetext",
-                        "rst_DisplayHelpText": "<b>Recommended for record label</b><br>Human-readable reference to an author, which can include annotations about certainty.",
+                        "rst_DisplayHelpText": "<b>Recommended for record label</b><br/>Human-readable reference to an author, which can include annotations about certainty.",
                         "dty_ID": 1091,
                         "dty_Type": "freetext",
                         "dty_SemanticReferenceURL": null,
@@ -784,7 +784,7 @@
                 "fields": [
                     {
                         "rst_DisplayName": "described_by_source",
-                        "rst_DisplayHelpText": "Work where the item is described.<br>Property <a target=\\\"_blank\\\" href=\\\"https://www.wikidata.org/wiki/Property:P1343\\\">P1343</a><br>\\nDescribed in source / written about in / described by encyclopedia / described by reference work",
+                        "rst_DisplayHelpText": "Work where the item is described.<br/>Property <a target=\"_blank\" href=\"https://www.wikidata.org/wiki/Property:P1343\">P1343</a><br/>Described in source / written about in / described by encyclopedia / described by reference work",
                         "dty_ID": 1255,
                         "dty_Type": "resource",
                         "dty_SemanticReferenceURL": "https://www.wikidata.org/wiki/Property:P1343",
@@ -795,7 +795,7 @@
                     },
                     {
                         "rst_DisplayName": "described_at_URL",
-                        "rst_DisplayHelpText": "Described at webpage.<br>Property <a target=\\\"_blank\\\" href=\\\"https://www.wikidata.org/wiki/Property:P973\\\">P973</a>",
+                        "rst_DisplayHelpText": "Described at webpage.<br/>Property <a target=\"_blank\" href=\"https://www.wikidata.org/wiki/Property:P973\">P973</a>",
                         "dty_ID": 1269,
                         "dty_Type": "freetext",
                         "dty_SemanticReferenceURL": null,
@@ -822,7 +822,7 @@
                 "fields": [
                     {
                         "rst_DisplayName": "review_status",
-                        "rst_DisplayHelpText": "Status of record\\'s preparation for public view.",
+                        "rst_DisplayHelpText": "Status of record's preparation for public view.",
                         "dty_ID": 1183,
                         "dty_Type": "enum",
                         "dty_SemanticReferenceURL": null,
@@ -922,7 +922,7 @@
                 "fields": [
                     {
                         "rst_DisplayName": "described_by_source",
-                        "rst_DisplayHelpText": "Work where the item is described.<br>Property <a target=\\\"_blank\\\" href=\\\"https://www.wikidata.org/wiki/Property:P1343\\\">P1343</a><br>\\nDescribed in source / written about in / described by encyclopedia / described by reference work",
+                        "rst_DisplayHelpText": "Work where the item is described.<br/>Property <a target=\"_blank\" href=\"https://www.wikidata.org/wiki/Property:P1343\">P1343</a><br/>Described in source / written about in / described by encyclopedia / described by reference work",
                         "dty_ID": 1255,
                         "dty_Type": "resource",
                         "dty_SemanticReferenceURL": "https://www.wikidata.org/wiki/Property:P1343",
@@ -933,7 +933,7 @@
                     },
                     {
                         "rst_DisplayName": "described_at_URL",
-                        "rst_DisplayHelpText": "Described at webpage.<br>Property <a target=\\\"_blank\\\" href=\\\"https://www.wikidata.org/wiki/Property:P973\\\">P973</a>",
+                        "rst_DisplayHelpText": "Described at webpage.<br/>Property <a target=\"_blank\" href=\"https://www.wikidata.org/wiki/Property:P973\">P973</a>",
                         "dty_ID": 1269,
                         "dty_Type": "freetext",
                         "dty_SemanticReferenceURL": null,
@@ -956,11 +956,11 @@
                 ]
             },
             {
-                "sectionName": "review_note",
+                "sectionName": "Review",
                 "fields": [
                     {
                         "rst_DisplayName": "review_status",
-                        "rst_DisplayHelpText": "Status of record\\'s preparation for public view.",
+                        "rst_DisplayHelpText": "Status of record's preparation for public view.",
                         "dty_ID": 1183,
                         "dty_Type": "enum",
                         "dty_SemanticReferenceURL": null,
@@ -1007,7 +1007,7 @@
         "metadata": {
             "rty_ID": 103,
             "rty_Name": "story",
-            "rty_Description": "An abstract \\'work\\', as an entity of superior level to  a given text. Typically, it can be a \\'geste\\' known by several major versions or independent texts, like the Story of Guillaume or Vivien, or Perceval for that matter.",
+            "rty_Description": "An abstract 'work', as an entity of superior level to  a given text. Typically, it can be a 'geste' known by several major versions or independent texts, like the Story of Guillaume or Vivien, or Perceval for that matter.",
             "rty_TitleMask": "[1244] ([1263.term])",
             "rty_ReferenceURL": null
         },
@@ -1113,7 +1113,7 @@
                 "fields": [
                     {
                         "rst_DisplayName": "described_by_source",
-                        "rst_DisplayHelpText": "Work where the item is described.<br>Property <a target=\\\"_blank\\\" href=\\\"https://www.wikidata.org/wiki/Property:P1343\\\">P1343</a><br>\\nDescribed in source / written about in / described by encyclopedia / described by reference work",
+                        "rst_DisplayHelpText": "Work where the item is described.<br/>Property <a target=\"_blank\" href=\"https://www.wikidata.org/wiki/Property:P1343\">P1343</a><br/>Described in source / written about in / described by encyclopedia / described by reference work",
                         "dty_ID": 1255,
                         "dty_Type": "resource",
                         "dty_SemanticReferenceURL": "https://www.wikidata.org/wiki/Property:P1343",
@@ -1124,7 +1124,7 @@
                     },
                     {
                         "rst_DisplayName": "described_at_URL",
-                        "rst_DisplayHelpText": "Described at webpage.<br>Property <a target=\\\"_blank\\\" href=\\\"https://www.wikidata.org/wiki/Property:P973\\\">P973</a>",
+                        "rst_DisplayHelpText": "Described at webpage.<br/>Property <a target=\"_blank\" href=\"https://www.wikidata.org/wiki/Property:P973\">P973</a>",
                         "dty_ID": 1269,
                         "dty_Type": "freetext",
                         "dty_SemanticReferenceURL": null,
@@ -1151,7 +1151,7 @@
                 "fields": [
                     {
                         "rst_DisplayName": "review_status",
-                        "rst_DisplayHelpText": "Status of record\\'s preparation for public view.",
+                        "rst_DisplayHelpText": "Status of record's preparation for public view.",
                         "dty_ID": 1183,
                         "dty_Type": "enum",
                         "dty_SemanticReferenceURL": null,
@@ -1850,7 +1850,7 @@
                     },
                     {
                         "rst_DisplayName": "URL(s)",
-                        "rst_DisplayHelpText": "The URL(s) of resources or web pages relating to the current record. Include http:// or https:// <br>\\nIf there is a primary URL, turn on the special URL field in the record type definition (Attributes) form., which will become a hotlink.",
+                        "rst_DisplayHelpText": "The URL(s) of resources or web pages relating to the current record. Include http:// or https:// <br/>If there is a primary URL, turn on the special URL field in the record type definition (Attributes) form., which will become a hotlink.",
                         "dty_ID": 986,
                         "dty_Type": "freetext",
                         "dty_SemanticReferenceURL": null,
@@ -1888,7 +1888,7 @@
                     },
                     {
                         "rst_DisplayName": "observed_on_pages",
-                        "rst_DisplayHelpText": "A subdivision of the witness\\'s text in an extant document.<br><a target=\\\"_blank\\\" href=\\\"https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-div.html\\\">div</a>",
+                        "rst_DisplayHelpText": "A subdivision of the witness's text in an extant document.<br/><a target=\"_blank\" href=\"https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-div.html\">div</a>",
                         "dty_ID": 1356,
                         "dty_Type": "resource",
                         "dty_SemanticReferenceURL": null,
@@ -1951,7 +1951,7 @@
                     },
                     {
                         "rst_DisplayName": "claim_freetext",
-                        "rst_DisplayHelpText": "<b>[Temporary]</b><br>Brief note about the hypothesis that attests to this record\\'s existence. This information is meant to be a temporary note that will eventually be entered into a Hypothesis entity, which should be linked back to this record.",
+                        "rst_DisplayHelpText": "<b>[Temporary]</b><br/>Brief note about the hypothesis that attests to this record's existence. This information is meant to be a temporary note that will eventually be entered into a Hypothesis entity, which should be linked back to this record.",
                         "dty_ID": 1294,
                         "dty_Type": "blocktext",
                         "dty_SemanticReferenceURL": null,
@@ -1962,7 +1962,7 @@
                     },
                     {
                         "rst_DisplayName": "used_to_follow_fragment",
-                        "rst_DisplayHelpText": "If the witness is a fragment, another fragment that represents an earlier part of the text and the 2 fragments were originally produced as one 1 unit. <br><b>[linked fragment (pp.1-2)]</b> <--(used to follow)-- <b>[this fragment (pp.3-4)]</b>",
+                        "rst_DisplayHelpText": "If the witness is a fragment, another fragment that represents an earlier part of the text and the 2 fragments were originally produced as one 1 unit. <br/><b>[linked fragment (pp.1-2)]</b> <--(used to follow)-- <b>[this fragment (pp.3-4)]</b>",
                         "dty_ID": 1298,
                         "dty_Type": "resource",
                         "dty_SemanticReferenceURL": null,
@@ -1973,7 +1973,7 @@
                     },
                     {
                         "rst_DisplayName": "used_to_follow_witness",
-                        "rst_DisplayHelpText": "If the witness was originally with another witness, especially the witness of a different text, in a now lost document, the witness that immediately preceded it in the hypothetical document. <br><b>[linked witness] <--(used to follow)-- [this witness]</b>",
+                        "rst_DisplayHelpText": "If the witness was originally with another witness, especially the witness of a different text, in a now lost document, the witness that immediately preceded it in the hypothetical document. <br/><b>[linked witness] <--(used to follow)-- [this witness]</b>",
                         "dty_ID": 1300,
                         "dty_Type": "resource",
                         "dty_SemanticReferenceURL": null,
@@ -2047,7 +2047,7 @@
                     },
                     {
                         "rst_DisplayName": "status_notes",
-                        "rst_DisplayHelpText": "Brief note detailing the entity\\'s survival status.",
+                        "rst_DisplayHelpText": "Brief note detailing the entity's survival status.",
                         "dty_ID": 1102,
                         "dty_Type": "blocktext",
                         "dty_SemanticReferenceURL": null,
@@ -2137,7 +2137,7 @@
                     },
                     {
                         "rst_DisplayName": "date_of_creation_certainty",
-                        "rst_DisplayHelpText": "Degree of certainty about the dating of the witness\\'s production.",
+                        "rst_DisplayHelpText": "Degree of certainty about the dating of the witness's production.",
                         "dty_ID": 1258,
                         "dty_Type": "enum",
                         "dty_SemanticReferenceURL": null,
@@ -2265,7 +2265,7 @@
                 "fields": [
                     {
                         "rst_DisplayName": "described_by_source",
-                        "rst_DisplayHelpText": "Work where the item is described.<br>Property <a target=\\\"_blank\\\" href=\\\"https://www.wikidata.org/wiki/Property:P1343\\\">P1343</a><br>\\nDescribed in source / written about in / described by encyclopedia / described by reference work",
+                        "rst_DisplayHelpText": "Work where the item is described.<br/>Property <a target=\"_blank\" href=\"https://www.wikidata.org/wiki/Property:P1343\">P1343</a><br/>Described in source / written about in / described by encyclopedia / described by reference work",
                         "dty_ID": 1255,
                         "dty_Type": "resource",
                         "dty_SemanticReferenceURL": "https://www.wikidata.org/wiki/Property:P1343",
@@ -2276,7 +2276,7 @@
                     },
                     {
                         "rst_DisplayName": "described_at_URL",
-                        "rst_DisplayHelpText": "Described at webpage.<br>Property <a target=\\\"_blank\\\" href=\\\"https://www.wikidata.org/wiki/Property:P973\\\">P973</a>",
+                        "rst_DisplayHelpText": "Described at webpage.<br/>Property <a target=\"_blank\" href=\"https://www.wikidata.org/wiki/Property:P973\">P973</a>",
                         "dty_ID": 1269,
                         "dty_Type": "freetext",
                         "dty_SemanticReferenceURL": null,
@@ -2303,7 +2303,7 @@
                 "fields": [
                     {
                         "rst_DisplayName": "review_status",
-                        "rst_DisplayHelpText": "Status of record\\'s preparation for public view.",
+                        "rst_DisplayHelpText": "Status of record's preparation for public view.",
                         "dty_ID": 1183,
                         "dty_Type": "enum",
                         "dty_SemanticReferenceURL": null,
@@ -2360,7 +2360,7 @@
                 "fields": [
                     {
                         "rst_DisplayName": "current_shelfmark",
-                        "rst_DisplayHelpText": "If this record is an extant (not hypothetical) document, the shelf mark by which it can be requested or, in the case of unavailable archives, by which it is known.<br>Query <a target=\\\"_blank\\\" href=\\\"https://www.wikidata.org/wiki/Q104842294\\\">Q104842294</a>",
+                        "rst_DisplayHelpText": "If this record is an extant (not hypothetical) document, the shelf mark by which it can be requested or, in the case of unavailable archives, by which it is known.<br/>Query <a target=\"_blank\" href=\"https://www.wikidata.org/wiki/Q104842294\">Q104842294</a>",
                         "dty_ID": 1307,
                         "dty_Type": "freetext",
                         "dty_SemanticReferenceURL": null,
@@ -2371,7 +2371,7 @@
                     },
                     {
                         "rst_DisplayName": "location",
-                        "rst_DisplayHelpText": "Location of the object, structure or event, i.e. the Mona Lisa\\'s location is the Louvre Museum.<br>Property <a target=\\\"_blank\\\" href=\\\"https://www.wikidata.org/wiki/Property:P276\\\">P276</a>",
+                        "rst_DisplayHelpText": "Location of the object, structure or event, i.e. the Mona Lisa's location is the Louvre Museum.<br/>Property <a target=\"_blank\" href=\"https://www.wikidata.org/wiki/Property:P276\">P276</a>",
                         "dty_ID": 1308,
                         "dty_Type": "resource",
                         "dty_SemanticReferenceURL": null,
@@ -2382,7 +2382,7 @@
                     },
                     {
                         "rst_DisplayName": "collection",
-                        "rst_DisplayHelpText": "A single collection of materials with some unifying characteristic, housed in an archive.<br>Query <a target=\\\"_blank\\\" href=\\\"https://www.wikidata.org/wiki/Q9388534\\\">Q9388534</a>",
+                        "rst_DisplayHelpText": "A single collection of materials with some unifying characteristic, housed in an archive.<br/>Query <a target=\"_blank\" href=\"https://www.wikidata.org/wiki/Q9388534\">Q9388534</a>",
                         "dty_ID": 1309,
                         "dty_Type": "freetext",
                         "dty_SemanticReferenceURL": null,
@@ -2445,7 +2445,7 @@
                     },
                     {
                         "rst_DisplayName": "claim_freetext",
-                        "rst_DisplayHelpText": "<b>[Temporary]</b><br>Brief note about the hypothesis that attests to this record\\'s existence. This information is meant to be a temporary note that will eventually be entered into a Hypothesis entity, which should be linked back to this record.",
+                        "rst_DisplayHelpText": "<b>[Temporary]</b><br/>Brief note about the hypothesis that attests to this record's existence. This information is meant to be a temporary note that will eventually be entered into a Hypothesis entity, which should be linked back to this record.",
                         "dty_ID": 1294,
                         "dty_Type": "blocktext",
                         "dty_SemanticReferenceURL": null,
@@ -2513,7 +2513,7 @@
                     },
                     {
                         "rst_DisplayName": "digitization_freetext",
-                        "rst_DisplayHelpText": "<b>Placeholder</b><br>Reference to a digitization that hasn\\'t yet been added to the database, as a means of temporarily storing information that will eventually be linked via an entity to this record.",
+                        "rst_DisplayHelpText": "<b>Placeholder</b><br/>Reference to a digitization that hasn't yet been added to the database, as a means of temporarily storing information that will eventually be linked via an entity to this record.",
                         "dty_ID": 1326,
                         "dty_Type": "freetext",
                         "dty_SemanticReferenceURL": null,
@@ -2573,7 +2573,7 @@
                     },
                     {
                         "rst_DisplayName": "place_of_creation_freetext",
-                        "rst_DisplayHelpText": "Placeholder notes about the entity\\'s place of creation, to eventually be converted into a relation to a Place entity.",
+                        "rst_DisplayHelpText": "Placeholder notes about the entity's place of creation, to eventually be converted into a relation to a Place entity.",
                         "dty_ID": 1328,
                         "dty_Type": "freetext",
                         "dty_SemanticReferenceURL": null,
@@ -2600,7 +2600,7 @@
                 "fields": [
                     {
                         "rst_DisplayName": "described_by_source",
-                        "rst_DisplayHelpText": "Work where the item is described.<br>Property <a target=\\\"_blank\\\" href=\\\"https://www.wikidata.org/wiki/Property:P1343\\\">P1343</a><br>\\nDescribed in source / written about in / described by encyclopedia / described by reference work",
+                        "rst_DisplayHelpText": "Work where the item is described.<br/>Property <a target=\"_blank\" href=\"https://www.wikidata.org/wiki/Property:P1343\">P1343</a><br/>Described in source / written about in / described by encyclopedia / described by reference work",
                         "dty_ID": 1255,
                         "dty_Type": "resource",
                         "dty_SemanticReferenceURL": "https://www.wikidata.org/wiki/Property:P1343",
@@ -2611,7 +2611,7 @@
                     },
                     {
                         "rst_DisplayName": "described_at_URL",
-                        "rst_DisplayHelpText": "Described at webpage.<br>Property <a target=\\\"_blank\\\" href=\\\"https://www.wikidata.org/wiki/Property:P973\\\">P973</a>",
+                        "rst_DisplayHelpText": "Described at webpage.<br/>Property <a target=\"_blank\" href=\"https://www.wikidata.org/wiki/Property:P973\">P973</a>",
                         "dty_ID": 1269,
                         "dty_Type": "freetext",
                         "dty_SemanticReferenceURL": null,
@@ -2622,7 +2622,7 @@
                     },
                     {
                         "rst_DisplayName": "online_catalogue_URL",
-                        "rst_DisplayHelpText": "URL of the page in a library or archive\\'s digital catalogue that serves as the reference for the document.<br>Property <a target=\\\"_blank\\\" href=\\\"https://www.wikidata.org/wiki/Property:P8768\\\">P8768</a>",
+                        "rst_DisplayHelpText": "URL of the page in a library or archive's digital catalogue that serves as the reference for the document.<br/>Property <a target=\"_blank\" href=\"https://www.wikidata.org/wiki/Property:P8768\">P8768</a>",
                         "dty_ID": 1329,
                         "dty_Type": "freetext",
                         "dty_SemanticReferenceURL": null,
@@ -2633,7 +2633,7 @@
                     },
                     {
                         "rst_DisplayName": "ARK",
-                        "rst_DisplayHelpText": "Archival Resource Key for the item or notice in the archival institution\\'s catalogue / system.<br>Property <a target=\\\"_blank\\\" href=\\\"https://www.wikidata.org/wiki/Property:P8091\\\">P8091</a>",
+                        "rst_DisplayHelpText": "Archival Resource Key for the item or notice in the archival institution's catalogue / system.<br/>Property <a target=\"_blank\" href=\"https://www.wikidata.org/wiki/Property:P8091\">P8091</a>",
                         "dty_ID": 1271,
                         "dty_Type": "freetext",
                         "dty_SemanticReferenceURL": null,
@@ -2660,7 +2660,7 @@
                 "fields": [
                     {
                         "rst_DisplayName": "review_status",
-                        "rst_DisplayHelpText": "Status of record\\'s preparation for public view.",
+                        "rst_DisplayHelpText": "Status of record's preparation for public view.",
                         "dty_ID": 1183,
                         "dty_Type": "enum",
                         "dty_SemanticReferenceURL": null,
@@ -2766,7 +2766,7 @@
                     },
                     {
                         "rst_DisplayName": "VIAF",
-                        "rst_DisplayHelpText": "The record\\'s permanent identifier in the VIAF database.",
+                        "rst_DisplayHelpText": "The record's permanent identifier in the VIAF database.",
                         "dty_ID": 1234,
                         "dty_Type": "float",
                         "dty_SemanticReferenceURL": null,
@@ -2894,7 +2894,7 @@
                 "fields": [
                     {
                         "rst_DisplayName": "described_by_source",
-                        "rst_DisplayHelpText": "Work where the item is described.<br>Property <a target=\\\"_blank\\\" href=\\\"https://www.wikidata.org/wiki/Property:P1343\\\">P1343</a><br>\\nDescribed in source / written about in / described by encyclopedia / described by reference work",
+                        "rst_DisplayHelpText": "Work where the item is described.<br/>Property <a target=\"_blank\" href=\"https://www.wikidata.org/wiki/Property:P1343\">P1343</a><br/>Described in source / written about in / described by encyclopedia / described by reference work",
                         "dty_ID": 1255,
                         "dty_Type": "resource",
                         "dty_SemanticReferenceURL": "https://www.wikidata.org/wiki/Property:P1343",
@@ -2910,7 +2910,7 @@
                 "fields": [
                     {
                         "rst_DisplayName": "review_status",
-                        "rst_DisplayHelpText": "Status of record\\'s preparation for public view.",
+                        "rst_DisplayHelpText": "Status of record's preparation for public view.",
                         "dty_ID": 1183,
                         "dty_Type": "enum",
                         "dty_SemanticReferenceURL": null,
@@ -3032,7 +3032,7 @@
                 "fields": [
                     {
                         "rst_DisplayName": "described_by_source",
-                        "rst_DisplayHelpText": "Work where the item is described.<br>Property <a target=\\\"_blank\\\" href=\\\"https://www.wikidata.org/wiki/Property:P1343\\\">P1343</a><br>\\nDescribed in source / written about in / described by encyclopedia / described by reference work",
+                        "rst_DisplayHelpText": "Work where the item is described.<br/>Property <a target=\"_blank\" href=\"https://www.wikidata.org/wiki/Property:P1343\">P1343</a><br/>Described in source / written about in / described by encyclopedia / described by reference work",
                         "dty_ID": 1255,
                         "dty_Type": "resource",
                         "dty_SemanticReferenceURL": "https://www.wikidata.org/wiki/Property:P1343",
@@ -3043,7 +3043,7 @@
                     },
                     {
                         "rst_DisplayName": "described_at_URL",
-                        "rst_DisplayHelpText": "Described at webpage.<br>Property <a target=\\\"_blank\\\" href=\\\"https://www.wikidata.org/wiki/Property:P973\\\">P973</a>",
+                        "rst_DisplayHelpText": "Described at webpage.<br/>Property <a target=\"_blank\" href=\"https://www.wikidata.org/wiki/Property:P973\">P973</a>",
                         "dty_ID": 1269,
                         "dty_Type": "freetext",
                         "dty_SemanticReferenceURL": null,
@@ -3066,11 +3066,11 @@
                 ]
             },
             {
-                "sectionName": "review_note",
+                "sectionName": "Review",
                 "fields": [
                     {
                         "rst_DisplayName": "review_status",
-                        "rst_DisplayHelpText": "Status of record\\'s preparation for public view.",
+                        "rst_DisplayHelpText": "Status of record's preparation for public view.",
                         "dty_ID": 1183,
                         "dty_Type": "enum",
                         "dty_SemanticReferenceURL": null,
@@ -3117,7 +3117,7 @@
         "metadata": {
             "rty_ID": 118,
             "rty_Name": "scripta",
-            "rty_Description": "he regional writing style, similar to the written version of a spoken dialect, as defined by <a class=\\\"link\\\" target=\\\"_blank\\\" href=\\\"https://doi.org/10.4000/books.pulg.347\\\">Louis Remacle</a>.",
+            "rty_Description": "he regional writing style, similar to the written version of a spoken dialect, as defined by <a class=\"link\" target=\"_blank\" href=\"https://doi.org/10.4000/books.pulg.347\">Louis Remacle</a>.",
             "rty_TitleMask": "[1244] ([1090.term])",
             "rty_ReferenceURL": null
         },
@@ -3337,7 +3337,7 @@
                 "fields": [
                     {
                         "rst_DisplayName": "described_by_source",
-                        "rst_DisplayHelpText": "Work where the item is described.<br>Property <a target=\\\"_blank\\\" href=\\\"https://www.wikidata.org/wiki/Property:P1343\\\">P1343</a><br>\\nDescribed in source / written about in / described by encyclopedia / described by reference work",
+                        "rst_DisplayHelpText": "Work where the item is described.<br/>Property <a target=\"_blank\" href=\"https://www.wikidata.org/wiki/Property:P1343\">P1343</a><br/>Described in source / written about in / described by encyclopedia / described by reference work",
                         "dty_ID": 1255,
                         "dty_Type": "resource",
                         "dty_SemanticReferenceURL": "https://www.wikidata.org/wiki/Property:P1343",
@@ -3348,7 +3348,7 @@
                     },
                     {
                         "rst_DisplayName": "described_at_URL",
-                        "rst_DisplayHelpText": "Described at webpage.<br>Property <a target=\\\"_blank\\\" href=\\\"https://www.wikidata.org/wiki/Property:P973\\\">P973</a>",
+                        "rst_DisplayHelpText": "Described at webpage.<br/>Property <a target=\"_blank\" href=\"https://www.wikidata.org/wiki/Property:P973\">P973</a>",
                         "dty_ID": 1269,
                         "dty_Type": "freetext",
                         "dty_SemanticReferenceURL": null,
@@ -3371,11 +3371,11 @@
                 ]
             },
             {
-                "sectionName": "review_status",
+                "sectionName": "Review",
                 "fields": [
                     {
                         "rst_DisplayName": "review_status",
-                        "rst_DisplayHelpText": "Status of record\\'s preparation for public view.",
+                        "rst_DisplayHelpText": "Status of record's preparation for public view.",
                         "dty_ID": 1183,
                         "dty_Type": "enum",
                         "dty_SemanticReferenceURL": null,
@@ -3432,7 +3432,7 @@
                 "fields": [
                     {
                         "rst_DisplayName": "is_inscribed_on",
-                        "rst_DisplayHelpText": "The physical document on which the signs (letters) of a witness\\'s parts are inscribed.",
+                        "rst_DisplayHelpText": "The physical document on which the signs (letters) of a witness's parts are inscribed.",
                         "dty_ID": 1315,
                         "dty_Type": "resource",
                         "dty_SemanticReferenceURL": null,
@@ -3448,7 +3448,7 @@
                 "fields": [
                     {
                         "rst_DisplayName": "div_order",
-                        "rst_DisplayHelpText": "Order of the text subdivision within the witness. Start counting at 1. If the witness is not subdivided, enter 1. <br>Property <a target=\\\"_blank\\\" href=\\\"https://www.wikidata.org/wiki/Property:P1545\\\">P1545</a>",
+                        "rst_DisplayHelpText": "Order of the text subdivision within the witness. Start counting at 1. If the witness is not subdivided, enter 1. <br/>Property <a target=\"_blank\" href=\"https://www.wikidata.org/wiki/Property:P1545\">P1545</a>",
                         "dty_ID": 1316,
                         "dty_Type": "float",
                         "dty_SemanticReferenceURL": "https://www.wikidata.org/wiki/Property:P1545",
@@ -3459,7 +3459,7 @@
                     },
                     {
                         "rst_DisplayName": "number_of_verses",
-                        "rst_DisplayHelpText": "To be compared with the \\\"verse length\\\" of the representative text, the number of verses or lines from the text represented on this part of the witness.",
+                        "rst_DisplayHelpText": "To be compared with the \"verse length\" of the representative text, the number of verses or lines from the text represented on this part of the witness.",
                         "dty_ID": 1317,
                         "dty_Type": "float",
                         "dty_SemanticReferenceURL": null,
@@ -3470,7 +3470,7 @@
                     },
                     {
                         "rst_DisplayName": "part_of_text",
-                        "rst_DisplayHelpText": "A simple description of the portion of the text, i.e. \\\"first third,\\\" represented on this part of the witness.",
+                        "rst_DisplayHelpText": "A simple description of the portion of the text, i.e. \"first third,\" represented on this part of the witness.",
                         "dty_ID": 1318,
                         "dty_Type": "freetext",
                         "dty_SemanticReferenceURL": null,
@@ -3579,7 +3579,7 @@
                     },
                     {
                         "rst_DisplayName": "page_ranges",
-                        "rst_DisplayHelpText": "A formatted string that represents the numbering on the beginning and end of an uninterrupted series of pages. <br>When a range of pages, separate the two numbers with a hyphen, i.e. \\\"1r-4v\\\". <br>When a single page, do not include separator, i.e. \\\"1r\\\".",
+                        "rst_DisplayHelpText": "A formatted string that represents the numbering on the beginning and end of an uninterrupted series of pages. <br/>When a range of pages, separate the two numbers with a hyphen, i.e. \"1r-4v\". <br/>When a single page, do not include separator, i.e. \"1r\".",
                         "dty_ID": 1322,
                         "dty_Type": "freetext",
                         "dty_SemanticReferenceURL": null,
@@ -3595,7 +3595,7 @@
                 "fields": [
                     {
                         "rst_DisplayName": "review_status",
-                        "rst_DisplayHelpText": "Status of record\\'s preparation for public view.",
+                        "rst_DisplayHelpText": "Status of record's preparation for public view.",
                         "dty_ID": 1183,
                         "dty_Type": "enum",
                         "dty_SemanticReferenceURL": null,
@@ -3644,7 +3644,7 @@
             "rty_Name": "digitization",
             "rty_Description": "Digital document visually representing a physical document or archival item.",
             "rty_TitleMask": "[1338.rectitle], [1304]",
-            "rty_ReferenceURL": "https://www.google.com"
+            "rty_ReferenceURL": null
         },
         "sections": [
             {
@@ -3690,7 +3690,7 @@
                     },
                     {
                         "rst_DisplayName": "ARK",
-                        "rst_DisplayHelpText": "Archival Resource Key for the item or notice in the archival institution\\'s catalogue / system.",
+                        "rst_DisplayHelpText": "Archival Resource Key for the item or notice in the archival institution's catalogue / system.",
                         "dty_ID": 1271,
                         "dty_Type": "freetext",
                         "dty_SemanticReferenceURL": null,
@@ -3744,7 +3744,7 @@
                 "fields": [
                     {
                         "rst_DisplayName": "file_range",
-                        "rst_DisplayHelpText": "A formatted string that represents the index of the first and last image file in the series of images. <br>When multiple files, separate the first and last with two colons, i.e. \\\"4::725\\\". <br>When a single file, do not include the separator, i.e. \\\"725\\\".",
+                        "rst_DisplayHelpText": "A formatted string that represents the index of the first and last image file in the series of images. <br/>When multiple files, separate the first and last with two colons, i.e. \"4::725\". <br/>When a single file, do not include the separator, i.e. \"725\".",
                         "dty_ID": 1324,
                         "dty_Type": "freetext",
                         "dty_SemanticReferenceURL": null,
@@ -3755,7 +3755,7 @@
                     },
                     {
                         "rst_DisplayName": "corresponding_page_range",
-                        "rst_DisplayHelpText": "A formatted string that represents the numbering at the start and end of the corresponding series of pages. <br>When a range of pages, separate the two numbers with two colons, i.e. \\\"1r::4v\\\". <br>When a single page, do not include separator, i.e. \\\"1r\\\".",
+                        "rst_DisplayHelpText": "A formatted string that represents the numbering at the start and end of the corresponding series of pages. <br/>When a range of pages, separate the two numbers with two colons, i.e. \"1r::4v\". <br/>When a single page, do not include separator, i.e. \"1r\".",
                         "dty_ID": 1322,
                         "dty_Type": "freetext",
                         "dty_SemanticReferenceURL": null,
@@ -3782,7 +3782,7 @@
                 "fields": [
                     {
                         "rst_DisplayName": "stated_in",
-                        "rst_DisplayHelpText": "Source in which the information is stated.<br><a target=\\\"_blank\\\" href=\\\"https://www.wikidata.org/wiki/Property:P248\\\">P248</a>",
+                        "rst_DisplayHelpText": "Source in which the information is stated.<br/><a target=\"_blank\" href=\"https://www.wikidata.org/wiki/Property:P248\">P248</a>",
                         "dty_ID": 1339,
                         "dty_Type": "resource",
                         "dty_SemanticReferenceURL": "https://www.wikidata.org/wiki/Property:P248",
@@ -3793,7 +3793,7 @@
                     },
                     {
                         "rst_DisplayName": "pages",
-                        "rst_DisplayHelpText": "Page number(s) of the source in which the information is stated.<br><a target=\\\"_blank\\\" href=\\\"https://www.wikidata.org/wiki/Property:P304\\\">P304</a>",
+                        "rst_DisplayHelpText": "Page number(s) of the source in which the information is stated.<br/><a target=\"_blank\" href=\"https://www.wikidata.org/wiki/Property:P304\">P304</a>",
                         "dty_ID": 1340,
                         "dty_Type": "freetext",
                         "dty_SemanticReferenceURL": "https://www.wikidata.org/wiki/Property:P304",
@@ -3804,7 +3804,7 @@
                     },
                     {
                         "rst_DisplayName": "reference_prefix",
-                        "rst_DisplayHelpText": "Prefix or other key used in a dictionary or encyclopedia to refer to an entry, i.e. \\\"AnsMetz.\\\"",
+                        "rst_DisplayHelpText": "Prefix or other key used in a dictionary or encyclopedia to refer to an entry, i.e. \"AnsMetz.\"",
                         "dty_ID": 1278,
                         "dty_Type": "freetext",
                         "dty_SemanticReferenceURL": null,
@@ -3832,7 +3832,7 @@
         "metadata": {
             "rty_ID": 129,
             "rty_Name": "physDesc",
-            "rty_Description": "Physical description of a witness\\'s material support.",
+            "rty_Description": "Physical description of a witness's material support.",
             "rty_TitleMask": "[1359.rectitle]",
             "rty_ReferenceURL": null
         },
@@ -3889,7 +3889,7 @@
                     },
                     {
                         "rst_DisplayName": "form",
-                        "rst_DisplayHelpText": "\\\"[T]he form of the object in its original state, before any mutilation, rebinding, etc.\\\"<br><a target=\\\"_blank\\\" href=\\\"https://github.com/msDesc/consolidated-tei-schema\\\">Consolidated TEI Schema</a> objectDesc[@form])",
+                        "rst_DisplayHelpText": "\"[T]he form of the object in its original state, before any mutilation, rebinding, etc.\"<br/><a target=\"_blank\" href=\"https://github.com/msDesc/consolidated-tei-schema\">Consolidated TEI Schema</a> objectDesc[@form])",
                         "dty_ID": 1342,
                         "dty_Type": "enum",
                         "dty_SemanticReferenceURL": null,
@@ -3930,7 +3930,7 @@
                 "fields": [
                     {
                         "rst_DisplayName": "folio_size_width",
-                        "rst_DisplayHelpText": "The current width of the folio size in millimeters.<br/>If unknown, enter \\\"NA\\\"",
+                        "rst_DisplayHelpText": "The current width of the folio size in millimeters.<br/>If unknown, enter \"NA\"",
                         "dty_ID": 1360,
                         "dty_Type": "freetext",
                         "dty_SemanticReferenceURL": null,
@@ -3941,7 +3941,7 @@
                     },
                     {
                         "rst_DisplayName": "folio_size_height",
-                        "rst_DisplayHelpText": "The current height of the folio size in millimeters.<br/>If unknown, enter \\\"NA\\\"",
+                        "rst_DisplayHelpText": "The current height of the folio size in millimeters.<br/>If unknown, enter \"NA\"",
                         "dty_ID": 1361,
                         "dty_Type": "freetext",
                         "dty_SemanticReferenceURL": null,
@@ -3952,7 +3952,7 @@
                     },
                     {
                         "rst_DisplayName": "folio_size_reference",
-                        "rst_DisplayHelpText": "An in-line citation (or URL of a library finding aid) documenting where the measurements were described.<br/>If the measurements are unknown, enter \\\"NA\\\"",
+                        "rst_DisplayHelpText": "An in-line citation (or URL of a library finding aid) documenting where the measurements were described.<br/>If the measurements are unknown, enter \"NA\"",
                         "dty_ID": 1362,
                         "dty_Type": "freetext",
                         "dty_SemanticReferenceURL": null,
@@ -4095,7 +4095,7 @@
                 "fields": [
                     {
                         "rst_DisplayName": "writing_surface_area_height",
-                        "rst_DisplayHelpText": "Height in millimeters (a range is permitted) of the writing area. <br>Equivalent to dimensions[@type=\\\"written\\\"]/height",
+                        "rst_DisplayHelpText": "Height in millimeters (a range is permitted) of the writing area. <br/>Equivalent to dimensions[@type=\"written\"]/height",
                         "dty_ID": 1348,
                         "dty_Type": "freetext",
                         "dty_SemanticReferenceURL": null,
@@ -4106,7 +4106,7 @@
                     },
                     {
                         "rst_DisplayName": "writing_surface_area_width",
-                        "rst_DisplayHelpText": "Width in millimeters (a range is permitted) of the writing area. <br>Equivalent to dimensions[@type=\\\"written\\\"]/width",
+                        "rst_DisplayHelpText": "Width in millimeters (a range is permitted) of the writing area. <br/>Equivalent to dimensions[@type=\"written\"]/width",
                         "dty_ID": 1349,
                         "dty_Type": "freetext",
                         "dty_SemanticReferenceURL": null,
@@ -4117,7 +4117,7 @@
                     },
                     {
                         "rst_DisplayName": "writing_surface_area_reference",
-                        "rst_DisplayHelpText": "An in-line citation for the source of the information about the dimensions of the witness\\'s writing area.",
+                        "rst_DisplayHelpText": "An in-line citation for the source of the information about the dimensions of the witness's writing area.",
                         "dty_ID": 1350,
                         "dty_Type": "freetext",
                         "dty_SemanticReferenceURL": null,
@@ -4128,7 +4128,7 @@
                     },
                     {
                         "rst_DisplayName": "number_of_columns",
-                        "rst_DisplayHelpText": "An estimation of the number of columns in the writing area, equivalent to the <a target=\\\"_blank\\\" href=\\\"https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-layout.html#tei_att.columns\\\">@columns</a> attribute of layout in TEI.",
+                        "rst_DisplayHelpText": "An estimation of the number of columns in the writing area, equivalent to the <a target=\"_blank\" href=\"https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-layout.html#tei_att.columns\">@columns</a> attribute of layout in TEI.",
                         "dty_ID": 1351,
                         "dty_Type": "freetext",
                         "dty_SemanticReferenceURL": null,
@@ -4139,7 +4139,7 @@
                     },
                     {
                         "rst_DisplayName": "number_of_lines_in_writing_area",
-                        "rst_DisplayHelpText": "An estimation of the number of lines of text per page or per column, equivalent to the <a target=\\\"_blank\\\" href=\\\"https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-layout.html#tei_att.writtenLines\\\">@writtenLines</a> attribute of layout in TEI.",
+                        "rst_DisplayHelpText": "An estimation of the number of lines of text per page or per column, equivalent to the <a target=\"_blank\" href=\"https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-layout.html#tei_att.writtenLines\">@writtenLines</a> attribute of layout in TEI.",
                         "dty_ID": 1352,
                         "dty_Type": "freetext",
                         "dty_SemanticReferenceURL": null,
