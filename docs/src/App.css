@@ -16,6 +16,16 @@
   --lostma-font: "Palatino", "URW Palladio L", "serif", "monospace";
 }
 
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
 .scroll-to-top {
     background-color: var(--lostma-secondary);
     top: 80px;
@@ -34,6 +44,28 @@
   border-radius: 4px;
   padding: 5px;
   height: 40px;
+}
+
+footer {
+  position: static;
+  left: 0;
+  bottom: 0;
+}
+
+footer img {
+  max-height: 5em;
+}
+
+footer h5 {
+  font-size: small;
+}
+
+footer p {
+  font-size: smaller;
+}
+
+footer span {
+  font-size: smaller;
 }
 
 header {
