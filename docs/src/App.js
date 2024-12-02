@@ -8,7 +8,7 @@ import {
 import ScrollToTop from "react-scroll-to-top";
 import React from 'react';
 import './App.css';
-import logo from './images/GettyMuseumMS100_f23.png';
+import logo from './images/BNF_Fr12558_f58v.jpg';
 
 // Route imports
 import Home from './Home';
@@ -32,7 +32,9 @@ class App extends React.Component {
               <h1>LostMa</h1>
               <p>navigating the currents of culture</p>
             </div>
-            <span className='image-citation'>Getty Museum MS 100, folio 23</span>
+            <span className='image-citation'>
+              Bibliothèque nationale de France, Français 12558, folio 58v
+            </span>
           </header>
           < NavBar />
           <Routes>

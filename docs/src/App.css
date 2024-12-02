@@ -1,15 +1,15 @@
 @import 'bootstrap/dist/css/bootstrap.min.css';
 
 :root {
-  --lostma-primary: #447604;
-  --lostma-light: #C5E2CE;
-  --lostma-dark: #3E4740;
-  --lostma-secondary: #6cc551;
-  --lostma-muted: #BBBBBB;
-  --lostma-highlight: #9ffcdf;
-  --lostma-info: #52ad9c;
-  --lostma-success: #c0e8f9;
-  --lostma-warning: #D53946;
+  --lostma-primary: #82C3ED;
+  --lostma-light: #DDF0F4;
+  --lostma-dark: #071E2E;
+  --lostma-secondary: #EDAD82;
+  --lostma-muted: #B8B8B8;
+  --lostma-highlight: #156FA4;
+  --lostma-info: #9E82ED;
+  --lostma-success: #82EDAA;
+  --lostma-warning: #ED8982;
 
   --header-height: 180px;
   --header-padding: 20px;
@@ -17,7 +17,7 @@
 }
 
 .scroll-to-top {
-    background-color: var(--lostma-light);
+    background-color: var(--lostma-secondary);
     top: 80px;
   }
 
@@ -28,7 +28,7 @@
 }
 
 .navbar-logo {
-  background-color: var(--lostma-success);
+  background-color: var(--lostma-light);
   border: 1px solid #ddd;
   border-radius: 4px;
   padding: 5px;
@@ -72,7 +72,7 @@ header .background {
 
 header .image-citation {
   padding: 5px;
-  color: var(--lostma-dark);
+  color: var(--lostma-light);
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
