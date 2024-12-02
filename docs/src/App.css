@@ -6,7 +6,7 @@
   --lostma-dark: #071E2E;
   --lostma-secondary: #EDAD82;
   --lostma-muted: #B8B8B8;
-  --lostma-highlight: #156FA4;
+  --lostma-highlight: #023755;
   --lostma-info: #9E82ED;
   --lostma-success: #82EDAA;
   --lostma-warning: #ED8982;
@@ -25,6 +25,7 @@
   background-color: var(--lostma-primary);
   height: 50px;
   padding-left: 10px;
+  z-index: 1;
 }
 
 .navbar-logo {
@@ -44,14 +45,26 @@ header .foreground {
   position: absolute;
   height: var(--header-height);
   z-index: 1;
-  color: white;
-  text-shadow: 4px 4px 10px var(--lostma-dark);
+  color: var(--lostma-highlight);
   text-align: center;
   padding: var(--header-padding) 0;
 }
 
 header div h1 {
   font-size: 80px;
+  text-shadow:
+    0 0 1px var(--lostma-light),
+    0 0 4px var(--lostma-light),
+    0 0 8px var(--lostma-light),
+    0 0 12px var(--lostma-light),
+    0 0 16px var(--lostma-light),
+    0 0 18px var(--lostma-light),
+    0 0 22px var(--lostma-light),
+    0 0 26px var(--lostma-light),
+    0 0 30px var(--lostma-light),
+    0 0 34px var(--lostma-light),
+    0 0 38px var(--lostma-light)
+  ;
   font-family: var(--lostma-font);
 }
 
@@ -59,19 +72,45 @@ header div p {
   font-size: 20px;
   font-family: var(--lostma-font);
   font-style: italic;
+  text-shadow: 
+    0 0 5px var(--lostma-light),
+    0 0 6px var(--lostma-light),
+    0 0 7px var(--lostma-light),
+    0 0 10px var(--lostma-light),
+    0 0 12px var(--lostma-light),
+    0 0 14px var(--lostma-light);
 }
 
 header .background {
   position: absolute;
   z-index: -1;
   height: var(--header-height);
-  width: 100%;
+  max-width: 100%;
+  opacity: 66%;
   overflow: hidden;
   object-fit: cover;
+  background-color: var(--lostma-light);
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%);
+}
+
+@media screen {
+  header .image-citation {
+      padding: 5px;
+      font-size: xx-small;
+      color: var(--lostma-light);
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+      height: var(--header-height);
+      opacity: 0.5;
+    }
 }
 
 header .image-citation {
   padding: 5px;
+  font-size: x-small;
   color: var(--lostma-light);
   display: flex;
   justify-content: flex-end;

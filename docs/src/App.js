@@ -8,7 +8,7 @@ import {
 import ScrollToTop from "react-scroll-to-top";
 import React from 'react';
 import './App.css';
-import logo from './images/BNF_Fr12558_f58v.jpg';
+import logo from './images/BNF_Fr95_209v_2.jpg';
 
 // Route imports
 import Home from './Home';
@@ -25,7 +25,7 @@ class App extends React.Component {
       <Router history={this.history}>
         <div>
           <header>
-            <span>
+            <span className='background-image-container'>
               <img src={logo} alt="placeholder logo" className="background" />
             </span>
             <div className='container-fluid foreground'>
@@ -33,7 +33,7 @@ class App extends React.Component {
               <p>navigating the currents of culture</p>
             </div>
             <span className='image-citation'>
-              Bibliothèque nationale de France, Français 12558, folio 58v
+              Bibliothèque nationale de France, Français 95, folio 209v
             </span>
           </header>
           < NavBar />
