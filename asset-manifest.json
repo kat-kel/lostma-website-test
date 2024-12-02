@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/lostma-website-test/static/css/main.67713963.css",
-    "main.js": "/lostma-website-test/static/js/main.3943b4f6.js",
+    "main.css": "/lostma-website-test/static/css/main.bb5c142b.css",
+    "main.js": "/lostma-website-test/static/js/main.a30b8ef8.js",
     "static/js/453.1f251112.chunk.js": "/lostma-website-test/static/js/453.1f251112.chunk.js",
-    "static/media/BNF_Fr12558_f58v.jpg": "/lostma-website-test/static/media/BNF_Fr12558_f58v.27af9f020ed8eb96e628.jpg",
-    "static/media/erc-logo.png": "/lostma-website-test/static/media/erc-logo.e302bc431a8608baaf19.png",
+    "static/media/BNF_Fr95_209v_2.jpg": "/lostma-website-test/static/media/BNF_Fr95_209v_2.952187928ec85d1d9f84.jpg",
+    "static/media/LOGO_ERC-FLAG_EU_.jpg": "/lostma-website-test/static/media/LOGO_ERC-FLAG_EU_.08a22d564128dd8f4c24.jpg",
     "index.html": "/lostma-website-test/index.html",
-    "main.67713963.css.map": "/lostma-website-test/static/css/main.67713963.css.map",
-    "main.3943b4f6.js.map": "/lostma-website-test/static/js/main.3943b4f6.js.map",
+    "main.bb5c142b.css.map": "/lostma-website-test/static/css/main.bb5c142b.css.map",
+    "main.a30b8ef8.js.map": "/lostma-website-test/static/js/main.a30b8ef8.js.map",
     "453.1f251112.chunk.js.map": "/lostma-website-test/static/js/453.1f251112.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.67713963.css",
-    "static/js/main.3943b4f6.js"
+    "static/css/main.bb5c142b.css",
+    "static/js/main.a30b8ef8.js"
   ]
 }
