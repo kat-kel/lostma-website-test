@@ -17,11 +17,14 @@ function navbar() {
                     <LinkContainer to="/">
                         <Nav.Link>Home</Nav.Link>
                     </LinkContainer>
-                    <LinkContainer to="/about">
-                        <Nav.Link>About</Nav.Link>
+                    <LinkContainer to="/people">
+                        <Nav.Link>People</Nav.Link>
                     </LinkContainer>
                     <LinkContainer to="/corpus">
                         <Nav.Link>Corpus</Nav.Link>
+                    </LinkContainer>
+                    <LinkContainer to="/news">
+                        <Nav.Link>News</Nav.Link>
                     </LinkContainer>
                 </Nav>
             </Navbar.Collapse>
