@@ -1,7 +1,7 @@
 // Basic imports
 import NavBar from './components/navbar';
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Routes,
   Route,
 } from 'react-router-dom';
