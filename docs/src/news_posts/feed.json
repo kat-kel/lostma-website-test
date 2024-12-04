@@ -1,0 +1,9 @@
+[
+    {
+        "key": "article", 
+        "date": "04-12-2024", 
+        "title": "Title of post", 
+        "body": "Body of post",
+        "link": "https://www.google.com"
+    }
+]

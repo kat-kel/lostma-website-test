@@ -91,7 +91,7 @@ const Grid = () => {
     )
 }
 
-const Content = () => {
+const Body = () => {
     return (
         <>
             <hr />
@@ -106,9 +106,17 @@ const Content = () => {
     )
 }
 
+const Content = () => {
+    return (
+        <>
+        <FrontMatter />
+        <Body />
+        </>
+    )
+}
 class TextsDatabaseHome extends React.Component {
     render() {
-        return (MainPage(FrontMatter, Content));
+        return (MainPage(Content));
     }
 }
 export default TextsDatabaseHome;

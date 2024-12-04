@@ -74,15 +74,15 @@ const FrontMatter = () => {
 const Content = () => {
   return (
     <>
+      <FrontMatter />
       <TOC /> <br />
       <Profiles />
     </>
   )
 }
-
 class RecordTypePage extends React.Component {
   render() {
-    return (MainPage(FrontMatter, Content));
+    return (MainPage(Content));
   }
 }
 export default RecordTypePage;

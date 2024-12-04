@@ -223,3 +223,55 @@ header .image-citation {
 .field {
   font-weight: 200;
 }
+
+.person-card {
+  background-color: var(--lostma-light);
+  color: var(--lostma-dark);
+  border-color: var(--lostma-muted);
+}
+
+.person-card .text-muted {
+  color: var(--lostma-dark);
+}
+
+.person-card img {
+  max-width: 66%;
+  display: block;
+  margin-left: auto;
+  margin-top: 6px;
+  margin-right: auto;
+  border-radius: 1em;
+}
+
+.person-card .card-body {
+  display: grid;
+  align-items: end;
+}
+
+.horizontal-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.horizontal-list li {
+  margin-right: 10px;
+}
+
+.news-feed .card{
+  border-width: 2pt;
+  min-height: 120px;
+}
+
+.badge-fail {
+  font-size: 1rem;
+  font-weight: 400;
+  background-color: var(--lostma-muted);
+  color: var(--lostma-dark);
+  opacity: 0.5;
+}
+
+.post h6 {
+  text-align: right;
+}

@@ -81,7 +81,7 @@ const FrontMatter = () => {
 }
 
 
-const Content = () => {
+const Grid = () => {
     return (
         <>
             <h4>Manual Workflow</h4>
@@ -219,9 +219,17 @@ const Content = () => {
     );
 }
 
+const Content = () => {
+    return (
+        <>
+        <FrontMatter />
+        <Grid />
+        </>
+    )
+}
 class WorkflowPage extends React.Component {
     render() {
-        return (MainPage(FrontMatter, Content));
+        return (MainPage(Content));
     }
 }
 export default WorkflowPage;

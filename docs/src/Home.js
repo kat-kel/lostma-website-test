@@ -73,9 +73,17 @@ const Grid = () => {
     )
 }
 
+const Content = () => {
+    return (
+        <>
+        <FrontMatter />
+        <Grid />
+        </>
+    )
+}
 class Home extends React.Component {
     render() {
-        return (MainPage(FrontMatter, Grid));
+        return (MainPage(Content));
     }
 }
 export default Home;

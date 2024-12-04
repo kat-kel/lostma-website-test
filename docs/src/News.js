@@ -1,4 +1,8 @@
 import React from 'react';
+import { MainPage } from './components/utils.js';
+import { NewsPostLegend } from './components/news/legend.js';
+import Post from './components/news/post.js';
+import posts from './news_posts/feed.json';
 
 const FrontMatter = () => {
     return (
@@ -11,29 +15,30 @@ const FrontMatter = () => {
     )
 }
 
-const Content = () => {
+
+function Body() {
     return (
         <div>
-            Post
+        <NewsPostLegend />
+        <div className='news-feed'>
+            {posts.map(p => (Post(p)))}
         </div>
+        </div>
+    )
+}
+
+const Content = () => {
+    return (
+        <>
+        <FrontMatter />
+        <Body />
+        </>
     )
 }
 
 class People extends React.Component {
     render() {
-        return (
-            <section className="py-3 py-md-5">
-                <div className="container">
-                    <div class="row justify-content-xl-center">
-                        <div class="col-12 col-xl-11">
-                            <FrontMatter />
-                            <Content />
-                        </div>
-                    </div>
-                </div>
-            </section>
-        );
+        return (MainPage(Content));
     }
 }
-
 export default People;

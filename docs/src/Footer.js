@@ -86,6 +86,9 @@ const BottomLegal = () => {
             <div className="col-md-3">
                 <p>&copy; 2024 lostma-erc | All rights reserved.</p>
             </div>
+            <div className="col-md-6">
+                <p>Header image: <em>Romans aurthuriens</em>, Bibliothèque nationale de France, Français 95, folio 209v</p>
+            </div>
         </div>
         </>
     )
