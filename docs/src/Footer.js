@@ -3,7 +3,7 @@ import { OverlayIcon } from './components/overlay';
 import logo from './images/LOGO_ERC-FLAG_EU_.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedin, faBluesky, faGithub, faReact, faBootstrap } from '@fortawesome/free-brands-svg-icons'
-
+import { faCloud } from '@fortawesome/free-solid-svg-icons';
 
 const TopLeft = () => {
     return (
@@ -26,17 +26,16 @@ const TopLeft = () => {
 
 const TopMiddle = () => {
     return (
-        <div className="col-md-3">
+        <div className="col-md-2">
             <h5>Follow Us</h5>
             <ul className='list-group'>
                 <li className='list-group-item'>
                     <a target="_blank" rel="noreferrer" href="https://bsky.app/profile/lostma.bsky.social">
                         <FontAwesomeIcon icon={faBluesky} />
-                    </a>
-                    <span> </span>
-                    <span>BlueSky</span>
+                    </a> BlueSky
                 </li>
                 <li className='list-group-item'><FontAwesomeIcon icon={faLinkedin} /> LinkedIn</li>
+                <li className='list-group-item'><FontAwesomeIcon icon={faCloud} /> Zenodo</li>
             </ul>
         </div>
     )
