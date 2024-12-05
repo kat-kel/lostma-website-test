@@ -1,16 +1,16 @@
 import { HashLink } from 'react-router-hash-link';
-import { MainPage } from './components/utils.js';
+import { MainPage } from '../../components/utils.js';
 import React from 'react';
 
 
 const FrontMatter = () => {
     return (
         <>
-            <h2 class="mb-3">Text Corpus</h2>
-            <p class="lead fs-4 text-secondary mb-3">
+            <h2 className="mb-3">Text Corpus</h2>
+            <p className="lead fs-4 text-secondary mb-3">
                 One objective of the LostMa project is to compose a multi-lingual corpus of textual traditions.
             </p>
-            <p class="mb-5">
+            <p className="mb-5">
                 The scope of this corpus is defined by the following factors:
                 <ul>
                     <li>Content: The story describes a hero or epic adventure; the archetypical example is a knight's tale.</li>
@@ -28,7 +28,7 @@ const Grid = () => {
         <div className="row">
             <div className='col'>
                 <div className='list-group'>
-                    <li class="list-group-item disabled">Pages</li>
+                    <li className="list-group-item disabled">Pages</li>
                     <HashLink
                         className="list-group-item list-group-item-action"
                         to="/corpus/recordtypes"
@@ -61,7 +61,7 @@ const Grid = () => {
             </div>
             <div className='col'>
                 <div className='list-group'>
-                    <li class="list-group-item disabled">External Links</li>
+                    <li className="list-group-item disabled">External Links</li>
                     <a
                         className="list-group-item list-group-item-action"
                         href="https://heurist.huma-num.fr/heurist/?db=jbcamps_gestes"
@@ -95,7 +95,7 @@ const Body = () => {
     return (
         <>
             <hr />
-            <p class="lead fs-4 text-secondary mb-3">
+            <p className="lead fs-4 text-secondary mb-3">
                 We are in the process of publishing our methods and results.
             </p>
             <p>

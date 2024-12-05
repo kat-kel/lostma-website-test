@@ -159,14 +159,6 @@ header .image-citation {
   z-index: 0;
 }
 
-.table-of-contents {
-  width: 80%;
-  column-count: 6;
-  column-fill: auto;
-  overflow: hidden;
-  height: 100px;
-}
-
 .card {
   margin-left: 1em;
   margin-right: 1em;
@@ -218,44 +210,6 @@ header .image-citation {
   color: var(--lostma-dark);
 }
 
-.section-header {
-  font-weight: 600;
-  font-style: oblique;
-}
-
-[scope='col'] {
-  font-weight: 600;
- }
-
-.field {
-  font-weight: 200;
-}
-
-.card.person {
-  background-color: var(--lostma-light);
-  color: var(--lostma-dark);
-  border-color: var(--lostma-muted);
-  width: 100%;
-}
-
-.person-card .text-muted {
-  color: var(--lostma-dark);
-}
-
-.person-card img {
-  max-width: 66%;
-  display: block;
-  margin-left: auto;
-  margin-top: 6px;
-  margin-right: auto;
-  border-radius: 1em;
-}
-
-.person-card .card-body {
-  display: grid;
-  align-items: end;
-}
-
 .horizontal-list {
   list-style-type: none;
   margin: 0;
@@ -267,19 +221,10 @@ header .image-citation {
   margin-right: 10px;
 }
 
-.news-feed .card{
-  border-width: 2pt;
-  min-height: 120px;
-}
-
 .badge-fail {
   font-size: 1rem;
   font-weight: 400;
   background-color: var(--lostma-muted);
   color: var(--lostma-dark);
   opacity: 0.5;
-}
-
-.post h6 {
-  text-align: right;
 }

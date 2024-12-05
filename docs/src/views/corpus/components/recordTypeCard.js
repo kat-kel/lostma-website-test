@@ -2,7 +2,7 @@ import Section from "./sections";
 import buildLinkedOpenData from './buildLinkedOpenData'
 import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
-import { fieldToggle } from '../utils';
+import { fieldToggle } from '../../../components/utils';
 
 
 function DataFields(item) {

@@ -1,8 +1,14 @@
-import { render, screen } from '@testing-library/react';
-import App from './App';
+import {render, screen} from '@testing-library/react'
+import Home from './Home'
 
-test('renders witness', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/Witness/i);
-  expect(linkElement).toBeInTheDocument();
-});
+
+test('loads and displays article on news feed', async () => {
+  // ARRANGE
+  render(<Home />)
+
+  // ACT
+  await screen.findByRole('h2')
+
+  // ASSERT
+  expect(screen.findByRole('h2')).toHaveTextContent('What is LostMa?')
+})

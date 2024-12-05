@@ -1,14 +1,16 @@
 import React from 'react';
-import { MainPage } from './components/utils.js';
-import { NewsPostLegend } from './components/news/legend.js';
-import Post from './components/news/post.js';
-import posts from './news_posts/feed.json';
+import { MainPage } from '../../components/utils';
+import { NewsPostLegend } from './Legend';
+import Post from './Post'
+import posts from '../../data/feed.json';
+import './News.css';
+
 
 const FrontMatter = () => {
     return (
         <>
-            <h2 class="mb-3">Keeping up with LostMa</h2>
-            <p class="mb-5">
+            <h2 className="mb-3">Keeping up with LostMa</h2>
+            <p className="mb-5">
                 Talks, publications, software updates, etc.
             </p>
         </>

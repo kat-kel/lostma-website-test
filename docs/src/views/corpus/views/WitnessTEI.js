@@ -1,5 +1,5 @@
 import React from 'react';
-import { MainPage } from '../components/utils.js';
+import { MainPage } from '../../../components/utils';
 
 
 const Content = () => {

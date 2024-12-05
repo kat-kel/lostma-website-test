@@ -28,7 +28,7 @@ const TopMiddle = () => {
     return (
         <div className="col-md-2">
             <h5>Follow Us</h5>
-            <p>
+            <div className='mb-2'>
                 <ul className='list-group'>
                     <li className='list-group-item'>
                         <a target="_blank" rel="noreferrer" href="https://bsky.app/profile/lostma.bsky.social">
@@ -38,7 +38,7 @@ const TopMiddle = () => {
                     <li className='list-group-item'><FontAwesomeIcon icon={faLinkedin} /> LinkedIn</li>
                     <li className='list-group-item'><FontAwesomeIcon icon={faCloud} /> Zenodo</li>
                 </ul>
-            </p>
+            </div>
         </div>
     )
 }
@@ -54,13 +54,13 @@ const TopRight = () => {
     return (
         <div className='col-md-3'>
             <h5>Website Credits</h5>
-            <p>
+            <div className='mb-2'>
                 <ul className='list-group'>
                     <li className='list-group-item'>Code Base: <a target="_blank" rel='noreferrer' href='https://github.com/kat-kel/lostma-website-test'>GitHub Repository</a></li>
                     <li className='list-group-item'>Editor: <a target="_blank" rel='noreferrer' href='https://github.com/kat-kel'>Kelly Christensen</a></li>
                     <li className='list-group-item'>Open-Source Tools: {<UsedTools />}</li>
                 </ul>
-            </p>
+            </div>
         </div>
     )
 }

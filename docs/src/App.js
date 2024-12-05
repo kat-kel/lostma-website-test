@@ -8,35 +8,17 @@ import {
 import ScrollToTop from "react-scroll-to-top";
 import React from 'react';
 import './App.css';
-import logo from './images/BNF_Fr95_209v_2.jpg';
 
 // Route imports
 import Home from './Home';
-import People from './People';
-import TextsDatabaseHome from './Corpus'
-import RecordTypePage from './corpus/RecordTypes';
-import TEIPage from './corpus/WitnessTEI';
-import WorkflowPage from './corpus/Workflow';
+import Header from './Header';
 import Footer from './Footer';
-import News from './News';
-
-
-const Header = () => {
-  return (
-    <header>
-      <span className='background-image-container'>
-        <img src={logo} alt="placeholder logo" className="background" />
-      </span>
-      <div className='container-fluid foreground'>
-        <h1>LostMa</h1>
-        <p>navigating the currents of culture</p>
-      </div>
-      <span className='image-citation'>
-        Bibliothèque nationale de France, Français 95, folio 209v
-      </span>
-    </header>
-  );
-}
+import People from './views/people';
+import TextsDatabaseHome from './views/corpus'
+import RecordTypePage from './views/corpus/views/RecordTypes';
+import TEIPage from './views/corpus/views/WitnessTEI';
+import WorkflowPage from './views/corpus/views/Workflow';
+import News from './views/news';
 
 
 class App extends React.Component {

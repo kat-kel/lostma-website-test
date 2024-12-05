@@ -1,12 +1,12 @@
-import React from 'react'
-import recordTypesJSON from "../rty_json/recordTypes.json"
-import RecordTypeCard from "../components/recordTypes/recordTypeCard"
-import { HashLink } from 'react-router-hash-link';
+import React from 'react';
 import { useState } from 'react';
+import { HashLink } from 'react-router-hash-link';
 import Button from 'react-bootstrap/Button';
 import Collapse from 'react-bootstrap/Collapse';
-import { fieldToggle } from '../components/utils';
-import { MainPage } from '../components/utils.js';
+import recordTypesJSON from "../../../data/recordTypes.json";
+import RecordTypeCard from "../components/recordTypeCard";
+import { fieldToggle, MainPage } from '../../../components/utils';
+import './RecordTypes.css';
 
 
 var sortedItems = Object.values(recordTypesJSON).sort(

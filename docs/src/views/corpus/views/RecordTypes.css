@@ -1,0 +1,20 @@
+.section-header {
+    font-weight: 600;
+    font-style: oblique;
+}
+
+[scope='col'] {
+    font-weight: 600;
+}
+
+.field {
+    font-weight: 200;
+}
+
+.table-of-contents {
+    width: 80%;
+    column-count: 6;
+    column-fill: auto;
+    overflow: hidden;
+    height: 100px;
+}

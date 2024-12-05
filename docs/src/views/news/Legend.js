@@ -2,23 +2,23 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMicrophone, faNewspaper, faDatabase, faCalendar, faHandshake } from '@fortawesome/free-solid-svg-icons';
 
 const TalkKey = () => {
-    return (<FontAwesomeIcon icon={faMicrophone} key="public-talk" />);
+    return (<FontAwesomeIcon icon={faMicrophone} alt="public-talk" />);
 }
 
 const ArticleKey = () => {
-    return (<FontAwesomeIcon icon={faNewspaper} key="article-publication" />);
+    return (<FontAwesomeIcon icon={faNewspaper} alt="article-publication" />);
 }
 
 const DatasetKey = () => {
-    return (<FontAwesomeIcon icon={faDatabase} key="dataset-publication" />);
+    return (<FontAwesomeIcon icon={faDatabase} alt="dataset-publication" />);
 }
 
 const ConferenceKey = () => {
-    return (<FontAwesomeIcon icon={faCalendar} key="public-conference" />);
+    return (<FontAwesomeIcon icon={faCalendar} alt="public-conference" />);
 }
 
 const MeetingKey = () => {
-    return (<FontAwesomeIcon icon={faHandshake} key="stakeholders-meeting" />);
+    return (<FontAwesomeIcon icon={faHandshake} alt="stakeholders-meeting" />);
 }
 
 const NewsPostLegend = () => {

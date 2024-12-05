@@ -1,4 +1,4 @@
-import { TalkKey, ArticleKey, DatasetKey, ConferenceKey, MeetingKey } from "./legend";
+import { TalkKey, ArticleKey, DatasetKey, ConferenceKey, MeetingKey } from "./Legend";
 
 
 const PostKey = (key) => {
@@ -36,17 +36,17 @@ const PostBody = (body) => {
 
 function Post(post) {
     return (
-        <div class="card post">
-            <div class="card-body">
-                <div class='row'>
-                    <div class='col-md-10'>
-                        <h5 class="card-title">{PostKey(post.key)} {post.title}</h5>
+        <div className="card post">
+            <div className="card-body">
+                <div className='row'>
+                    <div className='col-md-10'>
+                        <h5 className="card-title">{PostKey(post.key)} {post.title}</h5>
                     </div>
-                    <div class='col-md-2'>
-                        <h6 class='text-muted'>{post.date}</h6>
+                    <div className='col-md-2'>
+                        <h6 className='text-muted'>{post.date}</h6>
                     </div>
                 </div>
-                <p class="card-text">{PostBody(post.body)}</p>
+                <p className="card-text">{PostBody(post.body)}</p>
                 {PostLink(post.link)}
             </div>
         </div>

@@ -1,0 +1,8 @@
+.news-feed .card{
+    border-width: 2pt;
+    min-height: 120px;
+}
+
+.post h6 {
+    text-align: right;
+}
