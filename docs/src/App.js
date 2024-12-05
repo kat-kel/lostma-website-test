@@ -11,8 +11,8 @@ import ScrollToTop from 'react-scroll-to-top';
 
 import NavBar from './components/navbar';
 import Footer from './Footer';
-// Route imports
 import Header from './Header';
+// Route imports
 import TextsDatabaseHome from './views/corpus';
 import RecordTypePage from './views/corpus/views/RecordTypes';
 import TEIPage from './views/corpus/views/WitnessTEI';

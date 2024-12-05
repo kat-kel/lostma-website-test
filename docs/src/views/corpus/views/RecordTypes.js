@@ -6,7 +6,7 @@ import Button from 'react-bootstrap/Button';
 import Collapse from 'react-bootstrap/Collapse';
 import { HashLink } from 'react-router-hash-link';
 
-import { fieldToggle,MainPage } from '../../../components/utils';
+import { fieldToggle, MainPage } from '../../../components/utils';
 import recordTypesJSON from '../../../data/recordTypes.json';
 import RecordTypeCard from '../components/recordTypeCard';
 
