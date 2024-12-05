@@ -1,4 +1,4 @@
-// import buildLinkedOpenData from './buildLinkedOpenData';
+import buildLinkedOpenData from './buildLinkedOpenData';
 
 
 const makeHelpText = (item) => {
@@ -26,7 +26,7 @@ const Field = (item) => {
                     {item.dty_Type}
                 </td>
                 <td className='field'>
-                    {refURL}
+                    {buildLinkedOpenData(refURL)}
                 </td>
                 <td className='field'>
                     {item.trm_Label}

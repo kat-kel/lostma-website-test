@@ -166,27 +166,27 @@ header .image-citation {
   min-width: 100%;
 }
 
-.card-header .badge-primary {
+.badge-primary {
   font-size: 1rem;
   font-weight: 400;
   background-color: var(--lostma-primary);
 }
 
-.card-header .badge-info {
+.badge-info {
   font-size: 1rem;
   font-weight: 400;
   background-color: var(--lostma-info);
 }
 
-.card-header .badge-success {
+.badge-success {
   font-size: 1rem;
   font-weight: 400;
   background-color: var(--lostma-success);
   color: var(--lostma-dark);
-  border: 1px solid var(--lostma-muted);
+  border: 1px solid var(--lostma-light);
 }
 
-.card-header .badge-fail {
+.badge-fail {
   font-size: 1rem;
   font-weight: 400;
   background-color: var(--lostma-muted);
@@ -210,6 +210,12 @@ header .image-citation {
   color: var(--lostma-dark);
 }
 
+.btn-primary {
+  color: var(--lostma-highlight) !important;
+  background-color: var(--lostma-primary) !important;
+  border-color: var(--lostma-primary) !important;
+}
+
 .horizontal-list {
   list-style-type: none;
   margin: 0;
@@ -219,12 +225,4 @@ header .image-citation {
 
 .horizontal-list li {
   margin-right: 10px;
-}
-
-.badge-fail {
-  font-size: 1rem;
-  font-weight: 400;
-  background-color: var(--lostma-muted);
-  color: var(--lostma-dark);
-  opacity: 0.5;
 }

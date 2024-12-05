@@ -1,18 +1,21 @@
 function buildLinkedOpenData(val) {
+    let TextVal = "Linked Ref"
     if (val) {
         return (
+            <>
             <a
                 className="badge badge-success link"
                 target="_blank"
                 rel="noreferrer noopener"
                 href={val}>
-                Linked Open Data
+                {TextVal}
             </a>
+            </>
         );
     }
     else {
         return (
-            <span className="badge badge-fail">Linked Open Data</span>
+            <span className="badge badge-fail">{TextVal}</span>
         );
     }
 }

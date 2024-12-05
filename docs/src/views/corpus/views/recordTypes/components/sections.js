@@ -15,7 +15,7 @@ const Section = (item, openAll) => {
                                 <th scope='col'>Name</th>
                                 <th scope='col'>Description</th>
                                 <th scope='col'>Type</th>
-                                <th scope='col'>Linked Open Data</th>
+                                <th scope='col'>Semantic Reference URL</th>
                                 <th scope='col'>Vocabulary</th>
                             </tr>
                         </thead>

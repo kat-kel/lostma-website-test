@@ -1,7 +1,7 @@
 import React from 'react';
 import { HashLink } from 'react-router-hash-link';
 
-import { MainPage } from '../../../components/utils';
+import { MainPage } from '../../../../components/utils';
 
 const repositoryLink = <HashLink to='/corpus/recordtypes#108'><code>repository</code></HashLink>;
 const documentLink = <HashLink to="/corpus/recordtypes#106"><code>document</code></HashLink>;

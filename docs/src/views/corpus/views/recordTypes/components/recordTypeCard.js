@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 
-import { fieldToggle } from '../../../components/utils';
+import { fieldToggle } from '../../../../../components/utils';
 import buildLinkedOpenData from './buildLinkedOpenData';
 import Section from './sections';
 
