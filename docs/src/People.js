@@ -19,7 +19,7 @@ function PersonCardImage(name, imageSource) {
 function PersonCard(name, role, imageSource) {
     return (
         <div class="col-sm-6 mb-3 d-flex align-items-stretch">
-            <div class="card person-card">
+            <div class="card person">
                 {PersonCardImage(name, imageSource)}
                 <div class="card-body text-center px-4 py-4">
                     <h5 class="fw-bold">{name}</h5>

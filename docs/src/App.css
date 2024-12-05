@@ -26,6 +26,13 @@ main {
   flex: 1;
 }
 
+@media only screen and (max-width: 600px) {
+  .col-sm-6 {
+    width: 80%;
+    padding-left: 10%;
+  }
+}
+
 .scroll-to-top {
     /* background-color: var(--lostma-secondary); */
     top: 80px;
@@ -224,10 +231,11 @@ header .image-citation {
   font-weight: 200;
 }
 
-.person-card {
+.card.person {
   background-color: var(--lostma-light);
   color: var(--lostma-dark);
   border-color: var(--lostma-muted);
+  width: 100%;
 }
 
 .person-card .text-muted {
