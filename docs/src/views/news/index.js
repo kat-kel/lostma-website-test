@@ -13,7 +13,7 @@ const FrontMatter = () => {
         <>
             <h2 className="mb-3">Keeping up with LostMa</h2>
             <p className="mb-5">
-                Talks, publications, software updates, etc.
+                Talks, publications, dataset releases, etc.
             </p>
         </>
     );
