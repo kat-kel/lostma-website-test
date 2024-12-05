@@ -1,7 +1,9 @@
+import './People.css';
+
 import React from 'react';
+
 import { MainPage } from '../../components/utils';
 import PersonCard from './PersonCard';
-import './People.css';
 
 
 const Team = () => {
@@ -9,11 +11,11 @@ const Team = () => {
         <div className="row align-items-center">
             <div className="col-lg-6 order-2 order-lg-1">
                 <div className="row g-3">
-                    {PersonCard("Jean-Baptiste Camps", "Project Leader")}
-                    {PersonCard("Kelly Christensen", "Data Architect, Webmaster")}
-                    {PersonCard("Ulysse Godreau", "Postdoc")}
-                    {PersonCard("Théo Moins", "AI Engineer")}
-                    {PersonCard("Beatriz Tadeo Fuica", "Administrator")}
+                    {PersonCard('Jean-Baptiste Camps', 'Project Leader')}
+                    {PersonCard('Kelly Christensen', 'Data Architect, Webmaster')}
+                    {PersonCard('Ulysse Godreau', 'Postdoc')}
+                    {PersonCard('Théo Moins', 'AI Engineer')}
+                    {PersonCard('Beatriz Tadeo Fuica', 'Administrator')}
                 </div>
             </div>
             <div className="col-lg-6 order-1 order-lg-2">
@@ -24,8 +26,8 @@ const Team = () => {
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
 
 const Collaborators = () => {
@@ -40,17 +42,17 @@ const Collaborators = () => {
             </div>
             <div className="col-lg-6 order-2 order-lg-2">
                 <div className="row g-3">
-                    {PersonCard("Elisabeth de Bruijn", "Middle Dutch Corpus")}
-                    {PersonCard("Katarzyna Kapitan", "Scandinavian Corpus")}
-                    {PersonCard("Mike Kestemont", "Middle Dutch Corpus")}
-                    {PersonCard("Carolina Macedo", "Iberian Corpus")}
-                    {PersonCard("Remco Sleiderink", "Middle Dutch Corpus")}
-                    {PersonCard("Cecile Vermaas", "Middle Dutch Corpus")}
+                    {PersonCard('Elisabeth de Bruijn', 'Middle Dutch Corpus')}
+                    {PersonCard('Katarzyna Kapitan', 'Scandinavian Corpus')}
+                    {PersonCard('Mike Kestemont', 'Middle Dutch Corpus')}
+                    {PersonCard('Carolina Macedo', 'Iberian Corpus')}
+                    {PersonCard('Remco Sleiderink', 'Middle Dutch Corpus')}
+                    {PersonCard('Cecile Vermaas', 'Middle Dutch Corpus')}
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
 
 const Content = () => {
@@ -60,8 +62,8 @@ const Content = () => {
             <hr />
             <Collaborators />
         </>
-    )
-}
+    );
+};
 
 class People extends React.Component {
     render() {

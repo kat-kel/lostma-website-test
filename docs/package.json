@@ -39,7 +39,8 @@
     "extends": [
       "react-app",
       "react-app/jest"
-    ]
+    ],
+    "sourceType": "module"
   },
   "browserslist": {
     "production": [
@@ -52,5 +53,13 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.26.0",
+    "@babel/eslint-parser": "^7.25.9",
+    "@eslint/js": "^9.16.0",
+    "eslint-plugin-jsx": "^0.1.0",
+    "eslint-plugin-react": "^7.37.2",
+    "eslint-plugin-simple-import-sort": "^12.1.1"
   }
 }

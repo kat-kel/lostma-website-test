@@ -1,11 +1,11 @@
 const fieldToggle = (state) => {
     if (state) {
-        return (<span>Hide</span>)
+        return (<span>Hide</span>);
     }
     else {
-        return (<span>Show</span>)
+        return (<span>Show</span>);
     }
-}
+};
 
 
 function MainPage(Content) {
@@ -22,4 +22,4 @@ function MainPage(Content) {
     );
 }
 
-export { MainPage, fieldToggle }
+export { fieldToggle,MainPage };

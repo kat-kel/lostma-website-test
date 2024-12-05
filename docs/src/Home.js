@@ -1,7 +1,8 @@
-import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAddressBook, faDatabase, faFeed } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import React from 'react';
 import { HashLink } from 'react-router-hash-link';
+
 import { MainPage } from './components/utils.js';
 
 
@@ -16,8 +17,8 @@ const FrontMatter = () => {
                 We are funded by the European Research Council (ERC) for five years, 2024-2029. Our offices are in the Campus Condorcet's Hôtel à projets and we are hosted by the École nationale des chartes in Paris, France.
             </p>
         </>
-    )
-}
+    );
+};
 
 const Grid = () => {
     return (
@@ -70,17 +71,17 @@ const Grid = () => {
                 </div>
             </div>
         </>
-    )
-}
+    );
+};
 
 const Content = () => {
     return (
         <>
-        <FrontMatter />
-        <Grid />
+            <FrontMatter />
+            <Grid />
         </>
-    )
-}
+    );
+};
 class Home extends React.Component {
     render() {
         return (MainPage(Content));

@@ -1,8 +1,9 @@
-import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+
+import React from 'react';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import { LinkContainer } from 'react-router-bootstrap'
+import { LinkContainer } from 'react-router-bootstrap';
 
 function navbar() {
     return (
@@ -13,7 +14,7 @@ function navbar() {
         >
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
-                <Nav className="justify-content-start" style={{ width: "100%" }}>
+                <Nav className="justify-content-start" style={{ width: '100%' }}>
                     <LinkContainer to="/">
                         <Nav.Link>Home</Nav.Link>
                     </LinkContainer>

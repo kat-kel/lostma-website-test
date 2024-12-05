@@ -1,9 +1,11 @@
-import React from 'react';
-import { MainPage } from '../../components/utils';
-import { NewsPostLegend } from './Legend';
-import Post from './Post'
-import posts from '../../data/feed.json';
 import './News.css';
+
+import React from 'react';
+
+import { MainPage } from '../../components/utils';
+import posts from '../../data/feed.json';
+import { NewsPostLegend } from './Legend';
+import Post from './Post';
 
 
 const FrontMatter = () => {
@@ -14,29 +16,29 @@ const FrontMatter = () => {
                 Talks, publications, software updates, etc.
             </p>
         </>
-    )
-}
+    );
+};
 
 
 function Body() {
     return (
         <div>
-        <NewsPostLegend />
-        <div className='news-feed'>
-            {posts.map(p => (Post(p)))}
+            <NewsPostLegend />
+            <div className='news-feed'>
+                {posts.map(p => (Post(p)))}
+            </div>
         </div>
-        </div>
-    )
+    );
 }
 
 const Content = () => {
     return (
         <>
-        <FrontMatter />
-        <Body />
+            <FrontMatter />
+            <Body />
         </>
-    )
-}
+    );
+};
 
 class People extends React.Component {
     render() {

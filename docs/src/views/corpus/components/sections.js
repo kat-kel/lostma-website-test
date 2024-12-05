@@ -1,5 +1,6 @@
 import Collapse from 'react-bootstrap/Collapse';
-import Field from './field'
+
+import Field from './field';
 
 
 const Section = (item, openAll) => {
@@ -29,7 +30,7 @@ const Section = (item, openAll) => {
                 </div>
             </Collapse>
         </li>
-    )
-}
+    );
+};
 
 export default Section;

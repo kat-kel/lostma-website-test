@@ -1,6 +1,7 @@
-import { HashLink } from 'react-router-hash-link';
-import { MainPage } from '../../components/utils.js';
 import React from 'react';
+import { HashLink } from 'react-router-hash-link';
+
+import { MainPage } from '../../components/utils.js';
 
 
 const FrontMatter = () => {
@@ -20,8 +21,8 @@ const FrontMatter = () => {
                 </ul>
             </p>
         </>
-    )
-}
+    );
+};
 
 const Grid = () => {
     return (
@@ -88,8 +89,8 @@ const Grid = () => {
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
 const Body = () => {
     return (
@@ -103,17 +104,17 @@ const Body = () => {
             </p>
             <Grid />
         </>
-    )
-}
+    );
+};
 
 const Content = () => {
     return (
         <>
-        <FrontMatter />
-        <Body />
+            <FrontMatter />
+            <Body />
         </>
-    )
-}
+    );
+};
 class TextsDatabaseHome extends React.Component {
     render() {
         return (MainPage(Content));

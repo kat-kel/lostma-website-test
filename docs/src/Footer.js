@@ -1,9 +1,10 @@
-import React from 'react';
-import { OverlayIcon } from './components/overlay';
-import logo from './images/LOGO_ERC-FLAG_EU_.jpg'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faLinkedin, faBluesky, faGithub, faReact, faBootstrap } from '@fortawesome/free-brands-svg-icons'
+import { faBluesky, faBootstrap,faGithub, faLinkedin, faReact } from '@fortawesome/free-brands-svg-icons';
 import { faCloud } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import React from 'react';
+
+import { OverlayIcon } from './components/overlay';
+import logo from './images/LOGO_ERC-FLAG_EU_.jpg';
 
 const TopLeft = () => {
     return (
@@ -21,8 +22,8 @@ const TopLeft = () => {
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
 const TopMiddle = () => {
     return (
@@ -40,15 +41,15 @@ const TopMiddle = () => {
                 </ul>
             </div>
         </div>
-    )
-}
+    );
+};
 
 const UsedTools = ()  => {
     return (
-        <span> {<OverlayIcon text={"React App"} faIcon={faReact} />} {<OverlayIcon text={"Boostrap"} faIcon={faBootstrap} />} {<OverlayIcon text={"GitHub Pages"} faIcon={faGithub} />}
+        <span> {<OverlayIcon text={'React App'} faIcon={faReact} />} {<OverlayIcon text={'Boostrap'} faIcon={faBootstrap} />} {<OverlayIcon text={'GitHub Pages'} faIcon={faGithub} />}
         </span>
-    )
-}
+    );
+};
 
 const TopRight = () => {
     return (
@@ -62,38 +63,38 @@ const TopRight = () => {
                 </ul>
             </div>
         </div>
-    )
-}
+    );
+};
 
 const TopColumns = () => {
     return (
         <>
-        <br />
-        <hr />
-        <div className="row">
-            <TopLeft />
-            <TopMiddle />
-            <TopRight />  
-        </div>
+            <br />
+            <hr />
+            <div className="row">
+                <TopLeft />
+                <TopMiddle />
+                <TopRight />  
+            </div>
         </>
-    )
-}
+    );
+};
 
 const BottomLegal = () => {
     return (
         <>
-        <hr />
-        <div className="row">
-            <div className="col-md-3">
-                <p>&copy; 2024 lostma-erc | All rights reserved.</p>
+            <hr />
+            <div className="row">
+                <div className="col-md-3">
+                    <p>&copy; 2024 lostma-erc | All rights reserved.</p>
+                </div>
+                <div className="col-md-6">
+                    <p>Header image: <em>Romans aurthuriens</em>, Bibliothèque nationale de France, Français 95, folio 209v</p>
+                </div>
             </div>
-            <div className="col-md-6">
-                <p>Header image: <em>Romans aurthuriens</em>, Bibliothèque nationale de France, Français 95, folio 209v</p>
-            </div>
-        </div>
         </>
-    )
-}
+    );
+};
 
 class Footer extends React.Component {
     render() {
@@ -104,7 +105,7 @@ class Footer extends React.Component {
                     <BottomLegal />
                 </div>
             </footer>
-        )
+        );
     }
 }
 
