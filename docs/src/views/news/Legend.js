@@ -23,15 +23,17 @@ const MeetingKey = () => {
 
 const NewsPostLegend = () => {
     return (
-        <div>
-            <ul className='horizontal-list'>
-                <li key="talk-key">| Talk {<TalkKey />}</li>
-                <li>| Article {<ArticleKey />}</li>
-                <li>| Dataset {<DatasetKey />}</li>
-                <li>| Conference {<ConferenceKey />}</li>
-                <li>| Meeting {<MeetingKey />}</li>
-            </ul>
-        </div>
+        <table className='table table-responsive table-bordered'>
+            <thead>
+                <tr>
+                    <th>{<TalkKey />} Talk</th>
+                    <th>{<ArticleKey />} Article</th>
+                    <th>{<DatasetKey />} Dataset</th>
+                    <th>{<ConferenceKey />} Conference</th>
+                    <th>{<MeetingKey />} Meeting</th>
+                </tr>
+            </thead>
+        </table>
     );
 };
 

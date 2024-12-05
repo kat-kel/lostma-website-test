@@ -19,9 +19,7 @@ function PersonCard(name, role, imageSource) {
                 {PersonCardImage(name, imageSource)}
                 <div className="card-body text-center px-4 py-4">
                     <h5 className="fw-bold">{name}</h5>
-                    <div className="text-muted">
-                        {role}
-                    </div>
+                    <h6 className="text-muted">{role}</h6>
                 </div>
             </div>
         </div>

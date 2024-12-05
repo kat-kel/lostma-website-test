@@ -39,10 +39,10 @@ function Post(post) {
         <div className="card post">
             <div className="card-body">
                 <div className='row'>
-                    <div className='col-md-10'>
+                    <div className='col-md-10 order-2'>
                         <h5 className="card-title">{PostKey(post.key)} {post.title}</h5>
                     </div>
-                    <div className='col-md-2'>
+                    <div className='col-md-2 order-1'>
                         <h6 className='text-muted'>{post.date}</h6>
                     </div>
                 </div>

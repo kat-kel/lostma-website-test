@@ -1,6 +1,7 @@
 .news-feed .card{
     border-width: 2pt;
     min-height: 120px;
+    min-width: 90%;
 }
 
 .post h6 {
