@@ -1,8 +1,9 @@
-import Section from "./sections";
-import buildLinkedOpenData from './buildLinkedOpenData'
 import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
+
 import { fieldToggle } from '../../../components/utils';
+import buildLinkedOpenData from './buildLinkedOpenData';
+import Section from './sections';
 
 
 function DataFields(item) {
@@ -41,8 +42,8 @@ const RecordTypeCard = (item) => {
                 {DataFields(item)}
             </div>
         </div>
-    )
-}
+    );
+};
 
 
-export default RecordTypeCard
+export default RecordTypeCard;

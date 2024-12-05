@@ -1,18 +1,19 @@
 import React from 'react';
 import { HashLink } from 'react-router-hash-link';
+
 import { MainPage } from '../../../components/utils';
 
-const repositoryLink = <HashLink to='/corpus/recordtypes#108'><code>repository</code></HashLink>
-const documentLink = <HashLink to="/corpus/recordtypes#106"><code>document</code></HashLink>
-const phyDescLink = <HashLink to="/corpus/recordtypes#129"><code>physDesc</code></HashLink>
-const partLink = <HashLink to="/corpus/recordtypes#125"><code>part</code></HashLink>
-const witnessLink = <HashLink to="/corpus/recordtypes#105"><code>witness</code></HashLink>
-const textLink = <HashLink to="/corpus/recordtypes#101"><code>text</code></HashLink>
-const storyLink = <HashLink to="/corpus/recordtypes#103"><code>story</code></HashLink>
-const storyverseLink = <HashLink to="/corpus/recordtypes#102"><code>storyverse</code></HashLink>
-const genreLink = <HashLink to="/corpus/recordtypes#117"><code>genre</code></HashLink>
-const scriptaLink = <HashLink to="/corpus/recordtypes#118"><code>scripta</code></HashLink>
-const footnoteLink = <HashLink to="/corpus/recordtypes#128"><code>footnote</code></HashLink>
+const repositoryLink = <HashLink to='/corpus/recordtypes#108'><code>repository</code></HashLink>;
+const documentLink = <HashLink to="/corpus/recordtypes#106"><code>document</code></HashLink>;
+const phyDescLink = <HashLink to="/corpus/recordtypes#129"><code>physDesc</code></HashLink>;
+const partLink = <HashLink to="/corpus/recordtypes#125"><code>part</code></HashLink>;
+const witnessLink = <HashLink to="/corpus/recordtypes#105"><code>witness</code></HashLink>;
+const textLink = <HashLink to="/corpus/recordtypes#101"><code>text</code></HashLink>;
+const storyLink = <HashLink to="/corpus/recordtypes#103"><code>story</code></HashLink>;
+const storyverseLink = <HashLink to="/corpus/recordtypes#102"><code>storyverse</code></HashLink>;
+const genreLink = <HashLink to="/corpus/recordtypes#117"><code>genre</code></HashLink>;
+const scriptaLink = <HashLink to="/corpus/recordtypes#118"><code>scripta</code></HashLink>;
+const footnoteLink = <HashLink to="/corpus/recordtypes#128"><code>footnote</code></HashLink>;
 
 
 const EnteringData = () => {
@@ -27,8 +28,8 @@ const EnteringData = () => {
             <p>Heurist offers a graphic user interface that lets uers input data one by one. This method is the easiest to learn and best for avoiding accidents.</p>
             <p>Users can also input multiple examples of 1 record type by preparing and importing a CSV file. The CSV must conform to the record type's data fields and contain the Heurist IDs (not merely the name or label) of any related record types.</p>
         </>
-    )
-}
+    );
+};
 
 const EnteringReferences = () => {
     return (
@@ -68,8 +69,8 @@ const EnteringReferences = () => {
                 and includes page number (<code>pages</code>), the prefix for a dictionary or encyclopedia reference (<code>reference_prefix</code>), and/or a quotation from the source (<code>quotation</code>).
             </p>
         </>
-    )
-}
+    );
+};
 
 const FrontMatter = () => {
     return (
@@ -77,8 +78,8 @@ const FrontMatter = () => {
             <EnteringData />
             <EnteringReferences />
         </>
-    )
-}
+    );
+};
 
 
 const Grid = () => {
@@ -217,16 +218,16 @@ const Grid = () => {
             </div>
         </>
     );
-}
+};
 
 const Content = () => {
     return (
         <>
-        <FrontMatter />
-        <Grid />
+            <FrontMatter />
+            <Grid />
         </>
-    )
-}
+    );
+};
 class WorkflowPage extends React.Component {
     render() {
         return (MainPage(Content));

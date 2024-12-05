@@ -1,14 +1,9 @@
-import {render, screen} from '@testing-library/react'
-import Home from './Home'
+import {render, screen} from '@testing-library/react';
+
+import { NewsPostLegend } from './views/news/Legend';
 
 
-test('loads and displays article on news feed', async () => {
-  // ARRANGE
-  render(<Home />)
-
-  // ACT
-  await screen.findByRole('h2')
-
-  // ASSERT
-  expect(screen.findByRole('h2')).toHaveTextContent('What is LostMa?')
-})
+test('renders the correct content', () => {
+    render(<NewsPostLegend />);  
+    expect(screen.getByRole('listitem', {key: {value: /talk-key/i}})).toHaveTextContent('| Talk');
+});

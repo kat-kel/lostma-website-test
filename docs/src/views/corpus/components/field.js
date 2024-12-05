@@ -7,8 +7,8 @@ const makeHelpText = (item) => {
             className="help-text"
             dangerouslySetInnerHTML={{ __html: item.rst_DisplayHelpText }}
         ></div>
-    )
-}
+    );
+};
 
 const Field = (item) => {
     const helpText = makeHelpText(item);
@@ -33,7 +33,7 @@ const Field = (item) => {
                 </td>
             </tr>
         </>
-    )
+    );
 };
 
 export default Field;

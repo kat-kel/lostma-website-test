@@ -5,10 +5,10 @@ function PersonCardImage(name, imageSource) {
                 alt={name}
                 src={imageSource}
             />
-        )
+        );
     }
     else {
-        return <></>
+        return <></>;
     }
 }
 
@@ -25,7 +25,7 @@ function PersonCard(name, role, imageSource) {
                 </div>
             </div>
         </div>
-    )
+    );
 }
 
 export default PersonCard;

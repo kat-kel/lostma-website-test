@@ -8,13 +8,13 @@ function buildLinkedOpenData(val) {
                 href={val}>
                 Linked Open Data
             </a>
-        )
+        );
     }
     else {
         return (
             <span className="badge badge-fail">Linked Open Data</span>
-        )
+        );
     }
 }
 
-export default buildLinkedOpenData
+export default buildLinkedOpenData;

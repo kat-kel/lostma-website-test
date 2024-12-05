@@ -1,38 +1,38 @@
-import { TalkKey, ArticleKey, DatasetKey, ConferenceKey, MeetingKey } from "./Legend";
+import { ArticleKey, ConferenceKey, DatasetKey, MeetingKey,TalkKey } from './Legend';
 
 
 const PostKey = (key) => {
     if (key === 'article') {
-        return (<ArticleKey />)
+        return (<ArticleKey />);
     }
     else if (key === 'talk') {
-        return (<TalkKey />)
+        return (<TalkKey />);
     }
     else if (key === 'dataset') {
-        return (<DatasetKey />)
+        return (<DatasetKey />);
     }
     else if (key === 'conference') {
-        return (<ConferenceKey />)
+        return (<ConferenceKey />);
     }
     else if (key === 'meeting') {
-        return (<MeetingKey />)
+        return (<MeetingKey />);
     }
     else {
-        return <span className="badge badge-fail">{key}</span>
+        return <span className="badge badge-fail">{key}</span>;
     };
 };
 
 const PostLink = (link) => {
     if (link) {
-        return <a href={link} target="_blank" rel='noreferrer' className="btn btn-primary">{link}</a>
+        return <a href={link} target="_blank" rel='noreferrer' className="btn btn-primary">{link}</a>;
     }
-}
+};
 
 const PostBody = (body) => {
     return (
         <div dangerouslySetInnerHTML={{__html: body }}></div>
-    )
-}
+    );
+};
 
 function Post(post) {
     return (
