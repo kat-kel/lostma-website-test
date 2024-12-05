@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/lostma-website-test/static/css/main.d917d23b.css",
-    "main.js": "/lostma-website-test/static/js/main.9aba917f.js",
+    "main.css": "/lostma-website-test/static/css/main.cee3266a.css",
+    "main.js": "/lostma-website-test/static/js/main.91985d65.js",
     "static/js/453.1f251112.chunk.js": "/lostma-website-test/static/js/453.1f251112.chunk.js",
     "static/media/BNF_Fr95_209v_2.jpg": "/lostma-website-test/static/media/BNF_Fr95_209v_2.952187928ec85d1d9f84.jpg",
     "static/media/LOGO_ERC-FLAG_EU_.jpg": "/lostma-website-test/static/media/LOGO_ERC-FLAG_EU_.08a22d564128dd8f4c24.jpg",
     "index.html": "/lostma-website-test/index.html",
-    "main.d917d23b.css.map": "/lostma-website-test/static/css/main.d917d23b.css.map",
-    "main.9aba917f.js.map": "/lostma-website-test/static/js/main.9aba917f.js.map",
+    "main.cee3266a.css.map": "/lostma-website-test/static/css/main.cee3266a.css.map",
+    "main.91985d65.js.map": "/lostma-website-test/static/js/main.91985d65.js.map",
     "453.1f251112.chunk.js.map": "/lostma-website-test/static/js/453.1f251112.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d917d23b.css",
-    "static/js/main.9aba917f.js"
+    "static/css/main.cee3266a.css",
+    "static/js/main.91985d65.js"
   ]
 }
