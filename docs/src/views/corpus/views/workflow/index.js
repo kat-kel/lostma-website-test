@@ -1,8 +1,8 @@
 import React from 'react';
 import { HashLink } from 'react-router-hash-link';
 
-import References from './components/References';
 import ManualWorkflow from './components/ManualWorkflow';
+import References from './components/References';
 
 
 export default function WorkflowPage() {

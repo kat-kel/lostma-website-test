@@ -1,4 +1,4 @@
-// eslint.config.js
+// eslint.config.mjs
 import babelParser from '@babel/eslint-parser';
 import simpleImportSort from 'eslint-plugin-simple-import-sort';
 

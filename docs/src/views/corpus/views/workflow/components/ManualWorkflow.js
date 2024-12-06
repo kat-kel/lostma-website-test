@@ -1,4 +1,4 @@
-import { repositoryLink, documentLink, phyDescLink, partLink, witnessLink, textLink, storyLink, storyverseLink, genreLink, scriptaLink } from './Links';
+import { documentLink, genreLink, partLink, phyDescLink, repositoryLink, scriptaLink,storyLink, storyverseLink, textLink, witnessLink } from './Links';
 
 export default function ManualWorkflow() {
     return (

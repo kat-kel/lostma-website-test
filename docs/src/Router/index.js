@@ -2,9 +2,9 @@ import React from 'react';
 import { HashRouter } from 'react-router-dom';
 import ScrollToTop from 'react-scroll-to-top';
 
+import NavBar from './Navbar';
 import Routes from './Routes';
 import StartAtTop from './StartAtTop';
-import NavBar from './Navbar';
 
 export default function Router() {
     return (
@@ -24,5 +24,5 @@ export default function Router() {
             </section>
             <ScrollToTop smooth className="scroll-to-top" />
         </HashRouter>
-    )
+    );
 };

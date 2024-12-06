@@ -4,8 +4,8 @@ import {
 } from 'react-router-dom';
 
 import Corpus from '../views/Corpus';
-import CorpusOntology from '../views/Corpus/views/Ontology';
 import CorpusData from '../views/Corpus/views/Data';
+import CorpusOntology from '../views/Corpus/views/Ontology';
 import CorpusWorkflow from '../views/Corpus/views/Workflow';
 import Home from '../views/Home';
 import News from '../views/News';
@@ -22,5 +22,5 @@ export default function RouteList() {
             <Route exact path="/corpus/workflow" element={<CorpusWorkflow />} />
             <Route exact path="/corpus/data" element={<CorpusData />} />
         </Routes>
-    )
+    );
 };

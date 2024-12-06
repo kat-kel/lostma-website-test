@@ -3,8 +3,8 @@ import { faCloud } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 
-import OverlayIcon from './components/Overlay';
 import logo from '../images/LOGO_ERC-FLAG_EU_.jpg';
+import OverlayIcon from './components/Overlay';
 
 const TopLeft = () => {
     return (

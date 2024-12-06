@@ -1,5 +1,5 @@
-import { HashLink } from 'react-router-hash-link';
 import React, { useContext } from 'react';
+import { HashLink } from 'react-router-hash-link';
 
 import DataContext from '../components/contextData';
 
@@ -14,5 +14,5 @@ export default function ListedLinks() {
                 </li>
             ))}
         </>
-    )
+    );
 };

@@ -12,4 +12,4 @@ const genreLink = <HashLink to="/corpus/recordtypes#117"><code>genre</code></Has
 const scriptaLink = <HashLink to="/corpus/recordtypes#118"><code>scripta</code></HashLink>;
 const footnoteLink = <HashLink to="/corpus/recordtypes#128"><code>footnote</code></HashLink>;
 
-export { repositoryLink, documentLink, phyDescLink, partLink, witnessLink, textLink, storyLink, storyverseLink, genreLink, scriptaLink, footnoteLink };
+export { documentLink, footnoteLink,genreLink, partLink, phyDescLink, repositoryLink, scriptaLink, storyLink, storyverseLink, textLink, witnessLink };

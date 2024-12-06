@@ -1,6 +1,6 @@
+import PostBody from './postBody';
 import PostKey from './postKey';
 import PostLink from './postLink';
-import PostBody from './postBody';
 
 
 export default function Post(post) {

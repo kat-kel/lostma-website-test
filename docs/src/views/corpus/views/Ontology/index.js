@@ -2,10 +2,10 @@ import './recordTypes.css';
 
 import React, { useState } from 'react';
 
-import TableOfContents from './TableOfContents';
-import Data from './components/fetchData';
 import DataContext from './components/contextData';
+import Data from './components/fetchData';
 import ProfilesCards from './Items';
+import TableOfContents from './TableOfContents';
 
 
 export default function Ontology() {

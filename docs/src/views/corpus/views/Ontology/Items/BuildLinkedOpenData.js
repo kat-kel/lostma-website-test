@@ -1,5 +1,5 @@
 function BuildLinkedOpenData(val) {
-    let TextVal = "Linked Ref"
+    const TextVal = 'Linked Ref';
     if (val) {
         return (
             <>
