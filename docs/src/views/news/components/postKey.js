@@ -1,7 +1,7 @@
-import { ArticleKey, ConferenceKey, DatasetKey, MeetingKey,TalkKey } from './Legend';
+import { ArticleKey, ConferenceKey, DatasetKey, MeetingKey, TalkKey } from './Legend';
 
 
-const PostKey = (key) => {
+export default function PostKey(key) {
     if (key === 'article') {
         return (<ArticleKey />);
     }
@@ -21,5 +21,3 @@ const PostKey = (key) => {
         return <span className="badge badge-fail">{key}</span>;
     };
 };
-
-export default PostKey;

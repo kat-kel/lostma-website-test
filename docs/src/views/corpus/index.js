@@ -1,10 +1,8 @@
 import React from 'react';
 import { HashLink } from 'react-router-hash-link';
 
-import { MainPage } from '../../components/utils.js';
 
-
-const FrontMatter = () => {
+export default function Corpus() {
     return (
         <>
             <h2 className="mb-3">Text Corpus</h2>
@@ -20,81 +18,6 @@ const FrontMatter = () => {
                     <li>Geography: The story was circulated within Western Europe.</li>
                 </ul>
             </p>
-        </>
-    );
-};
-
-const Grid = () => {
-    return (
-        <div className="row">
-            <div className='col'>
-                <div className='list-group'>
-                    <li className="list-group-item disabled">Pages</li>
-                    <HashLink
-                        className="list-group-item list-group-item-action"
-                        to="/corpus/recordtypes"
-                    >
-                        <div className="d-flex w-100">
-                            <h5 className="mb-1">Profiles of Record Types</h5>
-                        </div>
-                        <p>What is the structure of the record types in the Heurist database?</p>
-                    </HashLink>
-                    <HashLink
-                        className='list-group-item list-group-item-action'
-                        to="/corpus/workflow"
-                    >
-                        <div className='d-flex w-100'>
-                            <h5 className='mb-1'>Recommended Workflow</h5>
-                        </div>
-                        <p>How do I enter new data into the Heurist database?</p>
-                    </HashLink>
-                    <HashLink
-                        className='list-group-item list-group-item-action'
-                        to="/corpus/witnesstei"
-                    >
-                        <div className='d-flex w-100'>
-                            <h5 className='mb-1'>Published Texts</h5>
-                        </div>
-                        <p>How is the data in the Heurist database output?</p>
-                        <small></small>
-                    </HashLink>
-                </div>
-            </div>
-            <div className='col'>
-                <div className='list-group'>
-                    <li className="list-group-item disabled">External Links</li>
-                    <a
-                        className="list-group-item list-group-item-action"
-                        href="https://heurist.huma-num.fr/heurist/?db=jbcamps_gestes"
-                        target="_blank" rel="noopener noreferrer"
-                    >
-                        <div className="d-flex w-100">
-                            <h5 className="mb-1">Heurist Database</h5>
-                        </div>
-                        <p>How do I log into the Heurist database?</p>
-                        <small>Clicking this block will open a new tab. You will be brought to the log-in page of the project's Heurist database. If you're a contributor to the project, enter your log-in details.</small>
-                    </a>
-                    <a
-                        className='list-group-item list-group-item-action'
-                        href="https://www.zotero.org/groups/5710605/lostma-international"
-                        target="_blank" rel="noopener noreferrer"
-                    >
-                        <div className='d-flex w-100'>
-                            <h5 className='mb-1'>LostMa Zotero</h5>
-                        </div>
-                        <p>What references does the corpus depend on?</p>
-                        <small>The library is periodically imported / synchronised with the Heurist database.
-                            In the Heurist database, citations (record type <code>footnote</code>) attached to records refer to references in the Zotero library.</small>
-                    </a>
-                </div>
-            </div>
-        </div>
-    );
-};
-
-const Body = () => {
-    return (
-        <>
             <hr />
             <p className="lead fs-4 text-secondary mb-3">
                 We are in the process of publishing our methods and results.
@@ -102,22 +25,69 @@ const Body = () => {
             <p>
                 The following links and pages are under construction and intended for contributors to the project.
             </p>
-            <Grid />
+            <div className="row">
+                <div className='col'>
+                    <div className='list-group'>
+                        <li className="list-group-item disabled">Pages</li>
+                        <HashLink
+                            className="list-group-item list-group-item-action"
+                            to="/corpus/ontology"
+                        >
+                            <div className="d-flex w-100">
+                                <h5 className="mb-1">Ontology and Vocabulary</h5>
+                            </div>
+                            <p>What is the structure of the record types in the Heurist database?</p>
+                        </HashLink>
+                        <HashLink
+                            className='list-group-item list-group-item-action'
+                            to="/corpus/workflow"
+                        >
+                            <div className='d-flex w-100'>
+                                <h5 className='mb-1'>Recommended Workflow</h5>
+                            </div>
+                            <p>How do I enter new data into the Heurist database?</p>
+                        </HashLink>
+                        <HashLink
+                            className='list-group-item list-group-item-action'
+                            to="/corpus/data"
+                        >
+                            <div className='d-flex w-100'>
+                                <h5 className='mb-1'>Published Texts</h5>
+                            </div>
+                            <p>How is the data in the Heurist database output?</p>
+                            <small></small>
+                        </HashLink>
+                    </div>
+                </div>
+                <div className='col'>
+                    <div className='list-group'>
+                        <li className="list-group-item disabled">External Links</li>
+                        <a
+                            className="list-group-item list-group-item-action"
+                            href="https://heurist.huma-num.fr/heurist/?db=jbcamps_gestes"
+                            target="_blank" rel="noopener noreferrer"
+                        >
+                            <div className="d-flex w-100">
+                                <h5 className="mb-1">Heurist Database</h5>
+                            </div>
+                            <p>How do I log into the Heurist database?</p>
+                            <small>Clicking this block will open a new tab. You will be brought to the log-in page of the project's Heurist database. If you're a contributor to the project, enter your log-in details.</small>
+                        </a>
+                        <a
+                            className='list-group-item list-group-item-action'
+                            href="https://www.zotero.org/groups/5710605/lostma-international"
+                            target="_blank" rel="noopener noreferrer"
+                        >
+                            <div className='d-flex w-100'>
+                                <h5 className='mb-1'>LostMa Zotero</h5>
+                            </div>
+                            <p>What references does the corpus depend on?</p>
+                            <small>The library is periodically imported / synchronised with the Heurist database.
+                                In the Heurist database, citations (record type <code>footnote</code>) attached to records refer to references in the Zotero library.</small>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </>
     );
 };
-
-const Content = () => {
-    return (
-        <>
-            <FrontMatter />
-            <Body />
-        </>
-    );
-};
-class TextsDatabaseHome extends React.Component {
-    render() {
-        return (MainPage(Content));
-    }
-}
-export default TextsDatabaseHome;

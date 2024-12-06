@@ -1,4 +1,4 @@
-import { faCalendar, faDatabase, faHandshake,faMicrophone, faNewspaper } from '@fortawesome/free-solid-svg-icons';
+import { faCalendar, faDatabase, faHandshake, faMicrophone, faNewspaper } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const TalkKey = () => {
@@ -37,4 +37,4 @@ const NewsPostLegend = () => {
     );
 };
 
-export {ArticleKey, ConferenceKey, DatasetKey, MeetingKey,NewsPostLegend, TalkKey};
+export { ArticleKey, ConferenceKey, DatasetKey, MeetingKey, NewsPostLegend, TalkKey };

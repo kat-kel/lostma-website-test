@@ -3,10 +3,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import { HashLink } from 'react-router-hash-link';
 
-import { MainPage } from '../../components/utils.js';
 
-
-const FrontMatter = () => {
+export default function Home() {
     return (
         <>
             <h2 className='mb-3'>What is LostMa?</h2>
@@ -16,13 +14,6 @@ const FrontMatter = () => {
             <p className='mb-5'>
                 We are funded by the European Research Council (ERC) for five years, 2024-2029. Our offices are in the Campus Condorcet&apos;s Hôtel à projets and we are hosted by the École nationale des chartes in Paris, France.
             </p>
-        </>
-    );
-};
-
-const Grid = () => {
-    return (
-        <>
             <div className='row gy-4 gy-md-0 gx-xxl-5X'>
                 {/* First point */}
                 <div className='col-12 col-md-6'>
@@ -73,18 +64,3 @@ const Grid = () => {
         </>
     );
 };
-
-const Content = () => {
-    return (
-        <>
-            <FrontMatter />
-            <Grid />
-        </>
-    );
-};
-class Home extends React.Component {
-    render() {
-        return (MainPage(Content));
-    }
-}
-export default Home;

@@ -1,4 +1,4 @@
-import logo from './images/BNF_Fr95_209v_2.jpg';
+import logo from '../images/BNF_Fr95_209v_2.jpg';
 
 
 const Header = () => {
@@ -12,7 +12,7 @@ const Header = () => {
                 <p>navigating the currents of culture</p>
             </div>
             <span className='image-citation'>
-          Bibliothèque nationale de France, Français 95, folio 209v
+                Bibliothèque nationale de France, Français 95, folio 209v
             </span>
         </header>
     );

@@ -2,7 +2,6 @@ import './People.css';
 
 import React from 'react';
 
-import { MainPage } from '../../components/utils';
 import PersonCard from './PersonCard';
 
 
@@ -54,20 +53,15 @@ const Collaborators = () => {
     );
 };
 
-
-const Content = () => {
-    return (
-        <>
-            <Team />
-            <hr />
-            <Collaborators />
-        </>
-    );
-};
-
 class People extends React.Component {
     render() {
-        return (MainPage(Content));
+        return (
+            <>
+                <Team />
+                <hr />
+                <Collaborators />
+            </>
+        );
     }
 }
 export default People;

@@ -1,10 +1,10 @@
-import { faBluesky, faBootstrap,faGithub, faLinkedin, faReact } from '@fortawesome/free-brands-svg-icons';
+import { faBluesky, faBootstrap, faGithub, faLinkedin, faReact } from '@fortawesome/free-brands-svg-icons';
 import { faCloud } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 
-import { OverlayIcon } from './components/overlay';
-import logo from './images/LOGO_ERC-FLAG_EU_.jpg';
+import OverlayIcon from './components/Overlay';
+import logo from '../images/LOGO_ERC-FLAG_EU_.jpg';
 
 const TopLeft = () => {
     return (
@@ -44,7 +44,7 @@ const TopMiddle = () => {
     );
 };
 
-const UsedTools = ()  => {
+const UsedTools = () => {
     return (
         <span> {<OverlayIcon text={'React App'} faIcon={faReact} />} {<OverlayIcon text={'Boostrap'} faIcon={faBootstrap} />} {<OverlayIcon text={'GitHub Pages'} faIcon={faGithub} />}
         </span>
@@ -74,7 +74,7 @@ const TopColumns = () => {
             <div className="row">
                 <TopLeft />
                 <TopMiddle />
-                <TopRight />  
+                <TopRight />
             </div>
         </>
     );

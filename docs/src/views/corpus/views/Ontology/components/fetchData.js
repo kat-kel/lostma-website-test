@@ -1,4 +1,4 @@
-import recordTypesJSON from '../../../../data/recordTypes.json';
+import recordTypesJSON from '../../../../../data/recordTypes.json';
 
 
 var SortedProfiles = Object.values(recordTypesJSON).sort(

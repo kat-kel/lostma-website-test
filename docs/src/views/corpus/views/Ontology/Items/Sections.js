@@ -1,6 +1,6 @@
 import Collapse from 'react-bootstrap/Collapse';
 
-import Field from './field';
+import Field from './Field';
 
 
 const Section = (item, openAll) => {

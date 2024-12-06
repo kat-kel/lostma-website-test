@@ -1,9 +1,6 @@
 import React from 'react';
 
-import { MainPage } from '../../../../components/utils';
-
-
-const Content = () => {
+export default function WitnessTEI() {
     return (
         <div id="TEIPage">
             <h3>Under Construction</h3>
@@ -11,10 +8,3 @@ const Content = () => {
         </div>
     );
 };
-
-class WitnessTEI extends React.Component {
-    render() {
-        return (MainPage(Content));
-    }
-}
-export default WitnessTEI;

@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 
-import { fieldToggle } from '../../../../../components/utils';
-import buildLinkedOpenData from './buildLinkedOpenData';
-import Section from './sections';
+import BuildLinkedOpenData from './BuildLinkedOpenData';
+import Section from './Sections';
+import Toggle from '../components/Toggle';
 
 
 function DataFields(item) {
@@ -15,7 +15,7 @@ function DataFields(item) {
                 aria-controls="collapse-all-sections"
                 aria-expanded={openAll}
             >
-                {fieldToggle(openAll)} Fields
+                {Toggle(openAll)} Fields
             </Button>
             <ul className="list-group">
                 {
@@ -31,7 +31,7 @@ const RecordTypeCard = (item) => {
     return (
         <div className="card rty" id={item.metadata.rty_ID}>
             <div className="card-header d-flex justify-content-between">
-                <div>{buildLinkedOpenData(refURL)}</div>
+                <div>{BuildLinkedOpenData(refURL)}</div>
                 <div>{item.metadata.rty_ID}</div>
             </div>
             <div className="card-body">

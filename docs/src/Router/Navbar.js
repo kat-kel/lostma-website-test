@@ -5,7 +5,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { LinkContainer } from 'react-router-bootstrap';
 
-function navbar() {
+export default function MyNavbar() {
     return (
         <Navbar
             className='justify-content-start'
@@ -31,7 +31,6 @@ function navbar() {
             </Navbar.Collapse>
         </Navbar>
     );
-}
+};
 
 
-export default navbar;

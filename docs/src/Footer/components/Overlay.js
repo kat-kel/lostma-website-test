@@ -21,4 +21,4 @@ function OverlayIcon({ faIcon, text }) {
 }
 
 
-export {OverlayIcon};
+export default OverlayIcon;
