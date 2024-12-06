@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 
 import DataContext from '../components/contextData';
-import RecordTypeCard from './RecordTypeCard';
+import RecordTypeCard from './components/RecordTypeCard';
 
 
 export default function ProfilesCards() {

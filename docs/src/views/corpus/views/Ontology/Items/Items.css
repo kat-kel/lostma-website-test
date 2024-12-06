@@ -1,0 +1,12 @@
+.data-field-header th[colspan="2"] {
+    text-align: center;
+}
+
+li.borderless {
+    border-left: 0;
+    border-right: 0;
+}
+
+td:has(div.invisible-left) {
+    border-left-style: hidden !important;
+}
