@@ -33,150 +33,86 @@ Website is deployed at [https://kat-kel.github.io/lostma-website-test/](https://
     npm run start
     ```
 
-## React App Architecture
+## Updating Information
 
-Understanding the application's strucutre.
+3 types of information need to be able to be updated easily and without knowledge of the website's JavaScript and/or internal React architecture.
 
-### Step 1: The Root
+|Information|JSON Location|
+|--|--|
+|Team / Collaborators|[`src/data/people.json`](docs/src/data/people.json)|
+|News|[`src/data/feed.json`](docs/src/data/feed.json)|
+|Data model|[`src/data/recordTypes.json`](docs/src/data/recordTypes.json)|
 
-The logic of the React app stems from actions on `index` files in two places:
+### People
 
-- `docs/public`
+Update the names of team members and collaborators directly in the JSON file.
 
-- `docs/src`
-
-Every `index` file in a folder in the `docs/` directory is directly interpretted by React. Consequently, the [`docs/public/index.html`](docs/public/index.html) is the HTML template for every page. Rooted in that HTML, file, dynamic content is then generated from JavaScript in the [`docs/src/index.js`](docs/src/index.js) file.
-
-The CSS (`<link>`) and JavaScript (`<script>`) in the `<head>` of the `public/index.html` file are applied to all views rendered by the app.
-
-```html
-<!-- public/index.html -->
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <link rel="stylesheet" href="..."/>
-    <script src="..."/>
-  </head>
-  <body>
-    <main id="main"></main>
-  </body>
-</html>
-```
-
-The React App generates all pages written in JavaScript Syntax Extension (JSX) that are part of the component rendered inside the root, i.e. the `App` component. In this case, the root is planted in the `<main>` element of the `index.html` tag because it has the id `'main'`.
-
-```js
-// src/index.js
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import App from './App';
-
-const root = ReactDOM.createRoot(document.getElementById('main'));
-root.render(
-    <React.StrictMode>
-        <App />
-    </React.StrictMode>
-);
-```
-
-### Step 2. The App
-
-This project's `App` component includes 3 things:
-
-  1. Header: Static header that's the same on every view.
-  2. Router: Routes to all the pages in the application and their content.
-  3. Footer: Static footer that's the same on every view.
-
-As a reminder: all of this content is embedded inside the HTML that serves as the `App`'s root in the `public/index.html` file.
-
-```js
-// src/App.js
-import './App.css';
-
-import React from 'react';
-
-import Footer from './Footer';
-import Header from './Header';
-import Router from './Router';
-
-class App extends React.Component {
-    render() {
-        return (
-            <>
-                <Header />
-                <Router />
-                <Footer />
-            </>
-        );
-    }
+```json
+{
+    "forename": "Philippe de",
+    "surname": "Vitry",
+    "role": "Troubadour"
 }
-
-export default App;
 ```
 
-Early on in the logic of React, every view in the web application needs to be declared as a `Route` component in a router.
+The JSON file has 2 key-value pairs: `Team`, `Collaborators`. The value of each is an array of people that can be added in any order. The website's JavaScript orders the array alphabetically by surname. When a person's last name is preceded by a particle (i.e. 'de', 'van'), which should not be part of the alphabetisation, add it to the end of the forename field.
 
-```js
-<Route exact path="PATH" element={<COMPONENT />} />
+### News
+
+Update the news feed JSON file.
+
+```json
+[
+    {
+        "key": "article", 
+        "date": "2024-12-04", 
+        "title": "Title of post", 
+        "body": "Body of post",
+        "link": "https://www.google.com"
+    }
+]
 ```
 
-Each `Route` needs to be a child in React's `Routes` component.
+The website's JavaScript orders the array alphabetically by date, so you can add them in any order you want.
 
-According to the logic of this project, every view is based on an `index.js` in a directory that has the same name as the path. As such, the base component for each page in the web application is imported via a directory. The base component is then given as the `element` prop of the `Route` component.
+The body of the post can contain HTML, but it's best to try sticking to simple text. Images are not currently supported.
 
-```js
-// src/Router/Routes.js
-import {
-    Route,
-    Routes,
-} from 'react-router-dom';
+All posts will be given an icon indicating what kind of information they present. As the value of `key`, provide one of the following (lowercase):
 
-import Corpus from '../views/Corpus';
-import CorpusData from '../views/Corpus/views/Data';
-import CorpusOntology from '../views/Corpus/views/Ontology';
-import CorpusWorkflow from '../views/Corpus/views/Workflow';
-import Home from '../views/Home';
-import News from '../views/News';
-import People from '../views/People';
+- `article`
+- `conference`
+- `dataset`
+- `meeting`
+- `talk`
 
-export default function RouteList() {
-    return (
-        <Routes>
-            <Route exact path="/" element={<Home />} />
-            <Route exact path="/people" element={<People />} />
-            <Route exact path="/corpus" element={<Corpus />} />
-            <Route exact path='/news' element={<News />} />
-            <Route exact path="/corpus/ontology" element={<CorpusOntology />} />
-            <Route exact path="/corpus/workflow" element={<CorpusWorkflow />} />
-            <Route exact path="/corpus/data" element={<CorpusData />} />
-        </Routes>
-    );
-};
-```
+### Data model
 
-The `Routes`, which include routes to every page in the web application, are descendants of React's `HashRouter` component. Furthermore, the each page's base component can be embedded inside extra HTML children that descend from the root element in `docs/public/index.html`. The HTML (i.e. `<section>` and `<div>` tags) applies to each page.
+Unlike the other information, do not update the data model by manually editing the JSON.
 
-```js
-import React from 'react';
-import { HashRouter } from 'react-router-dom';
-import ScrollToTop from 'react-scroll-to-top';
+Re-run the [`heurist-api`](https://github.com/LostMa-ERC/heurist-api) CLI tool, developped for the LostMa project, which will freshly export the architecture of the database in a JSON format.
 
-import NavBar from './Navbar';
-import Routes from './Routes';
-import StartAtTop from './StartAtTop';
+1. Install and set up the tool. (Follow instructions)
 
-export default function Router() {
-    return (
-        <HashRouter>
-            <StartAtTop />
-            <NavBar />
-            <section className="py-3 py-md-5">
-              <div className="container">
-                <Routes />
-              </div>
-            </section>
-            <ScrollToTop smooth className="scroll-to-top" />
-        </HashRouter>
-    );
-};
-```
+2. Run the `doc` subcommand.
+
+    ```console
+    $ heurist --database DATABASE --login USERNAME --password PASSWORD doc --output-type json --outdir ./docs/src/data/
+    ```
+
+## Updating Deployment
+
+If information JSON files have been updated:
+
+1. Make sure you're working with the most up-to-date version of the web application's repository with `git pull`.
+
+2. Commit and push the updated JSON files to the repository.
+
+3. If your terminal is not at the root of `./docs`, change to that directory.
+
+4. From `./docs`, run `npm run predeploy` to tell Node to generate new static files in the `./build` folder. Don't manually edit anything in that folder; let Node do it via the `predeploy` script.
+
+5. Finally, run `npm run deploy` to commit and push the build's files to the remote repository's `gh-pages` branch. Again, don't manually mess with the `gh-pages` branch. Let the project's scripts manage it.
+
+6. Check the deployment's success in the Actions tab / automated workflows page of the GitHub repository online. Locally, `npm run deploy` should have triggered a push that GitHub will show as a `pages build and deployment` action.
+
+When it's done, the website should have the new information. Confirm at the depolyment's URL.
