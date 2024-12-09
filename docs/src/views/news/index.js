@@ -2,9 +2,9 @@ import './news.css';
 
 import React from 'react';
 
-import posts from '../../data/feed.json';
 import { NewsPostLegend } from './components/Legend';
 import Post from './components/Post';
+import { PostData } from './components/fetchData';
 
 
 export default function People() {
@@ -17,7 +17,7 @@ export default function People() {
             <div>
                 <NewsPostLegend />
                 <div className='news-feed'>
-                    {posts.map(p => (Post(p)))}
+                    {PostData.map(p => (Post(p)))}
                 </div>
             </div>
         </>
