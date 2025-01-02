@@ -1,11 +1,12 @@
-{
-    "101": {
+[
+    {
+        "id": "101", 
         "metadata": {
             "rty_ID": 101,
             "rty_Name": "text",
             "rty_Description": "Formulation of a work in human language, whose literary form and style can be detected and whose creation can be attributed to one or more individuals.",
             "rty_TitleMask": "[[[1101.term]]] [1090] \\\"[1244]\\\" ([1265], [1285])",
-            "rty_ReferenceURL": null
+            "rty_ReferenceURL": "https://www.google.com"
         },
         "sections": [
             {
@@ -865,7 +866,8 @@
             }
         ]
     },
-    "102": {
+    {
+        "id": "102",
         "metadata": {
             "rty_ID": 102,
             "rty_Name": "storyverse",
@@ -1003,7 +1005,8 @@
             }
         ]
     },
-    "103": {
+    {
+        "id": "103",
         "metadata": {
             "rty_ID": 103,
             "rty_Name": "story",
@@ -1194,7 +1197,8 @@
             }
         ]
     },
-    "104": {
+    {
+        "id": "104",
         "metadata": {
             "rty_ID": 104,
             "rty_Name": "stemma",
@@ -1863,7 +1867,8 @@
             }
         ]
     },
-    "105": {
+    {
+        "id": "105",
         "metadata": {
             "rty_ID": 105,
             "rty_Name": "witness",
@@ -2346,7 +2351,8 @@
             }
         ]
     },
-    "106": {
+    {
+        "id": "106",
         "metadata": {
             "rty_ID": 106,
             "rty_Name": "document",
@@ -2703,7 +2709,8 @@
             }
         ]
     },
-    "108": {
+    {
+        "id": "108",
         "metadata": {
             "rty_ID": 108,
             "rty_Name": "repository",
@@ -2812,7 +2819,8 @@
             }
         ]
     },
-    "116": {
+    {
+        "id": "116",
         "metadata": {
             "rty_ID": 116,
             "rty_Name": "hypothesis",
@@ -2953,7 +2961,8 @@
             }
         ]
     },
-    "117": {
+    {
+        "id": "117",
         "metadata": {
             "rty_ID": 117,
             "rty_Name": "genre",
@@ -3113,7 +3122,8 @@
             }
         ]
     },
-    "118": {
+    {
+        "id": "118",
         "metadata": {
             "rty_ID": 118,
             "rty_Name": "scripta",
@@ -3418,7 +3428,8 @@
             }
         ]
     },
-    "125": {
+    {
+        "id": "125",
         "metadata": {
             "rty_ID": 125,
             "rty_Name": "part",
@@ -3638,7 +3649,8 @@
             }
         ]
     },
-    "126": {
+    {
+        "id": "126",
         "metadata": {
             "rty_ID": 126,
             "rty_Name": "digitization",
@@ -3703,7 +3715,8 @@
             }
         ]
     },
-    "127": {
+    {
+        "id": "127",
         "metadata": {
             "rty_ID": 127,
             "rty_Name": "images",
@@ -3768,7 +3781,8 @@
             }
         ]
     },
-    "128": {
+    {
+        "id": "128",
         "metadata": {
             "rty_ID": 128,
             "rty_Name": "footnote",
@@ -3828,7 +3842,8 @@
             }
         ]
     },
-    "129": {
+    {
+        "id": "129",
         "metadata": {
             "rty_ID": 129,
             "rty_Name": "physDesc",
@@ -4313,4 +4328,4 @@
             }
         ]
     }
-}
+]

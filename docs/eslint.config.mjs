@@ -1,33 +1,16 @@
-// eslint.config.mjs
-import babelParser from '@babel/eslint-parser';
-import simpleImportSort from 'eslint-plugin-simple-import-sort';
+import { dirname } from "path";
+import { fileURLToPath } from "url";
+import { FlatCompat } from "@eslint/eslintrc";
 
-export default [
-    {
-        plugins: {
-            'simple-import-sort': simpleImportSort,
-        },
-        rules: {
-            'simple-import-sort/imports': 'error',
-            'simple-import-sort/exports': 'error',
-            semi: 'error',
-            'prefer-const': 'error',
-            'quotes': [2, 'single', { 'avoidEscape': true }],
-            'indent': 2
-        },
-        languageOptions: {
-            parser: babelParser,
-            parserOptions: {
-                requireConfigFile: false,
-                babelOptions: {
-                    babelrc: false,
-                    configFile: false,
-                    presets: ['@babel/preset-env'],
-                    parserOpts: {
-                        plugins: ['jsx']
-                    }
-                }
-            }
-        },
-    }
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+
+const compat = new FlatCompat({
+  baseDirectory: __dirname,
+});
+
+const eslintConfig = [
+  ...compat.extends("next/core-web-vitals", "next/typescript"),
 ];
+
+export default eslintConfig;
