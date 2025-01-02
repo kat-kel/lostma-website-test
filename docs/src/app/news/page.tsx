@@ -2,7 +2,7 @@ import NewsItem from "./components/NewsItem";
 import jsonData from "@/data/feed.json";
 
 
-var SortedNewsData = Object.values(jsonData).sort(
+const SortedNewsData = Object.values(jsonData).sort(
     (a, b) => a.date.localeCompare(b.date)
 ).reverse();
 

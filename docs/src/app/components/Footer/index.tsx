@@ -3,6 +3,7 @@ import Image from 'next/image';
 import { faBluesky, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import logo from "@/public/images/LOGO_ERC-FLAG_EU_.jpg";
+import Link from 'next/link';
 
 const Zenodo =
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className='h-10 mx-auto'>
@@ -58,42 +59,36 @@ export default function Footer() {
                                 grid gap-2 md:gap-4 
                                 grid-cols-2 md:grid-cols-1
                             ">
-                                <a
-                                className="font-inter text-[12px] font-normal hover:font-semibold text-left ms-4"
-                                href="/"
-                                >
-                                    Home
-                                </a>
-                                <a
-                                className="font-inter text-[12px] font-normal hover:font-semibold text-left ms-4"
-                                href="/corpus"
-                                >
-                                    Corpus
-                                </a>
-                                <a
-                                className="font-inter text-[12px] font-normal hover:font-semibold text-left ms-4"
-                                href="/people"
-                                >
-                                    People
-                                </a>
-                                <a
-                                className="font-inter text-[12px] font-normal hover:font-semibold text-left ms-4"
-                                href="/news"
-                                >
-                                    News
-                                </a>
-                                <a
-                                className="font-inter text-[12px] font-normal hover:font-semibold text-left ms-4"
-                                href="/terms-and-conditions"
-                                >
-                                    Terms and conditions
-                                </a>
-                                <a
-                                className="font-inter text-[12px] font-normal hover:font-semibold text-left ms-4"
-                                href="/privacy-policy"
-                                >
-                                    Privacy policy
-                                </a>
+                                <Link href="/">
+                                    <span
+                                    className="font-inter text-[12px] font-normal hover:font-semibold text-left ms-4"
+                                    >Home</span>
+                                </Link>
+                                <Link href="/corpus">
+                                    <span
+                                    className="font-inter text-[12px] font-normal hover:font-semibold text-left ms-4"
+                                    >Corpus</span>
+                                </Link>
+                                <Link href="/people">
+                                    <span
+                                    className="font-inter text-[12px] font-normal hover:font-semibold text-left ms-4"
+                                    >People</span>
+                                </Link>
+                                <Link href="/news">
+                                    <span
+                                    className="font-inter text-[12px] font-normal hover:font-semibold text-left ms-4"
+                                    >News</span>
+                                </Link>
+                                <Link href="/terms-and-conditions">
+                                    <span
+                                    className="font-inter text-[12px] font-normal hover:font-semibold text-left ms-4"
+                                    >Terms and conditions</span>
+                                </Link>
+                                <Link href="/privacy-policy">
+                                    <span
+                                    className="font-inter text-[12px] font-normal hover:font-semibold text-left ms-4"
+                                    >Privacy policy</span>
+                                </Link>
                             </div>
                         </div>
                         <div 

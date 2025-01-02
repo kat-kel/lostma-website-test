@@ -42,12 +42,12 @@ export default function News() {
           <ul className="list-decimal">
             <li>Ask the administrator to join the Zotero group library.</li>
             <li>Add to the Zotero library the references you want to attach to information in the Heurist database.</li>
-            <li>Notify the administrator that you've updated the Zotero library. The administrator will then newly synchronise the database with the Zotero library.</li>
+            <li>Notify the administrator that you&apos;ve updated the Zotero library. The administrator will then newly synchronise the database with the Zotero library.</li>
             <li>Log into the database and start creating <Link href="/corpus/model/entities/128"><code>Footnote</code></Link> entities, which have one of the imported Zotero references and some other identifying information (i.e. page number).</li>
           </ul>
-          <div className="text-muted mb-3">Note: It's easiest to create <code>Footnote</code> entities directly from the entities you're editing / reviewing by clicking on their <code>described_by_source</code> attribute and adding a new <code>Footnote</code> from there. The new <code>Footnote</code> will be immediately linked to the entity you're editing / reviewing.</div>
+          <div className="text-muted mb-3">Note: It&apos;s easiest to create <code>Footnote</code> entities directly from the entities you&apos;re editing / reviewing by clicking on their <code>described_by_source</code> attribute and adding a new <code>Footnote</code> from there. The new <code>Footnote</code> will be immediately linked to the entity you&apos;re editing / reviewing.</div>
           <p>
-            Heurist converts Zotero's various reference types into its own record types. We have tested the conversion and only recommend using the following types of Zotero references:
+            Heurist converts Zotero&apos;s various reference types into its own record types. We have tested the conversion and only recommend using the following types of Zotero references:
           </p>
           <ul className="list-disc">
               <li>Book -- converts to <code>Book</code></li>

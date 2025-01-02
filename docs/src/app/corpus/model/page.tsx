@@ -5,11 +5,11 @@ export default async function DataModelPage() {
   const data = await loadData();
   const vocabs = await loadVocabData();
 
-  var SortedData = Object.values(data).sort(
+  const SortedData = Object.values(data).sort(
     (a, b) => a.metadata.rty_Name.localeCompare(b.metadata.rty_Name)
   );
 
-  var SortedVocabs = Object.values(vocabs).sort(
+  const SortedVocabs = Object.values(vocabs).sort(
     (a, b) => a.label.localeCompare(b.label)
   );
 
@@ -22,10 +22,10 @@ export default async function DataModelPage() {
         <ul key="entity-link-list" className="list-disc">
           {
             Object.values(SortedData).map((value, index) => {
-              let entityURL = "/corpus/model/entities/" + value.id;
-              let entityLinkID = "entity-link-" + index;
+              const entityURL = "/corpus/model/entities/" + value.id;
+              const entityLinkID = "entity-link-" + index;
               return (
-                <li><Link key={entityLinkID} href={entityURL}>{value.metadata.rty_Name}</Link></li>
+                <li key={entityLinkID}><Link href={entityURL}>{value.metadata.rty_Name}</Link></li>
               );
             })
           }
@@ -36,10 +36,10 @@ export default async function DataModelPage() {
         <ul key="vocab-link-list" className="list-disc">
           {
             Object.values(SortedVocabs).map((value, index) => {
-              let vocabURL = "/corpus/model/vocabs/" + value.id;
-              let vocabLinkID = "vocab-link-" + index;
+              const vocabURL = "/corpus/model/vocabs/" + value.id;
+              const vocabLinkID = "vocab-link-" + index;
               return (
-                <li><Link key={vocabLinkID} href={vocabURL}>{value.label}</Link></li>
+                <li key={vocabLinkID}><Link href={vocabURL}>{value.label}</Link></li>
               );
             })
           }

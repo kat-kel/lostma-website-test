@@ -1,15 +1,15 @@
 import PersonCard from "./components/PersonCard";
 import peopleJSON from '@/data/people.json';
 
-var TeamMemberData = Object.values(peopleJSON.Team).sort(
+const TeamMemberData = Object.values(peopleJSON.Team).sort(
     (a, b) => a.surname.localeCompare(b.surname)
 );
 
-var CollaboratorData = Object.values(peopleJSON.Collaborators).sort(
+const CollaboratorData = Object.values(peopleJSON.Collaborators).sort(
     (a, b) => a.surname.localeCompare(b.surname)
 );
 
-export default function People() {
+export default async function People() {
   return (
     <div className="flex flex-col space-y-4">
         <h1>Who are we?</h1>
@@ -19,7 +19,7 @@ export default function People() {
                     <div className="ms-lg-5 mb-5 content-around">
                         <span className="text-muted">LostMa / French Corpus</span>
                         <h2 className="display-5 fw-bold mb-3 mb-xl-5">Meet the Team</h2>
-                        <p className="lead">We are responsible for the project's milestones and the French-language part of the corpus.</p>
+                        <p className="lead">We are responsible for the project&apos;s milestones and the French-language part of the corpus.</p>
                     </div>
                 </div>
                 <div className="order-last md:order-first">
@@ -38,7 +38,7 @@ export default function People() {
                     <div className="ms-lg-5 mb-5 content-around">
                         <span className="text-muted">International</span>
                         <h2 className="display-5 fw-bold mb-3 mb-xl-5">Meet Our Collaborators</h2>
-                        <p className="lead">We collaborate with specialists in various literary traditions. They contribute data from different language communities to broaden the scope of the project's corpus.</p>
+                        <p className="lead">We collaborate with specialists in various literary traditions. They contribute data from different language communities to broaden the scope of the project&apos;s corpus.</p>
                     </div>
                 </div>
                 <div className="order-last">

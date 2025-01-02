@@ -4,8 +4,9 @@ import Hashtag from "@/app/components/Hashtag";
 import Link from "next/link";
 
 function Header({data} :{data:EntityDetail}) {
+    let p ;
     if (data.metadata.rty_ReferenceURL) {
-        var p = <>
+        p = <>
             <p className="content" dangerouslySetInnerHTML={{__html: data.metadata.rty_Description}}/>
             <p className="text-muted">
             Equivalent Entity: <Hashtag url={data.metadata.rty_ReferenceURL}/>
@@ -13,7 +14,7 @@ function Header({data} :{data:EntityDetail}) {
         </>
     }
     else {
-        var p = <>
+        p = <>
             <p className="content" dangerouslySetInnerHTML={{__html: data.metadata.rty_Description}}/>
             <p className="text-muted">
                 Equivalent Entity:
@@ -96,20 +97,15 @@ function VocabURL({data}: {data:VocabTerms}) {
 
 function ParseVocabTerms({terms, }: {terms:VocabTerms[] | null}) {
     if (terms) {
-        var termList = Object.values(terms).map((obj, index) => 
+        return Object.values(terms).map((obj) => 
                 <li key={obj.id}>
                     <VocabURL data={obj}/>
                 </li>
             )
     }
     else {
-        var termList = [<></>]
+        return [<></>]
     }
-    return (
-        <ul className="list-disc">
-        {termList}
-        </ul>
-    )
 }
 
 function IsRepeatable({data}: {data:boolean}) {
@@ -182,7 +178,11 @@ export default function EntityProfile({data}: {data:EntityDetail}) {
                                                 <div className="content" dangerouslySetInnerHTML={{__html: field.rst_DisplayHelpText}}/>
                                             </td>
                                             <td className="px-6 py-4 text-center overflow-scroll"><Hashtag url={field.dty_SemanticReferenceURL} /></td>
-                                            <td className="px-6 py-4">{ParseVocabTerms({terms:field.vocabTerms})}</td>
+                                            <td className="px-6 py-4">
+                                                <ul className="list-disc">
+                                                    {ParseVocabTerms({terms:field.vocabTerms})}
+                                                </ul>
+                                            </td>
                                         </tr>
                                     )
                                 }

@@ -16,10 +16,6 @@ export default function Navbar({links}: {links: LinkItem[]}) {
         setIsOpen(!isOpen);
     };
 
-    const closeDropdown = () => {
-        setIsOpen(false);
-    };
-
     const pathName = usePathname();
 
     return (
@@ -74,17 +70,19 @@ export default function Navbar({links}: {links: LinkItem[]}) {
                     {/* <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" --> */}
                     {links.map(({href, label}) => {
 
+                        let isActive ;
+
                         {/* If the path is a Main Link (from top-level navbar) */}
                         if (MainLinkPaths.includes(pathName)) {
-                            var isActive = pathName === href;
+                            isActive = pathName === href;
                             
                         }
                         else {
                             if (href === "/") {
-                                var isActive = false;
+                                isActive = false;
                             }
                             else {
-                                var isActive = pathName.includes(href);
+                                isActive = pathName.includes(href);
                             }
                         }
 

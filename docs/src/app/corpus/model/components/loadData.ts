@@ -6,9 +6,9 @@ export async function loadVocabData(): Promise<VocabDetail[]> {
 
     // Get all instances of vocabulary from the data
     const vocabList:VocabDetail[] = []
-    for (let entity of allData) {
-        for (let section of entity.sections) {
-            for (let field of section.fields) {
+    for (const entity of allData) {
+        for (const section of entity.sections) {
+            for (const field of section.fields) {
                 if (field.trm_TreeID && field.trm_Label && field.vocabTerms) {
                     vocabList.push({
                         "id": field.trm_TreeID.toString(),
@@ -41,7 +41,7 @@ export async function loadVocabData(): Promise<VocabDetail[]> {
 export default async function loadData(): Promise<EntityDetail[]> {
     // Import JSON data store
     const jsonData = await import('@/data/recordTypes.json');
-    let arr = jsonData as EntityDetail[];
+    const arr = jsonData as EntityDetail[];
     
     // Ignore the 'default' and 'length' from the JSON array 
     return Object.values(arr).flatMap(({id,}, index) => id ? arr[index]: []);

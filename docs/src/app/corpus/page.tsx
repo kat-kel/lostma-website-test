@@ -32,7 +32,7 @@ export default function Corpus() {
     <div>
       <h1>What stories do we consider?</h1>
       <div className="container">
-        <p>A big milestone of the LostMa project is to assemble and publish a multilingual corpus of textual traditions. A narrative's inclusion in the corpus is defined by the following criteria:</p>
+        <p>A big milestone of the LostMa project is to assemble and publish a multilingual corpus of textual traditions. A narrative&apos;s inclusion in the corpus is defined by the following criteria:</p>
         <div className="grid md:grid-cols-4 pt-4 md:pt-0 gap-8 px-8">
           <div className="container">
             <div className="flex gap-4">
@@ -85,23 +85,23 @@ export default function Corpus() {
           aria-haspopup="true"
           onClick={toggleDropdown}
         >
-          Are you a developer? Want to know how we're doing this in-progress observability?
+          Are you a developer? Want to know how we&apos;re doing this in-progress observability?
         </button>
         {isOpen && (
         <div className="rounded-xl ml-4 py-1 px-3 bg-info text-[14px] text-gray-100">
           <p>
-            You're currently looking at a static site generated with NextJS and hosted by GitHub Pages.
-            What you're not seeing is the LostMa corpus, which is being developed in real time via an OLTP relational database on a different server / platform, specifically Heurist.
+            You&apos;re currently looking at a static site generated with NextJS and hosted by GitHub Pages.
+            What you&apos;re not seeing is the LostMa corpus, which is being developed in real time via an OLTP relational database on a different server / platform, specifically Heurist.
           </p>
           <p className="my-2">
             On GitHub, a continuous integration / continuous deployment (CI/CD) periodically performs a process.
             First, the workflow extracts the current data from our Heurist server; 
             then, it transforms the relational data into flat information; 
-            finally, it loads the cleaned data into a data store that this static site's JavaScript then parses--without needing to communicate with the Heurist server.
+            finally, it loads the cleaned data into a data store that this static site&apos;s JavaScript then parses--without needing to communicate with the Heurist server.
           </p>
           <p>
             Furthermore, if we want to stop updating the statistics on this page for some reason, we can halt the workflow whilst we continue developing the corpus on the OLTP database. 
-            When we're ready to share the most up-to-date data again, we can restart the CI workflow and update the data store.
+            When we&apos;re ready to share the most up-to-date data again, we can restart the CI workflow and update the data store.
           </p>
           <p className="my-2">
             Check out the source code on our <a className="dark:text-blue-800" target="_blank" rel="noreferrer" href="https://github.com/kat-kel/lostma-website-test">open-source GitHub project</a> to learn more.
