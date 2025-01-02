@@ -20,10 +20,9 @@ Website is deployed at [https://kat-kel.github.io/lostma-website-test/](https://
     nvm install node
     ```
 
-3. Change into the [`docs`](docs/) directory and install the app's dependencies.
+3. Change into the [`docs`]() directory and install the app's dependencies.
 
     ```shell
-    cd docs
     npm install
     ```
 
@@ -39,9 +38,9 @@ Website is deployed at [https://kat-kel.github.io/lostma-website-test/](https://
 
 |Information|JSON Location|
 |--|--|
-|Team / Collaborators|[`src/data/people.json`](docs/src/data/people.json)|
-|News|[`src/data/feed.json`](docs/src/data/feed.json)|
-|Data model|[`src/data/recordTypes.json`](docs/src/data/recordTypes.json)|
+|Team / Collaborators|[`src/data/people.json`](src/data/people.json)|
+|News|[`src/data/feed.json`](src/data/feed.json)|
+|Data model|[`src/data/recordTypes.json`](src/data/recordTypes.json)|
 
 ### People
 
@@ -96,7 +95,7 @@ Re-run the [`heurist-api`](https://github.com/LostMa-ERC/heurist-api) CLI tool, 
 2. Run the `doc` subcommand.
 
     ```console
-    $ heurist --database DATABASE --login USERNAME --password PASSWORD doc --output-type json --outdir ./docs/src/data/
+    $ heurist --database DATABASE --login USERNAME --password PASSWORD doc --output-type json --outdir ./src/data/
     ```
 
 ## Updating Deployment

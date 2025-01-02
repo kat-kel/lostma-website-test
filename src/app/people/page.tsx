@@ -25,7 +25,7 @@ export default async function People() {
                 <div className="order-last md:order-first">
                     <div className="grid md:grid-cols-2 justify-items-center gap-8">
                         {
-                            Object.values(TeamMemberData).map(p => (PersonCard(p)))
+                            Object.values(TeamMemberData).map((p, index) => (PersonCard(p, index)))
                         }
                     </div>
                 </div>
@@ -44,7 +44,7 @@ export default async function People() {
                 <div className="order-last">
                     <div className="grid md:grid-cols-2 justify-items-center gap-8">
                         {
-                            Object.values(CollaboratorData).map(p => (PersonCard(p)))
+                            Object.values(CollaboratorData).map((p, index) => (PersonCard(p, index)))
                         }
                     </div>
                 </div>

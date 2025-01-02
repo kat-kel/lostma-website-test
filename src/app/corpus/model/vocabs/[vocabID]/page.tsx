@@ -19,7 +19,6 @@ export async function generateStaticParams(): Promise<object[]> {
 export default async function Page({params, }: {params: Promise<{ vocabID: string }>}) {
   const { vocabID } = await params
   const data = await fetchVocab(vocabID)
-  console.log(data)
   if (data) {
     return (
       <>
