@@ -34,7 +34,6 @@
   "include": [
     "**/*.ts",
     "**/*.tsx",
-    "next.config.ts",
     ".next/types/**/*.ts",
     "next-env.d.ts",
     "public/*.jpg",
