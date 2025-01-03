@@ -23,7 +23,7 @@ export default function Footer() {
                         justify-between 
                         justify-center items-center 
                         grid gap-2 md:gap-4
-                        grid-cols-1 sm:grid-cols-1 md:grid-cols-3
+                        grid-cols-1 md:grid-cols-3
                         divide-dashed 
                         divide-y
                         md:divide-x md:divide-y-0 lg:divide-x lg:divide-y-0
@@ -49,44 +49,44 @@ export default function Footer() {
                             pt-6 md:pt-0 md:pl-6
                         ">
                             <p 
-                            className="font-inter text-[14px] font-medium leading-normal my-0 text-left ms-2"
+                            className="font-inter text-[14px] font-medium leading-normal my-0 text-left"
                             >
                                 Pages
                             </p>
                             <div
                             className="
-                                justify-center items-center 
+                                justify-items-start
                                 grid gap-2 md:gap-4 
-                                grid-cols-2 md:grid-cols-1
+                                grid-cols-3 md:grid-cols-2
                             ">
                                 <Link href="/">
                                     <span
-                                    className="font-inter text-[12px] font-normal hover:font-semibold text-left ms-4"
+                                    className="font-inter text-[12px] font-normal hover:font-semibold text-left"
                                     >Home</span>
                                 </Link>
                                 <Link href="/corpus">
                                     <span
-                                    className="font-inter text-[12px] font-normal hover:font-semibold text-left ms-4"
+                                    className="font-inter text-[12px] font-normal hover:font-semibold text-left"
                                     >Corpus</span>
                                 </Link>
                                 <Link href="/people">
                                     <span
-                                    className="font-inter text-[12px] font-normal hover:font-semibold text-left ms-4"
+                                    className="font-inter text-[12px] font-normal hover:font-semibold text-left"
                                     >People</span>
                                 </Link>
                                 <Link href="/news">
                                     <span
-                                    className="font-inter text-[12px] font-normal hover:font-semibold text-left ms-4"
+                                    className="font-inter text-[12px] font-normal hover:font-semibold text-left"
                                     >News</span>
                                 </Link>
                                 <Link href="/terms-and-conditions">
                                     <span
-                                    className="font-inter text-[12px] font-normal hover:font-semibold text-left ms-4"
+                                    className="font-inter text-[12px] font-normal hover:font-semibold text-left"
                                     >Terms and conditions</span>
                                 </Link>
                                 <Link href="/privacy-policy">
                                     <span
-                                    className="font-inter text-[12px] font-normal hover:font-semibold text-left ms-4"
+                                    className="font-inter text-[12px] font-normal hover:font-semibold text-left"
                                     >Privacy policy</span>
                                 </Link>
                             </div>

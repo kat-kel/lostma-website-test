@@ -78,7 +78,7 @@ export default function Navbar({links}: {links: LinkItem[]}) {
                             
                         }
                         else {
-                            if (href === "${basePath}/") {
+                            if (href === "/") {
                                 isActive = false;
                             }
                             else {

@@ -1,6 +1,7 @@
 import { NewsItemType } from "./models";
 import {PublicationIcon, PresentationIcon, MeetingIcon, ConferenceIcon, OtherIcon} from "./icons";
 import NewsItemClassifications from "./iconTypes";
+import SetInnerHTML from "@/app/components/innerHTML";
 
 function GetItemLink(link: string | null | undefined) {
     if (link) {
@@ -17,16 +18,6 @@ function GetItemLink(link: string | null | undefined) {
     else {
         return ( <></> ) ;
     }
-}
-
-function AddLinebreaks(str:string) {
-    return str.replace(/\n/g, "<br/>");
-}
-
-function GetNewsBody(body:string) {
-    const content = AddLinebreaks(body);
-    return <div className="prose" dangerouslySetInnerHTML={{ __html: content }} />
-
 }
 
 class IconData {
@@ -70,7 +61,7 @@ function MakeIcon(str: string) {
 export default function NewsItem({item, index}: {item: NewsItemType, index: number}) {
     return (
         <>
-        <div key={index} className="
+        <div key={`news-${item.date}-${index}`} className="
             relative
             p-2 md:p-4 rounded
             h-full min-h-48
@@ -93,7 +84,7 @@ export default function NewsItem({item, index}: {item: NewsItemType, index: numb
                 overflow-x-scroll
                 p-2 my-4
             "
-            >{GetNewsBody(item.body)}</article>
+            >{SetInnerHTML(item.body)}</article>
             {GetItemLink(item.link)}
         </div>
         </>

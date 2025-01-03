@@ -2,12 +2,13 @@ import { EntityDetail, VocabTerms, Field } from "./models";
 import Card from "@/app/components/Card";
 import Hashtag from "@/app/components/Hashtag";
 import Link from "next/link";
+import SetInnerHTML from "@/app/components/innerHTML";
 
 function Header({data} :{data:EntityDetail}) {
     let p ;
     if (data.metadata.rty_ReferenceURL) {
         p = <>
-            <p className="content" dangerouslySetInnerHTML={{__html: data.metadata.rty_Description}}/>
+            {SetInnerHTML(data.metadata.rty_Description)}
             <p className="text-muted">
             Equivalent Entity: <Hashtag url={data.metadata.rty_ReferenceURL}/>
             </p>
@@ -15,7 +16,7 @@ function Header({data} :{data:EntityDetail}) {
     }
     else {
         p = <>
-            <p className="content" dangerouslySetInnerHTML={{__html: data.metadata.rty_Description}}/>
+            {SetInnerHTML(data.metadata.rty_Description)}
             <p className="text-muted">
                 Equivalent Entity:
             </p>
@@ -71,11 +72,7 @@ function ConvertFieldType({field,}: {field: Field}) {
         return (<div>foreign key</div>)
     }
     else if (field.dty_Type === HeuristFieldTypes.enum) {
-        return (<div>vocabulary<br/>
-            <Link href={`/corpus/model/vocabs/${field.trm_TreeID}`}>
-                <code className="text-center">{field.trm_Label}</code>
-            </Link>
-        </div>)
+        return (<div>vocabulary</div>)
     }
     else if (field.dty_Type === HeuristFieldTypes.blocktext) {
         return (<div>text</div>)
@@ -97,8 +94,8 @@ function VocabURL({data}: {data:VocabTerms}) {
 
 function ParseVocabTerms({terms, }: {terms:VocabTerms[] | null}) {
     if (terms) {
-        return Object.values(terms).map((obj) => 
-                <li key={obj.id}>
+        return Object.values(terms).map((obj, index) => 
+                <li key={`term-${obj.id}-${index}`}>
                     <VocabURL data={obj}/>
                 </li>
             )
@@ -178,7 +175,12 @@ export default function EntityProfile({data}: {data:EntityDetail}) {
                                                 <div className="content" dangerouslySetInnerHTML={{__html: field.rst_DisplayHelpText}}/>
                                             </td>
                                             <td className="px-6 py-4 text-center overflow-scroll"><Hashtag url={field.dty_SemanticReferenceURL} /></td>
-                                            <td className="px-6 py-4">
+                                            <td className="px-6 py-4 space-y-1">
+                                                <div className="uppercase text-xs text-center">
+                                                    <Link href={`/corpus/model/vocabs/${field.trm_TreeID}`}>
+                                                        {field.trm_Label}
+                                                    </Link>
+                                                </div>
                                                 <ul className="list-disc">
                                                     {ParseVocabTerms({terms:field.vocabTerms})}
                                                 </ul>
