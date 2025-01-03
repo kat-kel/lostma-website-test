@@ -1,7 +1,7 @@
 'use client';
 import { useState } from "react";
 import { LinkSVG } from "@/public/svgs";
-import GenerateCSV from "./GenerateCSV";
+import { GenerateFullTemplate, GenerateReqTemplate } from "./GenerateCSV";
 import { EntityDetail } from "./models";
 
 export default function ContributorPopup(entityDetail:EntityDetail) {
@@ -35,12 +35,20 @@ export default function ContributorPopup(entityDetail:EntityDetail) {
                 <div className="order-last flex items-center justify-center">
                     <div className="grid">
                     <p>Do you want to upload instances of this record type? Download a template for organising each record&apos;s information, wherein each row will be 1 new record of this type.</p>
-                    <div className="flex justify-center">
+                    <div className="flex justify-center py-2">
                         <button 
                             className="h-12 px-4 py-1 w-max rounded-full dark:bg-primary-dark bg-primary hover:outline-none hover:ring-2 hover:ring-inset hover:ring-white"
-                            onClick={() => GenerateCSV({entity:entityDetail})}
+                            onClick={() => GenerateFullTemplate({entity:entityDetail})}
                         >
-                            CSV Template
+                            CSV Template: All Fields
+                        </button>
+                    </div>
+                    <div className="flex justify-center py-2">
+                        <button 
+                            className="h-12 px-4 py-1 w-max rounded-full dark:bg-primary-dark bg-primary hover:outline-none hover:ring-2 hover:ring-inset hover:ring-white"
+                            onClick={() => GenerateReqTemplate({entity:entityDetail})}
+                        >
+                            CSV Template: Required Fields
                         </button>
                     </div>
                     </div>

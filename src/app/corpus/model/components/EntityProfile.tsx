@@ -54,7 +54,7 @@ export default function EntityProfile({data}: {data:EntityDetail}) {
                             <tbody>
                                 {
                                     Object.values(section.fields).map((field, index) =>
-                                        <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700" key={`field-${field.dty_ID}-${index}`}>
+                                        <tr key={`field-${field.dty_ID}-${index}`} className="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
                                             <td scope="row" className="px-6 py-4"><IsRepeatable data={field.rst_MaxValues}/></td>
                                             <td scope="row" className="px-6 py-4"><IsRequired data={field.rst_RequirementType} /></td>
                                             <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
