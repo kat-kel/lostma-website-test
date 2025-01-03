@@ -1,11 +1,11 @@
 import { EntityDetail } from "./models";
 import Hashtag from "@/app/components/Hashtag";
 import Link from "next/link";
-import { LockSVG, UnlockSVG, RepeatableSVG, LinkSVG } from "@/public/svgs";
+import { LockSVG, UnlockSVG, RepeatableSVG } from "@/public/svgs";
 import ConvertFieldType from "./FieldTypeConverter";
 import Header from "./EntityProfileHeader";
 import { IsRepeatable, IsRequired } from "./FieldIcons";
-import ParseVocabTerms from "./VocabTerms";
+import { VocabURL } from "./VocabTerms";
 import ContributorPopup from "./ContributorPopup";
 
 export default function EntityProfile({data}: {data:EntityDetail}) {
@@ -74,7 +74,12 @@ export default function EntityProfile({data}: {data:EntityDetail}) {
                                                     </Link>
                                                 </div>
                                                 <ul className="list-disc">
-                                                    {ParseVocabTerms({terms:field.vocabTerms})}
+                                                    {field.vocabTerms && (
+                                                        Object.values(field.vocabTerms).map((obj, index) => 
+                                                            <li key={`term-${obj.id}-${index}`}>
+                                                                <VocabURL data={obj}/>
+                                                            </li>
+                                                    ))}
                                                 </ul>
                                             </td>
                                         </tr>
