@@ -1,0 +1,1 @@
+self.__SSG_MANIFEST=new Set(["\u002Fcorpus\u002Fmodel\u002Fentities\u002F[entityID]","\u002Fcorpus\u002Fmodel\u002Fvocabs\u002F[vocabID]"]);self.__SSG_MANIFEST_CB&&self.__SSG_MANIFEST_CB()
