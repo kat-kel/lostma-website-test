@@ -13,7 +13,6 @@ export default function RootLayout({
     <html lang="en">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script>
     <title>LostMa</title>
   </head>
   <body className="prefers-color-scheme">

@@ -1,62 +1,7 @@
 import { NewsItemType } from "./models";
-import {PublicationIcon, PresentationIcon, MeetingIcon, ConferenceIcon, OtherIcon} from "./icons";
-import NewsItemClassifications from "./iconTypes";
 import SetInnerHTML from "@/app/components/innerHTML";
-
-function GetItemLink(link: string | null | undefined) {
-    if (link) {
-        return (
-            <span className="
-            inline-block dark:bg-gray-800 bg-gray-200 
-            rounded-full px-3 py-1 
-            text-sm font-semibold mr-2 mb-2
-            ">
-                <a target="_blank" rel="noreferrer noopener" href={link}>{link}</a>
-            </span> );
-    }
-
-    else {
-        return ( <></> ) ;
-    }
-}
-
-class IconData {
-    icon: any | undefined;
-    label: string | undefined;
-}
-
-function MakeIcon(str: string) {
-    const icon = new IconData();
-
-    if (NewsItemClassifications.Publication === str ) {
-        icon.icon = PublicationIcon;
-        icon.label = NewsItemClassifications.Publication;
-    }
-    else if (NewsItemClassifications.Presentation === str ) {
-        icon.icon = PresentationIcon;
-        icon.label = NewsItemClassifications.Presentation;
-    }
-    else if (NewsItemClassifications.Conference === str ) {
-        icon.icon = ConferenceIcon;
-        icon.label = NewsItemClassifications.Conference;
-    }
-    else if (NewsItemClassifications.Meeting === str ) {
-        icon.icon = MeetingIcon;
-        icon.label = NewsItemClassifications.Meeting;
-    }
-    else {
-        icon.icon = OtherIcon;
-        icon.label = NewsItemClassifications.Other;
-    }
-
-    return (
-        <div className="min-w-10 max-w-14 h-12 text-[10px] grid justify-center items-center mx-2">
-            <label className="ps-2 pt-1">{icon.label}</label>
-            <span className="h-10 mx-auto ps-2">{icon.icon}</span>
-        </div>
-    )
-
-}
+import GetItemLink from "./GetItemLink";
+import MakeIcon from "./MakeNewsIcon";
 
 export default function NewsItem({item, index}: {item: NewsItemType, index: number}) {
     return (
@@ -84,7 +29,9 @@ export default function NewsItem({item, index}: {item: NewsItemType, index: numb
                 overflow-x-scroll
                 p-2 my-4
             "
-            >{SetInnerHTML(item.body)}</article>
+            >
+                {SetInnerHTML(item.body)
+            }</article>
             {GetItemLink(item.link)}
         </div>
         </>

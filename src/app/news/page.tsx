@@ -16,7 +16,7 @@ export default function News() {
     </div>
     <div className="grid grid-flow-row auto-rows-max gap-8">
       {
-        Object.values(SortedNewsData).map((i, index) => (NewsItem({item: i, index: index})))
+        Object.values(SortedNewsData).map((i, index) => NewsItem({item: i, index: index}))
       }
     </div>
     </>

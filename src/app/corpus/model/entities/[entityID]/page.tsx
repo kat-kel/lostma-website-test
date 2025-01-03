@@ -13,7 +13,7 @@ export async function generateStaticParams(): Promise<object[]> {
     const arr = await loadData()
 
     // Generate slugs for only the valid entity IDs of the JSON data store
-    return Object.values(arr).flatMap(({id}) => id ? {entityID:id}: []);
+    return Object.values(arr).flatMap(({id}) => id ? {entityID:id.toString()}: []);
 }
  
 export default async function Page({params, }: {params: Promise<{ entityID: string }>}) {

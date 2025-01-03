@@ -1,12 +1,12 @@
 [
     {
-        "id": "101", 
+        "id": 101,
         "metadata": {
             "rty_ID": 101,
             "rty_Name": "text",
             "rty_Description": "Formulation of a work in human language, whose literary form and style can be detected and whose creation can be attributed to one or more individuals.",
             "rty_TitleMask": "[[[1101.term]]] [1090] \\\"[1244]\\\" ([1265], [1285])",
-            "rty_ReferenceURL": "https://www.google.com"
+            "rty_ReferenceURL": null
         },
         "sections": [
             {
@@ -17,10 +17,13 @@
                         "rst_DisplayHelpText": "Received or primary name by which the entity is known.",
                         "dty_ID": 1244,
                         "dty_Type": "freetext",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "required",
+                        "rst_MaxValues": 1,
                         "vocabTerms": null
                     },
                     {
@@ -28,10 +31,13 @@
                         "rst_DisplayHelpText": "Spoken language through which the entity is primarily expressed.",
                         "dty_ID": 1090,
                         "dty_Type": "enum",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": 9469,
                         "trm_Label": "Language",
                         "trm_Description": "A spoken language, through which a literary work is articulated into words.",
+                        "rst_RequirementType": "required",
+                        "rst_MaxValues": 1,
                         "vocabTerms": [
                             {
                                 "label": "fro (Old French)",
@@ -184,10 +190,13 @@
                         "rst_DisplayHelpText": "Overall form of the literary style (verse, prose, mixed).",
                         "dty_ID": 1265,
                         "dty_Type": "enum",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": 9548,
                         "trm_Label": "Form",
                         "trm_Description": "Literary form of the creative work.",
+                        "rst_RequirementType": "required",
+                        "rst_MaxValues": 1,
                         "vocabTerms": [
                             {
                                 "label": "verse",
@@ -225,10 +234,13 @@
                         "rst_DisplayHelpText": "Whether it is received as fact that the entity existed (No, is not hypothetical) or it is attested in a hypothesis (Yes, is hypothetical).",
                         "dty_ID": 1266,
                         "dty_Type": "enum",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": 9481,
                         "trm_Label": "yes/no/maybe vocab",
                         "trm_Description": null,
+                        "rst_RequirementType": "required",
+                        "rst_MaxValues": 1,
                         "vocabTerms": [
                             {
                                 "label": "Yes",
@@ -258,13 +270,16 @@
                     },
                     {
                         "rst_DisplayName": "claim_freetext",
-                        "rst_DisplayHelpText": "<b>[Temporary]</b><br/>Brief note about the hypothesis that attests to this record's existence.<br/>The note is meant to temporarily store information that will eventually be entered into a Hypothesis entity, which should be linked back to this record.",
+                        "rst_DisplayHelpText": "<b>[Temporary]</b><br>Brief note about the hypothesis that attests to this record\\'s existence.<br>The note is meant to temporarily store information that will eventually be entered into a Hypothesis entity, which should be linked back to this record.",
                         "dty_ID": 1294,
                         "dty_Type": "blocktext",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "recommended",
+                        "rst_MaxValues": 1,
                         "vocabTerms": null
                     }
                 ]
@@ -277,10 +292,13 @@
                         "rst_DisplayHelpText": "Alternative names or titles, use for simple alternatives where additional metadata is not needed",
                         "dty_ID": 132,
                         "dty_Type": "freetext",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "recommended",
+                        "rst_MaxValues": 0,
                         "vocabTerms": null
                     },
                     {
@@ -288,21 +306,29 @@
                         "rst_DisplayHelpText": "Realization of an abstract, creative work through words, sound, image, etc.",
                         "dty_ID": 1097,
                         "dty_Type": "resource",
+                        "dty_PtrTargetRectypeIDs": [
+                            103
+                        ],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "recommended",
+                        "rst_MaxValues": 1,
                         "vocabTerms": null
                     },
                     {
                         "rst_DisplayName": "peripheral",
-                        "rst_DisplayHelpText": "Not part of the main corpus's scope.",
+                        "rst_DisplayHelpText": "Not part of the main corpus\\'s scope.",
                         "dty_ID": 1331,
                         "dty_Type": "enum",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": 9496,
                         "trm_Label": "yes/no vocab",
                         "trm_Description": null,
+                        "rst_RequirementType": "required",
+                        "rst_MaxValues": 1,
                         "vocabTerms": [
                             {
                                 "label": "Yes",
@@ -329,21 +355,29 @@
                         "rst_DisplayHelpText": "Specific literary genre or subgenre attributed to the text.",
                         "dty_ID": 1270,
                         "dty_Type": "resource",
+                        "dty_PtrTargetRectypeIDs": [
+                            117
+                        ],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "recommended",
+                        "rst_MaxValues": 1,
                         "vocabTerms": null
                     },
                     {
                         "rst_DisplayName": "length",
-                        "rst_DisplayHelpText": "If in verse, the number of verses.<br/>For prose, the number of chapters.",
+                        "rst_DisplayHelpText": "If in verse, the number of verses.<br>For prose, the number of chapters.",
                         "dty_ID": 1166,
                         "dty_Type": "float",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "recommended",
+                        "rst_MaxValues": 1,
                         "vocabTerms": null
                     },
                     {
@@ -351,10 +385,13 @@
                         "rst_DisplayHelpText": "Briefly describe any uncertainties or ambiguities about the length.",
                         "dty_ID": 1334,
                         "dty_Type": "blocktext",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "recommended",
+                        "rst_MaxValues": 1,
                         "vocabTerms": null
                     },
                     {
@@ -362,10 +399,13 @@
                         "rst_DisplayHelpText": "Type of verses",
                         "dty_ID": 1165,
                         "dty_Type": "enum",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": 9552,
                         "trm_Label": "Meter",
                         "trm_Description": "When a text is composed in verse, the poetic meter.",
+                        "rst_RequirementType": "recommended",
+                        "rst_MaxValues": 0,
                         "vocabTerms": [
                             {
                                 "label": "octosyllabe",
@@ -416,10 +456,13 @@
                         "rst_DisplayHelpText": "Rhyme or assonance",
                         "dty_ID": 1167,
                         "dty_Type": "enum",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": 9558,
                         "trm_Label": "Rhyme",
                         "trm_Description": "When a text is composed in verse, the rhyme pattern.",
+                        "rst_RequirementType": "recommended",
+                        "rst_MaxValues": 0,
                         "vocabTerms": [
                             {
                                 "label": "unknown",
@@ -463,10 +506,15 @@
                         "rst_DisplayHelpText": "Prior text(s) that the entity reworked as an adaptation, translation, versification, etc.",
                         "dty_ID": 1267,
                         "dty_Type": "resource",
+                        "dty_PtrTargetRectypeIDs": [
+                            101
+                        ],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "optional",
+                        "rst_MaxValues": 0,
                         "vocabTerms": null
                     },
                     {
@@ -474,10 +522,13 @@
                         "rst_DisplayHelpText": "Note about the nature of the text or texts from which this text is derived.",
                         "dty_ID": 1332,
                         "dty_Type": "blocktext",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "optional",
+                        "rst_MaxValues": 1,
                         "vocabTerms": null
                     },
                     {
@@ -485,10 +536,13 @@
                         "rst_DisplayHelpText": "General evaluation of the overall survival of all the witnesses of a text.",
                         "dty_ID": 1101,
                         "dty_Type": "enum",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": 9476,
                         "trm_Label": "Tradition Status",
                         "trm_Description": "The overall evaluation of the survival of all witnesses to a text.",
+                        "rst_RequirementType": "required",
+                        "rst_MaxValues": 1,
                         "vocabTerms": [
                             {
                                 "label": "fragmentary",
@@ -518,13 +572,16 @@
                     },
                     {
                         "rst_DisplayName": "status_notes",
-                        "rst_DisplayHelpText": "Brief note detailing the entity's survival status.",
+                        "rst_DisplayHelpText": "Brief note detailing the entity\\'s survival status.",
                         "dty_ID": 1102,
                         "dty_Type": "blocktext",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "optional",
+                        "rst_MaxValues": 1,
                         "vocabTerms": null
                     },
                     {
@@ -532,10 +589,15 @@
                         "rst_DisplayHelpText": "Reference to the stemma(ta) of the text.",
                         "dty_ID": 1117,
                         "dty_Type": "resource",
+                        "dty_PtrTargetRectypeIDs": [
+                            104
+                        ],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "optional",
+                        "rst_MaxValues": 0,
                         "vocabTerms": null
                     }
                 ]
@@ -548,10 +610,13 @@
                         "rst_DisplayHelpText": "Certainty about whether the text is based on a now-lost older version of the same work (lost text)?",
                         "dty_ID": 1103,
                         "dty_Type": "enum",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": 9481,
                         "trm_Label": "yes/no/maybe vocab",
                         "trm_Description": null,
+                        "rst_RequirementType": "required",
+                        "rst_MaxValues": 1,
                         "vocabTerms": [
                             {
                                 "label": "Yes",
@@ -581,24 +646,30 @@
                     },
                     {
                         "rst_DisplayName": "ancient_translations_freetext",
-                        "rst_DisplayHelpText": "Free text description of translations and adaptations that were derived from this record.<br/>The idea is that these texts will later be added to the database and/or link to this record as their model.",
+                        "rst_DisplayHelpText": "Free text description of translations and adaptations that were derived from this record.<br>The idea is that these texts will later be added to the database and/or link to this record as their model.",
                         "dty_ID": 1105,
                         "dty_Type": "freetext",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "optional",
+                        "rst_MaxValues": 0,
                         "vocabTerms": null
                     },
                     {
                         "rst_DisplayName": "rewritings_freetext",
-                        "rst_DisplayHelpText": "Freetext description of rewritings that were derived from this record.<br/>The idea is that these texts will later be added to the database and/or link to this record as their model.",
+                        "rst_DisplayHelpText": "Freetext description of rewritings that were derived from this record.<br>The idea is that these texts will later be added to the database and/or link to this record as their model.",
                         "dty_ID": 1107,
                         "dty_Type": "freetext",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "optional",
+                        "rst_MaxValues": 0,
                         "vocabTerms": null
                     },
                     {
@@ -606,10 +677,13 @@
                         "rst_DisplayHelpText": "Note(s) concerning the text and the tradition",
                         "dty_ID": 1109,
                         "dty_Type": "blocktext",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "optional",
+                        "rst_MaxValues": 1,
                         "vocabTerms": null
                     }
                 ]
@@ -622,10 +696,15 @@
                         "rst_DisplayHelpText": "A regional writing style (aka scripta), similar to the written version of a spoken dialect.",
                         "dty_ID": 1330,
                         "dty_Type": "resource",
+                        "dty_PtrTargetRectypeIDs": [
+                            118
+                        ],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "recommended",
+                        "rst_MaxValues": 1,
                         "vocabTerms": null
                     },
                     {
@@ -633,10 +712,13 @@
                         "rst_DisplayHelpText": "Brief, human-readable description of the writing variant (Scripta) with which this record is associated.",
                         "dty_ID": 1100,
                         "dty_Type": "freetext",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "optional",
+                        "rst_MaxValues": 1,
                         "vocabTerms": null
                     }
                 ]
@@ -649,21 +731,27 @@
                         "rst_DisplayHelpText": "Time when the entity begins to exist.",
                         "dty_ID": 1285,
                         "dty_Type": "date",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": "https://www.wikidata.org/wiki/Property:P571",
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "required",
+                        "rst_MaxValues": 1,
                         "vocabTerms": null
                     },
                     {
                         "rst_DisplayName": "date_of_creation_certainty",
-                        "rst_DisplayHelpText": "Degree of certainty about the dating of the text's creation.",
+                        "rst_DisplayHelpText": "Degree of certainty about the dating of the text\\'s creation.",
                         "dty_ID": 1258,
                         "dty_Type": "enum",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": 9759,
                         "trm_Label": "certainty vocab",
                         "trm_Description": "Degree of certainty",
+                        "rst_RequirementType": "recommended",
+                        "rst_MaxValues": 1,
                         "vocabTerms": [
                             {
                                 "label": "4. Certain (100%)",
@@ -696,21 +784,27 @@
                         "rst_DisplayHelpText": "Notes about the source of the creation date information. Include a human-readable summary or transcription of the date in the source as well as a brief bibliographic reference.",
                         "dty_ID": 1286,
                         "dty_Type": "blocktext",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "recommended",
+                        "rst_MaxValues": 1,
                         "vocabTerms": null
                     },
                     {
                         "rst_DisplayName": "date_freetext",
-                        "rst_DisplayHelpText": "[Temporary] To eventually be input as a date object in <b>date_of_creation</b> field. <br/>Brief, human-readable description of the date given to this record.",
+                        "rst_DisplayHelpText": "[Temporary] To eventually be input as a date object in <b>date_of_creation</b> field. <br>Brief, human-readable description of the date given to this record.",
                         "dty_ID": 1094,
                         "dty_Type": "freetext",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "optional",
+                        "rst_MaxValues": 1,
                         "vocabTerms": null
                     }
                 ]
@@ -723,10 +817,15 @@
                         "rst_DisplayHelpText": "The individual accredited with formulating an expression of the creative work.",
                         "dty_ID": 1288,
                         "dty_Type": "resource",
+                        "dty_PtrTargetRectypeIDs": [
+                            10
+                        ],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "recommended",
+                        "rst_MaxValues": 0,
                         "vocabTerms": null
                     },
                     {
@@ -734,21 +833,29 @@
                         "rst_DisplayHelpText": "When the Text is an adaptation or translation of another Text, the individual accredited with creating the adaptation or translation.",
                         "dty_ID": 1289,
                         "dty_Type": "resource",
+                        "dty_PtrTargetRectypeIDs": [
+                            10
+                        ],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "recommended",
+                        "rst_MaxValues": 0,
                         "vocabTerms": null
                     },
                     {
                         "rst_DisplayName": "author_freetext",
-                        "rst_DisplayHelpText": "<b>Recommended for record label</b><br/>Human-readable reference to an author, which can include annotations about certainty.",
+                        "rst_DisplayHelpText": "<b>Recommended for record label</b><br>Human-readable reference to an author, which can include annotations about certainty.",
                         "dty_ID": 1091,
                         "dty_Type": "freetext",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "recommended",
+                        "rst_MaxValues": 1,
                         "vocabTerms": null
                     }
                 ]
@@ -761,10 +868,15 @@
                         "rst_DisplayHelpText": "Place where the entity was conceived or made.",
                         "dty_ID": 1290,
                         "dty_Type": "resource",
+                        "dty_PtrTargetRectypeIDs": [
+                            12
+                        ],
                         "dty_SemanticReferenceURL": "https://www.wikidata.org/wiki/Property:P1071",
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "recommended",
+                        "rst_MaxValues": 1,
                         "vocabTerms": null
                     },
                     {
@@ -772,10 +884,13 @@
                         "rst_DisplayHelpText": "Notes along with bibliographic citation about the source of the creation place information.",
                         "dty_ID": 1291,
                         "dty_Type": "blocktext",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "recommended",
+                        "rst_MaxValues": 1,
                         "vocabTerms": null
                     }
                 ]
@@ -785,24 +900,36 @@
                 "fields": [
                     {
                         "rst_DisplayName": "described_by_source",
-                        "rst_DisplayHelpText": "Work where the item is described.<br/>Property <a target=\"_blank\" href=\"https://www.wikidata.org/wiki/Property:P1343\">P1343</a><br/>Described in source / written about in / described by encyclopedia / described by reference work",
+                        "rst_DisplayHelpText": "Work where the item is described.<br>Property <a target=\\\"_blank\\\" href=\\\"https://www.wikidata.org/wiki/Property:P1343\\\">P1343</a><br>\\nDescribed in source / written about in / described by encyclopedia / described by reference work",
                         "dty_ID": 1255,
                         "dty_Type": "resource",
+                        "dty_PtrTargetRectypeIDs": [
+                            73,
+                            77,
+                            128,
+                            69,
+                            70
+                        ],
                         "dty_SemanticReferenceURL": "https://www.wikidata.org/wiki/Property:P1343",
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "recommended",
+                        "rst_MaxValues": 0,
                         "vocabTerms": null
                     },
                     {
                         "rst_DisplayName": "described_at_URL",
-                        "rst_DisplayHelpText": "Described at webpage.<br/>Property <a target=\"_blank\" href=\"https://www.wikidata.org/wiki/Property:P973\">P973</a>",
+                        "rst_DisplayHelpText": "Described at webpage.<br>Property <a target=\\\"_blank\\\" href=\\\"https://www.wikidata.org/wiki/Property:P973\\\">P973</a>",
                         "dty_ID": 1269,
                         "dty_Type": "freetext",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "recommended",
+                        "rst_MaxValues": 0,
                         "vocabTerms": null
                     },
                     {
@@ -810,10 +937,13 @@
                         "rst_DisplayHelpText": "Brief notes about a reference and/or citation that should eventually be added to the database and linked to this record.",
                         "dty_ID": 1284,
                         "dty_Type": "freetext",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "optional",
+                        "rst_MaxValues": 0,
                         "vocabTerms": null
                     }
                 ]
@@ -823,13 +953,16 @@
                 "fields": [
                     {
                         "rst_DisplayName": "review_status",
-                        "rst_DisplayHelpText": "Status of record's preparation for public view.",
+                        "rst_DisplayHelpText": "Status of record\\'s preparation for public view.",
                         "dty_ID": 1183,
                         "dty_Type": "enum",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": 9696,
                         "trm_Label": "_record review vocab",
                         "trm_Description": "Terms about records\\' quality check / review status.",
+                        "rst_RequirementType": "required",
+                        "rst_MaxValues": 1,
                         "vocabTerms": [
                             {
                                 "label": "Action required",
@@ -856,10 +989,13 @@
                         "rst_DisplayHelpText": "Information to help with review of this entity.",
                         "dty_ID": 1248,
                         "dty_Type": "blocktext",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "recommended",
+                        "rst_MaxValues": 1,
                         "vocabTerms": null
                     }
                 ]
@@ -867,7 +1003,7 @@
         ]
     },
     {
-        "id": "102",
+        "id": 102,
         "metadata": {
             "rty_ID": 102,
             "rty_Name": "storyverse",
@@ -884,10 +1020,13 @@
                         "rst_DisplayHelpText": "Received or primary name by which the entity is known.",
                         "dty_ID": 1244,
                         "dty_Type": "freetext",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "required",
+                        "rst_MaxValues": 1,
                         "vocabTerms": null
                     }
                 ]
@@ -900,10 +1039,15 @@
                         "rst_DisplayHelpText": "A parent cycle of which this entity is considered a part.",
                         "dty_ID": 1246,
                         "dty_Type": "resource",
+                        "dty_PtrTargetRectypeIDs": [
+                            102
+                        ],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "optional",
+                        "rst_MaxValues": 1,
                         "vocabTerms": null
                     },
                     {
@@ -911,10 +1055,13 @@
                         "rst_DisplayHelpText": "Alternative names or titles, use for simple alternatives where additional metadata is not needed",
                         "dty_ID": 132,
                         "dty_Type": "freetext",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "optional",
+                        "rst_MaxValues": 1,
                         "vocabTerms": null
                     }
                 ]
@@ -924,24 +1071,36 @@
                 "fields": [
                     {
                         "rst_DisplayName": "described_by_source",
-                        "rst_DisplayHelpText": "Work where the item is described.<br/>Property <a target=\"_blank\" href=\"https://www.wikidata.org/wiki/Property:P1343\">P1343</a><br/>Described in source / written about in / described by encyclopedia / described by reference work",
+                        "rst_DisplayHelpText": "Work where the item is described.<br>Property <a target=\\\"_blank\\\" href=\\\"https://www.wikidata.org/wiki/Property:P1343\\\">P1343</a><br>\\nDescribed in source / written about in / described by encyclopedia / described by reference work",
                         "dty_ID": 1255,
                         "dty_Type": "resource",
+                        "dty_PtrTargetRectypeIDs": [
+                            73,
+                            77,
+                            128,
+                            69,
+                            70
+                        ],
                         "dty_SemanticReferenceURL": "https://www.wikidata.org/wiki/Property:P1343",
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "recommended",
+                        "rst_MaxValues": 0,
                         "vocabTerms": null
                     },
                     {
                         "rst_DisplayName": "described_at_URL",
-                        "rst_DisplayHelpText": "Described at webpage.<br/>Property <a target=\"_blank\" href=\"https://www.wikidata.org/wiki/Property:P973\">P973</a>",
+                        "rst_DisplayHelpText": "Described at webpage.<br>Property <a target=\\\"_blank\\\" href=\\\"https://www.wikidata.org/wiki/Property:P973\\\">P973</a>",
                         "dty_ID": 1269,
                         "dty_Type": "freetext",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "recommended",
+                        "rst_MaxValues": 0,
                         "vocabTerms": null
                     },
                     {
@@ -949,10 +1108,13 @@
                         "rst_DisplayHelpText": "Brief notes about a reference and/or citation that should eventually be added to the database and linked to this record.",
                         "dty_ID": 1284,
                         "dty_Type": "freetext",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "optional",
+                        "rst_MaxValues": 0,
                         "vocabTerms": null
                     }
                 ]
@@ -962,13 +1124,16 @@
                 "fields": [
                     {
                         "rst_DisplayName": "review_status",
-                        "rst_DisplayHelpText": "Status of record's preparation for public view.",
+                        "rst_DisplayHelpText": "Status of record\\'s preparation for public view.",
                         "dty_ID": 1183,
                         "dty_Type": "enum",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": 9696,
                         "trm_Label": "_record review vocab",
                         "trm_Description": "Terms about records\\' quality check / review status.",
+                        "rst_RequirementType": "required",
+                        "rst_MaxValues": 1,
                         "vocabTerms": [
                             {
                                 "label": "Action required",
@@ -995,10 +1160,13 @@
                         "rst_DisplayHelpText": "Information to help with review of this entity.",
                         "dty_ID": 1248,
                         "dty_Type": "blocktext",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "optional",
+                        "rst_MaxValues": 1,
                         "vocabTerms": null
                     }
                 ]
@@ -1006,11 +1174,11 @@
         ]
     },
     {
-        "id": "103",
+        "id": 103,
         "metadata": {
             "rty_ID": 103,
             "rty_Name": "story",
-            "rty_Description": "An abstract 'work', as an entity of superior level to  a given text. Typically, it can be a 'geste' known by several major versions or independent texts, like the Story of Guillaume or Vivien, or Perceval for that matter.",
+            "rty_Description": "An abstract \\'work\\', as an entity of superior level to  a given text. Typically, it can be a \\'geste\\' known by several major versions or independent texts, like the Story of Guillaume or Vivien, or Perceval for that matter.",
             "rty_TitleMask": "[1244] ([1263.term])",
             "rty_ReferenceURL": null
         },
@@ -1023,10 +1191,13 @@
                         "rst_DisplayHelpText": "Received or primary name by which the entity is known.",
                         "dty_ID": 1244,
                         "dty_Type": "freetext",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "required",
+                        "rst_MaxValues": 1,
                         "vocabTerms": null
                     },
                     {
@@ -1034,10 +1205,15 @@
                         "rst_DisplayHelpText": "The cycle of which this record is a part.",
                         "dty_ID": 1246,
                         "dty_Type": "resource",
+                        "dty_PtrTargetRectypeIDs": [
+                            102
+                        ],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "recommended",
+                        "rst_MaxValues": 1,
                         "vocabTerms": null
                     }
                 ]
@@ -1050,10 +1226,13 @@
                         "rst_DisplayHelpText": "Alternative names or titles, use for simple alternatives where additional metadata is not needed.",
                         "dty_ID": 132,
                         "dty_Type": "freetext",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "optional",
+                        "rst_MaxValues": 0,
                         "vocabTerms": null
                     },
                     {
@@ -1061,10 +1240,13 @@
                         "rst_DisplayHelpText": "The matter treated by the literary content of the entity.",
                         "dty_ID": 1263,
                         "dty_Type": "enum",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": 9720,
                         "trm_Label": "Matter",
                         "trm_Description": "The matter or thematic subject treated in the course of a story.",
+                        "rst_RequirementType": "required",
+                        "rst_MaxValues": 1,
                         "vocabTerms": [
                             {
                                 "label": "England",
@@ -1103,10 +1285,15 @@
                         "rst_DisplayHelpText": "Model that was intentionally used in crafting the entity.",
                         "dty_ID": 1264,
                         "dty_Type": "resource",
+                        "dty_PtrTargetRectypeIDs": [
+                            103
+                        ],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "optional",
+                        "rst_MaxValues": 0,
                         "vocabTerms": null
                     }
                 ]
@@ -1116,24 +1303,36 @@
                 "fields": [
                     {
                         "rst_DisplayName": "described_by_source",
-                        "rst_DisplayHelpText": "Work where the item is described.<br/>Property <a target=\"_blank\" href=\"https://www.wikidata.org/wiki/Property:P1343\">P1343</a><br/>Described in source / written about in / described by encyclopedia / described by reference work",
+                        "rst_DisplayHelpText": "Work where the item is described.<br>Property <a target=\\\"_blank\\\" href=\\\"https://www.wikidata.org/wiki/Property:P1343\\\">P1343</a><br>\\nDescribed in source / written about in / described by encyclopedia / described by reference work",
                         "dty_ID": 1255,
                         "dty_Type": "resource",
+                        "dty_PtrTargetRectypeIDs": [
+                            73,
+                            77,
+                            128,
+                            69,
+                            70
+                        ],
                         "dty_SemanticReferenceURL": "https://www.wikidata.org/wiki/Property:P1343",
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "recommended",
+                        "rst_MaxValues": 0,
                         "vocabTerms": null
                     },
                     {
                         "rst_DisplayName": "described_at_URL",
-                        "rst_DisplayHelpText": "Described at webpage.<br/>Property <a target=\"_blank\" href=\"https://www.wikidata.org/wiki/Property:P973\">P973</a>",
+                        "rst_DisplayHelpText": "Described at webpage.<br>Property <a target=\\\"_blank\\\" href=\\\"https://www.wikidata.org/wiki/Property:P973\\\">P973</a>",
                         "dty_ID": 1269,
                         "dty_Type": "freetext",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "recommended",
+                        "rst_MaxValues": 0,
                         "vocabTerms": null
                     },
                     {
@@ -1141,26 +1340,32 @@
                         "rst_DisplayHelpText": "Brief notes about a reference and/or citation that should eventually be added to the database and linked to this record.",
                         "dty_ID": 1284,
                         "dty_Type": "freetext",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "optional",
+                        "rst_MaxValues": 0,
                         "vocabTerms": null
                     }
                 ]
             },
             {
-                "sectionName": "Review",
+                "sectionName": "review_status",
                 "fields": [
                     {
                         "rst_DisplayName": "review_status",
-                        "rst_DisplayHelpText": "Status of record's preparation for public view.",
+                        "rst_DisplayHelpText": "Status of record\\'s preparation for public view.",
                         "dty_ID": 1183,
                         "dty_Type": "enum",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": 9696,
                         "trm_Label": "_record review vocab",
                         "trm_Description": "Terms about records\\' quality check / review status.",
+                        "rst_RequirementType": "required",
+                        "rst_MaxValues": 1,
                         "vocabTerms": [
                             {
                                 "label": "Action required",
@@ -1187,10 +1392,13 @@
                         "rst_DisplayHelpText": "Information to help with review of this entity.",
                         "dty_ID": 1248,
                         "dty_Type": "blocktext",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "recommended",
+                        "rst_MaxValues": 1,
                         "vocabTerms": null
                     }
                 ]
@@ -1198,7 +1406,7 @@
         ]
     },
     {
-        "id": "104",
+        "id": 104,
         "metadata": {
             "rty_ID": 104,
             "rty_Name": "stemma",
@@ -1215,10 +1423,13 @@
                         "rst_DisplayHelpText": "id in open stemmata",
                         "dty_ID": 1128,
                         "dty_Type": "freetext",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "optional",
+                        "rst_MaxValues": 1,
                         "vocabTerms": null
                     },
                     {
@@ -1226,10 +1437,13 @@
                         "rst_DisplayHelpText": "openstemmata contributor",
                         "dty_ID": 1131,
                         "dty_Type": "freetext",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "optional",
+                        "rst_MaxValues": 0,
                         "vocabTerms": null
                     },
                     {
@@ -1237,10 +1451,13 @@
                         "rst_DisplayHelpText": "Is this the reference stemma for this particular text, or an obsolete one?",
                         "dty_ID": 1153,
                         "dty_Type": "enum",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": 9496,
                         "trm_Label": "yes/no vocab",
                         "trm_Description": null,
+                        "rst_RequirementType": "optional",
+                        "rst_MaxValues": 1,
                         "vocabTerms": [
                             {
                                 "label": "Yes",
@@ -1267,10 +1484,13 @@
                         "rst_DisplayHelpText": "Freetext version of the text whose stemma is being described.",
                         "dty_ID": 1154,
                         "dty_Type": "freetext",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "optional",
+                        "rst_MaxValues": 1,
                         "vocabTerms": null
                     },
                     {
@@ -1278,10 +1498,13 @@
                         "rst_DisplayHelpText": "Freetext version of the text author whose stemma is being described",
                         "dty_ID": 1155,
                         "dty_Type": "freetext",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "optional",
+                        "rst_MaxValues": 1,
                         "vocabTerms": null
                     },
                     {
@@ -1289,10 +1512,13 @@
                         "rst_DisplayHelpText": "text genre",
                         "dty_ID": 1129,
                         "dty_Type": "enum",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": 9488,
                         "trm_Label": "__subgenre vocab",
                         "trm_Description": null,
+                        "rst_RequirementType": "recommended",
+                        "rst_MaxValues": 1,
                         "vocabTerms": [
                             {
                                 "label": "chanson de geste",
@@ -1450,10 +1676,13 @@
                         "rst_DisplayHelpText": "Type of tree: reconstructed (general case) or observed (very rare)",
                         "dty_ID": 1139,
                         "dty_Type": "enum",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": 9493,
                         "trm_Label": "stemmaType vocab",
                         "trm_Description": null,
+                        "rst_RequirementType": "optional",
+                        "rst_MaxValues": 1,
                         "vocabTerms": [
                             {
                                 "label": "reconstructed",
@@ -1474,10 +1703,13 @@
                         "rst_DisplayHelpText": "stemma actually drawn in the source, or deduced from textual description?",
                         "dty_ID": 1140,
                         "dty_Type": "enum",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": 9496,
                         "trm_Label": "yes/no vocab",
                         "trm_Description": null,
+                        "rst_RequirementType": "optional",
+                        "rst_MaxValues": 1,
                         "vocabTerms": [
                             {
                                 "label": "Yes",
@@ -1504,10 +1736,13 @@
                         "rst_DisplayHelpText": "contamination present (whether drawn or not)?",
                         "dty_ID": 1141,
                         "dty_Type": "enum",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": 9496,
                         "trm_Label": "yes/no vocab",
                         "trm_Description": null,
+                        "rst_RequirementType": "optional",
+                        "rst_MaxValues": 1,
                         "vocabTerms": [
                             {
                                 "label": "Yes",
@@ -1534,10 +1769,13 @@
                         "rst_DisplayHelpText": "Extra stemmatic contamination (i.e., coming from outside the tree)",
                         "dty_ID": 1142,
                         "dty_Type": "enum",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": 9496,
                         "trm_Label": "yes/no vocab",
                         "trm_Description": null,
+                        "rst_RequirementType": "optional",
+                        "rst_MaxValues": 1,
                         "vocabTerms": [
                             {
                                 "label": "Yes",
@@ -1564,10 +1802,13 @@
                         "rst_DisplayHelpText": "Root type if specified: original, archetype",
                         "dty_ID": 1143,
                         "dty_Type": "enum",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": 9499,
                         "trm_Label": "rootType vocab",
                         "trm_Description": null,
+                        "rst_RequirementType": "optional",
+                        "rst_MaxValues": 1,
                         "vocabTerms": [
                             {
                                 "label": "unspecified",
@@ -1594,10 +1835,13 @@
                         "rst_DisplayHelpText": "Does the stemma include all witnesses?",
                         "dty_ID": 1144,
                         "dty_Type": "enum",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": 9503,
                         "trm_Label": "completeWits vocab",
                         "trm_Description": null,
+                        "rst_RequirementType": "optional",
+                        "rst_MaxValues": 1,
                         "vocabTerms": [
                             {
                                 "label": "included",
@@ -1624,10 +1868,13 @@
                         "rst_DisplayHelpText": "If it is a translation or rewriting, does the stemma include the source text(s) ?",
                         "dty_ID": 1145,
                         "dty_Type": "enum",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": 9507,
                         "trm_Label": "sourceText and derivatives vocab",
                         "trm_Description": null,
+                        "rst_RequirementType": "optional",
+                        "rst_MaxValues": 1,
                         "vocabTerms": [
                             {
                                 "label": "NA",
@@ -1660,10 +1907,13 @@
                         "rst_DisplayHelpText": "Does the stemma include derivatives (when applicable) such as translations, rewritings, … ?",
                         "dty_ID": 1146,
                         "dty_Type": "enum",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": 9507,
                         "trm_Label": "sourceText and derivatives vocab",
                         "trm_Description": null,
+                        "rst_RequirementType": "optional",
+                        "rst_MaxValues": 1,
                         "vocabTerms": [
                             {
                                 "label": "NA",
@@ -1696,10 +1946,13 @@
                         "rst_DisplayHelpText": "Note(s) concerning the text and the tradition",
                         "dty_ID": 1109,
                         "dty_Type": "blocktext",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "recommended",
+                        "rst_MaxValues": 1,
                         "vocabTerms": null
                     },
                     {
@@ -1707,10 +1960,15 @@
                         "rst_DisplayHelpText": "witness of this tradition",
                         "dty_ID": 1147,
                         "dty_Type": "resource",
+                        "dty_PtrTargetRectypeIDs": [
+                            105
+                        ],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "optional",
+                        "rst_MaxValues": 0,
                         "vocabTerms": null
                     },
                     {
@@ -1718,10 +1976,15 @@
                         "rst_DisplayHelpText": "witness of this tradition, yet not included in this stemma",
                         "dty_ID": 1148,
                         "dty_Type": "resource",
+                        "dty_PtrTargetRectypeIDs": [
+                            105
+                        ],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "optional",
+                        "rst_MaxValues": 1,
                         "vocabTerms": null
                     },
                     {
@@ -1729,10 +1992,15 @@
                         "rst_DisplayHelpText": "lost manuscript, part of the tradition, usually not shown on stemma",
                         "dty_ID": 1150,
                         "dty_Type": "resource",
+                        "dty_PtrTargetRectypeIDs": [
+                            106
+                        ],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "optional",
+                        "rst_MaxValues": 1,
                         "vocabTerms": null
                     }
                 ]
@@ -1745,10 +2013,13 @@
                         "rst_DisplayHelpText": "type of publication",
                         "dty_ID": 1137,
                         "dty_Type": "enum",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": 9490,
                         "trm_Label": "publicationType vocab",
                         "trm_Description": null,
+                        "rst_RequirementType": "optional",
+                        "rst_MaxValues": 1,
                         "vocabTerms": [
                             {
                                 "label": "book",
@@ -1769,10 +2040,13 @@
                         "rst_DisplayHelpText": "auteur (non contrôlé)",
                         "dty_ID": 1091,
                         "dty_Type": "freetext",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "recommended",
+                        "rst_MaxValues": 1,
                         "vocabTerms": null
                     },
                     {
@@ -1780,10 +2054,13 @@
                         "rst_DisplayHelpText": "title of the ...",
                         "dty_ID": 1092,
                         "dty_Type": "freetext",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "recommended",
+                        "rst_MaxValues": 1,
                         "vocabTerms": null
                     },
                     {
@@ -1791,10 +2068,13 @@
                         "rst_DisplayHelpText": "publication place",
                         "dty_ID": 1133,
                         "dty_Type": "freetext",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "optional",
+                        "rst_MaxValues": 1,
                         "vocabTerms": null
                     },
                     {
@@ -1802,10 +2082,13 @@
                         "rst_DisplayHelpText": "publication date",
                         "dty_ID": 1132,
                         "dty_Type": "date",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "optional",
+                        "rst_MaxValues": 1,
                         "vocabTerms": null
                     },
                     {
@@ -1813,10 +2096,13 @@
                         "rst_DisplayHelpText": "publication series",
                         "dty_ID": 1134,
                         "dty_Type": "freetext",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "optional",
+                        "rst_MaxValues": 1,
                         "vocabTerms": null
                     },
                     {
@@ -1824,10 +2110,13 @@
                         "rst_DisplayHelpText": "the volume",
                         "dty_ID": 1135,
                         "dty_Type": "float",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "optional",
+                        "rst_MaxValues": 1,
                         "vocabTerms": null
                     },
                     {
@@ -1835,10 +2124,13 @@
                         "rst_DisplayHelpText": "page",
                         "dty_ID": 1136,
                         "dty_Type": "freetext",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "optional",
+                        "rst_MaxValues": 1,
                         "vocabTerms": null
                     },
                     {
@@ -1846,21 +2138,27 @@
                         "rst_DisplayHelpText": "stemma number (if more than one in publication)",
                         "dty_ID": 1138,
                         "dty_Type": "float",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "optional",
+                        "rst_MaxValues": 1,
                         "vocabTerms": null
                     },
                     {
                         "rst_DisplayName": "URL(s)",
-                        "rst_DisplayHelpText": "The URL(s) of resources or web pages relating to the current record. Include http:// or https:// <br/>If there is a primary URL, turn on the special URL field in the record type definition (Attributes) form., which will become a hotlink.",
+                        "rst_DisplayHelpText": "The URL(s) of resources or web pages relating to the current record. Include http:// or https:// <br>\\nIf there is a primary URL, turn on the special URL field in the record type definition (Attributes) form., which will become a hotlink.",
                         "dty_ID": 986,
                         "dty_Type": "freetext",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "recommended",
+                        "rst_MaxValues": 1,
                         "vocabTerms": null
                     }
                 ]
@@ -1868,7 +2166,7 @@
         ]
     },
     {
-        "id": "105",
+        "id": 105,
         "metadata": {
             "rty_ID": 105,
             "rty_Name": "witness",
@@ -1885,21 +2183,31 @@
                         "rst_DisplayHelpText": "The text of which this item is a physical embodiment and inscription.",
                         "dty_ID": 1295,
                         "dty_Type": "resource",
+                        "dty_PtrTargetRectypeIDs": [
+                            101
+                        ],
                         "dty_SemanticReferenceURL": "https://www.wikidata.org/wiki/Property:P1557",
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "required",
+                        "rst_MaxValues": 1,
                         "vocabTerms": null
                     },
                     {
                         "rst_DisplayName": "observed_on_pages",
-                        "rst_DisplayHelpText": "A subdivision of the witness's text in an extant document.<br/><a target=\"_blank\" href=\"https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-div.html\">div</a>",
+                        "rst_DisplayHelpText": "A subdivision of the witness\\'s text in an extant document.<br><a target=\\\"_blank\\\" href=\\\"https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-div.html\\\">div</a>",
                         "dty_ID": 1356,
                         "dty_Type": "resource",
+                        "dty_PtrTargetRectypeIDs": [
+                            125
+                        ],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "recommended",
+                        "rst_MaxValues": 0,
                         "vocabTerms": null
                     },
                     {
@@ -1907,10 +2215,15 @@
                         "rst_DisplayHelpText": "The document in which the witness was last observed.",
                         "dty_ID": 1190,
                         "dty_Type": "resource",
+                        "dty_PtrTargetRectypeIDs": [
+                            106
+                        ],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "optional",
+                        "rst_MaxValues": 1,
                         "vocabTerms": null
                     }
                 ]
@@ -1923,10 +2236,13 @@
                         "rst_DisplayHelpText": "Whether the entity is attested (True) in a hypothesis or whether it is received as fact that it exists or existed (False).",
                         "dty_ID": 1266,
                         "dty_Type": "enum",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": 9481,
                         "trm_Label": "yes/no/maybe vocab",
                         "trm_Description": null,
+                        "rst_RequirementType": "required",
+                        "rst_MaxValues": 1,
                         "vocabTerms": [
                             {
                                 "label": "Yes",
@@ -1956,35 +2272,48 @@
                     },
                     {
                         "rst_DisplayName": "claim_freetext",
-                        "rst_DisplayHelpText": "<b>[Temporary]</b><br/>Brief note about the hypothesis that attests to this record's existence. This information is meant to be a temporary note that will eventually be entered into a Hypothesis entity, which should be linked back to this record.",
+                        "rst_DisplayHelpText": "<b>[Temporary]</b><br>Brief note about the hypothesis that attests to this record\\'s existence. This information is meant to be a temporary note that will eventually be entered into a Hypothesis entity, which should be linked back to this record.",
                         "dty_ID": 1294,
                         "dty_Type": "blocktext",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "recommended",
+                        "rst_MaxValues": 1,
                         "vocabTerms": null
                     },
                     {
                         "rst_DisplayName": "used_to_follow_fragment",
-                        "rst_DisplayHelpText": "If the witness is a fragment, another fragment that represents an earlier part of the text and the 2 fragments were originally produced as one 1 unit. <br/><b>[linked fragment (pp.1-2)]</b> <--(used to follow)-- <b>[this fragment (pp.3-4)]</b>",
+                        "rst_DisplayHelpText": "If the witness is a fragment, another fragment that represents an earlier part of the text and the 2 fragments were originally produced as one 1 unit. <br><b>[linked fragment (pp.1-2)]</b> <--(used to follow)-- <b>[this fragment (pp.3-4)]</b>",
                         "dty_ID": 1298,
                         "dty_Type": "resource",
+                        "dty_PtrTargetRectypeIDs": [
+                            105
+                        ],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "optional",
+                        "rst_MaxValues": 1,
                         "vocabTerms": null
                     },
                     {
                         "rst_DisplayName": "used_to_follow_witness",
-                        "rst_DisplayHelpText": "If the witness was originally with another witness, especially the witness of a different text, in a now lost document, the witness that immediately preceded it in the hypothetical document. <br/><b>[linked witness] <--(used to follow)-- [this witness]</b>",
+                        "rst_DisplayHelpText": "If the witness was originally with another witness, especially the witness of a different text, in a now lost document, the witness that immediately preceded it in the hypothetical document. <br><b>[linked witness] <--(used to follow)-- [this witness]</b>",
                         "dty_ID": 1300,
                         "dty_Type": "resource",
+                        "dty_PtrTargetRectypeIDs": [
+                            105
+                        ],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "optional",
+                        "rst_MaxValues": 1,
                         "vocabTerms": null
                     }
                 ]
@@ -1997,10 +2326,13 @@
                         "rst_DisplayHelpText": "An abbreviation, usually a letter or a letter with a numeral, assigned to a source. If not siglum has been associated with the witness, use a shelfmark or other shorthand that would serve the purpose of labeling the witness in a stemma.",
                         "dty_ID": 1296,
                         "dty_Type": "freetext",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "required",
+                        "rst_MaxValues": 1,
                         "vocabTerms": null
                     },
                     {
@@ -2008,10 +2340,13 @@
                         "rst_DisplayHelpText": "Other sigla by which the witness is known and which is different than the siglum preferred for making new stemma.",
                         "dty_ID": 1333,
                         "dty_Type": "freetext",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "optional",
+                        "rst_MaxValues": 0,
                         "vocabTerms": null
                     },
                     {
@@ -2019,10 +2354,13 @@
                         "rst_DisplayHelpText": "Survival status of the witness.",
                         "dty_ID": 1301,
                         "dty_Type": "enum",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": 9543,
                         "trm_Label": "Witness Status",
                         "trm_Description": "The survival status of a Witness.",
+                        "rst_RequirementType": "required",
+                        "rst_MaxValues": 1,
                         "vocabTerms": [
                             {
                                 "label": "fragmentary",
@@ -2052,13 +2390,16 @@
                     },
                     {
                         "rst_DisplayName": "status_notes",
-                        "rst_DisplayHelpText": "Brief note detailing the entity's survival status.",
+                        "rst_DisplayHelpText": "Brief note detailing the entity\\'s survival status.",
                         "dty_ID": 1102,
                         "dty_Type": "blocktext",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "recommended",
+                        "rst_MaxValues": 1,
                         "vocabTerms": null
                     }
                 ]
@@ -2071,10 +2412,13 @@
                         "rst_DisplayHelpText": "The witness was never a full manifestation of the text, but offers an excerpt or a citation of the text.",
                         "dty_ID": 1302,
                         "dty_Type": "enum",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": 9481,
                         "trm_Label": "yes/no/maybe vocab",
                         "trm_Description": null,
+                        "rst_RequirementType": "required",
+                        "rst_MaxValues": 1,
                         "vocabTerms": [
                             {
                                 "label": "Yes",
@@ -2107,10 +2451,15 @@
                         "rst_DisplayHelpText": "A regional writing style (aka scripta), similar to the written version of a spoken dialect.",
                         "dty_ID": 1330,
                         "dty_Type": "resource",
+                        "dty_PtrTargetRectypeIDs": [
+                            118
+                        ],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "recommended",
+                        "rst_MaxValues": 1,
                         "vocabTerms": null
                     },
                     {
@@ -2118,10 +2467,13 @@
                         "rst_DisplayHelpText": "Brief, human-readable description of the writing variant (Scripta) with which this record is associated.",
                         "dty_ID": 1100,
                         "dty_Type": "freetext",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "optional",
+                        "rst_MaxValues": 1,
                         "vocabTerms": null
                     }
                 ]
@@ -2134,21 +2486,27 @@
                         "rst_DisplayHelpText": "Time when the entity begins to exist.",
                         "dty_ID": 1285,
                         "dty_Type": "date",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": "https://www.wikidata.org/wiki/Property:P571",
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "required",
+                        "rst_MaxValues": 1,
                         "vocabTerms": null
                     },
                     {
                         "rst_DisplayName": "date_of_creation_certainty",
-                        "rst_DisplayHelpText": "Degree of certainty about the dating of the witness's production.",
+                        "rst_DisplayHelpText": "Degree of certainty about the dating of the witness\\'s production.",
                         "dty_ID": 1258,
                         "dty_Type": "enum",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": 9759,
                         "trm_Label": "certainty vocab",
                         "trm_Description": "Degree of certainty",
+                        "rst_RequirementType": "recommended",
+                        "rst_MaxValues": 1,
                         "vocabTerms": [
                             {
                                 "label": "4. Certain (100%)",
@@ -2181,10 +2539,13 @@
                         "rst_DisplayHelpText": "Notes about the source of the creation date information, including a human-readable summary or transcription of the time range. Can include a brief bibliographic citation.",
                         "dty_ID": 1286,
                         "dty_Type": "blocktext",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "recommended",
+                        "rst_MaxValues": 1,
                         "vocabTerms": null
                     },
                     {
@@ -2192,10 +2553,13 @@
                         "rst_DisplayHelpText": "Brief, human-readable description of the date given to this record.",
                         "dty_ID": 1094,
                         "dty_Type": "freetext",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "recommended",
+                        "rst_MaxValues": 1,
                         "vocabTerms": null
                     }
                 ]
@@ -2208,10 +2572,15 @@
                         "rst_DisplayHelpText": "The scribe accredited with composing the witness.",
                         "dty_ID": 1303,
                         "dty_Type": "resource",
+                        "dty_PtrTargetRectypeIDs": [
+                            10
+                        ],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "optional",
+                        "rst_MaxValues": 0,
                         "vocabTerms": null
                     },
                     {
@@ -2219,10 +2588,13 @@
                         "rst_DisplayHelpText": "Number of hands identified in the witness.",
                         "dty_ID": 1336,
                         "dty_Type": "float",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "optional",
+                        "rst_MaxValues": 1,
                         "vocabTerms": null
                     },
                     {
@@ -2230,10 +2602,13 @@
                         "rst_DisplayHelpText": "Notes about the source of information for the number of hands or number of scribes.",
                         "dty_ID": 1337,
                         "dty_Type": "blocktext",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "optional",
+                        "rst_MaxValues": 1,
                         "vocabTerms": null
                     }
                 ]
@@ -2246,10 +2621,15 @@
                         "rst_DisplayHelpText": "Place where the entity was conceived or made.",
                         "dty_ID": 1290,
                         "dty_Type": "resource",
+                        "dty_PtrTargetRectypeIDs": [
+                            12
+                        ],
                         "dty_SemanticReferenceURL": "https://www.wikidata.org/wiki/Property:P1071",
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "recommended",
+                        "rst_MaxValues": 0,
                         "vocabTerms": null
                     },
                     {
@@ -2257,10 +2637,13 @@
                         "rst_DisplayHelpText": "Notes along with bibliographic citation about the source of the creation place information.",
                         "dty_ID": 1291,
                         "dty_Type": "blocktext",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "recommended",
+                        "rst_MaxValues": 1,
                         "vocabTerms": null
                     }
                 ]
@@ -2270,24 +2653,36 @@
                 "fields": [
                     {
                         "rst_DisplayName": "described_by_source",
-                        "rst_DisplayHelpText": "Work where the item is described.<br/>Property <a target=\"_blank\" href=\"https://www.wikidata.org/wiki/Property:P1343\">P1343</a><br/>Described in source / written about in / described by encyclopedia / described by reference work",
+                        "rst_DisplayHelpText": "Work where the item is described.<br>Property <a target=\\\"_blank\\\" href=\\\"https://www.wikidata.org/wiki/Property:P1343\\\">P1343</a><br>\\nDescribed in source / written about in / described by encyclopedia / described by reference work",
                         "dty_ID": 1255,
                         "dty_Type": "resource",
+                        "dty_PtrTargetRectypeIDs": [
+                            73,
+                            77,
+                            128,
+                            69,
+                            70
+                        ],
                         "dty_SemanticReferenceURL": "https://www.wikidata.org/wiki/Property:P1343",
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "recommended",
+                        "rst_MaxValues": 0,
                         "vocabTerms": null
                     },
                     {
                         "rst_DisplayName": "described_at_URL",
-                        "rst_DisplayHelpText": "Described at webpage.<br/>Property <a target=\"_blank\" href=\"https://www.wikidata.org/wiki/Property:P973\">P973</a>",
+                        "rst_DisplayHelpText": "Described at webpage.<br>Property <a target=\\\"_blank\\\" href=\\\"https://www.wikidata.org/wiki/Property:P973\\\">P973</a>",
                         "dty_ID": 1269,
                         "dty_Type": "freetext",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "recommended",
+                        "rst_MaxValues": 0,
                         "vocabTerms": null
                     },
                     {
@@ -2295,10 +2690,13 @@
                         "rst_DisplayHelpText": "Brief notes about a reference and/or citation that should eventually be added to the database and linked to this record.",
                         "dty_ID": 1284,
                         "dty_Type": "freetext",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "optional",
+                        "rst_MaxValues": 1,
                         "vocabTerms": null
                     }
                 ]
@@ -2308,13 +2706,16 @@
                 "fields": [
                     {
                         "rst_DisplayName": "review_status",
-                        "rst_DisplayHelpText": "Status of record's preparation for public view.",
+                        "rst_DisplayHelpText": "Status of record\\'s preparation for public view.",
                         "dty_ID": 1183,
                         "dty_Type": "enum",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": 9696,
                         "trm_Label": "_record review vocab",
                         "trm_Description": "Terms about records\\' quality check / review status.",
+                        "rst_RequirementType": "required",
+                        "rst_MaxValues": 1,
                         "vocabTerms": [
                             {
                                 "label": "Action required",
@@ -2341,10 +2742,13 @@
                         "rst_DisplayHelpText": "Information to help with review of this entity.",
                         "dty_ID": 1248,
                         "dty_Type": "blocktext",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "recommended",
+                        "rst_MaxValues": 1,
                         "vocabTerms": null
                     }
                 ]
@@ -2352,7 +2756,7 @@
         ]
     },
     {
-        "id": "106",
+        "id": 106,
         "metadata": {
             "rty_ID": 106,
             "rty_Name": "document",
@@ -2366,35 +2770,46 @@
                 "fields": [
                     {
                         "rst_DisplayName": "current_shelfmark",
-                        "rst_DisplayHelpText": "If this record is an extant (not hypothetical) document, the shelf mark by which it can be requested or, in the case of unavailable archives, by which it is known.<br/>Query <a target=\"_blank\" href=\"https://www.wikidata.org/wiki/Q104842294\">Q104842294</a>",
+                        "rst_DisplayHelpText": "If this record is an extant (not hypothetical) document, the shelf mark by which it can be requested or, in the case of unavailable archives, by which it is known.<br>Query <a target=\\\"_blank\\\" href=\\\"https://www.wikidata.org/wiki/Q104842294\\\">Q104842294</a>",
                         "dty_ID": 1307,
                         "dty_Type": "freetext",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "recommended",
+                        "rst_MaxValues": 1,
                         "vocabTerms": null
                     },
                     {
                         "rst_DisplayName": "location",
-                        "rst_DisplayHelpText": "Location of the object, structure or event, i.e. the Mona Lisa's location is the Louvre Museum.<br/>Property <a target=\"_blank\" href=\"https://www.wikidata.org/wiki/Property:P276\">P276</a>",
+                        "rst_DisplayHelpText": "Location of the object, structure or event, i.e. the Mona Lisa\\'s location is the Louvre Museum.<br>Property <a target=\\\"_blank\\\" href=\\\"https://www.wikidata.org/wiki/Property:P276\\\">P276</a>",
                         "dty_ID": 1308,
                         "dty_Type": "resource",
+                        "dty_PtrTargetRectypeIDs": [
+                            108
+                        ],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "recommended",
+                        "rst_MaxValues": 1,
                         "vocabTerms": null
                     },
                     {
                         "rst_DisplayName": "collection",
-                        "rst_DisplayHelpText": "A single collection of materials with some unifying characteristic, housed in an archive.<br/>Query <a target=\"_blank\" href=\"https://www.wikidata.org/wiki/Q9388534\">Q9388534</a>",
+                        "rst_DisplayHelpText": "A single collection of materials with some unifying characteristic, housed in an archive.<br>Query <a target=\\\"_blank\\\" href=\\\"https://www.wikidata.org/wiki/Q9388534\\\">Q9388534</a>",
                         "dty_ID": 1309,
                         "dty_Type": "freetext",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "optional",
+                        "rst_MaxValues": 1,
                         "vocabTerms": null
                     },
                     {
@@ -2402,10 +2817,13 @@
                         "rst_DisplayHelpText": "If this record is a hypothetical document, a useful label by which to recognize and refer to the document.",
                         "dty_ID": 1310,
                         "dty_Type": "freetext",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "optional",
+                        "rst_MaxValues": 1,
                         "vocabTerms": null
                     }
                 ]
@@ -2418,10 +2836,13 @@
                         "rst_DisplayHelpText": "Whether the entity is attested (True) in a hypothesis or whether it is received as fact that it exists or existed (False).",
                         "dty_ID": 1266,
                         "dty_Type": "enum",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": 9481,
                         "trm_Label": "yes/no/maybe vocab",
                         "trm_Description": null,
+                        "rst_RequirementType": "required",
+                        "rst_MaxValues": 1,
                         "vocabTerms": [
                             {
                                 "label": "Yes",
@@ -2451,13 +2872,16 @@
                     },
                     {
                         "rst_DisplayName": "claim_freetext",
-                        "rst_DisplayHelpText": "<b>[Temporary]</b><br/>Brief note about the hypothesis that attests to this record's existence. This information is meant to be a temporary note that will eventually be entered into a Hypothesis entity, which should be linked back to this record.",
+                        "rst_DisplayHelpText": "<b>[Temporary]</b><br>Brief note about the hypothesis that attests to this record\\'s existence. This information is meant to be a temporary note that will eventually be entered into a Hypothesis entity, which should be linked back to this record.",
                         "dty_ID": 1294,
                         "dty_Type": "blocktext",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "recommended",
+                        "rst_MaxValues": 1,
                         "vocabTerms": null
                     }
                 ]
@@ -2470,10 +2894,13 @@
                         "rst_DisplayHelpText": "Whether or not the document is a collection of fragments, compiled at a date significantly later than when the manuscript components were themselves created, i.e. a 19th-century collection of 12th- and 13th-century fragments.",
                         "dty_ID": 1312,
                         "dty_Type": "enum",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": 9496,
                         "trm_Label": "yes/no vocab",
                         "trm_Description": null,
+                        "rst_RequirementType": "required",
+                        "rst_MaxValues": 1,
                         "vocabTerms": [
                             {
                                 "label": "Yes",
@@ -2500,10 +2927,13 @@
                         "rst_DisplayHelpText": "Outmoded shelf marks by which the archival object used to be known and referenced.",
                         "dty_ID": 1311,
                         "dty_Type": "freetext",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "recommended",
+                        "rst_MaxValues": 0,
                         "vocabTerms": null
                     },
                     {
@@ -2511,21 +2941,29 @@
                         "rst_DisplayHelpText": "A digitization of the archival object, preferably in its entirety.",
                         "dty_ID": 1313,
                         "dty_Type": "resource",
+                        "dty_PtrTargetRectypeIDs": [
+                            126
+                        ],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "recommended",
+                        "rst_MaxValues": 0,
                         "vocabTerms": null
                     },
                     {
                         "rst_DisplayName": "digitization_freetext",
-                        "rst_DisplayHelpText": "<b>Placeholder</b><br/>Reference to a digitization that hasn't yet been added to the database, as a means of temporarily storing information that will eventually be linked via an entity to this record.",
+                        "rst_DisplayHelpText": "<b>Placeholder</b><br>Reference to a digitization that hasn\\'t yet been added to the database, as a means of temporarily storing information that will eventually be linked via an entity to this record.",
                         "dty_ID": 1326,
                         "dty_Type": "freetext",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "optional",
+                        "rst_MaxValues": 0,
                         "vocabTerms": null
                     }
                 ]
@@ -2538,10 +2976,13 @@
                         "rst_DisplayHelpText": "Time when the entity begins to exist.",
                         "dty_ID": 1285,
                         "dty_Type": "date",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": "https://www.wikidata.org/wiki/Property:P571",
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "forbidden",
+                        "rst_MaxValues": 1,
                         "vocabTerms": null
                     },
                     {
@@ -2549,10 +2990,13 @@
                         "rst_DisplayHelpText": "Brief, human-readable description of the date given to this record.",
                         "dty_ID": 1094,
                         "dty_Type": "freetext",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "forbidden",
+                        "rst_MaxValues": 1,
                         "vocabTerms": null
                     },
                     {
@@ -2560,10 +3004,13 @@
                         "rst_DisplayHelpText": "Notes about the source of the creation date information, including a human-readable summary or transcription of the time range. Can include a brief bibliographic citation.",
                         "dty_ID": 1286,
                         "dty_Type": "blocktext",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "forbidden",
+                        "rst_MaxValues": 1,
                         "vocabTerms": null
                     },
                     {
@@ -2571,21 +3018,29 @@
                         "rst_DisplayHelpText": "Place where the entity was conceived or made.",
                         "dty_ID": 1290,
                         "dty_Type": "resource",
+                        "dty_PtrTargetRectypeIDs": [
+                            12
+                        ],
                         "dty_SemanticReferenceURL": "https://www.wikidata.org/wiki/Property:P1071",
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "forbidden",
+                        "rst_MaxValues": 1,
                         "vocabTerms": null
                     },
                     {
                         "rst_DisplayName": "place_of_creation_freetext",
-                        "rst_DisplayHelpText": "Placeholder notes about the entity's place of creation, to eventually be converted into a relation to a Place entity.",
+                        "rst_DisplayHelpText": "Placeholder notes about the entity\\'s place of creation, to eventually be converted into a relation to a Place entity.",
                         "dty_ID": 1328,
                         "dty_Type": "freetext",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "forbidden",
+                        "rst_MaxValues": 1,
                         "vocabTerms": null
                     },
                     {
@@ -2593,10 +3048,13 @@
                         "rst_DisplayHelpText": "Notes along with bibliographic citation about the source of the creation place information.",
                         "dty_ID": 1291,
                         "dty_Type": "blocktext",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "forbidden",
+                        "rst_MaxValues": 1,
                         "vocabTerms": null
                     }
                 ]
@@ -2606,46 +3064,64 @@
                 "fields": [
                     {
                         "rst_DisplayName": "described_by_source",
-                        "rst_DisplayHelpText": "Work where the item is described.<br/>Property <a target=\"_blank\" href=\"https://www.wikidata.org/wiki/Property:P1343\">P1343</a><br/>Described in source / written about in / described by encyclopedia / described by reference work",
+                        "rst_DisplayHelpText": "Work where the item is described.<br>Property <a target=\\\"_blank\\\" href=\\\"https://www.wikidata.org/wiki/Property:P1343\\\">P1343</a><br>\\nDescribed in source / written about in / described by encyclopedia / described by reference work",
                         "dty_ID": 1255,
                         "dty_Type": "resource",
+                        "dty_PtrTargetRectypeIDs": [
+                            73,
+                            77,
+                            128,
+                            69,
+                            70
+                        ],
                         "dty_SemanticReferenceURL": "https://www.wikidata.org/wiki/Property:P1343",
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "recommended",
+                        "rst_MaxValues": 0,
                         "vocabTerms": null
                     },
                     {
                         "rst_DisplayName": "described_at_URL",
-                        "rst_DisplayHelpText": "Described at webpage.<br/>Property <a target=\"_blank\" href=\"https://www.wikidata.org/wiki/Property:P973\">P973</a>",
+                        "rst_DisplayHelpText": "Described at webpage.<br>Property <a target=\\\"_blank\\\" href=\\\"https://www.wikidata.org/wiki/Property:P973\\\">P973</a>",
                         "dty_ID": 1269,
                         "dty_Type": "freetext",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "recommended",
+                        "rst_MaxValues": 0,
                         "vocabTerms": null
                     },
                     {
                         "rst_DisplayName": "online_catalogue_URL",
-                        "rst_DisplayHelpText": "URL of the page in a library or archive's digital catalogue that serves as the reference for the document.<br/>Property <a target=\"_blank\" href=\"https://www.wikidata.org/wiki/Property:P8768\">P8768</a>",
+                        "rst_DisplayHelpText": "URL of the page in a library or archive\\'s digital catalogue that serves as the reference for the document.<br>Property <a target=\\\"_blank\\\" href=\\\"https://www.wikidata.org/wiki/Property:P8768\\\">P8768</a>",
                         "dty_ID": 1329,
                         "dty_Type": "freetext",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "recommended",
+                        "rst_MaxValues": 1,
                         "vocabTerms": null
                     },
                     {
                         "rst_DisplayName": "ARK",
-                        "rst_DisplayHelpText": "Archival Resource Key for the item or notice in the archival institution's catalogue / system.<br/>Property <a target=\"_blank\" href=\"https://www.wikidata.org/wiki/Property:P8091\">P8091</a>",
+                        "rst_DisplayHelpText": "Archival Resource Key for the item or notice in the archival institution\\'s catalogue / system.<br>Property <a target=\\\"_blank\\\" href=\\\"https://www.wikidata.org/wiki/Property:P8091\\\">P8091</a>",
                         "dty_ID": 1271,
                         "dty_Type": "freetext",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "recommended",
+                        "rst_MaxValues": 1,
                         "vocabTerms": null
                     },
                     {
@@ -2653,10 +3129,13 @@
                         "rst_DisplayHelpText": "Brief notes about a reference and/or citation that should eventually be added to the database and linked to this record.",
                         "dty_ID": 1284,
                         "dty_Type": "freetext",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "optional",
+                        "rst_MaxValues": 0,
                         "vocabTerms": null
                     }
                 ]
@@ -2666,13 +3145,16 @@
                 "fields": [
                     {
                         "rst_DisplayName": "review_status",
-                        "rst_DisplayHelpText": "Status of record's preparation for public view.",
+                        "rst_DisplayHelpText": "Status of record\\'s preparation for public view.",
                         "dty_ID": 1183,
                         "dty_Type": "enum",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": 9696,
                         "trm_Label": "_record review vocab",
                         "trm_Description": "Terms about records\\' quality check / review status.",
+                        "rst_RequirementType": "required",
+                        "rst_MaxValues": 1,
                         "vocabTerms": [
                             {
                                 "label": "Action required",
@@ -2699,10 +3181,13 @@
                         "rst_DisplayHelpText": "Information to help with review of this entity.",
                         "dty_ID": 1248,
                         "dty_Type": "blocktext",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "recommended",
+                        "rst_MaxValues": 1,
                         "vocabTerms": null
                     }
                 ]
@@ -2710,7 +3195,7 @@
         ]
     },
     {
-        "id": "108",
+        "id": 108,
         "metadata": {
             "rty_ID": 108,
             "rty_Name": "repository",
@@ -2727,10 +3212,13 @@
                         "rst_DisplayHelpText": "Received or primary name by which the entity is known.",
                         "dty_ID": 1244,
                         "dty_Type": "freetext",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "required",
+                        "rst_MaxValues": 1,
                         "vocabTerms": null
                     },
                     {
@@ -2738,10 +3226,13 @@
                         "rst_DisplayHelpText": "Shortened name of the entity.",
                         "dty_ID": 1335,
                         "dty_Type": "freetext",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "required",
+                        "rst_MaxValues": 1,
                         "vocabTerms": null
                     },
                     {
@@ -2749,10 +3240,15 @@
                         "rst_DisplayHelpText": "City, town, or municipality in which the organization is located.",
                         "dty_ID": 1233,
                         "dty_Type": "resource",
+                        "dty_PtrTargetRectypeIDs": [
+                            12
+                        ],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "required",
+                        "rst_MaxValues": 1,
                         "vocabTerms": null
                     }
                 ]
@@ -2765,21 +3261,27 @@
                         "rst_DisplayHelpText": "Alternative names or titles, use for simple alternatives where additional metadata is not needed",
                         "dty_ID": 132,
                         "dty_Type": "freetext",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "optional",
+                        "rst_MaxValues": 0,
                         "vocabTerms": null
                     },
                     {
                         "rst_DisplayName": "VIAF",
-                        "rst_DisplayHelpText": "The record's permanent identifier in the VIAF database.",
+                        "rst_DisplayHelpText": "The record\\'s permanent identifier in the VIAF database.",
                         "dty_ID": 1234,
                         "dty_Type": "float",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "recommended",
+                        "rst_MaxValues": 1,
                         "vocabTerms": null
                     },
                     {
@@ -2787,10 +3289,13 @@
                         "rst_DisplayHelpText": "International Standard Name Identifier.",
                         "dty_ID": 1235,
                         "dty_Type": "freetext",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "recommended",
+                        "rst_MaxValues": 1,
                         "vocabTerms": null
                     },
                     {
@@ -2798,10 +3303,13 @@
                         "rst_DisplayHelpText": "Permanent identifier for the record in the Biblissima+ database.",
                         "dty_ID": 1236,
                         "dty_Type": "freetext",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "recommended",
+                        "rst_MaxValues": 1,
                         "vocabTerms": null
                     },
                     {
@@ -2809,10 +3317,13 @@
                         "rst_DisplayHelpText": "Website of the archival institution according to Archives Portal Europe.",
                         "dty_ID": 1185,
                         "dty_Type": "freetext",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": "https://www.wikidata.org/wiki/Q22137024",
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "optional",
+                        "rst_MaxValues": 1,
                         "vocabTerms": null
                     }
                 ]
@@ -2820,7 +3331,7 @@
         ]
     },
     {
-        "id": "116",
+        "id": 116,
         "metadata": {
             "rty_ID": 116,
             "rty_Name": "hypothesis",
@@ -2837,10 +3348,17 @@
                         "rst_DisplayHelpText": "The entity whose existence is attested in the hypothesis.",
                         "dty_ID": 1256,
                         "dty_Type": "resource",
+                        "dty_PtrTargetRectypeIDs": [
+                            101,
+                            105,
+                            106
+                        ],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "required",
+                        "rst_MaxValues": 1,
                         "vocabTerms": null
                     }
                 ]
@@ -2853,10 +3371,13 @@
                         "rst_DisplayHelpText": "Brief summary of the hypothesis.",
                         "dty_ID": 1257,
                         "dty_Type": "blocktext",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "required",
+                        "rst_MaxValues": 1,
                         "vocabTerms": null
                     },
                     {
@@ -2864,10 +3385,13 @@
                         "rst_DisplayHelpText": "Degree of certainty applied to the claim.",
                         "dty_ID": 1258,
                         "dty_Type": "enum",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": 9759,
                         "trm_Label": "certainty vocab",
                         "trm_Description": "Degree of certainty",
+                        "rst_RequirementType": "required",
+                        "rst_MaxValues": 1,
                         "vocabTerms": [
                             {
                                 "label": "4. Certain (100%)",
@@ -2902,29 +3426,41 @@
                 "fields": [
                     {
                         "rst_DisplayName": "described_by_source",
-                        "rst_DisplayHelpText": "Work where the item is described.<br/>Property <a target=\"_blank\" href=\"https://www.wikidata.org/wiki/Property:P1343\">P1343</a><br/>Described in source / written about in / described by encyclopedia / described by reference work",
+                        "rst_DisplayHelpText": "Work where the item is described.<br>Property <a target=\\\"_blank\\\" href=\\\"https://www.wikidata.org/wiki/Property:P1343\\\">P1343</a><br>\\nDescribed in source / written about in / described by encyclopedia / described by reference work",
                         "dty_ID": 1255,
                         "dty_Type": "resource",
+                        "dty_PtrTargetRectypeIDs": [
+                            73,
+                            77,
+                            128,
+                            69,
+                            70
+                        ],
                         "dty_SemanticReferenceURL": "https://www.wikidata.org/wiki/Property:P1343",
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "recommended",
+                        "rst_MaxValues": 0,
                         "vocabTerms": null
                     }
                 ]
             },
             {
-                "sectionName": "Review",
+                "sectionName": "review_status",
                 "fields": [
                     {
                         "rst_DisplayName": "review_status",
-                        "rst_DisplayHelpText": "Status of record's preparation for public view.",
+                        "rst_DisplayHelpText": "Status of record\\'s preparation for public view.",
                         "dty_ID": 1183,
                         "dty_Type": "enum",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": 9696,
                         "trm_Label": "_record review vocab",
                         "trm_Description": "Terms about records\\' quality check / review status.",
+                        "rst_RequirementType": "required",
+                        "rst_MaxValues": 1,
                         "vocabTerms": [
                             {
                                 "label": "Action required",
@@ -2951,10 +3487,13 @@
                         "rst_DisplayHelpText": "Information to help with review of this entity.",
                         "dty_ID": 1248,
                         "dty_Type": "blocktext",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "recommended",
+                        "rst_MaxValues": 1,
                         "vocabTerms": null
                     }
                 ]
@@ -2962,7 +3501,7 @@
         ]
     },
     {
-        "id": "117",
+        "id": 117,
         "metadata": {
             "rty_ID": 117,
             "rty_Name": "genre",
@@ -2979,10 +3518,13 @@
                         "rst_DisplayHelpText": "Received or primary name by which the entity is known.",
                         "dty_ID": 1244,
                         "dty_Type": "freetext",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "required",
+                        "rst_MaxValues": 1,
                         "vocabTerms": null
                     },
                     {
@@ -2990,10 +3532,15 @@
                         "rst_DisplayHelpText": "A broader category of literary composition to which this subgenre belongs.",
                         "dty_ID": 1259,
                         "dty_Type": "resource",
+                        "dty_PtrTargetRectypeIDs": [
+                            117
+                        ],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "optional",
+                        "rst_MaxValues": 1,
                         "vocabTerms": null
                     },
                     {
@@ -3001,10 +3548,13 @@
                         "rst_DisplayHelpText": "Alternative names or titles, use for simple alternatives where additional metadata is not needed",
                         "dty_ID": 132,
                         "dty_Type": "freetext",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "recommended",
+                        "rst_MaxValues": 0,
                         "vocabTerms": null
                     }
                 ]
@@ -3017,10 +3567,13 @@
                         "rst_DisplayHelpText": "An extended description, use this for free-format description up to 64K latin or 32K UTF characters",
                         "dty_ID": 4,
                         "dty_Type": "blocktext",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "required",
+                        "rst_MaxValues": 1,
                         "vocabTerms": null
                     },
                     {
@@ -3028,10 +3581,13 @@
                         "rst_DisplayHelpText": "Reference to an archetypical example of the entity.",
                         "dty_ID": 1260,
                         "dty_Type": "freetext",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "optional",
+                        "rst_MaxValues": 0,
                         "vocabTerms": null
                     }
                 ]
@@ -3041,24 +3597,36 @@
                 "fields": [
                     {
                         "rst_DisplayName": "described_by_source",
-                        "rst_DisplayHelpText": "Work where the item is described.<br/>Property <a target=\"_blank\" href=\"https://www.wikidata.org/wiki/Property:P1343\">P1343</a><br/>Described in source / written about in / described by encyclopedia / described by reference work",
+                        "rst_DisplayHelpText": "Work where the item is described.<br>Property <a target=\\\"_blank\\\" href=\\\"https://www.wikidata.org/wiki/Property:P1343\\\">P1343</a><br>\\nDescribed in source / written about in / described by encyclopedia / described by reference work",
                         "dty_ID": 1255,
                         "dty_Type": "resource",
+                        "dty_PtrTargetRectypeIDs": [
+                            73,
+                            77,
+                            128,
+                            69,
+                            70
+                        ],
                         "dty_SemanticReferenceURL": "https://www.wikidata.org/wiki/Property:P1343",
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "recommended",
+                        "rst_MaxValues": 0,
                         "vocabTerms": null
                     },
                     {
                         "rst_DisplayName": "described_at_URL",
-                        "rst_DisplayHelpText": "Described at webpage.<br/>Property <a target=\"_blank\" href=\"https://www.wikidata.org/wiki/Property:P973\">P973</a>",
+                        "rst_DisplayHelpText": "Described at webpage.<br>Property <a target=\\\"_blank\\\" href=\\\"https://www.wikidata.org/wiki/Property:P973\\\">P973</a>",
                         "dty_ID": 1269,
                         "dty_Type": "freetext",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "recommended",
+                        "rst_MaxValues": 0,
                         "vocabTerms": null
                     },
                     {
@@ -3066,10 +3634,13 @@
                         "rst_DisplayHelpText": "Brief notes about a reference and/or citation that should eventually be added to the database and linked to this record.",
                         "dty_ID": 1284,
                         "dty_Type": "freetext",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "optional",
+                        "rst_MaxValues": 0,
                         "vocabTerms": null
                     }
                 ]
@@ -3079,13 +3650,16 @@
                 "fields": [
                     {
                         "rst_DisplayName": "review_status",
-                        "rst_DisplayHelpText": "Status of record's preparation for public view.",
+                        "rst_DisplayHelpText": "Status of record\\'s preparation for public view.",
                         "dty_ID": 1183,
                         "dty_Type": "enum",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": 9696,
                         "trm_Label": "_record review vocab",
                         "trm_Description": "Terms about records\\' quality check / review status.",
+                        "rst_RequirementType": "required",
+                        "rst_MaxValues": 1,
                         "vocabTerms": [
                             {
                                 "label": "Action required",
@@ -3112,10 +3686,13 @@
                         "rst_DisplayHelpText": "Information to help with review of this entity.",
                         "dty_ID": 1248,
                         "dty_Type": "blocktext",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "recommended",
+                        "rst_MaxValues": 1,
                         "vocabTerms": null
                     }
                 ]
@@ -3123,11 +3700,11 @@
         ]
     },
     {
-        "id": "118",
+        "id": 118,
         "metadata": {
             "rty_ID": 118,
             "rty_Name": "scripta",
-            "rty_Description": "he regional writing style, similar to the written version of a spoken dialect, as defined by <a class=\"link\" target=\"_blank\" href=\"https://doi.org/10.4000/books.pulg.347\">Louis Remacle</a>.",
+            "rty_Description": "he regional writing style, similar to the written version of a spoken dialect, as defined by <a class=\\\"link\\\" target=\\\"_blank\\\" href=\\\"https://doi.org/10.4000/books.pulg.347\\\">Louis Remacle</a>.",
             "rty_TitleMask": "[1244] ([1090.term])",
             "rty_ReferenceURL": null
         },
@@ -3140,10 +3717,13 @@
                         "rst_DisplayHelpText": "Received or primary name by which the entity is known.",
                         "dty_ID": 1244,
                         "dty_Type": "freetext",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "required",
+                        "rst_MaxValues": 1,
                         "vocabTerms": null
                     }
                 ]
@@ -3156,10 +3736,13 @@
                         "rst_DisplayHelpText": "An extended description, use this for free-format description up to 64K latin or 32K UTF characters",
                         "dty_ID": 4,
                         "dty_Type": "blocktext",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "required",
+                        "rst_MaxValues": 1,
                         "vocabTerms": null
                     },
                     {
@@ -3167,10 +3750,13 @@
                         "rst_DisplayHelpText": "Spoken language through which the entity is primarily expressed.",
                         "dty_ID": 1090,
                         "dty_Type": "enum",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": 9469,
                         "trm_Label": "Language",
                         "trm_Description": "A spoken language, through which a literary work is articulated into words.",
+                        "rst_RequirementType": "required",
+                        "rst_MaxValues": 0,
                         "vocabTerms": [
                             {
                                 "label": "fro (Old French)",
@@ -3323,10 +3909,15 @@
                         "rst_DisplayHelpText": "Region in which the entity is primarily located.",
                         "dty_ID": 1261,
                         "dty_Type": "resource",
+                        "dty_PtrTargetRectypeIDs": [
+                            12
+                        ],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "recommended",
+                        "rst_MaxValues": 1,
                         "vocabTerms": null
                     },
                     {
@@ -3334,10 +3925,13 @@
                         "rst_DisplayHelpText": "Brief note about the region in which the entity is primarily located.",
                         "dty_ID": 1262,
                         "dty_Type": "blocktext",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "optional",
+                        "rst_MaxValues": 1,
                         "vocabTerms": null
                     }
                 ]
@@ -3347,24 +3941,36 @@
                 "fields": [
                     {
                         "rst_DisplayName": "described_by_source",
-                        "rst_DisplayHelpText": "Work where the item is described.<br/>Property <a target=\"_blank\" href=\"https://www.wikidata.org/wiki/Property:P1343\">P1343</a><br/>Described in source / written about in / described by encyclopedia / described by reference work",
+                        "rst_DisplayHelpText": "Work where the item is described.<br>Property <a target=\\\"_blank\\\" href=\\\"https://www.wikidata.org/wiki/Property:P1343\\\">P1343</a><br>\\nDescribed in source / written about in / described by encyclopedia / described by reference work",
                         "dty_ID": 1255,
                         "dty_Type": "resource",
+                        "dty_PtrTargetRectypeIDs": [
+                            73,
+                            77,
+                            128,
+                            69,
+                            70
+                        ],
                         "dty_SemanticReferenceURL": "https://www.wikidata.org/wiki/Property:P1343",
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "recommended",
+                        "rst_MaxValues": 0,
                         "vocabTerms": null
                     },
                     {
                         "rst_DisplayName": "described_at_URL",
-                        "rst_DisplayHelpText": "Described at webpage.<br/>Property <a target=\"_blank\" href=\"https://www.wikidata.org/wiki/Property:P973\">P973</a>",
+                        "rst_DisplayHelpText": "Described at webpage.<br>Property <a target=\\\"_blank\\\" href=\\\"https://www.wikidata.org/wiki/Property:P973\\\">P973</a>",
                         "dty_ID": 1269,
                         "dty_Type": "freetext",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "recommended",
+                        "rst_MaxValues": 0,
                         "vocabTerms": null
                     },
                     {
@@ -3372,26 +3978,32 @@
                         "rst_DisplayHelpText": "Brief notes about a reference and/or citation that should eventually be added to the database and linked to this record.",
                         "dty_ID": 1284,
                         "dty_Type": "freetext",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "optional",
+                        "rst_MaxValues": 0,
                         "vocabTerms": null
                     }
                 ]
             },
             {
-                "sectionName": "Review",
+                "sectionName": "review_status",
                 "fields": [
                     {
                         "rst_DisplayName": "review_status",
-                        "rst_DisplayHelpText": "Status of record's preparation for public view.",
+                        "rst_DisplayHelpText": "Status of record\\'s preparation for public view.",
                         "dty_ID": 1183,
                         "dty_Type": "enum",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": 9696,
                         "trm_Label": "_record review vocab",
                         "trm_Description": "Terms about records\\' quality check / review status.",
+                        "rst_RequirementType": "required",
+                        "rst_MaxValues": 1,
                         "vocabTerms": [
                             {
                                 "label": "Action required",
@@ -3418,10 +4030,13 @@
                         "rst_DisplayHelpText": "Information to help with review of this entity.",
                         "dty_ID": 1248,
                         "dty_Type": "blocktext",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "recommended",
+                        "rst_MaxValues": 1,
                         "vocabTerms": null
                     }
                 ]
@@ -3429,7 +4044,7 @@
         ]
     },
     {
-        "id": "125",
+        "id": 125,
         "metadata": {
             "rty_ID": 125,
             "rty_Name": "part",
@@ -3443,13 +4058,18 @@
                 "fields": [
                     {
                         "rst_DisplayName": "is_inscribed_on",
-                        "rst_DisplayHelpText": "The physical document on which the signs (letters) of a witness's parts are inscribed.",
+                        "rst_DisplayHelpText": "The physical document on which the signs (letters) of a witness\\'s parts are inscribed.",
                         "dty_ID": 1315,
                         "dty_Type": "resource",
+                        "dty_PtrTargetRectypeIDs": [
+                            106
+                        ],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "required",
+                        "rst_MaxValues": 1,
                         "vocabTerms": null
                     }
                 ]
@@ -3459,35 +4079,44 @@
                 "fields": [
                     {
                         "rst_DisplayName": "div_order",
-                        "rst_DisplayHelpText": "Order of the text subdivision within the witness. Start counting at 1. If the witness is not subdivided, enter 1. <br/>Property <a target=\"_blank\" href=\"https://www.wikidata.org/wiki/Property:P1545\">P1545</a>",
+                        "rst_DisplayHelpText": "Order of the text subdivision within the witness. Start counting at 1. If the witness is not subdivided, enter 1. <br>Property <a target=\\\"_blank\\\" href=\\\"https://www.wikidata.org/wiki/Property:P1545\\\">P1545</a>",
                         "dty_ID": 1316,
                         "dty_Type": "float",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": "https://www.wikidata.org/wiki/Property:P1545",
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "required",
+                        "rst_MaxValues": 1,
                         "vocabTerms": null
                     },
                     {
                         "rst_DisplayName": "number_of_verses",
-                        "rst_DisplayHelpText": "To be compared with the \"verse length\" of the representative text, the number of verses or lines from the text represented on this part of the witness.",
+                        "rst_DisplayHelpText": "To be compared with the \\\"verse length\\\" of the representative text, the number of verses or lines from the text represented on this part of the witness.",
                         "dty_ID": 1317,
                         "dty_Type": "float",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "recommended",
+                        "rst_MaxValues": 1,
                         "vocabTerms": null
                     },
                     {
                         "rst_DisplayName": "part_of_text",
-                        "rst_DisplayHelpText": "A simple description of the portion of the text, i.e. \"first third,\" represented on this part of the witness.",
+                        "rst_DisplayHelpText": "A simple description of the portion of the text, i.e. \\\"first third,\\\" represented on this part of the witness.",
                         "dty_ID": 1318,
                         "dty_Type": "freetext",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "recommended",
+                        "rst_MaxValues": 1,
                         "vocabTerms": null
                     },
                     {
@@ -3495,10 +4124,13 @@
                         "rst_DisplayHelpText": "If the witness is composed of multiple volumes, the integer, roman numeral, or other indicator used by archival or library catalogues to identify the part as a volume of the witness.",
                         "dty_ID": 1319,
                         "dty_Type": "freetext",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "recommended",
+                        "rst_MaxValues": 1,
                         "vocabTerms": null
                     }
                 ]
@@ -3511,10 +4143,15 @@
                         "rst_DisplayHelpText": "Description of the support, decorations, layout, and script type.",
                         "dty_ID": 1357,
                         "dty_Type": "resource",
+                        "dty_PtrTargetRectypeIDs": [
+                            129
+                        ],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "required",
+                        "rst_MaxValues": 1,
                         "vocabTerms": null
                     },
                     {
@@ -3522,10 +4159,13 @@
                         "rst_DisplayHelpText": "The length of the text as calculated by the number of lines.",
                         "dty_ID": 1320,
                         "dty_Type": "float",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "recommended",
+                        "rst_MaxValues": 1,
                         "vocabTerms": null
                     },
                     {
@@ -3533,10 +4173,13 @@
                         "rst_DisplayHelpText": "If the text is in verse, a categorical description of how many verses the scribe fit into a line of text.",
                         "dty_ID": 1358,
                         "dty_Type": "enum",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": 9829,
                         "trm_Label": "VersesPerLine vocab",
                         "trm_Description": null,
+                        "rst_RequirementType": "recommended",
+                        "rst_MaxValues": 1,
                         "vocabTerms": [
                             {
                                 "label": "continuous",
@@ -3563,10 +4206,13 @@
                         "rst_DisplayHelpText": "Whether the text lines have been interrupted, i.e. cut (Yes, incomplete).",
                         "dty_ID": 1321,
                         "dty_Type": "enum",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": 9496,
                         "trm_Label": "yes/no vocab",
                         "trm_Description": null,
+                        "rst_RequirementType": "required",
+                        "rst_MaxValues": 1,
                         "vocabTerms": [
                             {
                                 "label": "Yes",
@@ -3590,13 +4236,16 @@
                     },
                     {
                         "rst_DisplayName": "page_ranges",
-                        "rst_DisplayHelpText": "A formatted string that represents the numbering on the beginning and end of an uninterrupted series of pages. <br/>When a range of pages, separate the two numbers with a hyphen, i.e. \"1r-4v\". <br/>When a single page, do not include separator, i.e. \"1r\".",
+                        "rst_DisplayHelpText": "A formatted string that represents the numbering on the beginning and end of an uninterrupted series of pages. <br>When a range of pages, separate the two numbers with a hyphen, i.e. \\\"1r-4v\\\". <br>When a single page, do not include separator, i.e. \\\"1r\\\".",
                         "dty_ID": 1322,
                         "dty_Type": "freetext",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "required",
+                        "rst_MaxValues": 0,
                         "vocabTerms": null
                     }
                 ]
@@ -3606,13 +4255,16 @@
                 "fields": [
                     {
                         "rst_DisplayName": "review_status",
-                        "rst_DisplayHelpText": "Status of record's preparation for public view.",
+                        "rst_DisplayHelpText": "Status of record\\'s preparation for public view.",
                         "dty_ID": 1183,
                         "dty_Type": "enum",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": 9696,
                         "trm_Label": "_record review vocab",
                         "trm_Description": "Terms about records\\' quality check / review status.",
+                        "rst_RequirementType": "required",
+                        "rst_MaxValues": 1,
                         "vocabTerms": [
                             {
                                 "label": "Action required",
@@ -3639,10 +4291,13 @@
                         "rst_DisplayHelpText": "Information to help with review of this entity.",
                         "dty_ID": 1248,
                         "dty_Type": "blocktext",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "recommended",
+                        "rst_MaxValues": 1,
                         "vocabTerms": null
                     }
                 ]
@@ -3650,7 +4305,7 @@
         ]
     },
     {
-        "id": "126",
+        "id": 126,
         "metadata": {
             "rty_ID": 126,
             "rty_Name": "digitization",
@@ -3667,10 +4322,13 @@
                         "rst_DisplayHelpText": "Unique Resource Identifier (aka URL) for the digital document, which must contain a series of digital images.",
                         "dty_ID": 1304,
                         "dty_Type": "freetext",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "required",
+                        "rst_MaxValues": 1,
                         "vocabTerms": null
                     },
                     {
@@ -3678,10 +4336,15 @@
                         "rst_DisplayHelpText": "Document.",
                         "dty_ID": 1338,
                         "dty_Type": "resource",
+                        "dty_PtrTargetRectypeIDs": [
+                            106
+                        ],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "required",
+                        "rst_MaxValues": 1,
                         "vocabTerms": null
                     }
                 ]
@@ -3694,21 +4357,27 @@
                         "rst_DisplayHelpText": "If encoded according to IIIF standards, a URI linking to the file of a IIIF manifest.",
                         "dty_ID": 1306,
                         "dty_Type": "freetext",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "recommended",
+                        "rst_MaxValues": 1,
                         "vocabTerms": null
                     },
                     {
                         "rst_DisplayName": "ARK",
-                        "rst_DisplayHelpText": "Archival Resource Key for the item or notice in the archival institution's catalogue / system.",
+                        "rst_DisplayHelpText": "Archival Resource Key for the item or notice in the archival institution\\'s catalogue / system.",
                         "dty_ID": 1271,
                         "dty_Type": "freetext",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "recommended",
+                        "rst_MaxValues": 1,
                         "vocabTerms": null
                     }
                 ]
@@ -3716,7 +4385,7 @@
         ]
     },
     {
-        "id": "127",
+        "id": 127,
         "metadata": {
             "rty_ID": 127,
             "rty_Name": "images",
@@ -3733,10 +4402,15 @@
                         "rst_DisplayHelpText": "The portion (pages) of the document represented in the digitized images.",
                         "dty_ID": 1314,
                         "dty_Type": "resource",
+                        "dty_PtrTargetRectypeIDs": [
+                            125
+                        ],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "required",
+                        "rst_MaxValues": 1,
                         "vocabTerms": null
                     },
                     {
@@ -3744,10 +4418,15 @@
                         "rst_DisplayHelpText": "The digital object, which has a URL, from which this discrete range of images comes.",
                         "dty_ID": 1323,
                         "dty_Type": "resource",
+                        "dty_PtrTargetRectypeIDs": [
+                            126
+                        ],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "required",
+                        "rst_MaxValues": 1,
                         "vocabTerms": null
                     }
                 ]
@@ -3757,24 +4436,30 @@
                 "fields": [
                     {
                         "rst_DisplayName": "file_range",
-                        "rst_DisplayHelpText": "A formatted string that represents the index of the first and last image file in the series of images. <br/>When multiple files, separate the first and last with two colons, i.e. \"4::725\". <br/>When a single file, do not include the separator, i.e. \"725\".",
+                        "rst_DisplayHelpText": "A formatted string that represents the index of the first and last image file in the series of images. <br>When multiple files, separate the first and last with two colons, i.e. \\\"4::725\\\". <br>When a single file, do not include the separator, i.e. \\\"725\\\".",
                         "dty_ID": 1324,
                         "dty_Type": "freetext",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "required",
+                        "rst_MaxValues": 1,
                         "vocabTerms": null
                     },
                     {
                         "rst_DisplayName": "corresponding_page_range",
-                        "rst_DisplayHelpText": "A formatted string that represents the numbering at the start and end of the corresponding series of pages. <br/>When a range of pages, separate the two numbers with two colons, i.e. \"1r::4v\". <br/>When a single page, do not include separator, i.e. \"1r\".",
+                        "rst_DisplayHelpText": "A formatted string that represents the numbering at the start and end of the corresponding series of pages. <br>When a range of pages, separate the two numbers with two colons, i.e. \\\"1r::4v\\\". <br>When a single page, do not include separator, i.e. \\\"1r\\\".",
                         "dty_ID": 1322,
                         "dty_Type": "freetext",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "required",
+                        "rst_MaxValues": 1,
                         "vocabTerms": null
                     }
                 ]
@@ -3782,7 +4467,7 @@
         ]
     },
     {
-        "id": "128",
+        "id": 128,
         "metadata": {
             "rty_ID": 128,
             "rty_Name": "footnote",
@@ -3796,35 +4481,50 @@
                 "fields": [
                     {
                         "rst_DisplayName": "stated_in",
-                        "rst_DisplayHelpText": "Source in which the information is stated.<br/><a target=\"_blank\" href=\"https://www.wikidata.org/wiki/Property:P248\">P248</a>",
+                        "rst_DisplayHelpText": "Source in which the information is stated.<br><a target=\\\"_blank\\\" href=\\\"https://www.wikidata.org/wiki/Property:P248\\\">P248</a>",
                         "dty_ID": 1339,
                         "dty_Type": "resource",
+                        "dty_PtrTargetRectypeIDs": [
+                            70,
+                            69,
+                            73,
+                            77,
+                            72
+                        ],
                         "dty_SemanticReferenceURL": "https://www.wikidata.org/wiki/Property:P248",
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "required",
+                        "rst_MaxValues": 1,
                         "vocabTerms": null
                     },
                     {
                         "rst_DisplayName": "pages",
-                        "rst_DisplayHelpText": "Page number(s) of the source in which the information is stated.<br/><a target=\"_blank\" href=\"https://www.wikidata.org/wiki/Property:P304\">P304</a>",
+                        "rst_DisplayHelpText": "Page number(s) of the source in which the information is stated.<br><a target=\\\"_blank\\\" href=\\\"https://www.wikidata.org/wiki/Property:P304\\\">P304</a>",
                         "dty_ID": 1340,
                         "dty_Type": "freetext",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": "https://www.wikidata.org/wiki/Property:P304",
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "required",
+                        "rst_MaxValues": 1,
                         "vocabTerms": null
                     },
                     {
                         "rst_DisplayName": "reference_prefix",
-                        "rst_DisplayHelpText": "Prefix or other key used in a dictionary or encyclopedia to refer to an entry, i.e. \"AnsMetz.\"",
+                        "rst_DisplayHelpText": "Prefix or other key used in a dictionary or encyclopedia to refer to an entry, i.e. \\\"AnsMetz.\\\"",
                         "dty_ID": 1278,
                         "dty_Type": "freetext",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "recommended",
+                        "rst_MaxValues": 1,
                         "vocabTerms": null
                     },
                     {
@@ -3832,10 +4532,13 @@
                         "rst_DisplayHelpText": "Quotation from the source of information.",
                         "dty_ID": 1277,
                         "dty_Type": "blocktext",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "optional",
+                        "rst_MaxValues": 1,
                         "vocabTerms": null
                     }
                 ]
@@ -3843,11 +4546,11 @@
         ]
     },
     {
-        "id": "129",
+        "id": 129,
         "metadata": {
             "rty_ID": 129,
             "rty_Name": "physDesc",
-            "rty_Description": "Physical description of a witness's material support.",
+            "rty_Description": "Physical description of a witness\\'s material support.",
             "rty_TitleMask": "[1359.rectitle]",
             "rty_ReferenceURL": null
         },
@@ -3860,10 +4563,15 @@
                         "rst_DisplayHelpText": "The document that is the subject of the physical description.",
                         "dty_ID": 1359,
                         "dty_Type": "resource",
+                        "dty_PtrTargetRectypeIDs": [
+                            106
+                        ],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "required",
+                        "rst_MaxValues": 1,
                         "vocabTerms": null
                     },
                     {
@@ -3871,10 +4579,13 @@
                         "rst_DisplayHelpText": "Description of the material of which the object is composed.",
                         "dty_ID": 1341,
                         "dty_Type": "enum",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": 9781,
                         "trm_Label": "Material vocab",
                         "trm_Description": "Material of which an object is composed.",
+                        "rst_RequirementType": "required",
+                        "rst_MaxValues": 1,
                         "vocabTerms": [
                             {
                                 "label": "perg",
@@ -3904,13 +4615,16 @@
                     },
                     {
                         "rst_DisplayName": "form",
-                        "rst_DisplayHelpText": "\"[T]he form of the object in its original state, before any mutilation, rebinding, etc.\"<br/><a target=\"_blank\" href=\"https://github.com/msDesc/consolidated-tei-schema\">Consolidated TEI Schema</a> objectDesc[@form])",
+                        "rst_DisplayHelpText": "\\\"[T]he form of the object in its original state, before any mutilation, rebinding, etc.\\\"<br><a target=\\\"_blank\\\" href=\\\"https://github.com/msDesc/consolidated-tei-schema\\\">Consolidated TEI Schema</a> objectDesc[@form])",
                         "dty_ID": 1342,
                         "dty_Type": "enum",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": 9787,
                         "trm_Label": "PhysicalForm vocab",
                         "trm_Description": "\\\"[T]he form of the object in its original state, before any mutilation, rebinding, etc.\\\"<br><a target=\\\"_blank\\\" href=\\\"https://github.com/msDesc/consolidated-tei-schema\\\">Consolidated TEI Schema</a>",
+                        "rst_RequirementType": "required",
+                        "rst_MaxValues": 1,
                         "vocabTerms": [
                             {
                                 "label": "codex",
@@ -3945,35 +4659,44 @@
                 "fields": [
                     {
                         "rst_DisplayName": "folio_size_width",
-                        "rst_DisplayHelpText": "The current width of the folio size in millimeters.<br/>If unknown, enter \"NA\"",
+                        "rst_DisplayHelpText": "The current width of the folio size in millimeters.<br/>If unknown, enter \\\"NA\\\"",
                         "dty_ID": 1360,
                         "dty_Type": "freetext",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "required",
+                        "rst_MaxValues": 1,
                         "vocabTerms": null
                     },
                     {
                         "rst_DisplayName": "folio_size_height",
-                        "rst_DisplayHelpText": "The current height of the folio size in millimeters.<br/>If unknown, enter \"NA\"",
+                        "rst_DisplayHelpText": "The current height of the folio size in millimeters.<br/>If unknown, enter \\\"NA\\\"",
                         "dty_ID": 1361,
                         "dty_Type": "freetext",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "required",
+                        "rst_MaxValues": 1,
                         "vocabTerms": null
                     },
                     {
                         "rst_DisplayName": "folio_size_reference",
-                        "rst_DisplayHelpText": "An in-line citation (or URL of a library finding aid) documenting where the measurements were described.<br/>If the measurements are unknown, enter \"NA\"",
+                        "rst_DisplayHelpText": "An in-line citation (or URL of a library finding aid) documenting where the measurements were described.<br/>If the measurements are unknown, enter \\\"NA\\\"",
                         "dty_ID": 1362,
                         "dty_Type": "freetext",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "required",
+                        "rst_MaxValues": 1,
                         "vocabTerms": null
                     }
                 ]
@@ -3986,10 +4709,13 @@
                         "rst_DisplayHelpText": "The height in millimeters (a range is permitted) of the folio size in the witness as it would have been before any mutilation, rebinding, etc.",
                         "dty_ID": 1343,
                         "dty_Type": "freetext",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "optional",
+                        "rst_MaxValues": 1,
                         "vocabTerms": null
                     },
                     {
@@ -3997,10 +4723,13 @@
                         "rst_DisplayHelpText": "The width in millimeters (a range is permitted) of the folio size in the witness as it would have been before any mutilation, rebinding, etc.",
                         "dty_ID": 1344,
                         "dty_Type": "freetext",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "optional",
+                        "rst_MaxValues": 1,
                         "vocabTerms": null
                     },
                     {
@@ -4008,10 +4737,13 @@
                         "rst_DisplayHelpText": "An in-line citation (or URL of a library finding aid) documenting where the measurements were described.",
                         "dty_ID": 1345,
                         "dty_Type": "freetext",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "optional",
+                        "rst_MaxValues": 1,
                         "vocabTerms": null
                     }
                 ]
@@ -4024,10 +4756,13 @@
                         "rst_DisplayHelpText": "Decorations that are unrelated to the text. They include decorated letters (initials), rubrication, and pictures that do not illustrate scenes connected to the accompanying text.",
                         "dty_ID": 1346,
                         "dty_Type": "enum",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": 9792,
                         "trm_Label": "Decorations vocab",
                         "trm_Description": null,
+                        "rst_RequirementType": "required",
+                        "rst_MaxValues": 0,
                         "vocabTerms": [
                             {
                                 "label": "unknown",
@@ -4072,10 +4807,13 @@
                         "rst_DisplayHelpText": "Decorations that are related to the text, which illustrate a scene in the story. Select the category that matches the number most specialists agree are present and completed.",
                         "dty_ID": 1347,
                         "dty_Type": "enum",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": 9798,
                         "trm_Label": "CountCategories vocab",
                         "trm_Description": null,
+                        "rst_RequirementType": "required",
+                        "rst_MaxValues": 1,
                         "vocabTerms": [
                             {
                                 "label": "unknown",
@@ -4110,57 +4848,72 @@
                 "fields": [
                     {
                         "rst_DisplayName": "writing_surface_area_height",
-                        "rst_DisplayHelpText": "Height in millimeters (a range is permitted) of the writing area. <br/>Equivalent to dimensions[@type=\"written\"]/height",
+                        "rst_DisplayHelpText": "Height in millimeters (a range is permitted) of the writing area. <br>Equivalent to dimensions[@type=\\\"written\\\"]/height",
                         "dty_ID": 1348,
                         "dty_Type": "freetext",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "optional",
+                        "rst_MaxValues": 1,
                         "vocabTerms": null
                     },
                     {
                         "rst_DisplayName": "writing_surface_area_width",
-                        "rst_DisplayHelpText": "Width in millimeters (a range is permitted) of the writing area. <br/>Equivalent to dimensions[@type=\"written\"]/width",
+                        "rst_DisplayHelpText": "Width in millimeters (a range is permitted) of the writing area. <br>Equivalent to dimensions[@type=\\\"written\\\"]/width",
                         "dty_ID": 1349,
                         "dty_Type": "freetext",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "optional",
+                        "rst_MaxValues": 1,
                         "vocabTerms": null
                     },
                     {
                         "rst_DisplayName": "writing_surface_area_reference",
-                        "rst_DisplayHelpText": "An in-line citation for the source of the information about the dimensions of the witness's writing area.",
+                        "rst_DisplayHelpText": "An in-line citation for the source of the information about the dimensions of the witness\\'s writing area.",
                         "dty_ID": 1350,
                         "dty_Type": "freetext",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "optional",
+                        "rst_MaxValues": 1,
                         "vocabTerms": null
                     },
                     {
                         "rst_DisplayName": "number_of_columns",
-                        "rst_DisplayHelpText": "An estimation of the number of columns in the writing area, equivalent to the <a target=\"_blank\" href=\"https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-layout.html#tei_att.columns\">@columns</a> attribute of layout in TEI.",
+                        "rst_DisplayHelpText": "An estimation of the number of columns in the writing area, equivalent to the <a target=\\\"_blank\\\" href=\\\"https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-layout.html#tei_att.columns\\\">@columns</a> attribute of layout in TEI.",
                         "dty_ID": 1351,
                         "dty_Type": "freetext",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "optional",
+                        "rst_MaxValues": 1,
                         "vocabTerms": null
                     },
                     {
                         "rst_DisplayName": "number_of_lines_in_writing_area",
-                        "rst_DisplayHelpText": "An estimation of the number of lines of text per page or per column, equivalent to the <a target=\"_blank\" href=\"https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-layout.html#tei_att.writtenLines\">@writtenLines</a> attribute of layout in TEI.",
+                        "rst_DisplayHelpText": "An estimation of the number of lines of text per page or per column, equivalent to the <a target=\\\"_blank\\\" href=\\\"https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-layout.html#tei_att.writtenLines\\\">@writtenLines</a> attribute of layout in TEI.",
                         "dty_ID": 1352,
                         "dty_Type": "freetext",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": null,
                         "trm_Label": null,
                         "trm_Description": null,
+                        "rst_RequirementType": "optional",
+                        "rst_MaxValues": 1,
                         "vocabTerms": null
                     },
                     {
@@ -4168,10 +4921,13 @@
                         "rst_DisplayHelpText": "The text starts above the top ruled line on the page. If no, then the text starts at the line below the top line.",
                         "dty_ID": 1353,
                         "dty_Type": "enum",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": 9496,
                         "trm_Label": "yes/no vocab",
                         "trm_Description": null,
+                        "rst_RequirementType": "optional",
+                        "rst_MaxValues": 1,
                         "vocabTerms": [
                             {
                                 "label": "Yes",
@@ -4203,10 +4959,13 @@
                         "rst_DisplayHelpText": "Principal script type of the witness.",
                         "dty_ID": 1354,
                         "dty_Type": "enum",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": 9803,
                         "trm_Label": "MainScriptType vocab",
                         "trm_Description": null,
+                        "rst_RequirementType": "recommended",
+                        "rst_MaxValues": 1,
                         "vocabTerms": [
                             {
                                 "label": "unknown",
@@ -4245,10 +5004,13 @@
                         "rst_DisplayHelpText": "More refined definition of the main script type.",
                         "dty_ID": 1355,
                         "dty_Type": "enum",
+                        "dty_PtrTargetRectypeIDs": [],
                         "dty_SemanticReferenceURL": null,
                         "trm_TreeID": 9809,
                         "trm_Label": "SubScriptType vocab",
                         "trm_Description": null,
+                        "rst_RequirementType": "optional",
+                        "rst_MaxValues": 1,
                         "vocabTerms": [
                             {
                                 "label": "textualisNorthern",

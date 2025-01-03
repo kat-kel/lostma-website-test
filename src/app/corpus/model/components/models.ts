@@ -1,5 +1,5 @@
 export interface EntityDetail {
-    "id": string,
+    "id": number,
     "metadata": {
         "rty_ID": number,
         "rty_Name": string,
@@ -27,10 +27,13 @@ export interface Field {
     "rst_DisplayHelpText": string,
     "dty_ID": number,
     "dty_Type": string,
+    "dty_PtrTargetRectypeIDs": number[] | null[],
     "dty_SemanticReferenceURL": string | null | undefined,
     "trm_TreeID": number | null | undefined,
     "trm_Label": string | null | undefined,
     "trm_Description": string | null | undefined,
+    "rst_RequirementType": string,
+    "rst_MaxValues": number | null,
     "vocabTerms": null | VocabTerms[]
 }
 

@@ -15,6 +15,6 @@ export default async function fetchData(id:string): Promise<EntityDetail|undefin
     const data = await loadData()
 
     // Find an object in the array by the value of the key "id"
-    return data.find((element) => element.id === id);
+    return data.find((element) => element.id.toPrecision() === id);
 
 }
