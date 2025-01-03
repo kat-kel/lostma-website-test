@@ -30,7 +30,7 @@ export default function EntityProfile({data}: {data:EntityDetail}) {
                     </div>
                 </div>
                 <div className="p-2">
-                    <ContributorPopup />
+                    <ContributorPopup {...data} />
                 </div>
             </div>
             {

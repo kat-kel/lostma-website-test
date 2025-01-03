@@ -1,8 +1,10 @@
 'use client';
 import { useState } from "react";
 import { LinkSVG } from "@/public/svgs";
+import GenerateCSV from "./GenerateCSV";
+import { EntityDetail } from "./models";
 
-export default function ContributorPopup() {
+export default function ContributorPopup(entityDetail:EntityDetail) {
 
     const [isOpen, setIsOpen] = useState(false);
 
@@ -34,7 +36,10 @@ export default function ContributorPopup() {
                     <div className="grid">
                     <p>Do you want to upload instances of this record type? Download a template for organising each record&apos;s information, wherein each row will be 1 new record of this type.</p>
                     <div className="flex justify-center">
-                        <button className="h-12 px-4 py-1 w-max rounded-full dark:bg-primary-dark bg-primary hover:outline-none hover:ring-2 hover:ring-inset hover:ring-white">
+                        <button 
+                            className="h-12 px-4 py-1 w-max rounded-full dark:bg-primary-dark bg-primary hover:outline-none hover:ring-2 hover:ring-inset hover:ring-white"
+                            onClick={() => GenerateCSV({entity:entityDetail})}
+                        >
                             CSV Template
                         </button>
                     </div>
