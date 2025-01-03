@@ -78,7 +78,7 @@ export default function Navbar({links}: {links: LinkItem[]}) {
                             
                         }
                         else {
-                            if (href === "/") {
+                            if (href === "${basePath}/") {
                                 isActive = false;
                             }
                             else {
@@ -114,12 +114,12 @@ export default function Navbar({links}: {links: LinkItem[]}) {
             <div className="space-y-1 px-2 pb-3 pt-2">
                 {links.map(({href, label}) => {
                     return (
-                        <a 
+                        <Link
                             href={href} 
                             key={href} 
                             className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">
                             {label}
-                        </a>
+                        </Link>
                     )
                 }
 

@@ -106,26 +106,26 @@ export default function Footer() {
                                 grid-cols-2 md:grid-cols-4
                                 text-[10px]
                             ">
-                                <a className='rounded-full' target="_blank" rel="noreferrer" href="https://bsky.app/profile/lostma.bsky.social">
+                                <Link className='rounded-full' target="_blank" rel="noreferrer" href="https://bsky.app/profile/lostma.bsky.social">
                                     <span>
                                         <FontAwesomeIcon className='h-10 mx-auto' icon={faBluesky} /> Bluesky
                                     </span>
-                                </a>
-                                <a className='rounded-full' target="_blank" rel="noreferrer" href="https://bsky.app/profile/lostma.bsky.social">
+                                </Link>
+                                <Link className='rounded-full' target="_blank" rel="noreferrer" href="https://bsky.app/profile/lostma.bsky.social">
                                     <span>
                                         <FontAwesomeIcon className='h-10 mx-auto' icon={faLinkedin} /> LinkedIn
                                     </span>
-                                </a>
-                                <a className='rounded-full' target="_blank" rel="noreferrer" href="https://github.com/LostMa-ERC">
+                                </Link>
+                                <Link className='rounded-full' target="_blank" rel="noreferrer" href="https://github.com/LostMa-ERC">
                                     <span>
                                         <FontAwesomeIcon className='h-10 mx-auto' icon={faGithub} /> GitHub
                                     </span>
-                                </a>
-                                <a className='rounded-full' target="_blank" rel="noreferrer" href="https://bsky.app/profile/lostma.bsky.social">
+                                </Link>
+                                <Link className='rounded-full' target="_blank" rel="noreferrer" href="https://bsky.app/profile/lostma.bsky.social">
                                     <span>
                                         {Zenodo} Zenodo
                                     </span>
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     </div>
