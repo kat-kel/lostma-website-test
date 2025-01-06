@@ -17,7 +17,7 @@ export default function Home() {
           {/* First point */}
           <div className="container">
             <div className="flex gap-2">
-              <Link href='/people'>
+              <Link data-testid="people-page-icon-link" href='/people'>
                   {PeopleSVG}
               </Link>
               <h2>People</h2>
@@ -27,7 +27,7 @@ export default function Home() {
           {/* Second point */}
           <div className="container">
             <div className="flex gap-2">
-              <Link href='/corpus'>
+              <Link data-testid="corpus-page-icon-link" href='/corpus'>
                   {DatabaseSVG}
               </Link>
               <h2>Corpus</h2>
@@ -37,7 +37,7 @@ export default function Home() {
           {/* Third point */}
           <div className="container">
             <div className="flex gap-2">
-              <Link href='/news'>
+              <Link data-testid="news-page-icon-link" href='/news'>
                   {NewspaperSVG}
               </Link>
               <h2>News</h2>
