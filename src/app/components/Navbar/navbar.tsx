@@ -1,5 +1,5 @@
 'use client'
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { LinkItem } from "./types";
@@ -17,6 +17,11 @@ export default function Navbar({links}: {links: LinkItem[]}) {
     };
 
     const pathName = usePathname();
+
+    useEffect(() => {
+        // hide drop-down menu on path change
+        setIsOpen(false)
+      }, [pathName])
 
     return (
         <>
@@ -106,48 +111,50 @@ export default function Navbar({links}: {links: LinkItem[]}) {
         </div>
 
         {/* <!-- Mobile menu, show/hide based on menu state. --> */}
-        {isOpen && (
-        <div 
-        className="sm:hidden" 
-        id="mobile-menu"
-        >
-            <div className="space-y-1 px-2 pb-3 pt-2">
-                {links.map(({href, label}) => {
+        {isOpen && 
+        (
+            <div 
+            className="sm:hidden" 
+            id="mobile-menu"
+            >
+                <div className="space-y-1 px-2 pb-3 pt-2">
+                    {links.map(({href, label}) => {
 
-                    let isActive ;
+                        let isActive ;
 
-                    {/* If the path is a Main Link (from top-level navbar) */}
-                    if (MainLinkPaths.includes(pathName)) {
-                        isActive = pathName === href;
-                        
-                    }
-                    else {
-                        if (href === "/") {
-                            isActive = false;
+                        {/* If the path is a Main Link (from top-level navbar) */}
+                        if (MainLinkPaths.includes(pathName)) {
+                            isActive = pathName === href;
+                            
                         }
                         else {
-                            isActive = pathName.includes(href);
+                            if (href === "/") {
+                                isActive = false;
+                            }
+                            else {
+                                isActive = pathName.includes(href);
+                            }
                         }
+
+                        return (
+                            <Link
+                                href={href} 
+                                key={href} 
+                                className={`
+                                    ${isActive ? "bg-gray-300 text-gray-900 dark:bg-gray-900 dark:text-white" : "text-white"} 
+                                    block rounded-md px-3 py-2 text-base font-medium
+                                    hover:bg-gray-700 hover:text-white
+                                `}>
+                                {label}
+                            </Link>
+                        )
                     }
 
-                    return (
-                        <Link
-                            href={href} 
-                            key={href} 
-                            className={`
-                                ${isActive ? "bg-gray-300 text-gray-900 dark:bg-gray-900 dark:text-white" : "text-white"} 
-                                block rounded-md px-3 py-2 text-base font-medium
-                                hover:bg-gray-700 hover:text-white
-                            `}>
-                            {label}
-                        </Link>
-                    )
-                }
-
-                )}
+                    )}
+                </div>
             </div>
-        </div>
-        )}
+        )
+        }
     </>
     );
 }

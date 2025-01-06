@@ -139,7 +139,7 @@ export default function Footer() {
                 <hr className="mt-[30px]" />
                 <div className="flex flex-col items-center justify-center pb-4 pt-[9px] md:py-4">
                     <p className='my-0 text-[10px] font-normal md:text-[12px]'>Header image: <em>Romans aurthuriens</em>, Bibliothèque nationale de France, Français 95, folio 209v</p>
-                    <p className='my-0 text-[10px] font-normal md:text-[12px]'>&copy; 2024 lostma-erc | All rights reserved.</p>
+                    <p className='my-0 text-[10px] font-normal md:text-[12px]'>&copy; 2025 LostMa-ERC | All rights reserved.</p>
                 </div>
             </div>
         </footer>
