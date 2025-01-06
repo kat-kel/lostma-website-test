@@ -3,6 +3,7 @@ import { fetchVocab } from "../../components/fetchData";
 import Hashtag from "@/app/components/Hashtag";
 import Link from "next/link";
 import SetInnerHTML from "@/app/components/innerHTML";
+import { loadDataModificationDate } from "../../components/loadData";
 
 const UturnIcon = <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
   <path strokeLinecap="round" strokeLinejoin="round" d="M9 15 3 9m0 0 6-6M3 9h12a6 6 0 0 1 0 12h-3" />
@@ -18,8 +19,10 @@ export async function generateStaticParams(): Promise<object[]> {
 }
  
 export default async function Page({params, }: {params: Promise<{ vocabID: string }>}) {
-  const { vocabID } = await params
-  const data = await fetchVocab(vocabID)
+  const { vocabID } = await params;
+  const data = await fetchVocab(vocabID);
+  const dateResponse = await loadDataModificationDate()
+  const lastModifiedOn = new Date(dateResponse);
   if (data) {
     return (
       <>
@@ -28,6 +31,9 @@ export default async function Page({params, }: {params: Promise<{ vocabID: strin
           {UturnIcon}
         </Link>
         <p>Return to list of vocabularies.</p>
+      </div>
+      <div className="flex justify-center items-center">
+        <p>Last modified on {lastModifiedOn.toDateString()}.</p>
       </div>
       <h1>{data.label}</h1>
       <p>{data.description}</p>

@@ -19,7 +19,7 @@ export default async function DataModelPage() {
     <p>Explore the ontologies and controlled vocabularies we&apos;re using in our data model.</p>
     <p>
       Ideally, our data model should map to existing ontologies used across the semantic web. 
-      We&apos;re working to build clean, reusable data that can fit into other workflows thanks to an architecture based on existing and standardised ontolgoies.
+      We&apos;re working to build clean, reusable data that can fit into other workflows thanks to an architecture based on existing and standardised ontologies.
     </p>
     <p className="text-muted">
       Note: In order to facilitate data entry and the orientation of new contributors, some of the names given to the entities and vocabularies in our data model are unique to our project.
@@ -30,7 +30,7 @@ export default async function DataModelPage() {
 
       <div className="container">
         <h2>Ontologies</h2>
-        <ul data-testid="entity-link-list" className="list-disc">
+        <ul data-testid="entity-link-list" className="list-disc py-2">
           {
             Object.values(SortedData).map((value, index) => {
               const entityURL = "/corpus/model/entities/" + value.id;
@@ -45,7 +45,7 @@ export default async function DataModelPage() {
 
       <div className="container">
         <h2>Vocabularies</h2>
-        <ul data-testid="vocab-link-list" className="list-disc">
+        <ul data-testid="vocab-link-list" className="list-disc py-2">
           {
             Object.values(SortedVocabs).map((value, index) => {
               const vocabURL = "/corpus/model/vocabs/" + value.id;

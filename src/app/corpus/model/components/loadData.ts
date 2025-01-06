@@ -46,3 +46,9 @@ export default async function loadData(): Promise<EntityDetail[]> {
     // Ignore the 'default' and 'length' from the JSON array 
     return Object.values(arr).flatMap(({id,}, index) => id ? arr[index]: []);
 }
+
+export async function loadDataModificationDate(): Promise<string> {
+    // Import JSON data store
+    const jsonData = await import('@/data/recordTypes.json');
+    return jsonData.lastModified;
+}

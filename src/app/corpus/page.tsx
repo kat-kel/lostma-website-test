@@ -56,7 +56,7 @@ export default function Corpus() {
         <p className="px-2">
           As our specialist contributors assemble the corpus, you can observe some key indicators about its evolving composition.
         </p>
-
+{/* 
         <button 
           id="developer-popup-button"
           type="button" 
@@ -92,7 +92,7 @@ export default function Corpus() {
           </p>
         </div>
         )
-      }
+      } */}
       <div key="dashboard" className="text-center">
         <p><em>Dashboard is currently under construction...</em></p>
       </div>

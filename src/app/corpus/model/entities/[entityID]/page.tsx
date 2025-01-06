@@ -1,6 +1,7 @@
 import loadData from "../../components/loadData";
 import fetchData from "../../components/fetchData";
 import EntityProfile from "../../components/EntityProfile";
+import { loadDataModificationDate } from "../../components/loadData";
 import Link from "next/link";
 
 const UturnIcon = <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
@@ -19,6 +20,8 @@ export async function generateStaticParams(): Promise<object[]> {
 export default async function Page({params, }: {params: Promise<{ entityID: string }>}) {
   const { entityID } = await params
   const data = await fetchData(entityID)
+  const dateResponse = await loadDataModificationDate()
+  const lastModifiedOn = new Date(dateResponse)
   if (data) {
     return (
       <>
@@ -27,6 +30,10 @@ export default async function Page({params, }: {params: Promise<{ entityID: stri
           {UturnIcon}
         </Link>
         <p>Return to list of ontologies.</p>
+      </div>
+      <p>We&apos;re building our database in public, in the spirit of open science. Consequently, this page serves as both information for the general public and documentation for our community of contributors, who should click on the blue buttons below to reveal more specific information.</p>
+      <div className="flex justify-center items-center">
+        <p>Last modified on {lastModifiedOn.toDateString()}.</p>
       </div>
       {EntityProfile({data})}
       </>
