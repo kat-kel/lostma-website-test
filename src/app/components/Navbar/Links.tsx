@@ -7,8 +7,8 @@ const MainLinks = [
 ]
 
 const CorpusLinks = [
-    {"href": "/corpus/dataset", "label": "Published Data"},
     {"href": "/corpus/model", "label": "Data Model"},
+    {"href": "/corpus/dataset", "label": "Published Data"},
     {"href": "/corpus/bibliography", "label": "Bibliography"},
     {"href": "/corpus/contributing", "label": "Contributors' Workflow"}
 ]
