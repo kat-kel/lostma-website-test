@@ -3,10 +3,10 @@ import SetInnerHTML from "@/app/components/innerHTML";
 import GetItemLink from "./GetItemLink";
 import MakeIcon from "./MakeNewsIcon";
 
-export default function NewsItem({item, index}: {item: NewsItemType, index: number}) {
+export default function NewsItem({item}: {item: NewsItemType}) {
     return (
         <>
-        <div key={`news-${item.date}-${index}`} className="
+        <div className="
             relative
             p-2 md:p-4 rounded
             h-full min-h-48
@@ -22,8 +22,11 @@ export default function NewsItem({item, index}: {item: NewsItemType, index: numb
                     {item.title}
                 </h2>
             </div>
-            <div className="text-muted">{item.authors.map((n, a) => <span key={`${index}-author-${a}`} className="me-4">{n}</span>)}</div>
-            <article className="
+            <div className="text-muted">{item.authors.map((author, index) => 
+                <span key={`author-${index}`} className="me-4">{author}</span>
+            )}
+            </div>
+            <div className="
                 min-h-24 max-h-48
                 scroll-smooth focus:scroll-auto
                 overflow-x-scroll
@@ -31,7 +34,7 @@ export default function NewsItem({item, index}: {item: NewsItemType, index: numb
             "
             >
                 {SetInnerHTML(item.body)
-            }</article>
+            }</div>
             {GetItemLink(item.link)}
         </div>
         </>
