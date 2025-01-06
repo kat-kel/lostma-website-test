@@ -41,7 +41,7 @@ export async function loadVocabData(): Promise<VocabDetail[]> {
 export default async function loadData(): Promise<EntityDetail[]> {
     // Import JSON data store
     const jsonData = await import('@/data/recordTypes.json');
-    const arr = jsonData as EntityDetail[];
+    const arr = jsonData.items as EntityDetail[];
     
     // Ignore the 'default' and 'length' from the JSON array 
     return Object.values(arr).flatMap(({id,}, index) => id ? arr[index]: []);

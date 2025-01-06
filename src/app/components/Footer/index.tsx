@@ -17,7 +17,7 @@ export default function Footer() {
         <footer className='footer'>
             <div className="mt-2 pt-9">
                 <hr className='pt-1' />
-                <div className="mx-auto w-full max-w-[1166px] px-4 xl:px-0">
+                <div className="mx-auto max-w-[1166px] px-4 xl:px-0">
                     <div 
                     className="
                         justify-between 
@@ -47,6 +47,7 @@ export default function Footer() {
                         className="
                             grid gap-4
                             pt-6 md:pt-0 md:pl-6
+                            w-fit
                         ">
                             <p 
                             className="font-inter text-[14px] font-medium leading-normal my-0 text-left"
@@ -67,7 +68,12 @@ export default function Footer() {
                                 <Link href="/corpus">
                                     <span
                                     className="font-inter text-[12px] font-normal hover:font-semibold text-left"
-                                    >Corpus</span>
+                                    >Literary corpus</span>
+                                </Link>
+                                <Link href="/network-analysis">
+                                    <span
+                                    className="font-inter text-[12px] font-normal hover:font-semibold text-left"
+                                    >Network analysis</span>
                                 </Link>
                                 <Link href="/people">
                                     <span

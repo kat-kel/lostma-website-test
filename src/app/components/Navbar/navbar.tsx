@@ -113,21 +113,38 @@ export default function Navbar({links}: {links: LinkItem[]}) {
         >
             <div className="space-y-1 px-2 pb-3 pt-2">
                 {links.map(({href, label}) => {
+
+                    let isActive ;
+
+                    {/* If the path is a Main Link (from top-level navbar) */}
+                    if (MainLinkPaths.includes(pathName)) {
+                        isActive = pathName === href;
+                        
+                    }
+                    else {
+                        if (href === "/") {
+                            isActive = false;
+                        }
+                        else {
+                            isActive = pathName.includes(href);
+                        }
+                    }
+
                     return (
                         <Link
                             href={href} 
                             key={href} 
-                            className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">
+                            className={`
+                                ${isActive ? "bg-gray-300 text-gray-900 dark:bg-gray-900 dark:text-white" : "text-white"} 
+                                block rounded-md px-3 py-2 text-base font-medium
+                                hover:bg-gray-700 hover:text-white
+                            `}>
                             {label}
                         </Link>
                     )
                 }
 
                 )}
-                {/* <a href="/" className="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white" aria-current="page">About</a>
-                <a href="/people" className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Team</a>
-                <a href="/corpus" className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Corpus</a>
-                <a href="/news" className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">News</a> */}
             </div>
         </div>
         )}

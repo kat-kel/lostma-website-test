@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { PeopleSVG, DatabaseSVG, NewspaperSVG } from "@/public/svgs";
+import { PeopleSVG, DatabaseSVG, NewspaperSVG, ShareSVG } from "@/public/svgs";
 
 export default function Home() {
   return (
@@ -37,13 +37,23 @@ export default function Home() {
           {/* Third point */}
           <div className="container">
             <div className="flex gap-2">
+              <Link data-testid="network-analysis-page-icon-link" href='/network-analysis'>
+                  {ShareSVG}
+              </Link>
+              <h2>Network Analysis</h2>
+            </div>
+            <p>We are designing ML models and workflows to predict narratives&apos; evolution and transmission over time and space.</p>
+          </div>
+          {/* Fourth point */}
+          <div className="container">
+            <div className="flex gap-2">
               <Link data-testid="news-page-icon-link" href='/news'>
                   {NewspaperSVG}
               </Link>
               <h2>News</h2>
             </div>
             <p>We are committed to open science and the sharing of our results with the scientific community and general public.</p>
-          </div>
+          </div>         
       </div>
     </div>
   );
