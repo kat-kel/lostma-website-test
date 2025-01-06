@@ -35,7 +35,9 @@ export default function NewsItem({item}: {item: NewsItemType}) {
             >
                 {SetInnerHTML(item.body)
             }</div>
-            {GetItemLink(item.link)}
+            <div className="overflow-hidden">
+                {GetItemLink(item.link)}
+            </div>
         </div>
         </>
     )

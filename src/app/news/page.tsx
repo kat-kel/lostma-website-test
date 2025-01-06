@@ -17,7 +17,7 @@ export default function News() {
     <div className="grid grid-flow-row auto-rows-max gap-8">
       {
         Object.values(SortedNewsData).map((i, index) =>
-          <article key={`news-${i.date}-${index}`}>
+          <article key={`news-${i.date}-${index}`} className="w-10/12 sm:w-full md:w-full lg:w-full xl:w-full lg:w-full">
             < NewsItem item={i} />
           </article>
         )
