@@ -20,7 +20,7 @@ Website is deployed at [https://kat-kel.github.io/lostma-website-test/](https://
     nvm install node
     ```
 
-3. Change into the [`docs`]() directory and install the app's dependencies.
+3. Install the app's dependencies.
 
     ```shell
     npm install
@@ -29,7 +29,7 @@ Website is deployed at [https://kat-kel.github.io/lostma-website-test/](https://
 4. Run the app to test its development environment.
 
     ```shell
-    npm run start
+    npx next dev
     ```
 
 ## Updating Information
