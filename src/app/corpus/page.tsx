@@ -1,8 +1,7 @@
 'use client';
 import { useState } from "react";
-import Navbar from "../components/Navbar/navbar";
-import { CorpusLinks } from "../components/Navbar/Links";
-import { QuestionMarkSVG as What, MailSVG as How, ClockSVG as When, GlobeSVG as Where } from "@/public/svgs";
+import Link from "next/link";
+import { XMLFileSVG, ShareSVG } from "@/public/svgs";
 
 export default function Corpus() {
 
@@ -14,43 +13,38 @@ export default function Corpus() {
   
   return (
     <div>
-      <h1>What stories do we consider?</h1>
-      <div className="container">
-        <p>A big milestone of the LostMa project is to assemble and publish a multilingual corpus of textual traditions. A narrative&apos;s inclusion in the corpus is defined by the following criteria:</p>
-        <div className="grid md:grid-cols-4 pt-4 md:pt-0 gap-8 px-8">
-          <div className="container">
-            <div className="flex gap-4">
-              {What}
-              <h2>What</h2>
-            </div>
-            <p>Describes a hero or epic adventure.</p>
-          </div>
-          <div className="container">
-            <div className="flex gap-4">
-              {How}
-              <h2>How</h2>
-            </div>
-            <p>First circulated in manuscript form.</p>
-          </div>
-          <div className="container">
-            <div className="flex gap-4">
-              {When}
-              <h2>When</h2>
-            </div>
-            <p>First copies were written before the printing press.</p>
-          </div>
-          <div className="container">
-            <div className="flex gap-4">
-              {Where}
-              <h2>Where</h2>
-            </div>
-            <p>Circulated within Western Europe.</p>
-          </div>
+
+      <div className="container my-2 bg-gradient-to-l from-gray-100 dark:from-gray-800 p-4 rounded-xl">
+        <div className="w-fit">
+          <Link className="flex gap-2 p-1" href='/corpus/metadata'>
+            {XMLFileSVG}
+            <h2>Corpus Metadata</h2>
+          </Link>
         </div>
+        <p>Metadata about the literary corpus, which describe works, versions of works, manuscripts, etc.</p>
+        <p>See the <button><Link href='/corpus/documentation'>data model</Link></button> for more information about how these entities and their metadata are defined. The documentation will also help you understand how to use this dataset for your own research purposes.</p>
       </div>
-      <nav key="corpus-navbar" className="bg-secondary dark:bg-secondary-dark rounded">
-        <Navbar links={CorpusLinks} />
-      </nav>
+
+      <div className="container my-2 bg-gradient-to-l from-gray-100 dark:from-gray-800 p-4 rounded-xl">
+        <div className="w-fit">
+          <Link className="flex gap-2 p-1" href='/corpus/full-text'>
+            {XMLFileSVG}
+            <h2>Corpus Full Text</h2>
+          </Link>
+        </div>
+        <p>TEI-XML documents that include the metadata of a witness and its full text, as predicted from an Handwritten Text Recognition (HRT) model.</p>
+      </div>
+
+      <div className="container my-2 bg-gradient-to-l from-gray-100 dark:from-gray-800 p-4 rounded-xl">
+        <div className="w-fit">
+          <Link className="flex gap-2 p-1" href='/corpus/documentation'>
+            {ShareSVG}
+            <h2>Documentation / Data Model</h2>
+          </Link>
+        </div>
+        <p>Documentation explaining the data (entities) and their metadata.</p>
+      </div>
+
       <div className="container mt-4">
         <h2>In-progress stats</h2>
         <p className="px-2">

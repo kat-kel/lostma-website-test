@@ -33,7 +33,7 @@ export default async function DataModelPage() {
         <ul data-testid="entity-link-list" className="list-disc py-2">
           {
             Object.values(SortedData).map((value, index) => {
-              const entityURL = "/corpus/model/entities/" + value.id;
+              const entityURL = "/corpus/documentation/entities/" + value.id;
               const entityLinkID = "entity-link-" + index;
               return (
                 <li key={entityLinkID}><Link href={entityURL}>{value.metadata.rty_Name}</Link></li>
@@ -48,7 +48,7 @@ export default async function DataModelPage() {
         <ul data-testid="vocab-link-list" className="list-disc py-2">
           {
             Object.values(SortedVocabs).map((value, index) => {
-              const vocabURL = "/corpus/model/vocabs/" + value.id;
+              const vocabURL = "/corpus/documentation/vocabs/" + value.id;
               const vocabLinkID = "vocab-link-" + index;
               return (
                 <li key={vocabLinkID}><Link href={vocabURL}>{value.label}</Link></li>

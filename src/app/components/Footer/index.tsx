@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import { faBluesky, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import logo from "@/public/images/LOGO_ERC-FLAG_EU_.jpg";
+import logo from "@/public/images/erc-logo.png";
 import Link from 'next/link';
 
 const Zenodo =
@@ -32,7 +32,7 @@ export default function Footer() {
                         id="footer-erc-boilerplate" 
                         className='max-h-25'
                         >   
-                            <div className='flex items-center md:items-start justify-center md:justify-left'>
+                            <div className='flex items-center md:items-start justify-center md:justify-left dark:bg-gray-600 dark:rounded-xl p-4'>
                                 <Image className='object-contain w-[216px]' src={logo} alt='ERC & European Union logos' />
                             </div>
                             <p className="mt-[18px] text-[10px] font-normal md:text-[12px] my-0">

@@ -33,7 +33,7 @@ export default async function Page({params, }: {params: Promise<{ entityID: stri
       </div>
       <p>We&apos;re building our database in public, in the spirit of open science. Consequently, this page serves as both information for the general public and documentation for our community of contributors, who should click on the blue buttons below to reveal more specific information.</p>
       <div className="flex justify-center items-center">
-        <p>Last modified on {lastModifiedOn.toDateString()}.</p>
+        <p>Last updated on {lastModifiedOn.toDateString()}.</p>
       </div>
       {EntityProfile({data})}
       </>

@@ -33,7 +33,7 @@ export default async function Page({params, }: {params: Promise<{ vocabID: strin
         <p>Return to list of vocabularies.</p>
       </div>
       <div className="flex justify-center items-center">
-        <p>Last modified on {lastModifiedOn.toDateString()}.</p>
+        <p>Last updated on {lastModifiedOn.toDateString()}.</p>
       </div>
       <h1>{data.label}</h1>
       <p>{data.description}</p>

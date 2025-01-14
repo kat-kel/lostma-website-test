@@ -1,11 +1,12 @@
 import Link from "next/link";
-import { PeopleSVG, DatabaseSVG, NewspaperSVG, ShareSVG } from "@/public/svgs";
+import { InboxSVG, DownloadSVG, PresentationIcon, ToolsSVG, DatabaseSVG, PublicationIcon, QuestionMarkSVG as What, MailSVG as How, ClockSVG as When, GlobeSVG as Where } from "@/public/svgs";
+import Team from "./components/Team/page";
 
 export default function Home() {
   return (
     <div>
-      <h1>What is LostMa?</h1>
-      <div className="container">
+      <div className="container my-2 bg-gradient-to-l from-gray-100 dark:from-gray-800 p-4 rounded-xl">
+        <h1>What is LostMa?</h1>
         <p>
             A digital humanities research project that blends AI, complexity science, and philological expertise to unravel the mysteries behind the deviation from pure chance of a text&apos;s transmission.
         </p>
@@ -13,47 +14,96 @@ export default function Home() {
             We are funded by the European Research Council (ERC) for five years, 2024-2029. Our offices are in the Campus Condorcet&apos;s Hôtel à projets and we are hosted by the École nationale des chartes in Paris, France.
         </p>
       </div>
-      <div className="grid md:grid-cols-2 pt-4 md:pt-0 gap-8 px-8">
-          {/* First point */}
+
+      <div className="py-2 container my-2 bg-gradient-to-l from-gray-100 dark:from-gray-800 p-4 rounded-xl">
+        <div className="w-fit">
+          <Link className="flex gap-2 p-1" href='/corpus'>
+            {DatabaseSVG}
+            <h2>Data</h2>
+          </Link>
+        </div>
+        <p>A big milestone of the LostMa project is to assemble and publish a multilingual corpus of textual traditions. A narrative&apos;s inclusion in the corpus is defined by the following criteria:</p>
+        <div className="grid md:grid-cols-4 pt-4 md:pt-0 gap-8 px-8">
           <div className="container">
-            <div className="flex gap-2">
-              <Link data-testid="people-page-icon-link" href='/people'>
-                  {PeopleSVG}
-              </Link>
-              <h2>People</h2>
+            <div className="flex gap-4">
+              {What}
+              <h2>What</h2>
             </div>
-            <p>We are a small team with collaborators from around Europe, contributing area expertise on various textual traditions.</p>
+            <p>Describes a hero or epic adventure.</p>
           </div>
-          {/* Second point */}
           <div className="container">
-            <div className="flex gap-2">
-              <Link data-testid="corpus-page-icon-link" href='/corpus'>
-                  {DatabaseSVG}
-              </Link>
-              <h2>Corpus</h2>
+            <div className="flex gap-4">
+              {How}
+              <h2>How</h2>
             </div>
-            <p>We are building a multilingual corpus of Medieval literary traditions, focused on epics and knights&apos; tales.</p>
+            <p>First circulated in manuscript form.</p>
           </div>
-          {/* Third point */}
           <div className="container">
-            <div className="flex gap-2">
-              <Link data-testid="network-analysis-page-icon-link" href='/network-analysis'>
-                  {ShareSVG}
-              </Link>
-              <h2>Network Analysis</h2>
+            <div className="flex gap-4">
+              {When}
+              <h2>When</h2>
             </div>
-            <p>We are designing ML models and workflows to predict narratives&apos; evolution and transmission over time and space.</p>
+            <p>First copies were written before the printing press.</p>
           </div>
-          {/* Fourth point */}
           <div className="container">
-            <div className="flex gap-2">
-              <Link data-testid="news-page-icon-link" href='/news'>
-                  {NewspaperSVG}
-              </Link>
-              <h2>News</h2>
+            <div className="flex gap-4">
+              {Where}
+              <h2>Where</h2>
             </div>
-            <p>We are committed to open science and the sharing of our results with the scientific community and general public.</p>
-          </div>         
+            <p>Circulated within Western Europe.</p>
+          </div>
+        </div>
+        <p>
+          <Link className="p-1" href="/corpus">Learn more about the corpus, database, and data model.</Link>
+        </p>
+      </div>
+
+      <div className="py-2 container my-2 bg-gradient-to-l from-gray-100 dark:from-gray-800 p-4 rounded-xl">
+        <div className="flex gap-2">
+          {ToolsSVG}
+          <h2>Methods</h2>
+        </div>
+          <p>...</p>
+      </div>
+
+      <div className="py-2 container my-2 bg-gradient-to-l from-gray-100 dark:from-gray-800 p-4 rounded-xl">
+        <div className="flex gap-2">
+          {InboxSVG}
+          <h2>Output</h2>
+        </div>
+        <div className="grid md:grid-cols-3 pt-4 md:pt-0 gap-8 px-8">
+          <div className="container">
+            <div className="w-fit">
+              <Link className="flex gap-4 p-1" href="/publications">
+                {PublicationIcon}
+                <h2>Publications</h2>
+              </Link>
+            </div>
+            <p>Scientific articles, conference presentatations, and other publications.</p>
+          </div>
+          <div className="container">
+            <div className="w-fit">
+              <Link className="flex gap-4 p-1" href="/releases">
+                {DownloadSVG}
+                <h2>Releases</h2>
+              </Link>
+            </div>
+            <p>Versions of datasets, models, and software released for download.</p>
+          </div>
+          <div className="container">
+            <div className="w-fit">
+              <Link className="flex gap-4 p-1" href="/events">
+                {PresentationIcon}
+                <h2>Events</h2>
+              </Link>
+            </div>
+            <p>Conferences, hackathons, and other in-person events.</p>
+          </div>
+        </div>
+      </div>
+
+      <div className="py-2" id="people">
+        <Team />
       </div>
     </div>
   );

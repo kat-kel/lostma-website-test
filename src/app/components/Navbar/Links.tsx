@@ -1,16 +1,13 @@
 const MainLinks = [
     {"href": "/", "label": "About"},
-    {"href": "/corpus", "label": "Literary Corpus"},
-    {"href": "/network-analysis", "label": "Network Analysis"},
-    {"href": "/people", "label": "People"},
-    {"href": "/news", "label": "News"}
+    {"href": "/corpus", "label": "Corpus"},
+    {"href": "/publications", "label": "Publications"},
+    {"href": "/releases", "label": "Releases"},
+    {"href": "/events", "label": "Events"},
 ]
 
 const CorpusLinks = [
-    {"href": "/corpus/model", "label": "Data Model"},
-    {"href": "/corpus/dataset", "label": "Published Data"},
-    {"href": "/corpus/bibliography", "label": "Bibliography"},
-    {"href": "/corpus/contributing", "label": "Contributors' Workflow"}
+    {"href": "/corpus/documentation", "label": "Documentation"},
 ]
 
 export { MainLinks, CorpusLinks } 
