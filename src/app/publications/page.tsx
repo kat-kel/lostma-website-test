@@ -1,7 +1,8 @@
 export default function News() {
   return (
     <div>
-        <p>Check back in for more information later.</p>
+      <h1>Publications</h1>
+      <p>Check back in for more information later.</p>
     </div>
   );
 }
