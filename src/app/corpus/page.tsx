@@ -1,7 +1,7 @@
 'use client';
 import { useState } from "react";
 import Link from "next/link";
-import { XMLFileSVG, ShareSVG } from "@/public/svgs";
+import { XMLFileSVG, ShareSVG, QuestionMarkSVG as What, MailSVG as How, ClockSVG as When, GlobeSVG as Where } from "@/public/svgs";
 
 export default function Corpus() {
 
@@ -13,7 +13,41 @@ export default function Corpus() {
   
   return (
     <div>
+      <h1>Corpus</h1>
 
+      <p>A big milestone of the LostMa project is to assemble and publish a multilingual corpus of textual traditions. A narrative&apos;s inclusion in the corpus is defined by the following criteria:</p>
+      <div className="grid md:grid-cols-4 pt-4 md:pt-0 gap-8 px-8">
+        <div className="container">
+          <div className="flex gap-4">
+            {What}
+            <h2>What</h2>
+          </div>
+          <p>Describes a hero or epic adventure.</p>
+        </div>
+        <div className="container">
+          <div className="flex gap-4">
+            {How}
+            <h2>How</h2>
+          </div>
+          <p>First circulated in manuscript form.</p>
+        </div>
+        <div className="container">
+          <div className="flex gap-4">
+            {When}
+            <h2>When</h2>
+          </div>
+          <p>First copies were written before the printing press.</p>
+        </div>
+        <div className="container">
+          <div className="flex gap-4">
+            {Where}
+            <h2>Where</h2>
+          </div>
+          <p>Circulated within Western Europe.</p>
+        </div>
+      </div>
+
+      <h2>Resources</h2>
       <div className="container my-2 bg-gradient-to-l from-gray-100 dark:from-gray-800 p-4 rounded-xl">
         <div className="w-fit">
           <Link className="flex gap-2 p-1" href='/corpus/metadata'>
