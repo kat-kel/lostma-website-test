@@ -20,7 +20,7 @@ Website is deployed at [https://kat-kel.github.io/lostma-website-test/](https://
     nvm install node
     ```
 
-3. Change into the [`docs`]() directory and install the app's dependencies.
+3. Install the app's dependencies.
 
     ```shell
     npm install
@@ -29,7 +29,7 @@ Website is deployed at [https://kat-kel.github.io/lostma-website-test/](https://
 4. Run the app to test its development environment.
 
     ```shell
-    npm run start
+    npx next dev
     ```
 
 ## Updating Information
@@ -38,9 +38,9 @@ Website is deployed at [https://kat-kel.github.io/lostma-website-test/](https://
 
 |Information|JSON Location|
 |--|--|
-|Team / Collaborators|[`src/data/people.json`](src/data/people.json)|
-|News|[`src/data/feed.json`](src/data/feed.json)|
-|Data model|[`src/data/recordTypes.json`](src/data/recordTypes.json)|
+|Team / Collaborators|[`public/data/people.json`](public/data/people.json)|
+|News|[`public/data/feed.json`](public/data/feed.json)|
+|Data model|[`public/data/recordTypes.json`](public/data/recordTypes.json)|
 
 ### People
 
@@ -63,11 +63,12 @@ Update the news feed JSON file.
 ```json
 [
     {
-        "key": "article", 
-        "date": "2024-12-04", 
-        "title": "Title of post", 
-        "body": "Body of post",
-        "link": "https://www.google.com"
+        "classification": "Publication",
+        "date": "2022-10-26", 
+        "title": "Lost Manuscripts and Extinct Texts : A Dynamic Model of Cultural Transmission", 
+        "authors": ["Jean-Baptiste Camps", "Julien Randon-Furling"],
+        "body": "How did written works evolve....",
+        "link": "https://shs.hal.science/halshs-03827975"
     }
 ]
 ```
@@ -76,13 +77,15 @@ The website's JavaScript orders the array alphabetically by date, so you can add
 
 The body of the post can contain HTML, but it's best to try sticking to simple text. Images are not currently supported.
 
-All posts will be given an icon indicating what kind of information they present. As the value of `key`, provide one of the following (lowercase):
+A list of authors is optional. But when there is no author, provide an empty list, i.e. `"authors": []`.
 
-- `article`
-- `conference`
-- `dataset`
-- `meeting`
-- `talk`
+All posts will be given an icon indicating what kind of information they present. As the value of `classification`, provide one of the following:
+
+- `Publication`
+- `Presentation`
+- `Meeting`
+- `Conference`
+- `Other`
 
 ### Data model
 

@@ -1,4 +1,4 @@
-export default function SetInnerHTML(str:string | null) {
+export default function SetInnerHTML(str:string | null | undefined) {
     let p;
     if (str) {
         var cleanString = str.replace(/\\n/g, "<br/>")

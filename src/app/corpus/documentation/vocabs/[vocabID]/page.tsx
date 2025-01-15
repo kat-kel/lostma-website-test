@@ -36,7 +36,7 @@ export default async function Page({params, }: {params: Promise<{ vocabID: strin
         <p>Last updated on {lastModifiedOn.toDateString()}.</p>
       </div>
       <h1>{data.label}</h1>
-      <p>{data.description}</p>
+      {SetInnerHTML(data.description)}
       <div className="container relative overflow-x">
         <table className="md:w-full min-w-fit overflow-scroll table-fixed text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
           <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
