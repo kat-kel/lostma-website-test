@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { LinkItem } from "./types";
 import { MainLinks } from "./Links";
+import { HomeSVG } from "@/public/svgs";
 
 const MainLinkPaths = MainLinks.map(({ href }) => {
   return href;
@@ -29,6 +30,17 @@ export default function Navbar({links}: {links: LinkItem[]}) {
             
             {/* <!-- Mobile menu button--> */}
             <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
+                <div className="flex items-center">
+                    <Link 
+                        href="/" 
+                        className={`
+                            text-white 
+                            rounded-md px-3 py-2 
+                            text-sm font-medium 
+                            hover:bg-gray-700 hover:text-white`}>
+                    {HomeSVG}
+                    </Link>
+                </div>
                 
                 <button 
                 id="user-menu"
@@ -72,6 +84,17 @@ export default function Navbar({links}: {links: LinkItem[]}) {
                 </div>
                 <div className="hidden sm:ml-6 sm:block">
                 <div className="flex space-x-4">
+                    <div className="flex items-center">
+                        <Link 
+                            href="/" 
+                            className={`
+                                text-white 
+                                rounded-md px-3 py-2 
+                                text-sm font-medium 
+                                hover:bg-gray-700 hover:text-white`}>
+                        {HomeSVG}
+                        </Link>
+                    </div>
                     {/* <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" --> */}
                     {links.map(({href, label}) => {
 

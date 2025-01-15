@@ -68,32 +68,22 @@ export default function Footer() {
                                 <Link href="/corpus">
                                     <span
                                     className="font-inter text-[12px] font-normal hover:font-semibold text-left"
-                                    >Literary corpus</span>
+                                    >Corpus</span>
                                 </Link>
-                                <Link href="/network-analysis">
+                                <Link href="/events">
                                     <span
                                     className="font-inter text-[12px] font-normal hover:font-semibold text-left"
-                                    >Network analysis</span>
+                                    >Events</span>
                                 </Link>
-                                <Link href="/people">
+                                <Link href="/publications">
                                     <span
                                     className="font-inter text-[12px] font-normal hover:font-semibold text-left"
-                                    >People</span>
+                                    >Publications</span>
                                 </Link>
-                                <Link href="/news">
+                                <Link href="/releases">
                                     <span
                                     className="font-inter text-[12px] font-normal hover:font-semibold text-left"
-                                    >News</span>
-                                </Link>
-                                <Link href="/terms-and-conditions">
-                                    <span
-                                    className="font-inter text-[12px] font-normal hover:font-semibold text-left"
-                                    >Terms and conditions</span>
-                                </Link>
-                                <Link href="/privacy-policy">
-                                    <span
-                                    className="font-inter text-[12px] font-normal hover:font-semibold text-left"
-                                    >Privacy policy</span>
+                                    >Releases</span>
                                 </Link>
                             </div>
                         </div>
@@ -117,21 +107,25 @@ export default function Footer() {
                                         <FontAwesomeIcon className='h-10 mx-auto' icon={faBluesky} /> Bluesky
                                     </span>
                                 </Link>
-                                <Link className='rounded-full' target="_blank" rel="noreferrer" href="https://bsky.app/profile/lostma.bsky.social">
+                                {/* <Link className='rounded-full' target="_blank" rel="noreferrer" href="https://bsky.app/profile/lostma.bsky.social"> */}
+                                <div className='flex justify-center'>
                                     <span>
                                         <FontAwesomeIcon className='h-10 mx-auto' icon={faLinkedin} /> LinkedIn
                                     </span>
-                                </Link>
+                                </div>
+                                {/* </Link> */}
                                 <Link className='rounded-full' target="_blank" rel="noreferrer" href="https://github.com/LostMa-ERC">
                                     <span>
                                         <FontAwesomeIcon className='h-10 mx-auto' icon={faGithub} /> GitHub
                                     </span>
                                 </Link>
-                                <Link className='rounded-full' target="_blank" rel="noreferrer" href="https://bsky.app/profile/lostma.bsky.social">
+                                {/* <Link className='rounded-full' target="_blank" rel="noreferrer" href="https://bsky.app/profile/lostma.bsky.social"> */}
+                                <div className='flex justify-center'>
                                     <span>
                                         {Zenodo} Zenodo
                                     </span>
-                                </Link>
+                                </div>
+                                {/* </Link> */}
                             </div>
                         </div>
                     </div>
