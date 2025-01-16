@@ -27,7 +27,7 @@ async function MakeForeignKeyLabel({entityID,}: {entityID: number | null}) {
     if (entityID) {
         let fkEntity = await fetchData(entityID.toString())
         if (fkEntity) {
-            return <Link href={`/corpus/model/entities/${entityID}`}>{fkEntity?.metadata.rty_Name}</Link>       
+            return <Link href={`/corpus/documentation/entities/${entityID}`}>{fkEntity?.metadata.rty_Name}</Link>       
         }
         else {
             return <></>
@@ -43,7 +43,7 @@ export default function ConvertFieldType({field,}: {field: Field}) {
     if (field.dty_Type === HeuristFieldTypes.resource) {
         return (
         <div className="grid grid-rows-2">
-            <span className="flex gap-2">foreign key {LinkSVG}</span>
+            <span className="flex gap-2">foreign key <div className="size-6">{LinkSVG}</div></span>
             <div className="flex gap-2">
             {
                 Object.values(field.dty_PtrTargetRectypeIDs).map((value, index) => 
